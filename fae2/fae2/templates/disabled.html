@@ -110,7 +110,7 @@
               <li><a href="{% url 'logout' %}" >Logout: {{user.username}}</a></li>
             {% else %}
               {% if self_registration_enabled %}
-                <li><a href="{% url 'registration_register' %}" >Register</a></li>
+                <li><a href="{% url 'django_registration_register' %}" >Register</a></li>
               {% endif %}
               <li><a href="{% url 'login' %}" >Login</a></li>
             {% endif %}
