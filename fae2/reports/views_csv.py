@@ -36,7 +36,7 @@ from userProfiles.models import get_profile
 
 import csv
 
-def ReportRulesViewCSV(request):
+def ReportRulesViewCSV(request, report, view):
     # Create the HttpResponse object with the appropriate CSV header.
     response = HttpResponse(content_type='text/csv')
     response['Content-Disposition'] = 'attachment; filename="test.csv"'

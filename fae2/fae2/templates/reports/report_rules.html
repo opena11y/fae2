@@ -41,6 +41,8 @@
 
 {% include "reports/rules_summary.html" %}
 
+    <div><a href="{% url 'report_rules_csv' report.slug view %}">Test CSV</a></div>
+
 <nav id="view_options" aria-label="Result View Options">
 	<ul class="nav nav-tabs">
      	<li {% if view == 'rc' %}class="active"{% endif %}><a href="{% url 'report_rules' report.slug 'rc' %}">Rule Category</a></li>

@@ -86,7 +86,7 @@ urlpatterns = [
     url(r'^summary/(?P<report>\w+)/json/$', ReportJSON.as_view(), name='report_json'),
 
     url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/$', ReportRulesView.as_view(), name='report_rules'),
-    url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/csv$', ReportRulesViewCSV, name='report_rules_csv'),
+    url(r'^summary-csv/(?P<report>\w+)/(?P<view>\w+)/$', ReportRulesViewCSV, name='report_rules_csv'),
     url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/$', ReportRulesGroupView.as_view(),
         name='report_rules_group'),
     url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/rule/(?P<rule>\w+)/$',
