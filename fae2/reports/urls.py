@@ -57,7 +57,7 @@ from .views import ReportPageView
 from .views import ReportPageGroupView
 from .views import ReportPageGroupRuleView
 
-from .views_csv import ReportRulesViewCSV
+from .views_csv import ReportRulesViewCSV, ReportRulesGroupViewCSV
 
 from fae2.settings import ANONYMOUS_ENABLED
 from fae2.settings import SELF_REGISTRATION_ENABLED
@@ -87,10 +87,14 @@ urlpatterns = [
 
     url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/$', ReportRulesView.as_view(), name='report_rules'),
     url(r'^summary-csv/(?P<report>\w+)/(?P<view>\w+)/$', ReportRulesViewCSV, name='report_rules_csv'),
+
     url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/$', ReportRulesGroupView.as_view(),
         name='report_rules_group'),
+    url(r'^summary-csv/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/$', ReportRulesGroupViewCSV, name='report_rules_group_csv'),
+
     url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/rule/(?P<rule>\w+)/$',
         ReportRulesGroupRuleView.as_view(), name='report_rules_group_rule'),
+
     url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/rule/(?P<rule>\w+)/page/(?P<page>[\d-]+)/$',
         ReportRulesGroupRulePageView.as_view(), name='report_rules_group_rule_page'),
 

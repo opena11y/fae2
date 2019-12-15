@@ -47,13 +47,26 @@ def get_implementation_status(impl_status):
         return 'na'
 
 
+def get_result(result_value):
+    if result_value == 5:
+        return 'Violation'
+    elif result_value == 6:
+        return 'Warning'
+    elif result_value == 3:
+        return 'Manual Check'
+    elif result_value == 2:
+        return 'Passed'
+    elif result_value == 1:
+        return 'Not Applicable'
+
+
 def ReportRulesViewCSV(request, report, view):
     # Create the HttpResponse object with the appropriate CSV header.
     response = HttpResponse(content_type='text/csv')
     response['Content-Disposition'] = 'attachment; filename="test.csv"'
 
     writer = csv.writer(response)
-    writer.writerow(['Rule Group', 'V', 'W', 'MC', 'P', 'N/A', 'Score', 'Status'])
+    writer.writerow(['Rule Group', 'Violations', 'Warnings', 'Manual Check', 'Passed', 'N/A', 'Score', 'Status'])
 
     report_obj = WebsiteReport.objects.get(slug=report)
 
@@ -86,4 +99,37 @@ def ReportRulesViewCSV(request, report, view):
         ['All Report Groups', report_obj.rules_violation, report_obj.rules_warning, report_obj.rules_manual_check,
          report_obj.rules_passed, report_obj.rules_na, report_obj.implementation_score,
          get_implementation_status(report_obj.implementation_status)])
+    return response
+
+
+def ReportRulesGroupViewCSV(request, report, view, group):
+    response = HttpResponse(content_type='text/csv')
+    response['Content-Disposition'] = 'attachment; filename="test.csv"'
+
+    writer = csv.writer(response)
+    writer.writerow(
+        ['ID', 'Rule Summary', 'Result', 'Violations', 'Warnings', 'Manual Check', 'Passed', 'N/A', 'Score', 'Status'])
+
+    report_obj = WebsiteReport.objects.get(slug=report)
+
+    if view == 'gl':
+        group = report_obj.ws_gl_results.get(slug=group)
+        page_results = group.page_gl_results.all()
+        groups = Guideline.objects.all()
+    elif view == 'rs':
+        group = report_obj.ws_rs_results.get(slug=group)
+        page_results = group.page_rs_results.all()
+        groups = RuleScope.objects.all()
+    else:
+        group = report_obj.ws_rc_results.get(slug=group)
+        page_results = group.page_rc_results.all()
+        groups = RuleCategory.objects.all()
+        view = 'rc'
+
+    for g in group.ws_rule_results.all():
+        writer.writerow(
+            [g.rule.nls_rule_id, g.get_title(), get_result(g.result_value), g.pages_violation, g.pages_warning,
+             g.pages_manual_check, g.pages_passed, g.pages_na, g.implementation_score,
+             get_implementation_status(g.implementation_status)])
+
     return response
