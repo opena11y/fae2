@@ -11,11 +11,11 @@
 
     {% if page %}
 
-    {% include "reports/page_information.html" %}
+        {% include "reports/page_information.html" %}
 
     {% else %}
 
-    {% include "reports/report_information.html" %}
+        {% include "reports/report_information.html" %}
 
     {% endif %}
 
@@ -23,9 +23,9 @@
 
 {% block title %}
     {% if page %}
-      Page Summary
+        Page Summary
     {% else %}
-      Summary
+        Summary
     {% endif %}
 {% endblock %}
 
@@ -33,179 +33,183 @@
 
 {% block content %}
 
-{% if page %}
+    {% if page %}
 
-{% include "reports/report_rules_one_page.html" %}
+        {% include "reports/report_rules_one_page.html" %}
 
-{% else %}
+    {% else %}
 
-{% include "reports/rules_summary.html" %}
+        {% include "reports/rules_summary.html" %}
 
-    <div><a href="{% url 'report_rules_csv' report.slug view %}">Test CSV</a></div>
+        <div><a href="{% url 'report_rules_csv' report.slug view %}">Test CSV</a></div>
 
-<nav id="view_options" aria-label="Result View Options">
-	<ul class="nav nav-tabs">
-     	<li {% if view == 'rc' %}class="active"{% endif %}><a href="{% url 'report_rules' report.slug 'rc' %}">Rule Category</a></li>
-     	<li {% if view == 'gl' %}class="active"{% endif %}><a href="{% url 'report_rules' report.slug 'gl' %}">WCAG Guidelines</a></li>
-     	<li {% if view == 'rs' %}class="active"{% endif %}><a href="{% url 'report_rules' report.slug 'rs' %}">Rule Scope</a></li>
-	</ul>
-</nav>
+        <nav id="view_options" aria-label="Result View Options">
+            <ul class="nav nav-tabs">
+                <li {% if view == 'rc' %}class="active"{% endif %}><a href="{% url 'report_rules' report.slug 'rc' %}">Rule
+                    Category</a></li>
+                <li {% if view == 'gl' %}class="active"{% endif %}><a href="{% url 'report_rules' report.slug 'gl' %}">WCAG
+                    Guidelines</a></li>
+                <li {% if view == 'rs' %}class="active"{% endif %}><a href="{% url 'report_rules' report.slug 'rs' %}">Rule
+                    Scope</a></li>
+            </ul>
+        </nav>
 
-<section class="report" aria-labelledby="id_result_label">
+        <section class="report" aria-labelledby="id_result_label">
 
-<h2 id="id_result_label" class="sr-only">
-{% if view == 'gl' %}
-  Results by WCAG 2.0 Guideline
-{% else %}
-  {% if view == 'rs' %}
-  Results by Rule Scope
-  {% else %}
-  Results by Rule Category
-  {% endif %}
-{% endif %}
-</h2>
+            <h2 id="id_result_label" class="sr-only">
+                {% if view == 'gl' %}
+                    Results by WCAG 2.0 Guideline
+                {% else %}
+                    {% if view == 'rs' %}
+                        Results by Rule Scope
+                    {% else %}
+                        Results by Rule Category
+                    {% endif %}
+                {% endif %}
+            </h2>
 
 
-<table  id="id_table_show_summary" class="details table table-striped table-hover sortable"  aria-labelledby="id_result_label"  aria-describedby="id_result_description">
-    <thead>
-      <tr>
-        <th id="id_grp" class="text"  rowspan="2">Rule Group</th>
-        <th id="id_nor" class="text"  colspan="5">Number of Rules</th>
-        <th id="id_imp" class="text"  colspan="2">Implementation Level</th>
-      </tr>
-      <tr>
-        <th id="id_vio" class="num"   title="Violations">V</th>
-        <th id="id_war" class="num"   title="Warnings">W</th>
-        <th id="id_man" class="num"   title="Manual Checks">MC</th>
-        <th id="id_pas" class="num"   title="Passed">P</th>
-        <th id="id_not" class="num"   title="Not Applicable">N/A</th>
-        <th id="id_ovr" class="num sep"   title="Pass/Fail/manual Checks Implementation Score">Score</th>
-        <th id="id_sta" class="text"   title="Implementation Status">Status</th>
-      </tr>
-    </thead>
-    <tbody>
-        {% for g in groups %}
-        <tr>
-            <td id="id_r{{forloop.counter}}" class="text" headers="id_grp">
-              <a href="{% url 'report_rules_group' report.slug view g.slug %}">
-                {{g.get_title}}
-              </a>
-            </td>
+            <table id="id_table_show_summary" class="details table table-striped table-hover sortable"
+                   aria-labelledby="id_result_label" aria-describedby="id_result_description">
+                <thead>
+                <tr>
+                    <th id="id_grp" class="text" rowspan="2">Rule Group</th>
+                    <th id="id_nor" class="text" colspan="5">Number of Rules</th>
+                    <th id="id_imp" class="text" colspan="2">Implementation Level</th>
+                </tr>
+                <tr>
+                    <th id="id_vio" class="num" title="Violations">V</th>
+                    <th id="id_war" class="num" title="Warnings">W</th>
+                    <th id="id_man" class="num" title="Manual Checks">MC</th>
+                    <th id="id_pas" class="num" title="Passed">P</th>
+                    <th id="id_not" class="num" title="Not Applicable">N/A</th>
+                    <th id="id_ovr" class="num sep" title="Pass/Fail/manual Checks Implementation Score">Score</th>
+                    <th id="id_sta" class="text" title="Implementation Status">Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for g in groups %}
+                    <tr>
+                        <td id="id_r{{ forloop.counter }}" class="text" headers="id_grp">
+                            <a href="{% url 'report_rules_group' report.slug view g.slug %}">
+                                {{ g.get_title }}
+                            </a>
+                        </td>
 
-            <td class="num"  headers="id_r{{forloop.counter}} id_vio">
-            {% if g.rules_violation > 0 %}
-            {{g.rules_violation}}
-            {% else %}
-            -
-            {% endif %}
-            </td>
+                        <td class="num" headers="id_r{{ forloop.counter }} id_vio">
+                            {% if g.rules_violation > 0 %}
+                                {{ g.rules_violation }}
+                            {% else %}
+                                -
+                            {% endif %}
+                        </td>
 
-            <td class="num"  headers="id_r{{forloop.counter}} id_war">
-            {% if g.rules_warning > 0 %}
-            {{g.rules_warning}}
-            {% else %}
-            -
-            {% endif %}
-            </td>
+                        <td class="num" headers="id_r{{ forloop.counter }} id_war">
+                            {% if g.rules_warning > 0 %}
+                                {{ g.rules_warning }}
+                            {% else %}
+                                -
+                            {% endif %}
+                        </td>
 
-            <td class="num"  headers="id_r{{forloop.counter}} id_man">
-            {% if g.rules_manual_check > 0 %}
-            {{g.rules_manual_check}}
-            {% else %}
-            -
-            {% endif %}
-            </td>
+                        <td class="num" headers="id_r{{ forloop.counter }} id_man">
+                            {% if g.rules_manual_check > 0 %}
+                                {{ g.rules_manual_check }}
+                            {% else %}
+                                -
+                            {% endif %}
+                        </td>
 
-            <td class="num"  headers="id_r{{forloop.counter}} id_pas">
-            {% if g.rules_passed > 0 %}
-            {{g.rules_passed}}
-            {% else %}
-            -
-            {% endif %}
-            </td>
+                        <td class="num" headers="id_r{{ forloop.counter }} id_pas">
+                            {% if g.rules_passed > 0 %}
+                                {{ g.rules_passed }}
+                            {% else %}
+                                -
+                            {% endif %}
+                        </td>
 
-            <td class="num"  headers="id_r{{forloop.counter}} id_not">
-            {% if g.rules_na > 0 %}
-            {{g.rules_na}}
-            {% else %}
-            -
-            {% endif %}
+                        <td class="num" headers="id_r{{ forloop.counter }} id_not">
+                            {% if g.rules_na > 0 %}
+                                {{ g.rules_na }}
+                            {% else %}
+                                -
+                            {% endif %}
 
-           <td class="num"  headers="id_r{{forloop.counter}} id_ovr">
-            {% if g.implementation_score >= 0 %}
-            {{g.implementation_score}}
-            {% else %}
-            -
-            {% endif %}
-            </td>
+                        <td class="num" headers="id_r{{ forloop.counter }} id_ovr">
+                            {% if g.implementation_score >= 0 %}
+                                {{ g.implementation_score }}
+                            {% else %}
+                                -
+                            {% endif %}
+                        </td>
 
-           <td class="text"  headers="id_r{{forloop.counter}} id_sta">
-            {% include 'reports/implementation_status.html' with is=g.implementation_status %}
-            </td>
+                        <td class="text" headers="id_r{{ forloop.counter }} id_sta">
+                            {% include 'reports/implementation_status.html' with impl_status=g.implementation_status %}
+                        </td>
 
-        </tr>
-        {% endfor %}
-        <tr class="summary">
-            <td id="id_summ" class="text" headers="id_grp">All Rule Groups</td>
+                    </tr>
+                {% endfor %}
+                <tr class="summary">
+                    <td id="id_summ" class="text" headers="id_grp">All Rule Groups</td>
 
-            <td class="text"  headers="id_summ id_vio">
-            {% if summary.rules_violation > 0 %}
-            {{summary.rules_violation}}
-            {% else %}
-            -
-            {% endif %}
-            </td>
+                    <td class="text" headers="id_summ id_vio">
+                        {% if summary.rules_violation > 0 %}
+                            {{ summary.rules_violation }}
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
 
-            <td class="text"  headers="id_summ id_war">
-            {% if summary.rules_warning > 0 %}
-            {{summary.rules_warning}}
-            {% else %}
-            -
-            {% endif %}
-            </td>
+                    <td class="text" headers="id_summ id_war">
+                        {% if summary.rules_warning > 0 %}
+                            {{ summary.rules_warning }}
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
 
-            <td class="text"  headers="id_summ id_man">
-            {% if summary.rules_manual_check > 0 %}
-            {{summary.rules_manual_check}}
-            {% else %}
-            -
-            {% endif %}
-            </td>
+                    <td class="text" headers="id_summ id_man">
+                        {% if summary.rules_manual_check > 0 %}
+                            {{ summary.rules_manual_check }}
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
 
-            <td class="text"  headers="id_summ id_pas">
-            {% if summary.rules_passed > 0 %}
-            {{summary.rules_passed}}
-            {% else %}
-            -
-            {% endif %}
-            </td>
+                    <td class="text" headers="id_summ id_pas">
+                        {% if summary.rules_passed > 0 %}
+                            {{ summary.rules_passed }}
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
 
-            <td class="text"  headers="id_summ id_not">
-            {% if summary.rules_na > 0 %}
-            {{summary.rules_na}}
-            {% else %}
-            -
-            {% endif %}
-            </td>
+                    <td class="text" headers="id_summ id_not">
+                        {% if summary.rules_na > 0 %}
+                            {{ summary.rules_na }}
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
 
-           <td class="num"  headers="id_r{{forloop.counter}} id_ovr">
-            {% if summary.implementation_score >= 0 %}
-            {{summary.implementation_score}}
-            {% else %}
-            -
-            {% endif %}
-            </td>
+                    <td class="num" headers="id_r{{ forloop.counter }} id_ovr">
+                        {% if summary.implementation_score >= 0 %}
+                            {{ summary.implementation_score }}
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
 
-           <td class="text"  headers="id_r{{forloop.counter}} id_sta">
-            {% include 'reports/implementation_status.html' with is=summary.implementation_status pfs=summary.implementation_pass_fail_score pfmcs=summary.implementation_score %}
-            </td>
+                    <td class="text" headers="id_r{{ forloop.counter }} id_sta">
+                        {% include 'reports/implementation_status.html' with impl_status=summary.implementation_status pfs=summary.implementation_pass_fail_score pfmcs=summary.implementation_score %}
+                    </td>
 
-        </tr>
-     </tbody>
-</table>
-</section>
+                </tr>
+                </tbody>
+            </table>
+        </section>
 
-{% include "reports/implementation_information.html" %}
+        {% include "reports/implementation_information.html" %}
 
-{% endif %}
+    {% endif %}
 {% endblock %}

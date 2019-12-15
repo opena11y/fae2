@@ -36,13 +36,54 @@ from userProfiles.models import get_profile
 
 import csv
 
+
+def get_implementation_status(impl_status):
+    if impl_status in ['C', 'AC', 'AC-MC', 'PI', 'PI-MC', 'NI', 'NI-MC', 'MC']:
+        if 'MC' in impl_status:
+            return impl_status.strip('MC') + 'R'
+        else:
+            return impl_status
+    else:
+        return 'na'
+
+
 def ReportRulesViewCSV(request, report, view):
     # Create the HttpResponse object with the appropriate CSV header.
     response = HttpResponse(content_type='text/csv')
     response['Content-Disposition'] = 'attachment; filename="test.csv"'
 
     writer = csv.writer(response)
-    writer.writerow(['First row', 'Foo', 'Bar', 'Baz'])
-    writer.writerow(['Second row', 'A', 'B', 'C', '"Testing"', "Here's a quote"])
+    writer.writerow(['Rule Group', 'V', 'W', 'MC', 'P', 'N/A', 'Score', 'Status'])
 
+    report_obj = WebsiteReport.objects.get(slug=report)
+
+    page = False
+
+    if report_obj.page_count == 1:
+        page = report_obj.get_first_page()
+        if view == 'gl':
+            groups = page.page_gl_results.all()
+        elif view == 'rs':
+            groups = page.page_rs_results.all()
+        else:
+            groups = page.page_rc_results.all()
+            view = 'rc'
+    else:
+        if view == 'gl':
+            groups = report_obj.ws_gl_results.all()
+        elif view == 'rs':
+            groups = report_obj.ws_rs_results.all()
+        else:
+            groups = report_obj.ws_rc_results.all()
+            view = 'rc'
+
+    for g in groups:
+        writer.writerow(
+            [g.get_title(), g.rules_violation, g.rules_warning, g.rules_manual_check, g.rules_passed, g.rules_na,
+             g.implementation_score, get_implementation_status(g.implementation_status)])
+
+    writer.writerow(
+        ['All Report Groups', report_obj.rules_violation, report_obj.rules_warning, report_obj.rules_manual_check,
+         report_obj.rules_passed, report_obj.rules_na, report_obj.implementation_score,
+         get_implementation_status(report_obj.implementation_status)])
     return response

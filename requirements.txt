@@ -5,7 +5,7 @@ django-registration==3.0
 django-timezone-field==3.1
 future==0.15.2
 Markdown==2.6.5
-psycopg2==2.8.4
+psycopg2-binary
 pytz==2019.3
 requests==2.10.0
 sqlparse==0.3.0
