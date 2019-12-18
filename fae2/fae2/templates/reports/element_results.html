@@ -2,73 +2,88 @@
 
     <h2 id="id_result_label" class="sr-only">Element Results</h2>
 
-    <table  id="id_table_show_summary" class="details table table-striped table-hover sortable"  aria-labelledby="id_result_label"  aria-describedby="id_result_description">
+    <table id="id_table_show_summary" class="details table table-striped table-hover sortable"
+           aria-labelledby="id_result_label" aria-describedby="id_result_description">
         <thead>
-          <tr>
+        <tr>
             <th id="id_ele" class="text">Element Identifier</th>
             <th id="id_res" class="text">Result</th>
             <th id="id_pos" class="text" title="Element Number">
                 Element Position
             </th>
             <th id="id_mes" class="text">Message</th>
-          </tr>
+        </tr>
         </thead>
         <tbody>
         <script>
 
-          var element_results = {{page_rule_result.element_results_json|safe}};
+            var element_results = {{page_rule_result.element_results_json|safe}};
 
-          if (element_results.length > 0 ) {
-            for(var i = 0; i < element_results.length; i++ ) {
+            if (element_results.length > 0) {
+                for (var i = 0; i < element_results.length; i++) {
 
-                var er = element_results[i];
+                    var er = element_results[i];
 
-                document.write('<tr>\n');
+                    document.write('<tr>\n');
 
-                document.write('<td class="text">' + er['element_identifier'] + '</td>\n');
+                    document.write('<td class="text">' + er['element_identifier'] + '</td>\n');
 
-                var rv = er['result_value'];
-                if (rv == 5) document.write('<td class="text violation">Violation</td>\n');
-                else if (rv == 4) document.write('<td class="text warning">Warning</td>\n');
-                else if (rv == 3) document.write('<td class="text manual_check">Manual Check</td>\n');
-                else if (rv == 2) document.write('<td class="text fae-hidden">Hidden</td>\n');
-                else if (rv == 1) document.write('<td class="text passed">Pass</td>\n');
-                else document.write('<td class="text not_applicable">-</td>\n');
+                    var rv = er['result_value'];
+                    if (rv == 5) document.write('<td class="text violation">Violation</td>\n');
+                    else if (rv == 4) document.write('<td class="text warning">Warning</td>\n');
+                    else if (rv == 3) document.write('<td class="text manual_check">Manual Check</td>\n');
+                    else if (rv == 2) document.write('<td class="text fae-hidden">Hidden</td>\n');
+                    else if (rv == 1) document.write('<td class="text passed">Pass</td>\n');
+                    else document.write('<td class="text not_applicable">-</td>\n');
 
-                document.write('<td>' + er['ordinal_position']   + '</td>\n');
-                document.write('<td>' + er['message']            + '</td>\n');
+                    document.write('<td>' + er['ordinal_position'] + '</td>\n');
+                    document.write('<td>' + er['message'] + '</td>\n');
 
-                document.write('</tr>\n');
-            }
-         }   
-         else {
+                    document.write('</tr>\n');
+                }
+            } else {
                 document.write('<tr>\n');
                 document.write('<td class="none"><em>no element results</em></td>\n');
                 document.write('<td></td>\n');
                 document.write('<td></td>\n');
                 document.write('<td></td>\n');
-                document.write('</tr>\n');            
-         }
+                document.write('</tr>\n');
+            }
 
         </script>
         </tbody>
     </table>
+</section>
 
-    <section aria-labelledby="id_definitions"  style="margin-top: 4em;">
-        <h3 id="id_definitions">Column Definitions</h3>
-        <dl>
-            <dt>Element Identifier</dt>
-            <dd>Information about the element associated with the result.</dd>
-            <dd>The information typically includes the tag name, accessible name or other information related to the rule requirements.</dd>
-            <dd>"Page" means that the result applied to the page.  For example, the rule "One main landmark on the page" is a page level rule.</dd>
-        </dl>    
-        <dl>
-            <dt>Element Position</dt>
-            <dd>The element position is based on the DOM order of elements in the page.</dd>
-            <dd>The element position maybe useful in helping to locate a specific element on the page evaluated (e.g smaller numbers are typically toward the beginning of a page and larger numbers typically toward the end of a page).</dd>
-            <dd>Element position 1 is the first element.</dd>
-            <dd>The highest element position is the last element.</dd> 
-            <dd>Element position values for most rule/page results will not be consecutive since a rule only applies to a sub set of elements found on a page.</dd> 
-        </dl>    
-    </section>
-</section>    
+<section aria-labelledby="id_download_report">
+    <h2 id="download_report"> Download Report</h2>
+    <a href="{% url 'report_rules_group_rule_page_csv' report.slug view group.slug page_rule_result.slug page_rule_result.page_result.page_number %}"
+       class="btn btn-default">CSV</a>
+</section>
+
+<section aria-labelledby="id_definitions" style="margin-top: 4em;">
+    <h3 id="id_definitions">Column Definitions</h3>
+    <dl>
+        <dt>Element Identifier</dt>
+        <dd>Information about the element associated with the result.</dd>
+        <dd>The information typically includes the tag name, accessible name or other information related to the
+            rule requirements.
+        </dd>
+        <dd>"Page" means that the result applied to the page. For example, the rule "One main landmark on the page"
+            is a page level rule.
+        </dd>
+    </dl>
+    <dl>
+        <dt>Element Position</dt>
+        <dd>The element position is based on the DOM order of elements in the page.</dd>
+        <dd>The element position maybe useful in helping to locate a specific element on the page evaluated (e.g
+            smaller numbers are typically toward the beginning of a page and larger numbers typically toward the end
+            of a page).
+        </dd>
+        <dd>Element position 1 is the first element.</dd>
+        <dd>The highest element position is the last element.</dd>
+        <dd>Element position values for most rule/page results will not be consecutive since a rule only applies to
+            a sub set of elements found on a page.
+        </dd>
+    </dl>
+</section>

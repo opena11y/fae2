@@ -2,181 +2,187 @@
 
     <h2 id="id_result_label" class="sr-only">Page Results</h2>
 
-    <table  id="id_table_show_summary" class="details table table-striped table-hover sortable"  aria-labelledby="id_result_label"  aria-describedby="id_result_description">
+    <table id="id_table_show_summary" class="details table table-striped table-hover sortable"
+           aria-labelledby="id_result_label" aria-describedby="id_result_description">
         <thead>
-          <tr>
-            <th id="id_pgn" class="num"  rowspan="2">Page</th>
-            <th id="id_ttl" class="text"  rowspan="2">Page Title</th>
-            <th id="id_res" class="text"  rowspan="2">Result</th>
-            <th id="id_nor" class="text"  colspan="4">Element Results</th>
-            <th id="id_imp" class="text"  colspan="2">Implementation Level</th>
-          </tr>
-          <tr>
+        <tr>
+            <th id="id_pgn" class="num" rowspan="2">Page</th>
+            <th id="id_ttl" class="text" rowspan="2">Page Title</th>
+            <th id="id_res" class="text" rowspan="2">Result</th>
+            <th id="id_nor" class="text" colspan="4">Element Results</th>
+            <th id="id_imp" class="text" colspan="2">Implementation Level</th>
+        </tr>
+        <tr>
             <th id="id_vio" class="num" title="Violations">V</th>
             <th id="id_war" class="num" title="Warnings">W</th>
             <th id="id_man" class="num" title="Manual Checks">MC</th>
-            <th id="id_pas" class="num"  title="Passed">P</th>
+            <th id="id_pas" class="num" title="Passed">P</th>
             <th id="id_ovr" class="num sep" title="Pass/Fail/manual Checks Implementation Score">Score</th>
             <th id="id_sta" class="text" title="Implementation Status">Status</th>
-          </tr>
+        </tr>
         </thead>
         <tbody>
-            {% for prr in ws_rule_result.page_rule_results.all %}
+        {% for prr in ws_rule_result.page_rule_results.all %}
             <tr>
-                <td id="id_r{{forloop.counter}}" class="text" headers="id_pgn">
-                    {{prr.page_result.page_number}}
+                <td id="id_r{{ forloop.counter }}" class="text" headers="id_pgn">
+                    {{ prr.page_result.page_number }}
                 </td>
 
-                <td id="id_r{{forloop.counter}}" class="text" headers="id_pgn">
-                  <a href="{% url 'report_rules_group_rule_page' report.slug view group.slug prr.slug prr.page_result.page_number %}">
-                    {{prr.page_result.title}}
-                  </a>
+                <td id="id_r{{ forloop.counter }}" class="text" headers="id_pgn">
+                    <a href="{% url 'report_rules_group_rule_page' report.slug view group.slug prr.slug prr.page_result.page_number %}">
+                        {{ prr.page_result.title }}
+                    </a>
                 </td>
 
                 {% if prr.result_value == 5 %}
-                <td class="text violation"  headers="id_r{{forloop.counter}} id_res">
-                Violation
-                {% elif prr.result_value == 4 %}
-                <td class="text warning"  headers="id_r{{forloop.counter}} id_res">
-                Warning
-                {% elif prr.result_value == 3 %}
-                <td class="text manual_check"  headers="id_r{{forloop.counter}} id_res">
-                Manual Check
-                {% elif prr.result_value == 2 %}
-                <td class="text passed"  headers="id_r{{forloop.counter}} id_res">
-                Passed
-                {% elif prr.result_value == 1 %}
-                <td class="text not_applicable"  headers="id_r{{forloop.counter}} id_res">
-                Not Applicable
-                {% else %}
-                <td class="text"  headers="id_r{{forloop.counter}} id_res">
-                -
+                    <td class="text violation" headers="id_r{{ forloop.counter }} id_res">
+                        Violation
+                        {% elif prr.result_value == 4 %}
+                    <td class="text warning" headers="id_r{{ forloop.counter }} id_res">
+                        Warning
+                        {% elif prr.result_value == 3 %}
+                    <td class="text manual_check" headers="id_r{{ forloop.counter }} id_res">
+                        Manual Check
+                        {% elif prr.result_value == 2 %}
+                    <td class="text passed" headers="id_r{{ forloop.counter }} id_res">
+                        Passed
+                        {% elif prr.result_value == 1 %}
+                    <td class="text not_applicable" headers="id_r{{ forloop.counter }} id_res">
+                        Not Applicable
+                        {% else %}
+                    <td class="text" headers="id_r{{ forloop.counter }} id_res">
+                    -
                 {% endif %}
                 </td>
 
-                <td class="num"  headers="id_r{{forloop.counter}} id_vio">
-                {% if prr.elements_violation > 0 %}
-                {{prr.elements_violation}}
-                {% else %}
-                -
-                {% endif %}
+                <td class="num" headers="id_r{{ forloop.counter }} id_vio">
+                    {% if prr.elements_violation > 0 %}
+                        {{ prr.elements_violation }}
+                    {% else %}
+                        -
+                    {% endif %}
                 </td>
 
-                <td class="num"  headers="id_r{{forloop.counter}} id_war">
-                {% if prr.elements_warning > 0 %}
-                {{prr.elements_warning}}
-                {% else %}
-                -
-                {% endif %}
+                <td class="num" headers="id_r{{ forloop.counter }} id_war">
+                    {% if prr.elements_warning > 0 %}
+                        {{ prr.elements_warning }}
+                    {% else %}
+                        -
+                    {% endif %}
                 </td>
 
-                <td class="num"  headers="id_r{{forloop.counter}} id_man">
-                {% if prr.elements_mc_identified > 0 %}
-                {{prr.elements_mc_identified}}
-                {% else %}
-                -
-                {% endif %}
+                <td class="num" headers="id_r{{ forloop.counter }} id_man">
+                    {% if prr.elements_mc_identified > 0 %}
+                        {{ prr.elements_mc_identified }}
+                    {% else %}
+                        -
+                    {% endif %}
                 </td>
 
-                <td class="num"  headers="id_r{{forloop.counter}} id_pas">
-                {% if prr.elements_passed > 0 %}
-                {{prr.elements_passed}}
-                {% else %}
-                -
-                {% endif %}
+                <td class="num" headers="id_r{{ forloop.counter }} id_pas">
+                    {% if prr.elements_passed > 0 %}
+                        {{ prr.elements_passed }}
+                    {% else %}
+                        -
+                    {% endif %}
                 </td>
 
-               <td class="num"  headers="id_r{{forloop.counter}} id_ovr">
-                {% if prr.implementation_score >= 0 %}
-                {{prr.implementation_score}}
-                {% else %}
-                -
-                {% endif %}
+                <td class="num" headers="id_r{{ forloop.counter }} id_ovr">
+                    {% if prr.implementation_score >= 0 %}
+                        {{ prr.implementation_score }}
+                    {% else %}
+                        -
+                    {% endif %}
                 </td>
 
-               <td class="text"  headers="id_r{{forloop.counter}} id_sta">
-                {% include 'reports/implementation_status.html' with impl_status=prr.implementation_status %}
+                <td class="text" headers="id_r{{ forloop.counter }} id_sta">
+                    {% include 'reports/implementation_status.html' with impl_status=prr.implementation_status %}
                 </td>
 
             </tr>
-            {% endfor %}
+        {% endfor %}
         </tbody>
         <tbody>
-            <tr class="summary">
-                <td class="text">
+        <tr class="summary">
+            <td class="text">
 
-                </td>
+            </td>
 
-                <td id="id_all" class="text" headers="id_pgn">
+            <td id="id_all" class="text" headers="id_pgn">
                 All Pages
-                </td>
+            </td>
 
-               {% if ws_rule_result.result_value == 5 %}
-                <td class="text violation"  headers="id_all id_res">
-                Violation
-                {% elif ws_rule_result.result_value == 4 %}
-                <td class="text warning"  headers="id_all id_res">
-                Warning
-                {% elif ws_rule_result.result_value == 3 %}
-                <td class="text manual_check"  headers="id_all id_res">
-                Manual Check
-                {% elif ws_rule_result.result_value == 2 %}
-                <td class="text passed"  headers="id_all id_res">
-                Passed
-                {% elif ws_rule_result.result_value == 1 %}
-                <td class="text not_applicable"  headers="id_all id_res">
-                Not Applicable
-                {% else %}
-                <td class="text"  headers="id_all id_res">
+            {% if ws_rule_result.result_value == 5 %}
+                <td class="text violation" headers="id_all id_res">
+                    Violation
+                    {% elif ws_rule_result.result_value == 4 %}
+                <td class="text warning" headers="id_all id_res">
+                    Warning
+                    {% elif ws_rule_result.result_value == 3 %}
+                <td class="text manual_check" headers="id_all id_res">
+                    Manual Check
+                    {% elif ws_rule_result.result_value == 2 %}
+                <td class="text passed" headers="id_all id_res">
+                    Passed
+                    {% elif ws_rule_result.result_value == 1 %}
+                <td class="text not_applicable" headers="id_all id_res">
+                    Not Applicable
+                    {% else %}
+                <td class="text" headers="id_all id_res">
                 -
-                {% endif %}
-                </td>
+            {% endif %}
+            </td>
 
-                <td class="num"  headers="id_all id_vio">
+            <td class="num" headers="id_all id_vio">
                 {% if ws_rule_result.elements_violation > 0 %}
-                {{ws_rule_result.elements_violation}}
+                    {{ ws_rule_result.elements_violation }}
                 {% else %}
-                -
+                    -
                 {% endif %}
-                </td>
+            </td>
 
-                <td class="num"  headers="id_all id_war">
+            <td class="num" headers="id_all id_war">
                 {% if ws_rule_result.elements_warning > 0 %}
-                {{ws_rule_result.elements_warning}}
+                    {{ ws_rule_result.elements_warning }}
                 {% else %}
-                -
+                    -
                 {% endif %}
-                </td>
+            </td>
 
-                <td class="num"  headers="id_all id_man">
+            <td class="num" headers="id_all id_man">
                 {% if ws_rule_result.mc_identified > 0 %}
-                {{ws_rule_result.mc_identified}}
+                    {{ ws_rule_result.mc_identified }}
                 {% else %}
-                -
+                    -
                 {% endif %}
-                </td>
+            </td>
 
-                <td class="num"  headers="id_all id_pas">
+            <td class="num" headers="id_all id_pas">
                 {% if ws_rule_result.elements_passed > 0 %}
-                {{ws_rule_result.elements_passed}}
+                    {{ ws_rule_result.elements_passed }}
                 {% else %}
-                -
+                    -
                 {% endif %}
-                </td>
+            </td>
 
-               <td class="num"  headers="id_all id_ovr">
+            <td class="num" headers="id_all id_ovr">
                 {% if ws_rule_result.implementation_score >= 0 %}
-                {{ws_rule_result.implementation_score}}
+                    {{ ws_rule_result.implementation_score }}
                 {% else %}
-                -
+                    -
                 {% endif %}
-                </td>
+            </td>
 
-               <td class="text"  headers="id_all id_sta">
-                {% include 'reports/implementation_status.html' with impl_status=ws_rule_result.implementation_status%}
-                </td>
+            <td class="text" headers="id_all id_sta">
+                {% include 'reports/implementation_status.html' with impl_status=ws_rule_result.implementation_status %}
+            </td>
 
-            </tr>
-         </tbody>
+        </tr>
+        </tbody>
     </table>
+</section>
+
+<section aria-labelledby="id_download_report">
+    <h2 id="download_report"> Download Report</h2>
+    <a href="{% url 'report_rules_group_rule_csv' report.slug view group.slug ws_rule_result.slug %}" class="btn btn-default">CSV</a>
 </section>

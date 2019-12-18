@@ -34,7 +34,7 @@ from contact.models import Announcement
 
 from userProfiles.models import get_profile
 
-import csv
+import csv, json
 from fae2.settings import SITE_URL
 
 
@@ -98,7 +98,6 @@ def ReportRulesViewCSV(request, report, view):
             groups = page.page_rs_results.all()
         else:
             groups = page.page_rc_results.all()
-            view = 'rc'
     else:
         if view == 'gl':
             groups = report_obj.ws_gl_results.all()
@@ -106,7 +105,6 @@ def ReportRulesViewCSV(request, report, view):
             groups = report_obj.ws_rs_results.all()
         else:
             groups = report_obj.ws_rc_results.all()
-            view = 'rc'
 
     for g in groups:
         writer.writerow(
@@ -135,22 +133,82 @@ def ReportRulesGroupViewCSV(request, report, view, group):
 
     if view == 'gl':
         group = report_obj.ws_gl_results.get(slug=group)
-        page_results = group.page_gl_results.all()
-        groups = Guideline.objects.all()
+
     elif view == 'rs':
         group = report_obj.ws_rs_results.get(slug=group)
-        page_results = group.page_rs_results.all()
-        groups = RuleScope.objects.all()
+
     else:
         group = report_obj.ws_rc_results.get(slug=group)
-        page_results = group.page_rc_results.all()
-        groups = RuleCategory.objects.all()
-        view = 'rc'
 
     for g in group.ws_rule_results.all():
         writer.writerow(
             [g.rule.nls_rule_id, g.get_title(), get_result(g.result_value), g.pages_violation, g.pages_warning,
              g.pages_manual_check, g.pages_passed, g.pages_na, g.implementation_score,
              get_implementation_status(g.implementation_status)])
+
+    return response
+
+
+def ReportRulesGroupRuleViewCSV(request, report, view, group, rule):
+    response = HttpResponse(content_type='text/csv')
+    response['Content-Disposition'] = 'attachment; filename="' + \
+                                      request.path.replace('-csv', '').replace('/', '-').strip('-') + '.csv"'
+
+    writer = csv.writer(response)
+    report_obj = WebsiteReport.objects.get(slug=report)
+
+    addMetaData(report_obj, writer, request.path.replace('-csv', ''))
+
+    if view == 'gl':
+        group = report_obj.ws_gl_results.get(slug=group)
+    elif view == 'rs':
+        group = report_obj.ws_rs_results.get(slug=group)
+    else:
+        group = report_obj.ws_rc_results.get(slug=group)
+
+    ws_rule_result = group.ws_rule_results.get(slug=rule)
+
+    writer.writerow(
+        ['Page', 'Page Title', 'Result', 'Violations', 'Warnings', 'Manual Check', 'Passed', 'Score', 'Status'])
+
+    for wsr in ws_rule_result.page_rule_results.all():
+        writer.writerow(
+            [wsr.page_result.page_number, wsr.page_result.title, get_result(wsr.result_value), wsr.elements_violation,
+             wsr.elements_warning, wsr.elements_mc_identified, wsr.elements_passed, wsr.implementation_score,
+             get_implementation_status(wsr.implementation_status)])
+
+    writer.writerow([None, 'All Pages', get_result(ws_rule_result.result_value), ws_rule_result.elements_violation,
+                     ws_rule_result.elements_warning, ws_rule_result.elements_mc_identified,
+                     ws_rule_result.elements_passed, ws_rule_result.implementation_score,
+                     get_implementation_status(ws_rule_result.implementation_status)])
+
+    return response
+
+
+def ReportRulesGroupRulePageViewCSV(request, report, view, group, rule, page):
+    response = HttpResponse(content_type='text/csv')
+    response['Content-Disposition'] = 'attachment; filename="' + \
+                                      request.path.replace('-csv', '').replace('/', '-').strip('-') + '.csv"'
+
+    writer = csv.writer(response)
+    report_obj = WebsiteReport.objects.get(slug=report)
+
+    addMetaData(report_obj, writer, request.path.replace('-csv', ''))
+    if view == 'gl':
+        group = report_obj.ws_gl_results.get(slug=group)
+    elif view == 'rs':
+        group = report_obj.ws_rs_results.get(slug=group)
+    else:
+        group = report_obj.ws_rc_results.get(slug=group)
+
+    ws_rule_result = group.ws_rule_results.get(slug=rule)
+
+    page_rule_result = ws_rule_result.page_rule_results.get(page_result__page_number=page)
+
+    writer.writerow(['Element Identifier', 'Result', 'Element Position', 'Message'])
+
+    for prr in json.loads(page_rule_result.element_results_json):
+        writer.writerow(
+            [prr['element_identifier'], get_result(prr['result_value']), prr['ordinal_position'], prr['message']])
 
     return response
