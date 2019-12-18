@@ -33,7 +33,7 @@
 
     <section class="report" aria-labelledby="id_result_label">
         <h2 id="id_result_label" class="sr-only">{{ group.get_title }} Rule Results</h2>
-        <div><a href="{% url 'report_rules_group_csv' report.slug view group.slug %}">Test CSV</a></div>
+
         <table id="id_table_show_summary" class="details table table-striped table-hover sortable"
                aria-labelledby="id_result_label" aria-describedby="id_result_description">
             <thead>
@@ -142,6 +142,11 @@
             {% endfor %}
             </tbody>
         </table>
+    </section>
+
+    <section aria-labelledby="id_download_report">
+        <h2> Download Report</h2>
+        <a href="{% url 'report_rules_group_csv' report.slug view group.slug %}" class="btn btn-default">CSV</a>
     </section>
 
     {% include "reports/implementation_information.html" %}

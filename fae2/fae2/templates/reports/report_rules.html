@@ -41,7 +41,7 @@
 
         {% include "reports/rules_summary.html" %}
 
-        <div><a href="{% url 'report_rules_csv' report.slug view %}">Test CSV</a></div>
+
 
         <nav id="view_options" aria-label="Result View Options">
             <ul class="nav nav-tabs">
@@ -207,6 +207,11 @@
                 </tr>
                 </tbody>
             </table>
+        </section>
+
+        <section aria-labelledby="id_download_report">
+            <h2> Download Report</h2>
+            <a href="{% url 'report_rules_csv' report.slug view %}" class="btn btn-default">CSV</a>
         </section>
 
         {% include "reports/implementation_information.html" %}

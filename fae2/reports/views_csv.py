@@ -35,6 +35,7 @@ from contact.models import Announcement
 from userProfiles.models import get_profile
 
 import csv
+from fae2.settings import SITE_URL
 
 
 def get_implementation_status(impl_status):
@@ -60,15 +61,32 @@ def get_result(result_value):
         return 'Not Applicable'
 
 
+def addMetaData(report_obj, writer, path):
+    writer.writerow(['Meta Label', 'Meta Value'])
+
+    writer.writerow(['Title', report_obj.title])
+    writer.writerow(['URL', report_obj.url])
+    writer.writerow(['Ruleset', report_obj.ruleset.title])
+    writer.writerow(['Depth', report_obj.depth])
+    writer.writerow(['Pages', report_obj.page_count])
+    writer.writerow(['Report URL', SITE_URL + path])
+
+    writer.writerow([])
+
+
 def ReportRulesViewCSV(request, report, view):
     # Create the HttpResponse object with the appropriate CSV header.
     response = HttpResponse(content_type='text/csv')
-    response['Content-Disposition'] = 'attachment; filename="test.csv"'
+    response['Content-Disposition'] = 'attachment; filename="' + \
+                                      request.path.replace('-csv', '').replace('/', '-').strip('-') + '.csv"'
 
     writer = csv.writer(response)
-    writer.writerow(['Rule Group', 'Violations', 'Warnings', 'Manual Check', 'Passed', 'N/A', 'Score', 'Status'])
 
     report_obj = WebsiteReport.objects.get(slug=report)
+
+    addMetaData(report_obj, writer, request.path.replace('-csv', ''))
+
+    writer.writerow(['Rule Group', 'Violations', 'Warnings', 'Manual Check', 'Passed', 'N/A', 'Score', 'Status'])
 
     page = False
 
@@ -104,13 +122,16 @@ def ReportRulesViewCSV(request, report, view):
 
 def ReportRulesGroupViewCSV(request, report, view, group):
     response = HttpResponse(content_type='text/csv')
-    response['Content-Disposition'] = 'attachment; filename="test.csv"'
+    response['Content-Disposition'] = 'attachment; filename="' + \
+                                      request.path.replace('-csv', '').replace('/', '-').strip('-') + '.csv"'
 
     writer = csv.writer(response)
+    report_obj = WebsiteReport.objects.get(slug=report)
+
+    addMetaData(report_obj, writer, request.path.replace('-csv', ''))
+
     writer.writerow(
         ['ID', 'Rule Summary', 'Result', 'Violations', 'Warnings', 'Manual Check', 'Passed', 'N/A', 'Score', 'Status'])
-
-    report_obj = WebsiteReport.objects.get(slug=report)
 
     if view == 'gl':
         group = report_obj.ws_gl_results.get(slug=group)
