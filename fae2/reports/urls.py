@@ -87,21 +87,21 @@ urlpatterns = [
     url(r'^summary/(?P<report>\w+)/json/$', ReportJSON.as_view(), name='report_json'),
 
     url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/$', ReportRulesView.as_view(), name='report_rules'),
-    url(r'^summary-csv/(?P<report>\w+)/(?P<view>\w+)/$', ReportRulesViewCSV, name='report_rules_csv'),
+    url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/csv/$', ReportRulesViewCSV, name='report_rules_csv'),
 
     url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/$', ReportRulesGroupView.as_view(),
         name='report_rules_group'),
-    url(r'^summary-csv/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/$', ReportRulesGroupViewCSV,
+    url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/csv/$', ReportRulesGroupViewCSV,
         name='report_rules_group_csv'),
 
     url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/rule/(?P<rule>\w+)/$',
         ReportRulesGroupRuleView.as_view(), name='report_rules_group_rule'),
-    url(r'^summary-csv/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/rule/(?P<rule>\w+)/$',
+    url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/rule/(?P<rule>\w+)/csv/$',
         ReportRulesGroupRuleViewCSV, name='report_rules_group_rule_csv'),
 
     url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/rule/(?P<rule>\w+)/page/(?P<page>[\d-]+)/$',
         ReportRulesGroupRulePageView.as_view(), name='report_rules_group_rule_page'),
-    url(r'^summary-csv/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/rule/(?P<rule>\w+)/page/(?P<page>[\d-]+)/$',
+    url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/rule/(?P<rule>\w+)/page/(?P<page>[\d-]+)/csv/$',
         ReportRulesGroupRulePageViewCSV, name='report_rules_group_rule_page_csv'),
 
     url(r'^pages/(?P<report>\w+)/(?P<view>\w+)/all/$', ReportPagesView.as_view(), name='report_pages'),

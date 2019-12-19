@@ -1,41 +1,12 @@
 from __future__ import absolute_import
 
-from itertools import chain
-
-from django.urls import reverse_lazy, reverse
-from django.contrib.auth.mixins import LoginRequiredMixin
-from .uid import generate
-
-from fae2.settings import ANONYMOUS_ENABLED
-from fae2.settings import SELF_REGISTRATION_ENABLED
-from fae2.settings import SHIBBOLETH_ENABLED
-from fae2.settings import PAYMENT_ENABLED
+import csv
+import json
 
 from django.http import HttpResponse
-from django.http import HttpResponseRedirect
-from django.http import JsonResponse
-from django.shortcuts import redirect
 
-from django.contrib import messages
-
-from django.contrib.auth.models import User
-
-from reports.models import WebsiteReport
-from pageResults.models import PageRuleCategoryResult
-from pageResults.models import PageGuidelineResult
-from pageResults.models import PageRuleScopeResult
-from rulesets.models import Ruleset
-from userProfiles.models import UserProfile
-
-from ruleCategories.models import RuleCategory
-from wcag20.models import Guideline
-from rules.models import RuleScope
-from contact.models import Announcement
-
-from userProfiles.models import get_profile
-
-import csv, json
 from fae2.settings import SITE_URL
+from reports.models import WebsiteReport
 
 
 def get_implementation_status(impl_status):
@@ -69,7 +40,7 @@ def addMetaData(report_obj, writer, path):
     writer.writerow(['Ruleset', report_obj.ruleset.title])
     writer.writerow(['Depth', report_obj.depth])
     writer.writerow(['Pages', report_obj.page_count])
-    writer.writerow(['Report URL', SITE_URL + path])
+    writer.writerow(['Report URL', SITE_URL + path + '/'])
 
     writer.writerow([])
 
@@ -78,13 +49,13 @@ def ReportRulesViewCSV(request, report, view):
     # Create the HttpResponse object with the appropriate CSV header.
     response = HttpResponse(content_type='text/csv')
     response['Content-Disposition'] = 'attachment; filename="' + \
-                                      request.path.replace('-csv', '').replace('/', '-').strip('-') + '.csv"'
+                                      request.path.replace('/csv/', '').replace('/', '-').strip('-') + '.csv"'
 
     writer = csv.writer(response)
 
     report_obj = WebsiteReport.objects.get(slug=report)
 
-    addMetaData(report_obj, writer, request.path.replace('-csv', ''))
+    addMetaData(report_obj, writer, request.path.replace('/csv/', ''))
 
     writer.writerow(['Rule Group', 'Violations', 'Warnings', 'Manual Check', 'Passed', 'N/A', 'Score', 'Status'])
 
@@ -121,12 +92,12 @@ def ReportRulesViewCSV(request, report, view):
 def ReportRulesGroupViewCSV(request, report, view, group):
     response = HttpResponse(content_type='text/csv')
     response['Content-Disposition'] = 'attachment; filename="' + \
-                                      request.path.replace('-csv', '').replace('/', '-').strip('-') + '.csv"'
+                                      request.path.replace('/csv/', '').replace('/', '-').strip('-') + '.csv"'
 
     writer = csv.writer(response)
     report_obj = WebsiteReport.objects.get(slug=report)
 
-    addMetaData(report_obj, writer, request.path.replace('-csv', ''))
+    addMetaData(report_obj, writer, request.path.replace('/csv/', ''))
 
     writer.writerow(
         ['ID', 'Rule Summary', 'Result', 'Violations', 'Warnings', 'Manual Check', 'Passed', 'N/A', 'Score', 'Status'])
@@ -152,12 +123,12 @@ def ReportRulesGroupViewCSV(request, report, view, group):
 def ReportRulesGroupRuleViewCSV(request, report, view, group, rule):
     response = HttpResponse(content_type='text/csv')
     response['Content-Disposition'] = 'attachment; filename="' + \
-                                      request.path.replace('-csv', '').replace('/', '-').strip('-') + '.csv"'
+                                      request.path.replace('/csv/', '').replace('/', '-').strip('-') + '.csv"'
 
     writer = csv.writer(response)
     report_obj = WebsiteReport.objects.get(slug=report)
 
-    addMetaData(report_obj, writer, request.path.replace('-csv', ''))
+    addMetaData(report_obj, writer, request.path.replace('/csv/', ''))
 
     if view == 'gl':
         group = report_obj.ws_gl_results.get(slug=group)
@@ -188,12 +159,12 @@ def ReportRulesGroupRuleViewCSV(request, report, view, group, rule):
 def ReportRulesGroupRulePageViewCSV(request, report, view, group, rule, page):
     response = HttpResponse(content_type='text/csv')
     response['Content-Disposition'] = 'attachment; filename="' + \
-                                      request.path.replace('-csv', '').replace('/', '-').strip('-') + '.csv"'
+                                      request.path.replace('/csv/', '').replace('/', '-').strip('-') + '.csv"'
 
     writer = csv.writer(response)
     report_obj = WebsiteReport.objects.get(slug=report)
 
-    addMetaData(report_obj, writer, request.path.replace('-csv', ''))
+    addMetaData(report_obj, writer, request.path.replace('/csv/', ''))
     if view == 'gl':
         group = report_obj.ws_gl_results.get(slug=group)
     elif view == 'rs':
