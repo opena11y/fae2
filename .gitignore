@@ -11,3 +11,4 @@ fae2/fae-util/*.properties
 *~
 .idea/
 fae2/fae-util/openajax_a11y/scripts.txt
+venv/
