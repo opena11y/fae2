@@ -1,22 +1,26 @@
-# Functional Accessibility Evaluator, version 2.0
+# Functional Accessibility Evaluator, version 2.1
 
 Development is primarily supported by the [University of Illinois at Urbana-Champaign](http://illinois.edu).  The development is lead by [Accessible IT Group](http://disability.illinois.edu/academic-support/aitg) which is a unit of [Disability Resources and Educational Servcies](http://www.disability.illinois.edu) which is part fo the [College of Applied Health Sciences](http://www.ahs.illinois.edu).  Additional contributions for the [HTMLUnit](http://htmlunit.sourceforge.net/) based web site analysis engine are provided by [Administrative Information Technology Services (ATIS)](https://www.aits.uillinois.edu/) of University Administration.
 
 
+## Important major changes from Version 2.0
+* Updated to support Python 3.6
+* Updated to support Django 2.2.x
+* Removed migration files from app directories
 
 ## What is Functional Accessibility Evaluator (FAE)?
 * FAE analyzes a website based on the requirements of the W3C Web Content Accessibility Guidelines 2.0 Single A and AA Success Criteria.
 * Every rule used in FAE 2.0 references at primary WCAG 2.0 Success Criterion requirement it is based on.
 * The rules support not only accessibility, but also usable web design for people with disabilities.
-* The rules support accessible and usable design by enforcing the accessible coding practices and techniques of the Accessible Rich Internet Application (ARIA) 1.0 and W3C HTML5 specifications.  
+* The rules support accessible and usable design by enforcing the accessible coding practices and techniques of the Accessible Rich Internet Application (ARIA) 1.0 and W3C HTML5 specifications.
 
 ## Apache 2.0 License
-FAE may be used and distributed based on the terms and conditions of the [Apache License Version 2.0](http://www.apache.org/licenses/LICENSE-2.0). 
+FAE may be used and distributed based on the terms and conditions of the [Apache License Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
 ## Server requirements for Linux
 
 * Apache2 Web Server
-* Python 2.7.x
+* Python 3.6
 * Java 1.8
 * Python development package (`python-dev` in Debian/Ubuntu)
 * postgresql-devel (`libpq-dev` in Debian/Ubuntu)
@@ -27,15 +31,17 @@ FAE may be used and distributed based on the terms and conditions of the [Apache
 Here is the [requirements.txt] file to use with pip
 
 ```
-Django==1.9
-django-password-reset==0.9
-django-registration==2.0.4
-django-timezone-field==1.3
-psycopg2
+confusable-homoglyphs==3.2.0
+Django==2.2.7
+django-password-reset==2.0
+django-registration==3.0
+django-timezone-field==3.1
 future==0.15.2
 Markdown==2.6.5
-pytz==2015.7
+psycopg2==2.8.4
+pytz==2019.3
 requests==2.10.0
+sqlparse==0.3.0
 ```
 
 ### Creating a <code>secrets.json</code> file
@@ -49,7 +55,7 @@ The "secrets.json" file must be created and provides:
 ```
 {
   "FILENAME": "secrets.json",
-  "PROCESSING_THREADS": 4, 
+  "PROCESSING_THREADS": 4,
   "SITE_URL": "[your site URL]",
   "SITE_NAME": "FAE 2.0 for [your organization]",
   "SECRET_KEY": "[random string of 40-50 characters used by django]",
@@ -82,7 +88,7 @@ The "secrets.json" file must be created and provides:
 
 ### Apache 2.0 configuration notes
 
-* MOD_WSGI must be installed and support Python 2.7
+* MOD_WSGI must be installed and support Python 3.6
 
 #### Sample Apache configuration gile
 
@@ -112,25 +118,37 @@ The "secrets.json" file must be created and provides:
 </VirtualHost>
 ```
 
+### Initializing and updating the database tables
+* You will need to run django `makemigrations` and `migrate` commands to update any changes (or to create the initial database) for the django apps used in FAE.
+* This needs to be done after updating to a new version of FAE.
+* For your convience there is a script `init_apps` that can be used to setup the initial migrations and run migrate
+
+
+```
+python manage.py makemigrations
+python manage.py migrate
+
+```
+
 ### Setting up fae directories for read/write access
 * Need to create `data` directory with write permissions for `apache` user and group `root` user
 * Need to create `logs` direcotry with write permissions for `apache` user and group `root` user
 
 
-### Multiple Django Apps and mod_wsgi 
+### Multiple Django Apps and mod_wsgi
 * [Configuring wsgi.py for multiple Django apps](https://docs.djangoproject.com/en/1.9/howto/deployment/wsgi/modwsgi/)
 
 ### Setup Static Files
 * Enable the virtual environment for fae so it is available from the command prompt:<br/>`source [path to virtual environment]/bin/activate`.
 * Change directory to the fae directory with the file `manage.py'.
-* You will need to run the following command to copy static files to the static directory:<br/><code>python manage.py collectstatic</code> 
+* You will need to run the following command to copy static files to the static directory:<br/><code>python manage.py collectstatic</code>
 
 ### Initialize database tables
 * If not already enabled, enable the virtual environment for fae so it is available from the command prompt:<br/>`source [path to virtual environment]/bin/activate`.
 * Change directory to the fae directory with the file `manage.py'.
 * Run the following command to create the tables in the database:<br/><code>python manage.py migrate</code>
 * After the tables in the database are created, go to the "populate" directory.
-* In the populate directory initialize the tables using the following command:<br/><code>python pop_all.py</code> 
+* In the populate directory initialize the tables using the following command:<br/><code>python pop_all.py</code>
 
 ### fae-util configuration and testing
 * Purpose of fae-util

@@ -89,7 +89,6 @@ else:
         urlpatterns += [
             url(r'^accounts/', include('django_registration.backends.activation.urls')),
             url(r'^accounts/', include('django.contrib.auth.urls')),
-            url(r'^registration/', include('django.contrib.auth.urls')),
             url(r'^logout/$', Logout.as_view(), name='logout'),
             url(r'^reset/', include('password_reset.urls')),
         ]

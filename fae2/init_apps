@@ -1,0 +1,18 @@
+python manage.py makemigrations abouts
+python manage.py makemigrations accounts
+python manage.py makemigrations contact
+python manage.py makemigrations markup
+python manage.py makemigrations markupInfo
+python manage.py makemigrations pageResults
+python manage.py makemigrations reports
+python manage.py makemigrations ruleCategories
+python manage.py makemigrations rules
+python manage.py makemigrations rulesets
+python manage.py makemigrations stats
+python manage.py makemigrations subscriptions
+python manage.py makemigrations userProfiles
+python manage.py makemigrations wcag20
+python manage.py makemigrations websiteResultGroups
+python manage.py makemigrations websiteResults
+python manage.py migrate
+

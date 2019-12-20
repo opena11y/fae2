@@ -503,7 +503,7 @@ class WebsiteReport(RuleGroupResult):
 
       for pr in self.page_all_results.all():
         if view == 'rs':
-          pr = pr.page_rs_results.get(rule_category__slug=group)
+          pr = pr.page_rs_results.get(rule_scope__slug=group)
         elif view == 'gl':
           pr = pr.page_gl_results.get(guideline__slug=group)
         elif view == 'rc':
