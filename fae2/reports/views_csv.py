@@ -22,7 +22,7 @@ def get_implementation_status(impl_status):
 def get_result(result_value):
     if result_value == 5:
         return 'Violation'
-    elif result_value == 6:
+    elif result_value == 4:
         return 'Warning'
     elif result_value == 3:
         return 'Manual Check'
@@ -30,6 +30,18 @@ def get_result(result_value):
         return 'Passed'
     elif result_value == 1:
         return 'Not Applicable'
+
+def get_element_result(result_value):
+    if result_value == 5:
+        return 'Violation'
+    elif result_value == 4:
+        return 'Warning'
+    elif result_value == 3:
+        return 'Manual Check'
+    elif result_value == 2:
+        return 'Hidden'
+    elif result_value == 1:
+        return 'Pass'
 
 
 def addMetaData(report_obj, writer, path):
@@ -180,6 +192,6 @@ def ReportRulesGroupRulePageViewCSV(request, report, view, group, rule, page):
 
     for prr in json.loads(page_rule_result.element_results_json):
         writer.writerow(
-            [prr['element_identifier'], get_result(prr['result_value']), prr['ordinal_position'], prr['message']])
+            [prr['element_identifier'], get_element_result(int(prr['result_value'])), prr['ordinal_position'], prr['message']])
 
     return response
