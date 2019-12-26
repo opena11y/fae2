@@ -147,6 +147,7 @@
     <section aria-labelledby="id_download_report">
         <h2 id="download_report"> Download Report</h2>
         <a href="{% url 'report_rules_group_csv' report.slug view group.slug %}" class="btn btn-default">CSV</a>
+        <a href="{% url 'report_rules_group_docx' report.slug view group.slug %}" class="btn btn-default">DOCX</a>
     </section>
 
     {% include "reports/implementation_information.html" %}

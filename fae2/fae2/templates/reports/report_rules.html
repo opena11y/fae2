@@ -212,6 +212,7 @@
         <section aria-labelledby="id_download_report">
             <h2 id="download_report"> Download Report</h2>
             <a href="{% url 'report_rules_csv' report.slug view %}" class="btn btn-default">CSV</a>
+            <a href="{% url 'report_rules_docx' report.slug view %}" class="btn btn-default">DOCX</a>
         </section>
 
         {% include "reports/implementation_information.html" %}

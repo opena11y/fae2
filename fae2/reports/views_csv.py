@@ -7,6 +7,7 @@ from django.http import HttpResponse
 
 from fae2.settings import SITE_URL
 from reports.models import WebsiteReport
+from docx import Document
 
 
 def get_implementation_status(impl_status):
@@ -30,6 +31,7 @@ def get_result(result_value):
         return 'Passed'
     elif result_value == 1:
         return 'Not Applicable'
+
 
 def get_element_result(result_value):
     if result_value == 5:
@@ -55,6 +57,40 @@ def addMetaData(report_obj, writer, path):
     writer.writerow(['Report URL', SITE_URL + path + '/'])
 
     writer.writerow([])
+
+
+def addDocMetaData(report_obj, doc, path):
+    table = doc.add_table(rows=1, cols=2)
+    table.style = 'Light Shading Accent 1'
+    hdr_cells = table.rows[0].cells
+    hdr_cells[0].text = 'Meta Label'
+    hdr_cells[1].text = 'Meta Value'
+
+    row_cells = table.add_row().cells
+    row_cells[0].text = 'Title'
+    row_cells[1].text = report_obj.title
+
+    row_cells = table.add_row().cells
+    row_cells[0].text = 'URL'
+    row_cells[1].text = report_obj.url
+
+    row_cells = table.add_row().cells
+    row_cells[0].text = 'Ruleset'
+    row_cells[1].text = report_obj.ruleset.title
+
+    row_cells = table.add_row().cells
+    row_cells[0].text = 'Depth'
+    row_cells[1].text = str(report_obj.depth)
+
+    row_cells = table.add_row().cells
+    row_cells[0].text = 'Pages'
+    row_cells[1].text = str(report_obj.page_count)
+
+    row_cells = table.add_row().cells
+    row_cells[0].text = 'Report URL'
+    row_cells[1].text = SITE_URL + path
+
+    doc.add_paragraph('')
 
 
 def ReportRulesViewCSV(request, report, view):
@@ -101,6 +137,71 @@ def ReportRulesViewCSV(request, report, view):
     return response
 
 
+def ReportRulesViewDocx(request, report, view):
+    document = Document()
+    document.add_heading('Summary of ' + report + '-' + view, 1)
+    document.add_paragraph('\n')
+
+    response = HttpResponse(content_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document')
+    response['Content-Disposition'] = 'attachment; filename="' + \
+                                      request.path.replace('/docx/', '').replace('/', '-').strip('-') + '.docx"'
+
+    report_obj = WebsiteReport.objects.get(slug=report)
+
+    addDocMetaData(report_obj, document, request.path.replace('/csv/', ''))
+
+    headers = ['Rule Group', 'Violations', 'Warnings', 'Manual Check', 'Passed', 'N/A', 'Score', 'Status']
+    table = document.add_table(rows=1, cols=len(headers))
+    table.style = 'Light Shading Accent 2'
+    header_cells = table.rows[0].cells
+
+    for i in range(len(headers)):
+        header_cells[i].text = headers[i]
+
+    page = False
+
+    if report_obj.page_count == 1:
+        page = report_obj.get_first_page()
+        if view == 'gl':
+            groups = page.page_gl_results.all()
+        elif view == 'rs':
+            groups = page.page_rs_results.all()
+        else:
+            groups = page.page_rc_results.all()
+    else:
+        if view == 'gl':
+            groups = report_obj.ws_gl_results.all()
+        elif view == 'rs':
+            groups = report_obj.ws_rs_results.all()
+        else:
+            groups = report_obj.ws_rc_results.all()
+
+    for g in groups:
+        row_cells = table.add_row().cells
+        row_cells[0].text = g.get_title()
+        row_cells[1].text = str(g.rules_violation)
+        row_cells[2].text = str(g.rules_violation)
+        row_cells[3].text = str(g.rules_manual_check)
+        row_cells[4].text = str(g.rules_passed)
+        row_cells[5].text = str(g.rules_na)
+        row_cells[6].text = str(g.implementation_score)
+        row_cells[7].text = get_implementation_status(g.implementation_status)
+
+    row_cells = table.add_row().cells
+    row_cells[0].text = 'All Report Groups'
+    row_cells[1].text = str(report_obj.rules_violation)
+    row_cells[2].text = str(report_obj.rules_violation)
+    row_cells[3].text = str(report_obj.rules_manual_check)
+    row_cells[4].text = str(report_obj.rules_passed)
+    row_cells[5].text = str(report_obj.rules_na)
+    row_cells[6].text = str(report_obj.implementation_score)
+    row_cells[7].text = get_implementation_status(report_obj.implementation_status)
+
+    document.save(response)
+
+    return response
+
+
 def ReportRulesGroupViewCSV(request, report, view, group):
     response = HttpResponse(content_type='text/csv')
     response['Content-Disposition'] = 'attachment; filename="' + \
@@ -129,6 +230,54 @@ def ReportRulesGroupViewCSV(request, report, view, group):
              g.pages_manual_check, g.pages_passed, g.pages_na, g.implementation_score,
              get_implementation_status(g.implementation_status)])
 
+    return response
+
+
+def ReportRulesGroupViewDocx(request, report, view, group):
+    document = Document()
+    document.add_heading('Summary of ' + report + '-' + view + '-' + group, 1)
+    document.add_paragraph('\n')
+
+    response = HttpResponse(content_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document')
+    response['Content-Disposition'] = 'attachment; filename="' + \
+                                      request.path.replace('/docx/', '').replace('/', '-').strip('-') + '.docx"'
+
+    report_obj = WebsiteReport.objects.get(slug=report)
+
+    addDocMetaData(report_obj, document, request.path.replace('/csv/', ''))
+
+    headers = ['ID', 'Rule Summary', 'Result', 'Violations', 'Warnings', 'Manual Check', 'Passed', 'N/A', 'Score',
+               'Status']
+    table = document.add_table(rows=1, cols=len(headers))
+    table.style = 'Light Shading Accent 2'
+    header_cells = table.rows[0].cells
+
+    for i in range(len(headers)):
+        header_cells[i].text = headers[i]
+
+    if view == 'gl':
+        group = report_obj.ws_gl_results.get(slug=group)
+
+    elif view == 'rs':
+        group = report_obj.ws_rs_results.get(slug=group)
+
+    else:
+        group = report_obj.ws_rc_results.get(slug=group)
+
+    for g in group.ws_rule_results.all():
+        row_cells = table.add_row().cells
+        row_cells[0].text = str(g.rule.nls_rule_id)
+        row_cells[1].text = g.get_title()
+        row_cells[2].text = get_result(g.result_value)
+        row_cells[3].text = str(g.pages_violation)
+        row_cells[4].text = str(g.pages_warning)
+        row_cells[5].text = str(g.pages_manual_check)
+        row_cells[6].text = str(g.pages_passed)
+        row_cells[7].text = str(g.pages_na)
+        row_cells[8].text = str(g.implementation_score)
+        row_cells[9].text = get_implementation_status(g.implementation_status)
+
+    document.save(response)
     return response
 
 
@@ -192,6 +341,7 @@ def ReportRulesGroupRulePageViewCSV(request, report, view, group, rule, page):
 
     for prr in json.loads(page_rule_result.element_results_json):
         writer.writerow(
-            [prr['element_identifier'], get_element_result(int(prr['result_value'])), prr['ordinal_position'], prr['message']])
+            [prr['element_identifier'], get_element_result(int(prr['result_value'])), prr['ordinal_position'],
+             prr['message']])
 
     return response
