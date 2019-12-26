@@ -88,7 +88,7 @@ def addDocMetaData(report_obj, doc, path):
 
     row_cells = table.add_row().cells
     row_cells[0].text = 'Report URL'
-    row_cells[1].text = SITE_URL + path
+    row_cells[1].text = SITE_URL + path + '/'
 
     doc.add_paragraph('')
 
@@ -148,7 +148,7 @@ def ReportRulesViewDocx(request, report, view):
 
     report_obj = WebsiteReport.objects.get(slug=report)
 
-    addDocMetaData(report_obj, document, request.path.replace('/csv/', ''))
+    addDocMetaData(report_obj, document, request.path.replace('/docx/', ''))
 
     headers = ['Rule Group', 'Violations', 'Warnings', 'Manual Check', 'Passed', 'N/A', 'Score', 'Status']
     table = document.add_table(rows=1, cols=len(headers))
@@ -244,7 +244,7 @@ def ReportRulesGroupViewDocx(request, report, view, group):
 
     report_obj = WebsiteReport.objects.get(slug=report)
 
-    addDocMetaData(report_obj, document, request.path.replace('/csv/', ''))
+    addDocMetaData(report_obj, document, request.path.replace('/docx/', ''))
 
     headers = ['ID', 'Rule Summary', 'Result', 'Violations', 'Warnings', 'Manual Check', 'Passed', 'N/A', 'Score',
                'Status']
@@ -317,6 +317,63 @@ def ReportRulesGroupRuleViewCSV(request, report, view, group, rule):
     return response
 
 
+def ReportRulesGroupRuleViewDocx(request, report, view, group, rule):
+    document = Document()
+    document.add_heading('Summary of ' + report + '-' + view + '-' + group + '-' + rule, 1)
+    document.add_paragraph('\n')
+
+    response = HttpResponse(content_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document')
+    response['Content-Disposition'] = 'attachment; filename="' + \
+                                      request.path.replace('/docx/', '').replace('/', '-').strip('-') + '.docx"'
+
+    report_obj = WebsiteReport.objects.get(slug=report)
+
+    addDocMetaData(report_obj, document, request.path.replace('/docx/', ''))
+
+    headers = ['Page', 'Page Title', 'Result', 'Violations', 'Warnings', 'Manual Check', 'Passed', 'Score', 'Status']
+    table = document.add_table(rows=1, cols=len(headers))
+    table.style = 'Light Shading Accent 2'
+    header_cells = table.rows[0].cells
+
+    for i in range(len(headers)):
+        header_cells[i].text = headers[i]
+
+    if view == 'gl':
+        group = report_obj.ws_gl_results.get(slug=group)
+    elif view == 'rs':
+        group = report_obj.ws_rs_results.get(slug=group)
+    else:
+        group = report_obj.ws_rc_results.get(slug=group)
+
+    ws_rule_result = group.ws_rule_results.get(slug=rule)
+
+    for wsr in ws_rule_result.page_rule_results.all():
+        row_cells = table.add_row().cells
+        row_cells[0].text = str(wsr.page_result.page_number)
+        row_cells[1].text = wsr.page_result.title
+        row_cells[2].text = get_result(wsr.result_value)
+        row_cells[3].text = str(wsr.elements_violation)
+        row_cells[4].text = str(wsr.elements_warning)
+        row_cells[5].text = str(wsr.elements_mc_identified)
+        row_cells[6].text = str(wsr.elements_passed)
+        row_cells[7].text = str(wsr.implementation_score)
+        row_cells[8].text = get_implementation_status(wsr.implementation_status)
+
+    row_cells = table.add_row().cells
+    row_cells[0].text = ''
+    row_cells[1].text = 'All Pages'
+    row_cells[2].text = get_result(ws_rule_result.result_value)
+    row_cells[3].text = str(ws_rule_result.elements_violation)
+    row_cells[4].text = str(ws_rule_result.elements_warning)
+    row_cells[5].text = str(ws_rule_result.elements_mc_identified)
+    row_cells[6].text = str(ws_rule_result.elements_passed)
+    row_cells[7].text = str(ws_rule_result.implementation_score)
+    row_cells[8].text = get_implementation_status(ws_rule_result.implementation_status)
+
+    document.save(response)
+    return response
+
+
 def ReportRulesGroupRulePageViewCSV(request, report, view, group, rule, page):
     response = HttpResponse(content_type='text/csv')
     response['Content-Disposition'] = 'attachment; filename="' + \
@@ -343,5 +400,49 @@ def ReportRulesGroupRulePageViewCSV(request, report, view, group, rule, page):
         writer.writerow(
             [prr['element_identifier'], get_element_result(int(prr['result_value'])), prr['ordinal_position'],
              prr['message']])
+
+    return response
+
+
+def ReportRulesGroupRulePageViewDocx(request, report, view, group, rule, page):
+    document = Document()
+    document.add_heading('Summary of ' + report + '-' + view + '-' + group + '-' + rule, 1)
+    document.add_paragraph('\n')
+
+    response = HttpResponse(content_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document')
+    response['Content-Disposition'] = 'attachment; filename="' + \
+                                      request.path.replace('/docx/', '').replace('/', '-').strip('-') + '.docx"'
+
+    report_obj = WebsiteReport.objects.get(slug=report)
+
+    addDocMetaData(report_obj, document, request.path.replace('/docx/', ''))
+
+    headers = ['Element Identifier', 'Result', 'Element Position', 'Message']
+    table = document.add_table(rows=1, cols=len(headers))
+    table.style = 'Light Shading Accent 2'
+    header_cells = table.rows[0].cells
+
+    for i in range(len(headers)):
+        header_cells[i].text = headers[i]
+
+    if view == 'gl':
+        group = report_obj.ws_gl_results.get(slug=group)
+    elif view == 'rs':
+        group = report_obj.ws_rs_results.get(slug=group)
+    else:
+        group = report_obj.ws_rc_results.get(slug=group)
+
+    ws_rule_result = group.ws_rule_results.get(slug=rule)
+
+    page_rule_result = ws_rule_result.page_rule_results.get(page_result__page_number=page)
+
+    for prr in json.loads(page_rule_result.element_results_json):
+        row_cells = table.add_row().cells
+        row_cells[0].text = prr['element_identifier']
+        row_cells[1].text = get_element_result(int(prr['result_value']))
+        row_cells[2].text = str(prr['ordinal_position'])
+        row_cells[3].text = prr['message']
+
+    document.save(response)
 
     return response

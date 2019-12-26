@@ -58,7 +58,8 @@ from .views import ReportPageGroupView
 from .views import ReportPageGroupRuleView
 
 from .views_csv import ReportRulesViewCSV, ReportRulesGroupViewCSV, ReportRulesGroupRuleViewCSV, \
-    ReportRulesGroupRulePageViewCSV, ReportRulesViewDocx, ReportRulesGroupViewDocx
+    ReportRulesGroupRulePageViewCSV, ReportRulesViewDocx, ReportRulesGroupViewDocx, ReportRulesGroupRuleViewDocx, \
+    ReportRulesGroupRulePageViewDocx
 
 from fae2.settings import ANONYMOUS_ENABLED
 from fae2.settings import SELF_REGISTRATION_ENABLED
@@ -104,12 +105,16 @@ urlpatterns = [
         ReportRulesGroupRuleView.as_view(), name='report_rules_group_rule'),
     url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/rule/(?P<rule>\w+)/csv/$',
         ReportRulesGroupRuleViewCSV, name='report_rules_group_rule_csv'),
+    url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/rule/(?P<rule>\w+)/docx/$',
+        ReportRulesGroupRuleViewDocx, name='report_rules_group_rule_docx'),
 
     # Report Rules Group Rule Page
     url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/rule/(?P<rule>\w+)/page/(?P<page>[\d-]+)/$',
         ReportRulesGroupRulePageView.as_view(), name='report_rules_group_rule_page'),
     url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/rule/(?P<rule>\w+)/page/(?P<page>[\d-]+)/csv/$',
         ReportRulesGroupRulePageViewCSV, name='report_rules_group_rule_page_csv'),
+    url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/rule/(?P<rule>\w+)/page/(?P<page>[\d-]+)/docx/$',
+        ReportRulesGroupRulePageViewDocx, name='report_rules_group_rule_page_docx'),
 
     url(r'^pages/(?P<report>\w+)/(?P<view>\w+)/all/$', ReportPagesView.as_view(), name='report_pages'),
     url(r'^pages/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/$', ReportPagesGroupView.as_view(),
