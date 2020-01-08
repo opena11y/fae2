@@ -8,7 +8,8 @@ from django.http import HttpResponse
 from fae2.settings import SITE_URL
 from reports.models import WebsiteReport
 from docx import Document
-
+# import pdfkit
+import weasyprint
 
 def get_implementation_status(impl_status):
     if impl_status in ['C', 'AC', 'AC-MC', 'PI', 'PI-MC', 'NI', 'NI-MC', 'MC']:
@@ -201,6 +202,14 @@ def ReportRulesViewDocx(request, report, view):
 
     return response
 
+def ReportRulesViewPDF(request, report, view):
+    # pdf = pdfkit.from_url('http://' + SITE_URL + request.path.replace('/pdf/', '') + '/', False)
+    pdf = weasyprint.HTML('http://' + SITE_URL + request.path.replace('/pdf/', '') + '/').write_pdf()
+
+    response = HttpResponse(pdf, content_type='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename="' + \
+                                      request.path.replace('/pdf/', '').replace('/', '-').strip('-') + '.pdf"'
+    return response
 
 def ReportRulesGroupViewCSV(request, report, view, group):
     response = HttpResponse(content_type='text/csv')

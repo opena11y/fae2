@@ -59,7 +59,7 @@ from .views import ReportPageGroupRuleView
 
 from .views_csv import ReportRulesViewCSV, ReportRulesGroupViewCSV, ReportRulesGroupRuleViewCSV, \
     ReportRulesGroupRulePageViewCSV, ReportRulesViewDocx, ReportRulesGroupViewDocx, ReportRulesGroupRuleViewDocx, \
-    ReportRulesGroupRulePageViewDocx
+    ReportRulesGroupRulePageViewDocx, ReportRulesViewPDF
 
 from fae2.settings import ANONYMOUS_ENABLED
 from fae2.settings import SELF_REGISTRATION_ENABLED
@@ -91,6 +91,7 @@ urlpatterns = [
     url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/$', ReportRulesView.as_view(), name='report_rules'),
     url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/csv/$', ReportRulesViewCSV, name='report_rules_csv'),
     url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/docx/$', ReportRulesViewDocx, name='report_rules_docx'),
+    url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/pdf/$', ReportRulesViewPDF, name='report_rules_pdf'),
 
     # Report Rules Group
     url(r'^summary/(?P<report>\w+)/(?P<view>\w+)/(?P<group>\w+)/$', ReportRulesGroupView.as_view(),
