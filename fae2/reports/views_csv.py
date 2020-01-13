@@ -197,6 +197,13 @@ def ReportRulesViewDocx(request, report, view):
     # Document Formation
     document = Document()
 
+    sections = document.sections
+    for section in sections:
+        section.top_margin = 457200
+        section.bottom_margin = 457200
+        section.left_margin = 457200
+        section.right_margin = 457200
+
     addDocMetaData(report_obj, document, request.path.replace('/docx/', ''), report, view)
 
     document.add_heading('Summary', 1)
@@ -206,6 +213,7 @@ def ReportRulesViewDocx(request, report, view):
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     table.style = 'Table Grid'
     header_cells = table.rows[0].cells
+    table.rows[0].height = 304800
     table.columns[0].width = 1371600
 
     header_cells[1].text = 'Violations'
@@ -232,18 +240,26 @@ def ReportRulesViewDocx(request, report, view):
 
     document.add_paragraph('')
 
-    headers = ['Rule Group', 'Violations', 'Warnings', 'Manual Check', 'Passed', 'N/A', 'Score', 'Status']
+    # headers = ['Rule Group', 'Violations', 'Warnings', 'Manual Check', 'Passed', 'N/A', 'Score', 'Status']
+    headers = ['Rule Group', 'V', 'W', 'MC', 'P', 'N/A', 'Score', 'Status']
 
     # First Table
     table = document.add_table(rows=1, cols=len(headers))
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
     table.style = 'Colorful Grid'
     header_cells = table.rows[0].cells
 
     # table.columns[0].width = 1828800
     table.columns[0].width = 1371600
 
+    for i in range(1, len(headers)):
+        table.columns[i].width = 750000
+
+    table.rows[0].height = 304800
+
     for i in range(len(headers)):
         header_cells[i].text = headers[i]
+        header_cells[i].vertical_alignment = WD_ALIGN_VERTICAL.CENTER
 
     for g in groups:
         row_cells = table.add_row().cells
