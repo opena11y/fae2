@@ -9,7 +9,9 @@ from fae2.settings import SITE_URL
 from reports.models import WebsiteReport
 import docx
 from docx import Document
-from docx.enum.dml import MSO_THEME_COLOR_INDEX
+from docx.enum.table import WD_TABLE_ALIGNMENT, WD_ALIGN_VERTICAL
+from docx.oxml.ns import nsdecls
+from docx.oxml import parse_xml
 
 
 def get_implementation_status(impl_status):
@@ -200,12 +202,45 @@ def ReportRulesViewDocx(request, report, view):
     document.add_heading('Summary', 1)
     document.add_paragraph('')
 
+    table = document.add_table(rows=1, cols=5)
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    table.style = 'Table Grid'
+    header_cells = table.rows[0].cells
+    table.columns[0].width = 1371600
+
+    header_cells[1].text = 'Violations'
+    header_cells[2].text = 'Warnings'
+    header_cells[3].text = 'Manual Checks'
+    header_cells[4].text = 'Passed'
+
+    row_cells = table.add_row().cells
+    table.rows[1].height = 304800
+    row_cells[0].text = 'Number of Rules'
+    row_cells[1].text = str(report_obj.rules_violation)
+    row_cells[2].text = str(report_obj.rules_warning)
+    row_cells[3].text = str(report_obj.rules_manual_check)
+    row_cells[4].text = str(report_obj.rules_passed)
+
+    for i in range(5):
+        table.cell(0, i).vertical_alignment = WD_ALIGN_VERTICAL.CENTER
+        table.cell(1, i).vertical_alignment = WD_ALIGN_VERTICAL.CENTER
+
+    table.rows[1].cells[1]._tc.get_or_add_tcPr().append(parse_xml(r'<w:shd {} w:fill="FFAEAE"/>'.format(nsdecls('w'))))
+    table.rows[1].cells[2]._tc.get_or_add_tcPr().append(parse_xml(r'<w:shd {} w:fill="FFEC94"/>'.format(nsdecls('w'))))
+    table.rows[1].cells[3]._tc.get_or_add_tcPr().append(parse_xml(r'<w:shd {} w:fill="B4D8E7"/>'.format(nsdecls('w'))))
+    table.rows[1].cells[4]._tc.get_or_add_tcPr().append(parse_xml(r'<w:shd {} w:fill="B0E57C"/>'.format(nsdecls('w'))))
+
+    document.add_paragraph('')
+
     headers = ['Rule Group', 'Violations', 'Warnings', 'Manual Check', 'Passed', 'N/A', 'Score', 'Status']
 
     # First Table
     table = document.add_table(rows=1, cols=len(headers))
     table.style = 'Colorful Grid'
     header_cells = table.rows[0].cells
+
+    # table.columns[0].width = 1828800
+    table.columns[0].width = 1371600
 
     for i in range(len(headers)):
         header_cells[i].text = headers[i]
@@ -214,22 +249,31 @@ def ReportRulesViewDocx(request, report, view):
         row_cells = table.add_row().cells
         row_cells[0].text = g.get_title()
         row_cells[1].text = str(g.rules_violation)
-        row_cells[2].text = str(g.rules_violation)
+        row_cells[2].text = str(g.rules_warning)
         row_cells[3].text = str(g.rules_manual_check)
         row_cells[4].text = str(g.rules_passed)
         row_cells[5].text = str(g.rules_na)
         row_cells[6].text = str(g.implementation_score)
         row_cells[7].text = get_implementation_status(g.implementation_status)
 
+        for i in range(len(row_cells)):
+            row_cells[i].vertical_alignment = WD_ALIGN_VERTICAL.CENTER
+
     row_cells = table.add_row().cells
     row_cells[0].text = 'All Report Groups'
     row_cells[1].text = str(report_obj.rules_violation)
-    row_cells[2].text = str(report_obj.rules_violation)
+    row_cells[2].text = str(report_obj.rules_warning)
     row_cells[3].text = str(report_obj.rules_manual_check)
     row_cells[4].text = str(report_obj.rules_passed)
     row_cells[5].text = str(report_obj.rules_na)
     row_cells[6].text = str(report_obj.implementation_score)
     row_cells[7].text = get_implementation_status(report_obj.implementation_status)
+
+    for i in range(len(row_cells)):
+        row_cells[i].vertical_alignment = WD_ALIGN_VERTICAL.CENTER
+
+    for i in range(1, len(table.rows)):
+        table.rows[i].height = 304800
 
     document.add_paragraph('')
 
@@ -245,7 +289,7 @@ def ReportRulesViewDocx(request, report, view):
         row_cells = table.add_row().cells
         row_cells[0].text = g.get_title()
         row_cells[1].text = str(g.rules_violation)
-        row_cells[2].text = str(g.rules_violation)
+        row_cells[2].text = str(g.rules_warning)
         row_cells[3].text = str(g.rules_manual_check)
         row_cells[4].text = str(g.rules_passed)
         row_cells[5].text = str(g.rules_na)
@@ -255,7 +299,7 @@ def ReportRulesViewDocx(request, report, view):
     row_cells = table.add_row().cells
     row_cells[0].text = 'All Report Groups'
     row_cells[1].text = str(report_obj.rules_violation)
-    row_cells[2].text = str(report_obj.rules_violation)
+    row_cells[2].text = str(report_obj.rules_warning)
     row_cells[3].text = str(report_obj.rules_manual_check)
     row_cells[4].text = str(report_obj.rules_passed)
     row_cells[5].text = str(report_obj.rules_na)
@@ -276,7 +320,7 @@ def ReportRulesViewDocx(request, report, view):
         row_cells = table.add_row().cells
         row_cells[0].text = g.get_title()
         row_cells[1].text = str(g.rules_violation)
-        row_cells[2].text = str(g.rules_violation)
+        row_cells[2].text = str(g.rules_warning)
         row_cells[3].text = str(g.rules_manual_check)
         row_cells[4].text = str(g.rules_passed)
         row_cells[5].text = str(g.rules_na)
@@ -286,7 +330,7 @@ def ReportRulesViewDocx(request, report, view):
     row_cells = table.add_row().cells
     row_cells[0].text = 'All Report Groups'
     row_cells[1].text = str(report_obj.rules_violation)
-    row_cells[2].text = str(report_obj.rules_violation)
+    row_cells[2].text = str(report_obj.rules_warning)
     row_cells[3].text = str(report_obj.rules_manual_check)
     row_cells[4].text = str(report_obj.rules_passed)
     row_cells[5].text = str(report_obj.rules_na)
@@ -307,7 +351,348 @@ def ReportRulesViewDocx(request, report, view):
         row_cells = table.add_row().cells
         row_cells[0].text = g.get_title()
         row_cells[1].text = str(g.rules_violation)
-        row_cells[2].text = str(g.rules_violation)
+        row_cells[2].text = str(g.rules_warning)
+        row_cells[3].text = str(g.rules_manual_check)
+        row_cells[4].text = str(g.rules_passed)
+        row_cells[5].text = str(g.rules_na)
+        row_cells[6].text = str(g.implementation_score)
+        row_cells[7].text = get_implementation_status(g.implementation_status)
+
+    row_cells = table.add_row().cells
+    row_cells[0].text = 'All Report Groups'
+    row_cells[1].text = str(report_obj.rules_violation)
+    row_cells[2].text = str(report_obj.rules_warning)
+    row_cells[3].text = str(report_obj.rules_manual_check)
+    row_cells[4].text = str(report_obj.rules_passed)
+    row_cells[5].text = str(report_obj.rules_na)
+    row_cells[6].text = str(report_obj.implementation_score)
+    row_cells[7].text = get_implementation_status(report_obj.implementation_status)
+
+    document.add_paragraph('')
+
+    # Second Table
+    table = document.add_table(rows=1, cols=len(headers))
+    table.style = 'Light Grid'
+    header_cells = table.rows[0].cells
+
+    for i in range(len(headers)):
+        header_cells[i].text = headers[i]
+
+    for g in groups:
+        row_cells = table.add_row().cells
+        row_cells[0].text = g.get_title()
+        row_cells[1].text = str(g.rules_violation)
+        row_cells[2].text = str(g.rules_warning)
+        row_cells[3].text = str(g.rules_manual_check)
+        row_cells[4].text = str(g.rules_passed)
+        row_cells[5].text = str(g.rules_na)
+        row_cells[6].text = str(g.implementation_score)
+        row_cells[7].text = get_implementation_status(g.implementation_status)
+
+    row_cells = table.add_row().cells
+    row_cells[0].text = 'All Report Groups'
+    row_cells[1].text = str(report_obj.rules_violation)
+    row_cells[2].text = str(report_obj.rules_warning)
+    row_cells[3].text = str(report_obj.rules_manual_check)
+    row_cells[4].text = str(report_obj.rules_passed)
+    row_cells[5].text = str(report_obj.rules_na)
+    row_cells[6].text = str(report_obj.implementation_score)
+    row_cells[7].text = get_implementation_status(report_obj.implementation_status)
+
+    document.add_paragraph('')
+
+    # Second Table
+    table = document.add_table(rows=1, cols=len(headers))
+    table.style = 'Light List'
+    header_cells = table.rows[0].cells
+
+    for i in range(len(headers)):
+        header_cells[i].text = headers[i]
+
+    for g in groups:
+        row_cells = table.add_row().cells
+        row_cells[0].text = g.get_title()
+        row_cells[1].text = str(g.rules_violation)
+        row_cells[2].text = str(g.rules_warning)
+        row_cells[3].text = str(g.rules_manual_check)
+        row_cells[4].text = str(g.rules_passed)
+        row_cells[5].text = str(g.rules_na)
+        row_cells[6].text = str(g.implementation_score)
+        row_cells[7].text = get_implementation_status(g.implementation_status)
+
+    row_cells = table.add_row().cells
+    row_cells[0].text = 'All Report Groups'
+    row_cells[1].text = str(report_obj.rules_violation)
+    row_cells[2].text = str(report_obj.rules_warning)
+    row_cells[3].text = str(report_obj.rules_manual_check)
+    row_cells[4].text = str(report_obj.rules_passed)
+    row_cells[5].text = str(report_obj.rules_na)
+    row_cells[6].text = str(report_obj.implementation_score)
+    row_cells[7].text = get_implementation_status(report_obj.implementation_status)
+
+    document.add_paragraph('')
+
+    # Second Table
+    table = document.add_table(rows=1, cols=len(headers))
+    table.style = 'Light Shading'
+    header_cells = table.rows[0].cells
+
+    for i in range(len(headers)):
+        header_cells[i].text = headers[i]
+
+    for g in groups:
+        row_cells = table.add_row().cells
+        row_cells[0].text = g.get_title()
+        row_cells[1].text = str(g.rules_violation)
+        row_cells[2].text = str(g.rules_warning)
+        row_cells[3].text = str(g.rules_manual_check)
+        row_cells[4].text = str(g.rules_passed)
+        row_cells[5].text = str(g.rules_na)
+        row_cells[6].text = str(g.implementation_score)
+        row_cells[7].text = get_implementation_status(g.implementation_status)
+
+    row_cells = table.add_row().cells
+    row_cells[0].text = 'All Report Groups'
+    row_cells[1].text = str(report_obj.rules_violation)
+    row_cells[2].text = str(report_obj.rules_violation)
+    row_cells[3].text = str(report_obj.rules_manual_check)
+    row_cells[4].text = str(report_obj.rules_passed)
+    row_cells[5].text = str(report_obj.rules_na)
+    row_cells[6].text = str(report_obj.implementation_score)
+    row_cells[7].text = get_implementation_status(report_obj.implementation_status)
+
+    document.add_paragraph('')
+
+    # Second Table
+    table = document.add_table(rows=1, cols=len(headers))
+    table.style = 'Medium Grid 1'
+    header_cells = table.rows[0].cells
+
+    for i in range(len(headers)):
+        header_cells[i].text = headers[i]
+
+    for g in groups:
+        row_cells = table.add_row().cells
+        row_cells[0].text = g.get_title()
+        row_cells[1].text = str(g.rules_violation)
+        row_cells[2].text = str(g.rules_warning)
+        row_cells[3].text = str(g.rules_manual_check)
+        row_cells[4].text = str(g.rules_passed)
+        row_cells[5].text = str(g.rules_na)
+        row_cells[6].text = str(g.implementation_score)
+        row_cells[7].text = get_implementation_status(g.implementation_status)
+
+    row_cells = table.add_row().cells
+    row_cells[0].text = 'All Report Groups'
+    row_cells[1].text = str(report_obj.rules_violation)
+    row_cells[2].text = str(report_obj.rules_violation)
+    row_cells[3].text = str(report_obj.rules_manual_check)
+    row_cells[4].text = str(report_obj.rules_passed)
+    row_cells[5].text = str(report_obj.rules_na)
+    row_cells[6].text = str(report_obj.implementation_score)
+    row_cells[7].text = get_implementation_status(report_obj.implementation_status)
+
+    document.add_paragraph('')
+
+    # Second Table
+    table = document.add_table(rows=1, cols=len(headers))
+    table.style = 'Medium Grid 2'
+    header_cells = table.rows[0].cells
+
+    for i in range(len(headers)):
+        header_cells[i].text = headers[i]
+
+    for g in groups:
+        row_cells = table.add_row().cells
+        row_cells[0].text = g.get_title()
+        row_cells[1].text = str(g.rules_violation)
+        row_cells[2].text = str(g.rules_warning)
+        row_cells[3].text = str(g.rules_manual_check)
+        row_cells[4].text = str(g.rules_passed)
+        row_cells[5].text = str(g.rules_na)
+        row_cells[6].text = str(g.implementation_score)
+        row_cells[7].text = get_implementation_status(g.implementation_status)
+
+    row_cells = table.add_row().cells
+    row_cells[0].text = 'All Report Groups'
+    row_cells[1].text = str(report_obj.rules_violation)
+    row_cells[2].text = str(report_obj.rules_violation)
+    row_cells[3].text = str(report_obj.rules_manual_check)
+    row_cells[4].text = str(report_obj.rules_passed)
+    row_cells[5].text = str(report_obj.rules_na)
+    row_cells[6].text = str(report_obj.implementation_score)
+    row_cells[7].text = get_implementation_status(report_obj.implementation_status)
+
+    document.add_paragraph('')
+
+    # Second Table
+    table = document.add_table(rows=1, cols=len(headers))
+    table.style = 'Medium Grid 3'
+    header_cells = table.rows[0].cells
+
+    for i in range(len(headers)):
+        header_cells[i].text = headers[i]
+
+    for g in groups:
+        row_cells = table.add_row().cells
+        row_cells[0].text = g.get_title()
+        row_cells[1].text = str(g.rules_violation)
+        row_cells[2].text = str(g.rules_warning)
+        row_cells[3].text = str(g.rules_manual_check)
+        row_cells[4].text = str(g.rules_passed)
+        row_cells[5].text = str(g.rules_na)
+        row_cells[6].text = str(g.implementation_score)
+        row_cells[7].text = get_implementation_status(g.implementation_status)
+
+    row_cells = table.add_row().cells
+    row_cells[0].text = 'All Report Groups'
+    row_cells[1].text = str(report_obj.rules_violation)
+    row_cells[2].text = str(report_obj.rules_violation)
+    row_cells[3].text = str(report_obj.rules_manual_check)
+    row_cells[4].text = str(report_obj.rules_passed)
+    row_cells[5].text = str(report_obj.rules_na)
+    row_cells[6].text = str(report_obj.implementation_score)
+    row_cells[7].text = get_implementation_status(report_obj.implementation_status)
+
+    document.add_paragraph('')
+
+    # Second Table
+    table = document.add_table(rows=1, cols=len(headers))
+    table.style = 'Medium List 1'
+    header_cells = table.rows[0].cells
+
+    for i in range(len(headers)):
+        header_cells[i].text = headers[i]
+
+    for g in groups:
+        row_cells = table.add_row().cells
+        row_cells[0].text = g.get_title()
+        row_cells[1].text = str(g.rules_violation)
+        row_cells[2].text = str(g.rules_warning)
+        row_cells[3].text = str(g.rules_manual_check)
+        row_cells[4].text = str(g.rules_passed)
+        row_cells[5].text = str(g.rules_na)
+        row_cells[6].text = str(g.implementation_score)
+        row_cells[7].text = get_implementation_status(g.implementation_status)
+
+    row_cells = table.add_row().cells
+    row_cells[0].text = 'All Report Groups'
+    row_cells[1].text = str(report_obj.rules_violation)
+    row_cells[2].text = str(report_obj.rules_violation)
+    row_cells[3].text = str(report_obj.rules_manual_check)
+    row_cells[4].text = str(report_obj.rules_passed)
+    row_cells[5].text = str(report_obj.rules_na)
+    row_cells[6].text = str(report_obj.implementation_score)
+    row_cells[7].text = get_implementation_status(report_obj.implementation_status)
+
+    document.add_paragraph('')
+
+    # Second Table
+    table = document.add_table(rows=1, cols=len(headers))
+    table.style = 'Medium List 2'
+    header_cells = table.rows[0].cells
+
+    for i in range(len(headers)):
+        header_cells[i].text = headers[i]
+
+    for g in groups:
+        row_cells = table.add_row().cells
+        row_cells[0].text = g.get_title()
+        row_cells[1].text = str(g.rules_violation)
+        row_cells[2].text = str(g.rules_warning)
+        row_cells[3].text = str(g.rules_manual_check)
+        row_cells[4].text = str(g.rules_passed)
+        row_cells[5].text = str(g.rules_na)
+        row_cells[6].text = str(g.implementation_score)
+        row_cells[7].text = get_implementation_status(g.implementation_status)
+
+    row_cells = table.add_row().cells
+    row_cells[0].text = 'All Report Groups'
+    row_cells[1].text = str(report_obj.rules_violation)
+    row_cells[2].text = str(report_obj.rules_violation)
+    row_cells[3].text = str(report_obj.rules_manual_check)
+    row_cells[4].text = str(report_obj.rules_passed)
+    row_cells[5].text = str(report_obj.rules_na)
+    row_cells[6].text = str(report_obj.implementation_score)
+    row_cells[7].text = get_implementation_status(report_obj.implementation_status)
+
+    document.add_paragraph('')
+
+    # Second Table
+    table = document.add_table(rows=1, cols=len(headers))
+    table.style = 'Medium Shading 1'
+    header_cells = table.rows[0].cells
+
+    for i in range(len(headers)):
+        header_cells[i].text = headers[i]
+
+    for g in groups:
+        row_cells = table.add_row().cells
+        row_cells[0].text = g.get_title()
+        row_cells[1].text = str(g.rules_violation)
+        row_cells[2].text = str(g.rules_warning)
+        row_cells[3].text = str(g.rules_manual_check)
+        row_cells[4].text = str(g.rules_passed)
+        row_cells[5].text = str(g.rules_na)
+        row_cells[6].text = str(g.implementation_score)
+        row_cells[7].text = get_implementation_status(g.implementation_status)
+
+    row_cells = table.add_row().cells
+    row_cells[0].text = 'All Report Groups'
+    row_cells[1].text = str(report_obj.rules_violation)
+    row_cells[2].text = str(report_obj.rules_violation)
+    row_cells[3].text = str(report_obj.rules_manual_check)
+    row_cells[4].text = str(report_obj.rules_passed)
+    row_cells[5].text = str(report_obj.rules_na)
+    row_cells[6].text = str(report_obj.implementation_score)
+    row_cells[7].text = get_implementation_status(report_obj.implementation_status)
+
+    document.add_paragraph('')
+
+    # Second Table
+    table = document.add_table(rows=1, cols=len(headers))
+    table.style = 'Medium Shading 2'
+    header_cells = table.rows[0].cells
+
+    for i in range(len(headers)):
+        header_cells[i].text = headers[i]
+
+    for g in groups:
+        row_cells = table.add_row().cells
+        row_cells[0].text = g.get_title()
+        row_cells[1].text = str(g.rules_violation)
+        row_cells[2].text = str(g.rules_warning)
+        row_cells[3].text = str(g.rules_manual_check)
+        row_cells[4].text = str(g.rules_passed)
+        row_cells[5].text = str(g.rules_na)
+        row_cells[6].text = str(g.implementation_score)
+        row_cells[7].text = get_implementation_status(g.implementation_status)
+
+    row_cells = table.add_row().cells
+    row_cells[0].text = 'All Report Groups'
+    row_cells[1].text = str(report_obj.rules_violation)
+    row_cells[2].text = str(report_obj.rules_violation)
+    row_cells[3].text = str(report_obj.rules_manual_check)
+    row_cells[4].text = str(report_obj.rules_passed)
+    row_cells[5].text = str(report_obj.rules_na)
+    row_cells[6].text = str(report_obj.implementation_score)
+    row_cells[7].text = get_implementation_status(report_obj.implementation_status)
+
+    document.add_paragraph('')
+
+    # Second Table
+    table = document.add_table(rows=1, cols=len(headers))
+    table.style = 'Table Grid'
+    header_cells = table.rows[0].cells
+
+    for i in range(len(headers)):
+        header_cells[i].text = headers[i]
+
+    for g in groups:
+        row_cells = table.add_row().cells
+        row_cells[0].text = g.get_title()
+        row_cells[1].text = str(g.rules_violation)
+        row_cells[2].text = str(g.rules_warning)
         row_cells[3].text = str(g.rules_manual_check)
         row_cells[4].text = str(g.rules_passed)
         row_cells[5].text = str(g.rules_na)
