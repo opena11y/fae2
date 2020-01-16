@@ -221,26 +221,26 @@
                     const doc = new Document();
 
                     const p1 = new Paragraph();
-                    const titletext1 = new TextRun('Report Title: ').font('Arial');
-                    const titletext2 = new TextRun(reportMetaData[0]['fields']['title']).font('Arial').bold();
+                    const titletext1 = new TextRun('Report Title: ').font('Arial').size(24);
+                    const titletext2 = new TextRun(reportMetaData[0]['fields']['title']).font('Arial').bold().size(24);
 
                     p1.addRun(titletext1);
                     p1.addRun(titletext2);
 
                     const p2 = new Paragraph();
-                    const urltext = new TextRun('URL: ' + reportMetaData[0]['fields']['url']).font('Arial');
-                    const depthtext = new TextRun('    Depth: ' + reportMetaData[0]['fields']['depth']).font('Arial');
-                    const ruleset = new TextRun('    Ruleset: ' + otherReportData['ruleset_title']).font('Arial');
+                    const urltext = new TextRun('URL: ' + reportMetaData[0]['fields']['url']).font('Arial').size(24);
+                    const depthtext = new TextRun('    Depth: ' + reportMetaData[0]['fields']['depth']).font('Arial').size(24);
+                    const ruleset = new TextRun('    Ruleset: ' + otherReportData['ruleset_title']).font('Arial').size(24);
 
                     p2.addRun(urltext);
                     p2.addRun(depthtext);
                     p2.addRun(ruleset);
 
                     const p3 = new Paragraph();
-                    const pagestext = new TextRun('Pages: ' + reportMetaData[0]['fields']['page_count']).font('Arial');
-                    const pagelimittext = new TextRun('    Page Limit: ' + reportMetaData[0]['fields']['max_pages']).font('Arial');
-                    const nonhtmltext = new TextRun('    Non-HTML Files: ' + otherReportData['excluded_urls_count']).font('Arial');
-                    const urlevalinfotext = new TextRun('    URL Evaluation Information').font('Arial');
+                    const pagestext = new TextRun('Pages: ' + reportMetaData[0]['fields']['page_count']).font('Arial').size(24);
+                    const pagelimittext = new TextRun('    Page Limit: ' + reportMetaData[0]['fields']['max_pages']).font('Arial').size(24);
+                    const nonhtmltext = new TextRun('    Non-HTML Files: ' + otherReportData['excluded_urls_count']).font('Arial').size(24);
+                    const urlevalinfotext = new TextRun('    URL Evaluation Information').font('Arial').size(24);
 
                     p3.addRun(pagestext);
                     p3.addRun(pagelimittext);
@@ -250,13 +250,23 @@
                     doc.addParagraph(p1);
                     doc.addParagraph(p2);
                     doc.addParagraph(p3);
+                    doc.addParagraph(new Paragraph('\n'));
+                    
+                    const table = doc.createTable(2, 5);
+                    table.getCell(0, 1).addContent(new Paragraph('Violations'));
+                    table.getCell(0, 2).addContent(new Paragraph('Warnings'));
+                    table.getCell(0, 3).addContent(new Paragraph('Manual Checks'));
+                    table.getCell(0, 4).addContent(new Paragraph('Passed'));
+                    table.getCell(1, 0).addContent(new Paragraph('Number of Rules'));
+                    table.getCell(1, 1).addContent(new Paragraph(reportMetaData[0]['fields']['rules_violation'].toString()));
+                    table.getCell(1, 2).addContent(new Paragraph(reportMetaData[0]['fields']['rules_warning'].toString()));
+                    table.getCell(1, 3).addContent(new Paragraph(reportMetaData[0]['fields']['rules_manual_check'].toString()));
+                    table.getCell(1, 4).addContent(new Paragraph(reportMetaData[0]['fields']['rules_passed'].toString()));
 
                     const packer = new Packer();
 
                     packer.toBlob(doc).then(blob => {
-                        console.log(blob);
                         saveAs(blob, "example.docx");
-                        console.log("Document created successfully");
                     });
                 }
             </script>
