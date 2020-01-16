@@ -210,21 +210,46 @@
         <section aria-labelledby="id_download_report">
             <h2 id="download_report"> Download Report</h2>
 
-            <a onclick="generate()" class="btn btn-default">DOCX</a>
+            <a onclick="generate({{ groupsData }}, {{ reportMetaData }}, {{ otherReportData }})"
+               class="btn btn-default">DOCX</a>
 
             <script>
 
 
-                function generate() {
+                function generate(groupsData, reportMetaData, otherReportData) {
+
                     const doc = new Document();
 
-                    const paragraph = new Paragraph("Hello World");
-                    const institutionText = new TextRun("Foo Bar").bold();
-                    const dateText = new TextRun("Github is the best").tab().bold();
-                    paragraph.addRun(institutionText);
-                    paragraph.addRun(dateText);
+                    const p1 = new Paragraph();
+                    const titletext1 = new TextRun('Report Title: ').font('Arial');
+                    const titletext2 = new TextRun(reportMetaData[0]['fields']['title']).font('Arial').bold();
 
-                    doc.addParagraph(paragraph);
+                    p1.addRun(titletext1);
+                    p1.addRun(titletext2);
+
+                    const p2 = new Paragraph();
+                    const urltext = new TextRun('URL: ' + reportMetaData[0]['fields']['url']).font('Arial');
+                    const depthtext = new TextRun('    Depth: ' + reportMetaData[0]['fields']['depth']).font('Arial');
+                    const ruleset = new TextRun('    Ruleset: ' + otherReportData['ruleset_title']).font('Arial');
+
+                    p2.addRun(urltext);
+                    p2.addRun(depthtext);
+                    p2.addRun(ruleset);
+
+                    const p3 = new Paragraph();
+                    const pagestext = new TextRun('Pages: ' + reportMetaData[0]['fields']['page_count']).font('Arial');
+                    const pagelimittext = new TextRun('    Page Limit: ' + reportMetaData[0]['fields']['max_pages']).font('Arial');
+                    const nonhtmltext = new TextRun('    Non-HTML Files: ' + otherReportData['excluded_urls_count']).font('Arial');
+                    const urlevalinfotext = new TextRun('    URL Evaluation Information').font('Arial');
+
+                    p3.addRun(pagestext);
+                    p3.addRun(pagelimittext);
+                    p3.addRun(nonhtmltext);
+                    p3.addRun(urlevalinfotext);
+
+                    doc.addParagraph(p1);
+                    doc.addParagraph(p2);
+                    doc.addParagraph(p3);
 
                     const packer = new Packer();
 

@@ -60,6 +60,9 @@ from contact.models import Announcement
 
 from userProfiles.models import get_profile
 
+from django.core.serializers import serialize
+import json
+
 
 # ==============================================================
 #
@@ -751,6 +754,13 @@ class ReportRulesView(FAENavigationMixin, TemplateView):
         context['view'] = view
         context['summary'] = report
         context['groups'] = groups
+        context['groupsData'] = serialize('json', groups)
+        context['otherReportData'] = str({
+            'ruleset_title': report.ruleset.title_text,
+            'ruleset_url': report.ruleset.slug,
+            'excluded_urls_count': report.excluded_urls.count()
+        })
+        context['reportMetaData'] = serialize('json', [report])
 
         return context
 
