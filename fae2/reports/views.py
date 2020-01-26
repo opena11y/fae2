@@ -765,6 +765,51 @@ class ReportRulesView(FAENavigationMixin, TemplateView):
         return context
 
 
+class ReportRulesViewDocx(FAENavigationMixin, TemplateView):
+    template_name = 'reports/report_rules_docx.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(ReportRulesViewDocx, self).get_context_data(**kwargs)
+
+        view = kwargs['view']
+
+        report = WebsiteReport.objects.get(slug=kwargs['report'])
+        page = False
+
+        if report.page_count == 1:
+            page = report.get_first_page()
+            if view == 'gl':
+                groups = page.page_gl_results.all()
+            elif view == 'rs':
+                groups = page.page_rs_results.all()
+            else:
+                groups = page.page_rc_results.all()
+                view = 'rc'
+        else:
+            if view == 'gl':
+                groups = report.ws_gl_results.all()
+            elif view == 'rs':
+                groups = report.ws_rs_results.all()
+            else:
+                groups = report.ws_rc_results.all()
+                view = 'rc'
+
+        context['page'] = page
+        context['report'] = report
+        context['view'] = view
+        context['summary'] = report
+        context['groups'] = groups
+        context['groupsData'] = serialize('json', groups)
+        context['otherReportData'] = str({
+            'ruleset_title': report.ruleset.title_text,
+            'ruleset_url': report.ruleset.slug,
+            'excluded_urls_count': report.excluded_urls.count()
+        })
+        context['reportMetaData'] = serialize('json', [report])
+
+        return context
+
+
 class ReportRulesGroupView(FAENavigationMixin, TemplateView):
     template_name = 'reports/report_rules_group.html'
 
