@@ -1,21 +1,23 @@
 {% load staticfiles i18n %}
 <!DOCTYPE html>
 <html lang="en" ng-app>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>{{site.name}}</title>
+    <title>{{ site.name }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="The Functional Accessibility Evaluator (FAE) evaluates a website or a single web page based on the W3C Web Content Accessibility Guidelines (WCAG) 2.0 Level A and AA requirements.">
+    <meta name="description"
+          content="The Functional Accessibility Evaluator (FAE) evaluates a website or a single web page based on the W3C Web Content Accessibility Guidelines (WCAG) 2.0 Level A and AA requirements.">
 
-    <meta name="keywords" content="wcag web content accessibility guidelines section 508 disability evaluation evalutor disability ada report">
+    <meta name="keywords"
+          content="wcag web content accessibility guidelines section 508 disability evaluation evalutor disability ada report">
 
     <meta name="author" content="Jon Gunderson and Nicholas Hoyt University of Illinois">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <!-- Latest compiled and minified CSS -->
@@ -31,331 +33,400 @@
     {% block css %}
     {% endblock %}
 
-  </head>
+</head>
 
-  <body>
-    <nav id="top-navbar-container" class="navbar navbar-inverse" aria-labelledby="top-navbar-label">
-      <h2 id="top-navbar-label" class="sr-only">Main Navigation</h2>
-      <div class="container">
+<body>
+<nav id="top-navbar-container" class="navbar navbar-inverse" aria-labelledby="top-navbar-label">
+    <h2 id="top-navbar-label" class="sr-only">Main Navigation</h2>
+    <div class="container">
 
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar">
-            <span class="sr-only">Toggle Navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="{{site.domain}}" aria-label="Run Report">{{site.name}}</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navbar"
+                    aria-controls="top-navbar">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ site.domain }}" aria-label="Run Report">{{ site.name }}</a>
         </div>
 
         <div id="top-navbar" class="navbar-collapse collapse">
 
-          <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right">
 
-            <li class="dropdown">
-              <a  href="#"
-                  class="dropdown-toggle"
-                  data-toggle="dropdown"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false">
-                About
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" role="menu" aria-label="About FAE and other resources">
-                    <li><a href="{% url 'overview'        %}">Getting Started</a></li>
-                    <li><a href="{% url 'faqs'            %}">FAQs</a></li>
-                    <li><a href="{% url 'sharing'         %}">Sharing Reports</a></li>
-                    <li><a href="{% url 'concepts_terms'  %}">Concepts and Terms</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="{% url 'announcements'%}">Announcements</a></li>
-                    <li><a href="{% url 'usage_statistics'%}">Usage Statistics</a></li>
-                    <li><a href="{% url 'report_issues'   %}">Create Issue</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-wcag/">AInspector WCAG</a></li>
-                    <li><a href="https://accessibility-bookmarklets.org/">Accessibility Bookmarklets</a></li>
-                    <li role="separator" class="divider"></li>
-                    {% if payment_enabled or shibboleth.enabled %}
-                    <li><a href="{% url 'subscription'   %}">Subscription Options</a></li>
+                <li class="dropdown">
+                    <a href="#"
+                       class="dropdown-toggle"
+                       data-toggle="dropdown"
+                       role="button"
+                       aria-haspopup="true"
+                       aria-expanded="false">
+                        About
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-label="About FAE and other resources">
+                        <li><a href="{% url 'overview' %}">Getting Started</a></li>
+                        <li><a href="{% url 'faqs' %}">FAQs</a></li>
+                        <li><a href="{% url 'sharing' %}">Sharing Reports</a></li>
+                        <li><a href="{% url 'concepts_terms' %}">Concepts and Terms</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="{% url 'announcements' %}">Announcements</a></li>
+                        <li><a href="{% url 'usage_statistics' %}">Usage Statistics</a></li>
+                        <li><a href="{% url 'report_issues' %}">Create Issue</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-wcag/">AInspector
+                            WCAG</a></li>
+                        <li><a href="https://accessibility-bookmarklets.org/">Accessibility Bookmarklets</a></li>
+                        <li role="separator" class="divider"></li>
+                        {% if payment_enabled or shibboleth.enabled %}
+                            <li><a href="{% url 'subscription' %}">Subscription Options</a></li>
+                        {% endif %}
+                        <li><a href="{% url 'donate' %}">Donate</a></li>
+                    </ul>
+                </li>
+                {% if user.is_superuser %}
+                    <li class="dropdown">
+                        <a href="#"
+                           class="dropdown-toggle"
+                           data-toggle="dropdown"
+                           role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">
+                            Admin
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-label="Administration Options">
+                            <li><a href="{% url 'fae_status' %}">Processing Status</a></li>
+                            <li><a href="{% url 'responses' %}">Respond to Contacts</a></li>
+                            <li><a href="{% url 'all_user_information' %}">User Information</a></li>
+                            {% if shibboleth.enabled %}
+                                <li><a href="{% url 'institutional_information' %}">Institutional Information</a></li>
+                            {% endif %}
+                            <li><a href="{% url 'payment_information' %}">Payment Information</a></li>
+                            <li><a href="{% url 'create_announcement' %}">Create Announcement</a></li>
+                        </ul>
+                    </li>
+                {% endif %}
+                <li><a href="{% url 'rulesets' %}">Rulesets</a></li>
+                {% if user.is_authenticated %}
+                    <li><a href="{% url 'contact_form' %}">Contact</a></li>
+                    <li><a href="{% url 'my_account' %}">My Account</a></li>
+                    <li><a href="{% url 'logout' %}">Logout: {{ user.username }}</a></li>
+                {% else %}
+                    {% if self_registration_enabled %}
+                        <li><a href="{% url 'django_registration_register' %}">Register</a></li>
                     {% endif %}
-                    <li><a href="{% url 'donate'   %}">Donate</a></li>
-              </ul>
-            </li>
-            {% if user.is_superuser %}
-            <li class="dropdown">
-              <a  href="#"
-                  class="dropdown-toggle"
-                  data-toggle="dropdown"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false">
-                Admin
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" role="menu" aria-label="Administration Options">
-                    <li><a href="{% url 'fae_status'       %}">Processing Status</a></li>
-                    <li><a href="{% url 'responses'        %}">Respond to Contacts</a></li>
-                    <li><a href="{% url 'all_user_information' %}">User Information</a></li>
-                    {% if shibboleth.enabled %}
-                    <li><a href="{% url 'institutional_information' %}">Institutional Information</a></li>
-                    {% endif %}
-                    <li><a href="{% url 'payment_information' %}">Payment Information</a></li>
-                    <li><a href="{% url 'create_announcement' %}">Create Announcement</a></li>
-              </ul>
-            </li>
-            {% endif %}
-            <li><a href="{% url 'rulesets'    %}">Rulesets</a></li>
-            {% if user.is_authenticated %}
-              <li><a href="{% url 'contact_form'  %}">Contact</a></li>
-              <li><a href="{% url 'my_account' %}" >My Account</a></li>
-              <li><a href="{% url 'logout' %}" >Logout: {{user.username}}</a></li>
-            {% else %}
-              {% if self_registration_enabled %}
-                <li><a href="{% url 'django_registration_register' %}" >Register</a></li>
-              {% endif %}
-              <li><a href="{% url 'login' %}" >Login</a></li>
-            {% endif %}
-          </ul>
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                {% endif %}
+            </ul>
         </div>
-      </div>
-    </nav>
+    </div>
+</nav>
 
 
-    <nav id="id_breadcrumbs" aria-labelledby="breadcrumb-nav-label"  class="hidden-xs">
-      <h2 id="breadcrumb-nav-label" class="sr-only">Breadcrumb Navigation</h2>
-      <div class="container">
-        <ul class="breadcrumb">
-          <li><a href="{% url 'run_report' %}">Home</a></li>
-          {% block breadcrumb %}
-          {% endblock %}
-        </ul>
-      </div>
-    </nav>  <!-- /container -->
-
+<nav id="id_breadcrumbs" aria-labelledby="breadcrumb-nav-label" class="hidden-xs">
+    <h2 id="breadcrumb-nav-label" class="sr-only">Breadcrumb Navigation</h2>
     <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="{% url 'run_report' %}">Home</a></li>
+            {% block breadcrumb %}
+            {% endblock %}
+        </ul>
+    </div>
+</nav>  <!-- /container -->
 
-      <div class="row">
+<div class="container">
+
+    <div class="row">
 
         <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-        {% if user.is_authenticated %}
-          <nav id="id_report_manage" aria-labelledby="id_report_manage_label">
+            {% if user.is_authenticated %}
+                <nav id="id_report_manage" aria-labelledby="id_report_manage_label">
 
-            <h2 id="id_report_manage_label" class="sr-only">Report Management</h2>
+                    <h2 id="id_report_manage_label" class="sr-only">Report Management</h2>
 
-             <ul class="nav nav-pills nav-stacked">
-                <li><a href="{% url 'run_report'          %}">Run FAE</a></li>
-                <li><a href="{% url 'processing_reports'  %}">Report Processing</a></li>
-                <li><a href="{% url 'archived_reports'    %}">Archived Reports</a></li>
-                <li><a href="{% url 'manage_reports'      %}">Manage Reports</a></li>
-             </ul>
-          </nav>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="{% url 'run_report' %}">Run FAE</a></li>
+                        <li><a href="{% url 'processing_reports' %}">Report Processing</a></li>
+                        <li><a href="{% url 'archived_reports' %}">Archived Reports</a></li>
+                        <li><a href="{% url 'manage_reports' %}">Manage Reports</a></li>
+                    </ul>
+                </nav>
 
-        {% else %}
-          <nav id="id_report_manage" aria-labelledby="id_report_manage_label">
-
-            <h2 id="id_report_manage_label" class="sr-only">Run Page Report or Login</h2>
-
-             <ul class="nav nav-pills nav-stacked">
-                {% if anonymous_enabled %}
-                  <li><a href="{% url 'run_anonymous_report'  %}">Run FAE</a></li>
-                {% else %}
-                <li><a href="{% url 'login'   %}">Login</a></li>
-                {% endif %}
-            </ul>
-          </nav>
-        {% endif %}
-
-
-          {% if report_nav.page_count > 1 %}
-
-          <nav id="id_nav_reports" aria-labelledby="id_nav_reports_label">
-
-            <h2 id="id_nav_reports_label">Reports</h2>
-
-            <ul class="nav nav-pills nav-stacked">
-                <li><a href="{% url 'report_rules' report_nav.slug  report_nav.view %}">Summary</a></li>
-                <li><a href="{% url 'report_pages' report_nav.slug  report_nav.view %}">All Pages</a></li>
-                <li><a href="{% url 'report_page'  report_nav.slug  report_nav.view report_nav.page %}">Page {{report_nav.page}}</a></li>
-            </ul>
-          </nav>
-
-          <nav id="id_view_nav" aria-labelledby="id_view_nav_label">
-
-            <h2 id="id_view_nav_label">Current View</h2>
-
-            <ul class="nav nav-pills nav-stacked">
-            {% if report_nav.current_url %}
-                <li id="id_view_current"><a href="{{report_nav.current_url}}">{{report_nav.current_label}}</a></li>
             {% else %}
-                <li id="id_view_current"><a class="disabled">None</a></li>
+                <nav id="id_report_manage" aria-labelledby="id_report_manage_label">
+
+                    <h2 id="id_report_manage_label" class="sr-only">Run Page Report or Login</h2>
+
+                    <ul class="nav nav-pills nav-stacked">
+                        {% if anonymous_enabled %}
+                            <li><a href="{% url 'run_anonymous_report' %}">Run FAE</a></li>
+                        {% else %}
+                            <li><a href="{% url 'login' %}">Login</a></li>
+                        {% endif %}
+                    </ul>
+                </nav>
             {% endif %}
 
-                <li class="side_by_side">
-                {% if report_nav.previous_url %}
-                    <a href="{{report_nav.previous_url}}" class="left"  title="{{report_nav.previous_label}}">
-                {% else %}
-                    <a class="disabled left">
+
+            {% if report_nav.page_count > 1 %}
+
+                <nav id="id_nav_reports" aria-labelledby="id_nav_reports_label">
+
+                    <h2 id="id_nav_reports_label">Reports</h2>
+
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="{% url 'report_rules' report_nav.slug  report_nav.view %}">Summary</a></li>
+                        <li><a href="{% url 'report_pages' report_nav.slug  report_nav.view %}">All Pages</a></li>
+                        <li>
+                            <a href="{% url 'report_page'  report_nav.slug  report_nav.view report_nav.page %}">Page {{ report_nav.page }}</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav id="id_view_nav" aria-labelledby="id_view_nav_label">
+
+                    <h2 id="id_view_nav_label">Current View</h2>
+
+                    <ul class="nav nav-pills nav-stacked">
+                        {% if report_nav.current_url %}
+                            <li id="id_view_current"><a
+                                    href="{{ report_nav.current_url }}">{{ report_nav.current_label }}</a></li>
+                        {% else %}
+                            <li id="id_view_current"><a class="disabled">None</a></li>
+                        {% endif %}
+
+                        <li class="side_by_side">
+                            {% if report_nav.previous_url %}
+                                <a href="{{ report_nav.previous_url }}" class="left"
+                                   title="{{ report_nav.previous_label }}">
+                            {% else %}
+                                <a class="disabled left">
+                            {% endif %}
+                            <span class="glyphicon glyphicon-step-backward"></span>
+                            Prev
+                            </a>
+
+                            {% if report_nav.next_url %}
+                                <a href="{{ report_nav.next_url }}" class="right" title="{{ report_nav.next_label }}">
+                            {% else %}
+                                <a class="disabled right">
+                            {% endif %}
+                            Next
+                            <span class="glyphicon glyphicon-step-forward"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav id="id_view_filters" aria-labelledby="id_view_filters_label" class="hidden-xs">
+
+                    <h2 id="id_view_filters_label">View Filters</h2>
+
+                    <ul class="nav nav-pills nav-stacked">
+                        {% for fi in report_nav.filters %}
+                            <li><a href="{{ fi.url }}">{{ fi.label }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            {% else %}
+
+                {% if report_nav.slug %}
+                    <nav id="id_nav_reports" aria-labelledby="id_nav_reports_label">
+
+                        <h2 id="id_nav_reports_label">Reports</h2>
+
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="{% url 'report_page' report_nav.slug  report_nav.view  1 %}">Page Summary</a>
+                            </li>
+                        </ul>
+                    </nav>
                 {% endif %}
-                        <span class="glyphicon glyphicon-step-backward"></span>
-                        Prev
-                    </a>
 
-                {% if report_nav.next_url %}
-                    <a href="{{report_nav.next_url}}" class="right" title="{{report_nav.next_label}}">
-                {% else %}
-                    <a class="disabled right">
-                {% endif %}
-                        Next
-                        <span class="glyphicon glyphicon-step-forward"></span>
-                    </a>
-                </li>
-            </ul>
-          </nav>
-
-          <nav id="id_view_filters" aria-labelledby="id_view_filters_label" class="hidden-xs">
-
-            <h2 id="id_view_filters_label">View Filters</h2>
-
-            <ul class="nav nav-pills nav-stacked">
-            {% for fi in report_nav.filters %}
-                <li><a href="{{fi.url}}">{{fi.label}}</a></li>
-            {% endfor %}
-            </ul>
-          </nav>
-          {% else %}
-
-            {% if report_nav.slug %}
-            <nav id="id_nav_reports" aria-labelledby="id_nav_reports_label">
-
-              <h2 id="id_nav_reports_label">Reports</h2>
-
-              <ul class="nav nav-pills nav-stacked">
-                  <li><a href="{% url 'report_page' report_nav.slug  report_nav.view  1 %}">Page Summary</a></li>
-              </ul>
-            </nav>
             {% endif %}
-
-          {% endif %}
 
         </div>
 
         <main class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
 
-        {% if messages %}
-          <section aria-labelledby="messages-label">
-              <h2 id="messages-label" class="sr-only">Important Messages</h2>
-              {% for message in messages %}
-                <div class="alert {% if message.tags %}alert-{{ message.tags }}"{% endif %}>{{ message|safe }}</div>
-              {% endfor %}
-          </section>
-        {% endif %}
+            {% if messages %}
+                <section aria-labelledby="messages-label">
+                    <h2 id="messages-label" class="sr-only">Important Messages</h2>
+                    {% for message in messages %}
+                        <div class="alert {% if message.tags %}alert-{{ message.tags }}"{% endif %}>{{ message|safe }}</div>
+                    {% endfor %}
+                </section>
+            {% endif %}
 
-        <section id="content">
+            <section id="content">
 
-          {% block content_before_title %}
+                {% block content_before_title %}
 
-          {% endblock content_before_title %}
+                {% endblock content_before_title %}
 
-          <h1 id="id_page_title">{% block title %}{% endblock title %}</h1>
+                <h1 id="id_page_title">{% block title %}{% endblock title %}</h1>
 
 
-          {% if report %}
-          <div id="sendto" >
-            <a href="mailto:?cc={{report.user.email}}&amp;subject=FAE report for {{report.title}}&amp;body=FAE Report%0D%0DTitle:%20{{report.title}}%0DURL:%20{{report.url}}%0DRuleset:%20{{report.ruleset}}%0DDepth:%20{{report.depth}}%0DCreated: {{report.created}}%0DFrom:%20{{report.user.first_name}}%20{{report.user.last_name}}%0D%0DFAE Report:%20{{site.domain}}/{{report_nav.current_url}}" title="Share report URL using e-mail">
-            <span class="glyphicon glyphicon-envelope" style="width: 1.2em;"></span>E-mail Report
-            </a>
-          </div>
+                {% if report %}
+                    <div id="sendto">
+                        <a href="mailto:?cc={{ report.user.email }}&amp;subject=FAE report for {{ report.title }}&amp;body=FAE Report%0D%0DTitle:%20{{ report.title }}%0DURL:%20{{ report.url }}%0DRuleset:%20{{ report.ruleset }}%0DDepth:%20{{ report.depth }}%0DCreated: {{ report.created }}%0DFrom:%20{{ report.user.first_name }}%20{{ report.user.last_name }}%0D%0DFAE Report:%20{{ site.domain }}/{{ report_nav.current_url }}"
+                           title="Share report URL using e-mail">
+                            <span class="glyphicon glyphicon-envelope" style="width: 1.2em;"></span>E-mail Report
+                        </a>
 
-          {% endif %}
+                        <button onclick="copyToClipboard(document.getElementsByClassName('content')[0].innerHTML)">Copy
+                            to Clipboard
+                        </button>
+                        <script>
+                            // This is the actual copy function.
+                            // It expects an HTML string to copy as rich text.
 
-          {% block content %}
 
-          {% endblock content %}
-          </section>
+                            function copyFormatted(html) {
+                                // Create an iframe (isolated container) for the HTML
+                                var container = document.createElement('div');
+                                container.innerHTML = html;
+
+                                // Hide element
+                                container.style.position = 'fixed';
+                                container.style.pointerEvents = 'none';
+                                container.style.opacity = 0;
+
+                                // Detect all style sheets of the page
+                                var activeSheets = Array.prototype.slice.call(document.styleSheets)
+                                    .filter(function (sheet) {
+                                        return !sheet.disabled
+                                    });
+
+                                // Mount the iframe to the DOM to make `contentWindow` available
+                                document.body.appendChild(container);
+
+                                // Copy to clipboard
+                                window.getSelection().removeAllRanges();
+
+                                var range = document.createRange();
+                                range.selectNode(container);
+                                window.getSelection().addRange(range);
+
+                                document.execCommand('copy');
+                                for (var i = 0; i < activeSheets.length; i++) activeSheets[i].disabled = true;
+                                document.execCommand('copy');
+                                for (var i = 0; i < activeSheets.length; i++) activeSheets[i].disabled = false;
+
+                                // Remove the iframe
+                                document.body.removeChild(container);
+                            }
+
+                            // Create nice animation on copy button click
+                            function copyToClipboard(html) {
+                                console.log(html);
+                                copyFormatted(html);
+                            }
+                        </script>
+
+                    </div>
+
+                {% endif %}
+
+                <div class="content">
+                    {% block content %}
+
+                    {% endblock content %}
+                </div>
+
+            </section>
 
         </main>
 
-      </div>
+    </div>
 
-    </div>  <!-- /container -->
+</div>  <!-- /container -->
 
 
-    <footer>
-      <div class="container">
+<footer>
+    <div class="container">
         <div class="well well-sm">
-          <div>
-            <div style="float: left">
-              Copyright &copy; 2014&#8211;{% now "Y" %} <a href="http://illinois.edu">University of Illinois</a>
-              | <a href="{% url 'disclaimer' %}">Disclaimer</a>
-              | <a href="{% url 'privacy'    %}">Privacy</a>
-              | <a href="{% url 'vpat'       %}">Section 508 VPAT</a>
-              | <a href="{% url 'versions'   %}">Version History</a>
+            <div>
+                <div style="float: left">
+                    Copyright &copy; 2014&#8211;{% now "Y" %} <a href="http://illinois.edu">University of Illinois</a>
+                    | <a href="{% url 'disclaimer' %}">Disclaimer</a>
+                    | <a href="{% url 'privacy' %}">Privacy</a>
+                    | <a href="{% url 'vpat' %}">Section 508 VPAT</a>
+                    | <a href="{% url 'versions' %}">Version History</a>
 
+                </div>
+                <div class="text-right">Version {% include 'version.txt' %}</div>
             </div>
-            <div class="text-right">Version {% include 'version.txt' %}</div>
-          </div>
         </div>
-      </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-      <!-- Latest JQuery -->
-      <script src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- Latest JQuery -->
+<script src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
 
-      <!-- Latest compiled and minified JavaScript -->
-      <script src="{% static 'js/bootstrap.js' %}"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="{% static 'js/bootstrap.js' %}"></script>
 
-      <script src="{% static 'js/bootstrap-accessibility.min.js' %}"></script>
+<script src="{% static 'js/bootstrap-accessibility.min.js' %}"></script>
 
-      <!-- Latest compiled and minified bootstrap sortable JavaScript -->
-      <script src="{% static 'js/moment.min.js' %}"></script>
+<!-- Latest compiled and minified bootstrap sortable JavaScript -->
+<script src="{% static 'js/moment.min.js' %}"></script>
 
-      <script src="{% static 'js/bootstrap-sortable.js' %}"></script>
+<script src="{% static 'js/bootstrap-sortable.js' %}"></script>
 
-      <!-- place project specific Javascript in this file -->
-      <script src="{% static 'js/fae2.js' %}"></script>
+<!-- place project specific Javascript in this file -->
+<script src="{% static 'js/fae2.js' %}"></script>
 
-      <script>
-          $(document).ready(function() {
-              $('[data-toggle=offcanvas]').click(function() {
-                  $('.row-offcanvas').toggleClass('active');
-              });
-          });
+<script>
+    $(document).ready(function () {
+        $('[data-toggle=offcanvas]').click(function () {
+            $('.row-offcanvas').toggleClass('active');
+        });
+    });
 
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-53851729-1', 'auto');
-        ga('send', 'pageview');
+    ga('create', 'UA-53851729-1', 'auto');
+    ga('send', 'pageview');
 
-      </script>
+</script>
 
 
-      <script>
-      // Use the SkipTo defaults, but just showing custom configuration
-      var SkipToConfig =
-      {
-        "settings": {
-          "skipTo": {
-            "headings": "h1, h2"
-          }
-        }
-      };
-      </script>
+<script>
+    // Use the SkipTo defaults, but just showing custom configuration
+    var SkipToConfig =
+        {
+            "settings": {
+                "skipTo": {
+                    "headings": "h1, h2"
+                }
+            }
+        };
+</script>
 
-      <script type="text/javascript" src="{% static 'js/SkipTo.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/SkipTo.min.js' %}"></script>
 
-      <script type="text/javascript" src="{% static 'js/fae-info-button.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/fae-info-button.js' %}"></script>
 
-      <script type="text/javascript">
+<script type="text/javascript">
 
-        window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
 
-          function cleanURL(u) {
+        function cleanURL(u) {
 
             index1 = u.indexOf('?');
             index2 = u.indexOf('#');
@@ -365,27 +436,27 @@
             if (index1 > 0) url = u.substring(0, index1) + target;
 
             return u;
-          }
+        }
 
-          function checkLinks(url, links, style) {
+        function checkLinks(url, links, style) {
 
             if (typeof links !== 'object') return false;
 
             for (var i = 0; i < links.length; i++) {
-              var link = links[i];
-              var href = cleanURL(link.href);
+                var link = links[i];
+                var href = cleanURL(link.href);
 
-              if (href == url) {
-                if (link.parentNode.className.indexOf('active') < 0) {
-                  link.parentNode.className = style;
+                if (href == url) {
+                    if (link.parentNode.className.indexOf('active') < 0) {
+                        link.parentNode.className = style;
+                    }
+                    return true;
                 }
-                return true;
-              }
             }
             return false;
-          }
+        }
 
-          function setActiveLink(url) {
+        function setActiveLink(url) {
 
 
             checkLinks(url, document.querySelectorAll('#top-navbar       a[href]'), 'active');
@@ -393,57 +464,60 @@
             flag_reports = checkLinks(url, document.querySelectorAll('#id_nav_reports   a[href]'), 'active');
             flag_filters = checkLinks(url, document.querySelectorAll('#id_view_filters  a[href]'), 'active');
 
-          }
+        }
 
-          function setHighlightLink(url) {
+        function setHighlightLink(url) {
 
-          }
+        }
 
-          var flag_report  = false;
-          var flag_filters = false;
-          var flag_nav     = false;
+        var flag_report = false;
+        var flag_filters = false;
+        var flag_nav = false;
 
-          var url = cleanURL(window.location.href);
+        var url = cleanURL(window.location.href);
 
-          setActiveLink(url)
+        setActiveLink(url)
 
-          if (!flag_reports && !flag_filters) {
+        if (!flag_reports && !flag_filters) {
             flag_nav = checkLinks(url, document.querySelectorAll('#id_view_nav a[href]'), 'active');
-          }
+        }
 
-          var breadcrumbs = document.querySelectorAll('#id_breadcrumbs a[href]')
+        var breadcrumbs = document.querySelectorAll('#id_breadcrumbs a[href]')
 
-          for (var i =(breadcrumbs.length-1); 0 < i; i--) {
+        for (var i = (breadcrumbs.length - 1); 0 < i; i--) {
             url = cleanURL(breadcrumbs[i].href);
 
-            if (!flag_report)  flag_report  = checkLinks(url, document.querySelectorAll('#id_nav_reports   a[href]'), 'highlight');
+            if (!flag_report) flag_report = checkLinks(url, document.querySelectorAll('#id_nav_reports   a[href]'), 'highlight');
             if (!flag_filters) flag_filters = checkLinks(url, document.querySelectorAll('#id_view_filters  a[href]'), 'highlight');
-          }
+        }
 
-          if (!flag_reports && !flag_filters && !flag_nav && {% if report_nav.page_count %}({{report_nav.page_count}} > 1){% else %}false{% endif %}) {
+        if (!flag_reports && !flag_filters && !flag_nav &&
+            {% if report_nav.page_count %}({{report_nav.page_count}} > 1){% else %}false{% endif %}
+    )
+        {
             document.getElementById('id_view_current').className = 'highlight';
-          }
+        }
 
 
-        });
+    });
 
-        window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
 
-          var tablist = document.querySelectorAll('[role=tablist]');
+        var tablist = document.querySelectorAll('[role=tablist]');
 
-          for (var i = 0; i < tablist.length; i++) {
+        for (var i = 0; i < tablist.length; i++) {
             tablist[i].removeAttribute('role');
 
-          }
+        }
 
-        });
+    });
 
 
 </script>
 
-   {% block javascript %}
+{% block javascript %}
 
-   {% endblock javascript %}
-  </body>
+{% endblock javascript %}
+</body>
 </html>
 
