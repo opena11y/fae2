@@ -275,53 +275,27 @@
                             <span class="glyphicon glyphicon-envelope" style="width: 1.2em;"></span>E-mail Report
                         </a>
 
-                        <button onclick="copyToClipboard(document.getElementsByClassName('content')[0].innerHTML)">Copy
-                            to Clipboard
+                        <button class="btn btn-primary"
+                                style="margin-left: 10px"
+                                onclick="copyToClipboard(document.getElementsByClassName('content')[0].innerHTML)">
+                            <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                            </svg>
                         </button>
                         <script>
-                            // This is the actual copy function.
-                            // It expects an HTML string to copy as rich text.
 
-
-                            function copyFormatted(html) {
-                                // Create an iframe (isolated container) for the HTML
-                                var container = document.createElement('div');
-                                container.innerHTML = html;
-
-                                // Hide element
-                                container.style.position = 'fixed';
-                                container.style.pointerEvents = 'none';
-                                container.style.opacity = 0;
-
-                                // Detect all style sheets of the page
-                                var activeSheets = Array.prototype.slice.call(document.styleSheets)
-                                    .filter(function (sheet) {
-                                        return !sheet.disabled
-                                    });
-
-                                // Mount the iframe to the DOM to make `contentWindow` available
-                                document.body.appendChild(container);
-
-                                // Copy to clipboard
-                                window.getSelection().removeAllRanges();
-
-                                var range = document.createRange();
-                                range.selectNode(container);
-                                window.getSelection().addRange(range);
-
-                                document.execCommand('copy');
-                                for (var i = 0; i < activeSheets.length; i++) activeSheets[i].disabled = true;
-                                document.execCommand('copy');
-                                for (var i = 0; i < activeSheets.length; i++) activeSheets[i].disabled = false;
-
-                                // Remove the iframe
-                                document.body.removeChild(container);
-                            }
-
-                            // Create nice animation on copy button click
                             function copyToClipboard(html) {
-                                console.log(html);
-                                copyFormatted(html);
+                                function listener(e) {
+                                    e.clipboardData.setData("text/html", html);
+                                    e.clipboardData.setData("text/plain", html);
+                                    e.preventDefault();
+                                }
+
+                                document.addEventListener("copy", listener);
+                                document.execCommand("copy");
+                                document.removeEventListener("copy", listener);
                             }
                         </script>
 
