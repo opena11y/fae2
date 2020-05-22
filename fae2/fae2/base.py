@@ -177,6 +177,7 @@ INSTALLED_APPS = (
     'websiteResults.apps.WebsiteResultsConfig',
     'websiteResultGroups.apps.WebsiteresultgroupsConfig',
     'stats.apps.StatsConfig',
+    'timezone_field',
 )
 
 if SHIBBOLETH_ENABLED:
