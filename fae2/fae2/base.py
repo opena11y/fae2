@@ -151,7 +151,12 @@ BOOTSTRAP3 = {
     'include_jquery': True,
 }
 
-INSTALLED_APPS = (
+DEBUG_APPS = [
+    'django_extensions',
+    'debug_toolbar',
+]
+
+INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -177,7 +182,8 @@ INSTALLED_APPS = (
     'websiteResults.apps.WebsiteResultsConfig',
     'websiteResultGroups.apps.WebsiteresultgroupsConfig',
     'stats.apps.StatsConfig',
-)
+    'gtm',
+] + DEBUG_APPS
 
 if SHIBBOLETH_ENABLED:
     MIDDLEWARE = [
@@ -200,6 +206,7 @@ if SHIBBOLETH_ENABLED:
 
 else:
     MIDDLEWARE = [
+        'debug_toolbar.middleware.DebugToolbarMiddleware',
         'django.contrib.sessions.middleware.SessionMiddleware',
         'django.middleware.common.CommonMiddleware',
         'django.middleware.csrf.CsrfViewMiddleware',
@@ -269,6 +276,16 @@ LOGGING = {
         },
     },
 }
+
+# Tells the debug_toolbar when to display
+INTERNAL_IPS = [
+    '127.0.0.1',
+]
+
+# Analytics implemented via GTM
+# https://pypi.org/project/django-google-tag-manager/
+
+GOOGLE_TAG_ID = get_secret('GOOGLE_TAG_ID')
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
