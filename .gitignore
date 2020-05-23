@@ -1,6 +1,8 @@
 data/
 logs/
+secrets.json
 fae2/fae2/secrets.json
+fae2/fae2/fae2/secrets.json
 fae2/venv/
 fae2/fae2/static/
 fae2/fae-util/test/
@@ -14,3 +16,25 @@ fae2/fae-util/openajax_a11y/scripts.txt
 **/migrations/
 venv/
 *.bak
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# Mac OS stuff #
+################
+
+*.DS_Store
+*.DS_Store?
+.AppleDouble
+.LSOverride
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Scratch folder for notes and snippets while working
+scratch/

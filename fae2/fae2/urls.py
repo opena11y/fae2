@@ -38,6 +38,7 @@ Including another URLconf
 
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.urls import include, path
 
 from fae2.settings import SHIBBOLETH_ENABLED
 from fae2.settings import FAE_DISABLED
@@ -52,6 +53,13 @@ from accounts.views import ShibbolethDiscovery
 from accounts.views import ShibbolethInstitution
 from accounts.views import HeaderInfo
 from accounts.views import DisabledView
+
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns = [
+        path('__debug__/', include(debug_toolbar.urls)),
+    ] + urlpatterns
 
 if FAE_DISABLED:
     urlpatterns = [
