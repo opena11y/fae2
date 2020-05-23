@@ -1,41 +1,30 @@
-{% load staticfiles i18n %}
+{% load staticfiles i18n gtm_tags %}
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" dir="ltr" ng-app>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>{{site.name}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block page_title %}{{site.name}}{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}The Web Accessibility Compliance Checker by ADA First uses the most thorough and reliable automated testing software available, the Functional Accessibility Evaluator (FAE) to check websites and web pages for compliance with Web Content Accessibility Guidlelines (WCAG) 2.0{% endblock %}">
+    <meta name="keywords" content="{% block meta_keywords %}website checker, accessibile, WCAG, web content accessibility guidelines, section 508, website audit, compliance tools, ADA, americans with disabilities act{% endblock %}">
+    <meta name="robots" content="{% block meta_robots %}index,follow{% endblock %}">
 
-    <meta name="description" content="The Functional Accessibility Evalutor (FAE) evaluates a website or a single web page based on the W3C Web Content Accessibility Guidelines (WCAG) 2.0 Level A and AA requirements.">
+    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script> <![endif]-->
 
-    <meta name="keywords" content="wcag web content accessibility guidelines section 508 disability evaluation evalutor disability ada report">
-
-    <meta name="author" content="Jon Gunderson, Nicholas Hoyt, University of Illinois">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.css' %}">
-
-    <!-- Your stuff: Third-party css libraries go here -->
-    <link rel="stylesheet" href="{% static 'css/bootstrap-accessibility.css' %}">
-    <link rel="stylesheet" href="{% static 'css/bootstrap-sortable.css' %}">
-
-    <!-- This file store project specific CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="{% static 'css/bootstrap-plugins.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/fae2.css' %}" rel="stylesheet">
     {% block css %}
     {% endblock %}
 
-
+    {% gtm_head %} <!-- Google Tag Manager -->
   </head>
-
   <body>
     <nav id="top-navbar-container" class="navbar navbar-inverse" aria-labelledby="top-navbar-label">
+
+      {% gtm_body %} <!-- Google Tag Manager (noscript) -->
+
       <h2 id="top-navbar-label" class="sr-only">Main Navigation</h2>
       <div class="container">
 
@@ -242,36 +231,36 @@
         </div>
 
         <main class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
-
-        {% if messages %}
-          <section aria-labelledby="messages-label">
-              <h2 id="messages-label" class="sr-only">Important Messages</h2>
-              {% for message in messages %}
-                <div class="alert {% if message.tags %}alert-{{ message.tags }}"{% endif %}>{{ message|safe }}</div>
-              {% endfor %}
-          </section>
-        {% endif %}
-
-        <section id="content">
-
-          {% block content_before_title %}
-
-          {% endblock content_before_title %}
-
-          <h1 id="id_page_title">{% block title %}{% endblock title %}</h1>
-
-
-          {% if report %}
-          <div id="sendto" >
-            <a href="mailto:?cc={{report.user.email}}&amp;subject=FAE report for {{report.title}}&amp;body=FAE Report%0D%0DTitle:%20{{report.title}}%0DURL:%20{{report.url}}%0DRuleset:%20{{report.ruleset}}%0DDepth:%20{{report.depth}}%0DCreated: {{report.created}}%0DFrom:%20{{report.user.first_name}}%20{{report.user.last_name}}%0D%0DFAE Report:%20{{site.domain}}/{{report_nav.current_url}}" title="Share report URL using e-mail">
-            <span class="glyphicon glyphicon-envelope" style="width: 1.2em;"></span>E-mail Report
-            </a>
-          </div>
+          {% if messages %}
+            <section aria-labelledby="messages-label">
+                <h2 id="messages-label" class="sr-only">Important Messages</h2>
+                {% for message in messages %}
+                  <div class="alert {% if message.tags %}alert-{{ message.tags }}"{% endif %}>{{ message|safe }}</div>
+                {% endfor %}
+            </section>
           {% endif %}
-
-          {% block content %}
-
-          {% endblock content %}
+          <section id="content">
+            <div class="row">
+              {% block content_before_title %}
+              {% endblock content_before_title %}
+            </div>
+            <div class="row row-no-gutters page-header">
+              <div class="col-xs-12 col-md-9">
+                <h1 id="id_page_title">{% block title %}{% endblock title %}</h1>
+              </div>
+              <div class="col-xs-12 col-md-3">
+                {% if report %}
+                  <div id="sendto" class="center-block btn-group btn-group-lg" role="group">
+                    <a href="mailto:?cc={{report.user.email}}&amp;subject=FAE report for {{report.title}}&amp;body=FAE Report%0D%0DTitle:%20{{report.title}}%0DURL:%20{{report.url}}%0DRuleset:%20{{report.ruleset}}%0DDepth:%20{{report.depth}}%0DCreated: {{report.created}}%0DFrom:%20{{report.user.first_name}}%20{{report.user.last_name}}%0D%0DFAE Report:%20{{site.domain}}/{{report_nav.current_url}}" title="Share report URL using e-mail" class="btn btn-success"><span class="glyphicon glyphicon-envelope"></span>E-mail Report
+                    </a>
+                    <a href="{{report_nav.current_url}}csv/" title="Download CSV version of report data" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-save"></span>Save CSV
+                    </a>
+                  </div>
+                {% endif %}
+              </div> <!-- /col-md-3 -->
+            </div> <!-- /row -->
+            {% block content %}
+            {% endblock content %}
           </section>
         </main>
 
@@ -279,53 +268,35 @@
 
     </div>  <!-- /container -->
 
-
-    <footer>
-      <div class="container">
-        <div class="well well-sm">
-          <div style="float: left">Copyright University of Illinois 2014-2016  </div>
-          <div class="text-right">Version {% include 'version.txt' %}</div>
+    <footer role="contentinfo" class="container">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <ul class="nav navbar-nav">
+            <li><a href="{% url 'disclaimer' %}" title="Terms of Service">Terms</a></li>
+            <li><a href="{% url 'privacy'    %}" title="Privacy Policy">Privacy</a></li>
+            <li><a href="{% url 'vpat'       %}" title="Accessibilty Statement">Accessibility</a></li>
+            {% comment %}
+            <li><a href="{% url 'versions'   %}" title="Additional Navigation">Sitemap</a></li>
+            {% endcomment %}
+            <li><a href="https://www.adafirst.org/">ADA First</a></li>
+          </ul>
         </div>
-      </div>
+      </nav>
     </footer>
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-      <!-- Latest JQuery -->
       <script src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
-
-      <!-- Latest compiled and minified JavaScript -->
-      <script src="{% static 'js/bootstrap.js' %}"></script>
-
+      <script src="{% static 'js/bootstrap.min.js' %}"></script>
       <script src="{% static 'js/bootstrap-accessibility.min.js' %}"></script>
-
-      <!-- Latest compiled and minified bootstrap sortable JavaScript -->
       <script src="{% static 'js/moment.min.js' %}"></script>
-
       <script src="{% static 'js/bootstrap-sortable.js' %}"></script>
-
       <!-- place project specific Javascript in this file -->
       <script src="{% static 'js/fae2.js' %}"></script>
-
       <script>
           $(document).ready(function() {
               $('[data-toggle=offcanvas]').click(function() {
                   $('.row-offcanvas').toggleClass('active');
               });
           });
-
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-53851729-1', 'auto');
-        ga('send', 'pageview');
-
       </script>
-
-
       <script>
       // Use the SkipTo defaults, but just showing custom configuration
       var SkipToConfig =
@@ -337,9 +308,7 @@
         }
       };
       </script>
-
       <script type="text/javascript" src="{% static 'js/SkipTo.min.js' %}"></script>
-
       <script type="text/javascript">
 
         window.addEventListener('load', function() {

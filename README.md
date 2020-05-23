@@ -50,7 +50,7 @@ The "secrets.json" file must be created and provides:
 * Security information for Django
 * Information for Django to access and manage the database
 * Information on on e-mail commmunications for registration and announcements.
-* Place this file in the <code><em>[absolute path]</em>/fae2/fae2</code> directory
+* Copy the text in `secrets_template.json` (or the file itself is you'd rather replace it) and paste it into `./fae2/fae2/secrets_placeholder.json` then rename that file **secrets.json**
 
 ```
 {
@@ -58,13 +58,13 @@ The "secrets.json" file must be created and provides:
   "PROCESSING_THREADS": 4,
   "SITE_URL": "[your site URL]",
   "SITE_NAME": "FAE 2.0 for [your organization]",
-  "SECRET_KEY": "[random string of 40-50 characters used by django]",
+  "SECRET_KEY": "[random string of 50 characters used by django]",
   "SELF_REGISTRATION_ENABLED": true,
   "ANONYMOUS_ENABLED": true,
   "DEBUG": false,
   "LOGGER_LEVEL": "INFO",
   "DATABASE_HOST": "[ip address or localhost if database on same server]",
-  "DATABASE_PORT": "[port, typicall 5432]",
+  "DATABASE_PORT": "[port, typically 5432]",
   "DATABASE_NAME": "[DB name]",
   "DATABASE_USER": "[DB username]",
   "DATABASE_PASSWORD": "[DB password]",
@@ -82,9 +82,13 @@ The "secrets.json" file must be created and provides:
   "ADMIN_PASSWORD": "[password for admin]",
   "ADMIN_EMAIL": "[email for admin]",
   "ANONYMOUS_PASSWORD" : "[anonymous password, use random characters]",
-  "DEFAULT_ACCOUNT_TYPE" : 2
+  "DEFAULT_ACCOUNT_TYPE" : 2,
+  "GOOGLE_TAG_ID" : "[GTM-_______]"
 }
 ```
+
+*Make sure the last 'key : value' pair doesn't have a trailing comma.*
+
 
 ### Apache 2.0 configuration notes
 
