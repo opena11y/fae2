@@ -11,47 +11,45 @@
 
 {% block content %}
 
-<form id="id_send_report_form" 
-      action="{% url 'send_report_form' report_type report view group page rule %}" 
+<form id="id_send_report_form"
+      action="{% url 'send_report_form' report_type report view group page rule %}"
       method="post" >
     {% csrf_token %}
 
    <div class="input" >
         <label for="topic">{{form.sendto.label}}</label>
         <div {% if form.sendto.errors|length %}class="error"{% endif %}>
-        <input 
+        <input
             id="sendto"
             name="sendto"
             required
             {% if form.sendto.errors|length %}aria-invalid="true"{% endif %}
-            size="100"> 
+            size="100">
         {% if form.sendto.errors|length %}
         <label class="error" for="sendto">{% for error in form.sendto.errors %}{{error}}{% endfor %}</label>
         {% endif %}
         </div>
     </div>
 
-
    <div class="input" >
         <label for="topic">{{form.subject.label}}</label>
         <div {% if form.subject.errors|length %}class="error"{% endif %}>
-        <input 
+        <input
             id="subject"
             name="subject"
             required
             {% if form.subject.errors|length %}aria-invalid="true"{% endif %}
-            size="100"> 
+            size="100">
         {% if form.subject.errors|length %}
         <label class="error" for="subject">{% for error in form.subject.errors %}{{error}}{% endfor %}</label>
         {% endif %}
         </div>
     </div>
 
-
    <div class="input" >
         <label for="message">{{form.message.label}}</label>
         <div {% if form.tmessage.errors|length %}class="error"{% endif %}>
-        <textarea 
+        <textarea
             id="message"
             name="message"
             required
@@ -59,15 +57,13 @@
             {% if form.message.errors|length %}aria-invalid="true"{% endif %}
             rows="10"
             cols=80
-            title="Details of the comment or feedback"></textarea>     
+            title="Details of the comment or feedback"></textarea>
         {% if form.message.errors|length %}
         <label class="error" for="message">{% for error in form.message.errors %}{{error}}{% endfor %}</label>
         {% endif %}
         </div>
     </div>
-
     <input type="submit" value="Send Report"/>
-
 </form>
 
 <section aria-labelledby="id_sent_reports_label">
@@ -95,6 +91,4 @@
         </table>
     {% endif %}
 </section>
-
 {% endblock %}
-

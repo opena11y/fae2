@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block title %}
-  {{ruleset.title}}    
+  {{ruleset.title}}
 {% endblock %}
 
 {% block content %}
@@ -25,7 +25,7 @@
 
  {% for sc_item in g_item.sc_mappings.all %}
  <h3 id="sc{{sc_item.success_criterion.id}}">Success Criterion {{ sc_item.success_criterion}} ({{ sc_item.success_criterion.show_level }})</h3>
- <table class="table table-striped sortable" 
+ <table class="table table-striped sortable"
         aria-labelledby="#sc{{sc_item.success_criterion.id}}">
    <thead>
     <tr>
@@ -44,7 +44,7 @@
         {% else %}
         <td>no</td>
         {% endif %}
-    </tr>    
+    </tr>
  {% endfor %}
    </tbody>
 
@@ -53,5 +53,3 @@
  {% endfor %}
 
 {% endblock %}
-
-

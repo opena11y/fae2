@@ -1,6 +1,8 @@
 data/
 logs/
+secrets.json
 fae2/fae2/secrets.json
+fae2/fae2/fae2/secrets.json
 fae2/venv/
 fae2/fae2/static/
 fae2/fae-util/test/
@@ -9,8 +11,76 @@ fae2/fae-util/*.properties
 fae2/fae-util/openajax_a11y/scripts.txt
 *.class
 *.pyc
+*.pyo
 *~
 .idea/
 **/migrations/
 venv/
 *.bak
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+
+# Mac OS stuff #
+################
+
+*.DS_Store
+*.DS_Store?
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Scratch folder for notes and snippets while working
+scratch/
+documentation/scratch/
+
+# Favicons
+android-chrome-192x192.png
+android-chrome-512x512.png
+apple-touch-icon-120x120.png
+apple-touch-icon-152x152.png
+apple-touch-icon-180x180.png
+apple-touch-icon-60x60.png
+apple-touch-icon-76x76.png
+apple-touch-icon.png
+browserconfig.xml
+favicon-16x16.png
+favicon-32x32.png
+favicon.ico
+mstile-150x150.png
+mstile-310x310.png
+safari-pinned-tab.svg
+site.webmanifest
+
+# Search Engine related files
+# Not sure what the django.contrib setting would yield
+# so I created this one manually using Screaming Frog SEO Spider
+# Yours will be different from mine so this one is excluded
+sitemap.xml
+
+# Files related to vagrant
+/bootstrap.sh
+/Vagrantfile
+
+# Byte-compiled
+__pycache__/
+
+# Publicly available files that have been copied in /static
+# via 'collectstatic' (that directory needs to be empty when command is run)
+public_html/static/admin/
+public_html/static/css/
+public_html/static/debug_toolbar/
+public_html/static/django_extensions/
+public_html/static/favicons/
+public_html/static/js/
+public_html/static/robots.txt
+

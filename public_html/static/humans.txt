@@ -1,0 +1,3 @@
+Please see: http://humanstxt.org/Standard.html
+
+Additionally, this file is here because git doesn't all empty directories to be checked into version control.

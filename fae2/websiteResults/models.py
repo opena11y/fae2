@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -32,7 +32,6 @@ from ruleCategories.models import RuleCategory
 from wcag20.models import Guideline
 from rules.models import RuleScope
 from rules.models import Rule
-
 
 # ---------------------------------------------------------------
 #
@@ -63,13 +62,11 @@ class WebsiteRuleCategoryResult(RuleGroupResult):
     def get_id(self):
         return 'wsrcr_' + self.rule_category.id
 
-    # ---------------------------------------------------------------
-
-
+# ---------------------------------------------------------------
 #
 # WebsiteGuidelineResult
 #
-# ---------------------------------------------------------------    
+# ---------------------------------------------------------------
 
 class WebsiteGuidelineResult(RuleGroupResult):
     id = models.AutoField(primary_key=True)
@@ -94,9 +91,7 @@ class WebsiteGuidelineResult(RuleGroupResult):
     def get_id(self):
         return 'wsglr_' + self.guideline.id
 
-    # ---------------------------------------------------------------
-
-
+# ---------------------------------------------------------------
 #
 # WebsiteRuleScopeResult
 #
@@ -125,9 +120,7 @@ class WebsiteRuleScopeResult(RuleGroupResult):
     def get_title(self):
         return self.rule_scope.title
 
-    # ---------------------------------------------------------------
-
-
+# ---------------------------------------------------------------
 #
 # WebsiteRuleResult
 #

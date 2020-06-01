@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -24,7 +24,6 @@ from django.contrib.sites.models import Site
 from userProfiles.models import UserProfile
 from django.contrib.auth.models import AnonymousUser
 
-
 from fae2.settings import ANONYMOUS_ENABLED
 from fae2.settings import SELF_REGISTRATION_ENABLED
 
@@ -33,7 +32,6 @@ from fae2.settings import SHIBBOLETH_URL
 from fae2.settings import SHIBBOLETH_NAME
 
 from fae2.settings import PAYMENT_ENABLED
-
 
 def site(request):
     return {

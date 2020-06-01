@@ -10,8 +10,8 @@
             <tr>
                 <th style="min-width: 6.5em">Rule ID</th>
                 <th>Summary</th>
-                <th title"WCAG 2.0 Level">Level</th>
-                <th title"WCAG 2.0 Success Criteria">SC</th>
+                <th title="WCAG 2.0 Level">Level</th>
+                <th title="WCAG 2.0 Success Criteria">SC</th>
                 {% for rs in rulesets %}
                 <th>{{ rs.title }}</th>
                 {% endfor %}
@@ -38,9 +38,7 @@
             </tr>
             {% endfor %}
         </tbody>
-    </table>    
+    </table>
 {% endfor %}
 
 {% endblock %}
-
-

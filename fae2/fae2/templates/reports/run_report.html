@@ -17,29 +17,24 @@
     {% include "forms/input_report_title.html" %}
 
     {% include "forms/input_report_depth.html" %}
-    
+
     {% include "forms/input_report_domains.html" %}
-    
+
     {% include "forms/input_report_ruleset.html" %}
-    
+
     {% include "forms/input_report_max_pages.html" %}
-    
+
     <div class="fae_button">
         <input id="id_submit" name="submit" type="submit" value="Evaluate"  title="You must enter a valid URL and a title before you can request a report"/>
     </div>
-
 </form>
-
 {% endblock %}
 
 {% block javascript %}
 
 <script src="{% static 'js/url-validation.js' %}" type="text/javascript"></script>
-
 <script src="{% static 'js/form-control-focus.js' %}" type="text/javascript"></script>
-
 <script type="text/javascript">
-
   var last_report = {};
 
   {% if last_report %}
@@ -71,7 +66,7 @@
   last_report.depth      = 0;
   last_report.max_pages  = 0;
   last_report.depth_id   = "id_depth_2";
-  
+
   last_report.follow              = 1;
   last_report.require_path        = false;
 
@@ -111,7 +106,7 @@
       }
 
     }
-  
+
     function updateText(id, value) {
 
       var node = document.getElementById(id);
@@ -129,7 +124,6 @@
       updateChecked("id_input_require_path", last_report.require_path);
       updateChecked("id_input_require_path", last_report.require_path);
 
-
       updateChecked("id_enable_next_level_sub_domains", last_report.enable_next_level_sub_domains);
 
       updateChecked("id_enable_span_sub_domains", last_report.enable_span_sub_domains);
@@ -137,11 +131,11 @@
 
       updateChecked("id_enable_exclude_domains", last_report.enable_exclude_domains);
       updateValue("id_input_exclude_domains", last_report.exclude_domains);
-      
+
       updateChecked("id_enable_include_domains", last_report.enable_include_domains);
       updateValue("id_input_include_domains", last_report.include_domains);
-      
-      
+
+
       if (last_report.path && last_report.path.length) {
         updateText("id_path_value", last_report.path);
       }
@@ -173,8 +167,5 @@
 
     }
   }
-
-
 </script>
-
 {% endblock %}

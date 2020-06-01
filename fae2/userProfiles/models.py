@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -78,7 +78,6 @@ def get_profile(user):
 
     return profile
 
-
 SUBSCRIPTION_STATUS_CHOICES = (
     ('FREE', 'Free'),
     ('CURRENT', 'Current'),
@@ -90,7 +89,6 @@ USER_ROLES = (
     ('STANDARD', 'Standard User'),
     ('ADMIN', 'Institutional Administrator')
 )
-
 
 class InstitutionalProfile(models.Model):
     id = models.AutoField(primary_key=True)
@@ -176,7 +174,6 @@ class InstitutionalProfile(models.Model):
                                                                                         site) + reverse(
                                                                                         'contact_form')})
             send_mail(topic, message, EMAIL_HOST_USER, emails, fail_silently=False)
-
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User, related_name="profile", on_delete=models.CASCADE)
@@ -385,9 +382,7 @@ class UserProfile(models.Model):
     def is_inst_admin(self):
         return self.role == 'ADMIN'
 
-
     # creates new UserProfile when new user registers
-
 
 def user_registered_callback(sender, user, request, **kwargs):
     profile = UserProfile(user=user)
@@ -404,6 +399,5 @@ def user_registered_callback(sender, user, request, **kwargs):
     wsrg.save()
     user_stats = StatsUser(user=user, ws_report_group=wsrg)
     user_stats.save()
-
 
 user_registered.connect(user_registered_callback)

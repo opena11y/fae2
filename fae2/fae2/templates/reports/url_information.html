@@ -16,7 +16,6 @@
   URL Evaluation Information
 {% endblock %}
 
-
 {% block content %}
 
     <h2>Summary</h2>
@@ -62,11 +61,9 @@
          <h2 id="id_excluded_urls_label">{{ report.excluded_urls.all|length }} Non-HTML Files Found</h2>
         {% endif %}
 
-
     {% if report.excluded_urls.all|length %}
 
         <p>The following non-HTML files were found while spidering the links of the website.  FAE does not have the capabilities to evaluate non-HTML files for accessibility, but it is important to identify these files so they can be checked for accessibility using other tools or manual inspection techniques.</p>
-
 
         <table class="details table table-striped table-hover sortable" aria-labelledby="id_excluded_urls_label" aria-describedby="id_table_summ">
             <thead>
@@ -86,7 +83,6 @@
                     <td class="text"><a href="{{excluded_url.url}}" target="_referenced_website" title="{{excluded_url.url}}">{{excluded_url.filename}}</a></td>
 
                     <td class="text">{{excluded_url.file_type}}</td>
-
 
                     <td class="text">
                         <details>
@@ -114,8 +110,6 @@
 
     </section>
 
-
-
     <section class="region" aria-labelledby="id_processed_urls_label">
     {% if report.processed_urls.all|length == 1 %}
     <h2 id="id_processed_urls_label">1 URL Evaluated</h2>
@@ -123,13 +117,10 @@
     <h2 id="id_processed_urls_label">{{ report.processed_urls.all|length }} URLs Evaluated</h2>
     {% endif %}
 
-
     {% if report.processed_urls.all|length %}
-        <p> The number of urls evaluated will usually be larger than the number of pages identified in the Summary Report.
-            The difference is due to redirects causing the same page being evaluated more than once (e.g. http://www.somewhere.org and http://somewhere.org return
-            the same URL).  FAE 2.0 will only include the same returned URL once in the evaluation.
+        <p>
+            The number of urls evaluated will usually be larger than the number of pages identified in the Summary Report. The difference is due to redirects causing the same page being evaluated more than once (e.g. https://www.example.com and https://example.com return the same URL).  FAE 2.1 will only include the same returned URL once in the evaluation.
         </p>
-
 
         <table  id="id_table_show_summary_urls_1" class="details table table-striped table-hover sortable"  aria-labelledby="id_processed_urls_label" aria-describedby="id_table_summ">
             <thead>
@@ -167,10 +158,6 @@
 
     </section>
 
-
-
-
-
     <section class="region" aria-labelledby="id_not_included_urls_label">
         {% if report.filtered_urls.all|length == 1 %}
         <h2 id="id_not_included_urls_label">1 URL Not Included</h2>
@@ -181,7 +168,6 @@
     {% if report.filtered_urls.all|length %}
 
         <p>URLs that were found, but were not evaluated for accessibility due to user configuration</p>
-
 
         <table id="id_table_show_summary_urls_4" class="details table table-striped table-hover sortable" aria-labelledby="id_filtered_urls_label" aria-describedby="id_table_summ">
             <thead>
@@ -223,7 +209,6 @@
 
      {% if report.broken_urls|length %}
 
-
         <table id="id_table_show_summary_urls_2" class="details table table-striped table-hover sortable" aria-labelledby="id_unprocessed_urls_label" aria-describedby="id_table_summ">
             <thead>
                 <tr>
@@ -254,11 +239,10 @@
         </table>
 
     {% else %}
-    <p class="message">No problem URLs.</p>
+    <p class="message">No problem URLs</p>
     {% endif %}
 
     </section>
-
 
     <section class="region" aria-labelledby="id_failed_urls_label">
         {% if report.unprocessed_urls.all|length == 1 %}
@@ -267,8 +251,9 @@
         <h2 id="id_failed_urls_label">{{ report.unprocessed_urls.all|length }} Evaluation Failed URLs</h2>
         {% endif %}
 
-    <p>URLs that were found and should have been evaluated for accessibility, but for some reason could not be evaluated (e.g. extensive html coding errors, signifcant Javascript errors on page being loaded...).
-            The processing engine timed out its evaluation of the page or other javascript error from the page that stopped the evaluation.</p>
+        <p>
+          URLs that were found and should have been evaluated for accessibility, but for some reason could not be evaluated (e.g. extensive html coding errors, signifcant Javascript errors on page being loaded...). The processing engine timed out its evaluation of the page or other javascript error from the page that stopped the evaluation.
+        </p>
 
     {% if report.unprocessed_urls.all|length %}
 
@@ -298,13 +283,5 @@
     <p class="message">No pages failed while running the evaluation engine.</p>
     {% endif %}
     </section>
-
-
-
-
-
-
 </div>
 {% endblock %}
-
-

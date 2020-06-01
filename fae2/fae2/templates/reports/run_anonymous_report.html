@@ -5,10 +5,9 @@
   Run FAE
 {% endblock %}
 
-
 {% block content %}
 
-<p style="margin-top: 1em;">The Functional Accessibility Evaluator (FAE) evaluates a website or a single web page based on the W3C <a href="http://www.w3.org/tr/wcag/">Web Content Accessibility Guidelines</a> (WCAG) 2.0 Level A and AA requirements.</p>
+<p style="margin-top: 1em;">The Functional Accessibility Evaluator (FAE) evaluates a website or a single web page based on the W3C <a href="https://www.w3.org/tr/wcag/">Web Content Accessibility Guidelines</a> (WCAG) 2.0 Level A and AA requirements.</p>
 
 <h2>Website Report</h2>
 
@@ -30,8 +29,6 @@
 
 <p>Use the following form or <a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-wcag/">AInspector WCAG</a> to evaluate a single web page without creating an account:</p>
 
-
-
 <form id="id_run_report" action="{% url 'run_anonymous_report' %}" method="post">
     {% csrf_token %}
 
@@ -48,7 +45,6 @@
       <input id="id_submit" name="submit" type="submit" value="Evaluate"  title="You must enter a valid URL and a title before you can request a report"/>
     </div>
 
-
 </form>
 
 {% include "accounts/support_information.html" %}
@@ -56,16 +52,8 @@
 {% endblock %}
 
 {% block javascript %}
-
 <script src="{% static 'js/url-validation.js' %}" type="text/javascript"></script>
-
 <script src="{% static 'js/form-control-focus.js' %}" type="text/javascript"></script>
-
 <script type="text/javascript">
-
-
-
 </script>
-
-
 {% endblock %}

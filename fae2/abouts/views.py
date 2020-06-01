@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -18,7 +18,6 @@ File: abouts/views.py
 Author: Jon Gunderson
 
 """
-
 
 # abouts/views.py
 
@@ -43,9 +42,8 @@ class OverviewView(FAENavigationMixin, TemplateView):
         context = super(OverviewView, self).get_context_data(**kwargs)
 
         context['rule_categories'] = RuleCategory.objects.all()
-        
-        return context            
 
+        return context
 
 class PrivacyView(FAENavigationMixin, TemplateView):
     template_name = 'abouts/privacy.html'
@@ -69,5 +67,5 @@ class FAQView(FAENavigationMixin, TemplateView):
         context = super(FAQView, self).get_context_data(**kwargs)
 
         context['faqs'] = FAQ.objects.all()
-        
-        return context  
+
+        return context

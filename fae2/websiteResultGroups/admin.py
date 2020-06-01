@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -34,27 +34,26 @@ class WebsiteReportGroupAdmin(admin.ModelAdmin):
 
 admin.site.register(WebsiteReportGroup, WebsiteReportGroupAdmin)
 
-
 class WebsiteRuleCategoryResultGroupAdmin(admin.ModelAdmin):
     list_display = ('rule_category', 'wsr_group', 'implementation_pass_fail_score', 'implementation_score')
-    list_filter  = ('wsr_group', 'rule_category')    
+    list_filter  = ('wsr_group', 'rule_category')
 
 admin.site.register(WebsiteRuleCategoryResultGroup, WebsiteRuleCategoryResultGroupAdmin)
 
 class WebsiteGuidelineResultGroupAdmin(admin.ModelAdmin):
     list_display = ('guideline', 'wsr_group',  'implementation_pass_fail_score', 'implementation_score')
-    list_filter  = ('wsr_group', 'guideline')    
+    list_filter  = ('wsr_group', 'guideline')
 
 admin.site.register(WebsiteGuidelineResultGroup, WebsiteGuidelineResultGroupAdmin)
 
 class WebsiteRuleScopeResultGroupAdmin(admin.ModelAdmin):
     list_display = ('rule_scope', 'wsr_group', 'implementation_pass_fail_score', 'implementation_score')
-    list_filter  = ('wsr_group', 'rule_scope')    
+    list_filter  = ('wsr_group', 'rule_scope')
 
 admin.site.register(WebsiteRuleScopeResultGroup, WebsiteRuleScopeResultGroupAdmin)
 
 class WebsiteRuleResultGroupAdmin(admin.ModelAdmin):
     list_display = ('rule', 'wsr_group', 'result_value',  'implementation_pass_fail_score', 'implementation_score')
-    list_filter  = ('wsr_group', 'rule')    
+    list_filter  = ('wsr_group', 'rule')
 
 admin.site.register(WebsiteRuleResultGroup, WebsiteRuleResultGroupAdmin)

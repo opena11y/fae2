@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -90,7 +90,6 @@ from stats.models  import StatsAll
 
 from websiteResultGroups.models  import WebsiteReportGroup
 
-
 from save_fae_util_information import excludedUrlsToDatabase
 from save_fae_util_information import processedUrlsToDatabase
 from save_fae_util_information import unprocessedUrlsToDatabase
@@ -120,7 +119,6 @@ def debug(s):
     log.write("[SAVE WEBSITE][debug  ]: " + str(s) + "\n")
     log.flush()
     print("[SAVE WEBSITE][debug  ]: " + str(s) + "\n")
-
 
 def info(s):
   if INFO and log:
@@ -272,7 +270,6 @@ class RuleScopeRefs:
 
     return False
 
-
 rule_scope_refs = RuleScopeRefs()
 
 # ---------------------------------------------------------------
@@ -342,7 +339,6 @@ class DataResult(object):
       error("[DataResult][saveToDjango] " + insert_str)
 
 
-
 # ---------------------------------------------------------------
 #
 # DataRuleResult (Abstract)
@@ -379,7 +375,6 @@ class DataRuleResult(DataResult):
     self.addColumnValue('rules_with_hidden_content', self.rules_with_hidden_content)
 
     super(DataRuleResult, self).saveToDjango(table)
-
 
   def __str__(self):
     return "ID: %6d V: %6d W: %6d MC: %6d P: %6d NA: %6d RV: %2d Score: %3d Status: %s " % (self.sql_id, self.rules_violation, self.rules_warning, self.rules_mc_indentified, self.rules_passed, self.rules_na, self.result_value, self.implementation_score, self.implementation_status)
@@ -497,9 +492,7 @@ class DataRuleResult(DataResult):
     elif self.implementation_score > 99:
       self.implementation_score = 99
 
-
 #    debug("[DataRuleResult][calculateImplementation] 4")
-
 
 # ---------------------------------------------------------------
 #
@@ -536,7 +529,6 @@ class DataPageRuleResult(DataResult):
     self.elements_mc_na          = 0
     self.elements_hidden         = rr["elements_hidden"]
     self.elements_passed         = rr["elements_passed"]
-
 
 #    debug("[DataPageRuleResult][__init__] B")
 
@@ -598,9 +590,7 @@ class DataPageRuleResult(DataResult):
     if (total == passed) and (total > 0):
       self.implementation_status = "C"
 
-
 #    debug("[DataPageRuleResult][calaculate_implementation]           score: " + str(self.implementation_score))
-
 
   def saveToDjango(self, data_page_result, page_result, website_rule_result):
 
@@ -667,7 +657,6 @@ class DataPageRuleCategoryResult(DataRuleResult):
 
     super(DataPageRuleCategoryResult, self).__init__()
 
-
   def __str__(self):
     s = "Page RC: "
     s += super(DataPageRuleCategoryResult, self).__str__()
@@ -694,7 +683,6 @@ class DataPageRuleCategoryResult(DataRuleResult):
       self.sql_id = str(page_rc_result.id)
     except:
       error("[DataPageRuleCategoryResult][saveToDjango] SQL select error " + str(rc))
-
 
 # ---------------------------------------------------------------
 #
@@ -875,7 +863,6 @@ class DataPageResult(DataRuleResult):
     self.page_rule_category_results.append(prcr)
     return prcr
 
-
   def getPageGuidelineResult(self, num):
 
     for pgr in self.page_guideline_results:
@@ -886,7 +873,6 @@ class DataPageResult(DataRuleResult):
     self.page_guideline_results.append(pgr)
     return pgr
 
-
   def getPageRuleScopeResult(self, code):
 
     for prsr in self.page_rule_scope_results:
@@ -896,7 +882,6 @@ class DataPageResult(DataRuleResult):
     prsr = DataPageRuleScopeResult(code)
     self.page_rule_scope_results.append(prsr)
     return prsr
-
 
   def saveToDjango(self, data_website_result, ws_report):
 
@@ -946,8 +931,6 @@ class DataPageResult(DataRuleResult):
 #    debug("[DataPageResult][saveToDango] Saving Page Markup Information...")
     if self.markup_info:
       self.markup_info.saveToDjango(page_result)
-
-
 
 # ---------------------------------------------------------------
 #
@@ -1018,7 +1001,6 @@ class DataWebsiteRuleResult(DataResult):
     if prr.elements_hidden > 0:
       self.pages_with_hidden_content += 1
 
-
     self.elements_violation      += prr.elements_violation
     self.elements_warning        += prr.elements_warning
     self.elements_mc_identified  += prr.elements_mc_identified
@@ -1027,7 +1009,6 @@ class DataWebsiteRuleResult(DataResult):
     self.elements_mc_na          += prr.elements_mc_na
     self.elements_passed         += prr.elements_passed
     self.elements_hidden         += prr.elements_hidden
-
 
 #    debug("[WebsiteRuleResult][addPageRuleResult]: 2 ")
 
@@ -1092,7 +1073,6 @@ class DataWebsiteRuleResult(DataResult):
     elif self.implementation_score > 99:
       self.implementation_score = 99
 
-
 #
 
   def saveToDjango(self, data_ws_result, ws_report):
@@ -1144,7 +1124,6 @@ class DataWebsiteRuleResult(DataResult):
     except:
       error("[DataWebsiteRuleResult][saveToDjango] SQL select error")
 
-
 # ------------------------------------------------------------------------------------------------------------------------
 #
 # WebsiteRuleCategoryResult
@@ -1173,7 +1152,6 @@ class DataWebsiteRuleCategoryResult(DataRuleResult):
 
     rc = rule_category_refs.getRuleCategory(self.rule_category_code)
 
-
     self.addColumnValue("ws_report_id", ws_report.id)
     self.addColumnValue("rule_category_id", rc.id)
     self.addColumnValue("slug", self.slug)
@@ -1191,7 +1169,6 @@ class DataWebsiteRuleCategoryResult(DataRuleResult):
     except:
       error("[DataWebsiteRuleCategoryResult][saveToDjango] SQL select error")
 
-
 # -----------------------------------------------------------------------------
 #
 # WebsiteGuidelineResult
@@ -1205,7 +1182,6 @@ class DataWebsiteGuidelineResult(DataRuleResult):
     self.slug = guideline_refs.getGuideline(num).slug
 
     self.page_gl_results = []
-
 
     super(DataWebsiteGuidelineResult, self).__init__()
 
@@ -1251,7 +1227,6 @@ class DataWebsiteRuleScopeResult(DataRuleResult):
     self.slug = rule_scope_refs.getRuleScope(code).slug
 
     self.page_rs_results = []
-
 
     super(DataWebsiteRuleScopeResult, self).__init__()
 
@@ -1448,7 +1423,6 @@ class DataWebsiteResult(DataRuleResult):
     self.website_rule_scope_results.append(wsrsr)
     return wsrsr
 
-
   def saveToDjango(self):
 
     if (self.ws_report):
@@ -1578,7 +1552,6 @@ def saveResultsToDjango(ws_report, l):
     return
 
 
-
   def process_file(dir_name, file_name):
     parts = file_name.split('.');
     info("Processing File: " + file_name)
@@ -1603,7 +1576,6 @@ def saveResultsToDjango(ws_report, l):
 
       file_json.close()
 
-
     if file_name == "processed_urls.csv":
       debug("[saveResultsToDjango][process_file] Retreiving processed urls information")
       processedUrlsToDatabase(ws_report, dir_name + "/" + file_name, 10)
@@ -1615,7 +1587,6 @@ def saveResultsToDjango(ws_report, l):
     if file_name == "filtered_urls.csv":
       debug("[saveResultsToDjango][process_file] Retreiving filtered urls")
       filteredUrlsToDatabase(ws_report, dir_name + "/" + file_name, 2)
-
 
     if file_name == "status.txt":
       debug("[saveResultsToDjango][process_file] Retreiving status information")
@@ -1734,7 +1705,6 @@ def saveResultsToDjango(ws_report, l):
     info("[SAVE_WEBSITE_RESULTS] Saving StatsRuleset: " + str(ruleset_stats))
     ruleset_stats.ws_report_group.add_website_report(ws_report)
 
-
     today = datetime.date.today()
     years = StatsYear.objects.filter(year=today.year)
 
@@ -1779,4 +1749,3 @@ def saveResultsToDjango(ws_report, l):
 
   except:
     error("Error: saving stats ")
-

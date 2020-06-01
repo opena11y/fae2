@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -23,7 +23,7 @@ from __future__ import absolute_import
 
 """
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/1.8/topics/http/urls/
+    https://docs.djangoproject.com/en/2.2/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -38,6 +38,8 @@ Including another URLconf
 
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.conf import settings
+from django.urls import include, path
 
 from fae2.settings import SHIBBOLETH_ENABLED
 from fae2.settings import FAE_DISABLED
@@ -52,6 +54,7 @@ from accounts.views import ShibbolethDiscovery
 from accounts.views import ShibbolethInstitution
 from accounts.views import HeaderInfo
 from accounts.views import DisabledView
+
 
 if FAE_DISABLED:
     urlpatterns = [
@@ -92,3 +95,9 @@ else:
             url(r'^logout/$', Logout.as_view(), name='logout'),
             url(r'^reset/', include('password_reset.urls')),
         ]
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns = [
+        path('__debug__/', include(debug_toolbar.urls)),
+    ] + urlpatterns

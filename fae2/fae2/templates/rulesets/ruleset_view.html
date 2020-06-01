@@ -6,11 +6,10 @@
 {% endblock %}
 
 {% block title %}
-  {{ruleset.title}}    
+  {{ruleset.title}}
 {% endblock %}
 
 {% block content %}
-
 
  {% include "rulesets/ruleset_detail.html" %}
 
@@ -23,7 +22,7 @@
 
  {% for rcm in ruleset.rc_mappings.all %}
  <h2 id="rc{{rcm.rule_category.id}}">{{ rcm.rule_category.title }}</h2>
- <table class="table table-striped sortable" 
+ <table class="table table-striped sortable"
         aria-labelledby="#rc{{rcm.rule_category.id}}">
    <thead>
     <tr>
@@ -46,7 +45,7 @@
         {% else %}
         <td>no</td>
         {% endif %}
-    </tr>    
+    </tr>
  {% endfor %}
    </tbody>
 
@@ -54,5 +53,3 @@
  {% endfor %}
 
 {% endblock %}
-
-

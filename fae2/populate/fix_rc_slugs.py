@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -38,7 +38,7 @@ from ruleCategories.models      import RuleCategory
 from websiteResultGroups.models import WebsiteRuleCategoryResultGroup
 from websiteResults.models      import WebsiteRuleCategoryResult
 from pageResults.models         import PageRuleCategoryResult
- 
+
 
 ws_rc_groups = WebsiteRuleCategoryResultGroup.objects.all()
 for ws_rc_g in ws_rc_groups:

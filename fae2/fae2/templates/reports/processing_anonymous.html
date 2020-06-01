@@ -11,38 +11,38 @@ Page Processing
 
 {% include "reports/page_information.html" %}
 
-<div role="status" style="margin-top: 2em; font-size: 150%; margin-bottom: 10em"><strong>Report Status:</strong> <span id="id_status"><span></div>   
+<div role="status" style="margin-top: 2em; font-size: 150%; margin-bottom: 10em"><strong>Report Status:</strong> <span id="id_status"><span></div>
 
 <script type="text/javascript">
 
 function updateReport(reportInfoObj) {
 
   function getStatusNLS(s) {
-  
+
      var s1 = "Undefined";
-  
+
     switch (s) {
 
     case '-':
       s1 = "Initializing...";
       break;
-    
+
     case 'I':
       s1 = "Initializing...";
       break;
-    
+
     case 'A':
       s1 = "Evaluating page";
       break;
-    
+
     case 'S':
       s1 = "Saving page results";
       break;
-    
+
     case 'C':
       s1 = "Page report ready";
       break;
-    
+
     case 'E':
       s1 = "Error in processing";
       break;
@@ -50,19 +50,17 @@ function updateReport(reportInfoObj) {
     case 'B':
       s1 = "Invalid URL";
       break;
-    
+
     case 'N':
       str = "Report cannot be found";
       break;
-  
-    
+
     default:
       break;
     }
-  
+
     return s1;
   }
-
 
   var node = document.getElementById("id_status");
 
@@ -77,25 +75,24 @@ function updateReport(reportInfoObj) {
       else {
         node.innerHTML = '<a href="' + reportInfoObj['report_page_url'] + '">' + getStatusNLS(reportInfoObj['status']) + '</a>';
         window.location.href = '{{site}}' + reportInfoObj['report_page_url'];
-      }  
+      }
     }
     else {
       node.innerHTML = getStatusNLS(status);
-    }  
+    }
   }
   else {
     node.innerHTML = getStatusNLS('N')
-  }  
-  
+  }
+
   setTimeout(loadJSON, 2000);
 }
-
 
 function loadJSON()
 {
    var data_file = "{{site.domain}}/processing/status/{{report.slug}}";
    var http_request = new XMLHttpRequest();
-   
+
    try{
       // Opera 8.0+, Firefox, Chrome, Safari
       http_request = new XMLHttpRequest();
@@ -113,22 +110,20 @@ function loadJSON()
          }
       }
    }
-   
+
    http_request.onreadystatechange  = function(){
       if (http_request.readyState == 4)
       {
         // Javascript function JSON.parse to parse JSON data
         var reportInfoObj = JSON.parse(http_request.responseText);
         updateReport(reportInfoObj);
-      }  
+      }
    }
-   
+
    http_request.open("GET", data_file, true);
    http_request.send();
 }
 
 loadJSON();
-
 </script>
-
 {% endblock %}

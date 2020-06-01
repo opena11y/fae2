@@ -30,35 +30,25 @@
     <link href="{% static 'css/fae2.css' %}" rel="stylesheet">
     {% block css %}
     {% endblock %}
-
-
   </head>
-
   <body>
     <header id="top-navbar-container" class="navbar navbar-inverse" >
-        <div style="margin-top:  0.25em; margin-left: 1em;color: white; font-size: 150%; ">{{site.name}} is Disabled</div>
+        <div style="margin-top:  0.25em; margin-left: 1em;color: white; font-size: 150%;">{{site.name}} is Disabled</div>
     </header>
-
     <div class="container">
-
       <div class="row">
-
         <main class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
         <h1>{{site.name}} is Disabled</h1>
 
-
         <p>This version of the Functional Accessibility Evaluator is not available or being updated.</p>
         {% if fae_disabled_url %}
-        <p>Please use the <a href="{{fae_disabled_url}}">production version of FAE 2.0</a>.</p>
+        <p>Please use the <a href="{{fae_disabled_url}}">production version of FAE 2.1</a>.</p>
         {% endif %}
 
         </main>
-
       </div>
-
     </div>  <!-- /container -->
-
 
     <footer>
       <div class="container">
@@ -77,12 +67,9 @@
 
       <!-- Latest compiled and minified JavaScript -->
       <script src="{% static 'js/bootstrap.js' %}"></script>
-
       <script src="{% static 'js/bootstrap-accessibility.min.js' %}"></script>
 
       <!-- place project specific Javascript in this file -->
       <script src="{% static 'js/fae2.js' %}"></script>
-
   </body>
 </html>
-

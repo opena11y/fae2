@@ -10,7 +10,6 @@ Institutional Accounts
 {% endblock %}
 
 {% block content %}
-
   <table class="details table table-striped table-hover sortable" aria-labelledby="id_title">
     <thead>
       <tr >
@@ -29,27 +28,27 @@ Institutional Accounts
             <details>
                 <summary>{{i.title}}</summary>
                 <dl class="contact" title="Contacts">
-                    <dt> 
+                    <dt>
                     {% if i.contact1_email %}
                         <a href="mailto:{{i.contact1_email}}">{{i.contact1_name}}</a>
                     {% else %}
                         {{i.contact1_name}}
-                    {% endif %}    
-                    </dt>    
+                    {% endif %}
+                    </dt>
                     {% if i.contact1_phone %}
                     <dd><a href="tel:{{i.contact1_phone}}">{{i.contact1_phone}}</a></dd>
-                    {% endif %}    
+                    {% endif %}
                     {% if i.contact2_name %}
                         <dt>
                         {% if i.contact2_email %}
                             <a href="mailto:{{i.contact2_email}}">{{i.contact2_name}}</a>
                         {% else %}
                             {{i.contact2_name}}
-                        {% endif %}    
-                        </dt>    
+                        {% endif %}
+                        </dt>
                         {% if i.contact2_phone %}
                         <dd><a href="tel:{{i.contact2_phone}}">{{i.contact2_phone}}</a></dd>
-                        {% endif %}    
+                        {% endif %}
                     {% endif %}
                 </dl>
             </details>
@@ -75,8 +74,5 @@ Institutional Accounts
       </tr>
     {% endfor %}
     </tbody>
-  </table>  
-
+  </table>
 {% endblock %}
-
-

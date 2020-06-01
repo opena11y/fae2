@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,Payement
@@ -90,10 +90,8 @@ from userProfiles.models import get_profile
 from django.conf import settings
 from django.utils.timezone import make_aware
 
-
 def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for _ in range(size))
-
 
 def getExpirationDate(dt, months):
     if (not dt):
@@ -113,7 +111,6 @@ def getExpirationDate(dt, months):
 
     return
 
-
 # Utilities
 
 def parse_result(result):
@@ -130,7 +127,6 @@ def parse_result(result):
 
     return ro
 
-
 def format_timestamp(ts):
     [date, time] = ts.split(' ')
 
@@ -138,13 +134,10 @@ def format_timestamp(ts):
 
     return year + '-' + month + '-' + day + ' ' + time
 
-
 # Create your views here.
-
 
 class HeaderInfo(LoginRequiredMixin, TemplateView):
     template_name = 'registration/header_info.html'
-
 
 class ShibbolethLogout(RedirectView):
 
@@ -152,7 +145,6 @@ class ShibbolethLogout(RedirectView):
         logout(self.request)
         self.url = SITE_URL + '/Shibboleth.sso/Logout'
         return super(ShibbolethLogout, self).get_redirect_url(*args, **kwargs)
-
 
 class ShibbolethLogin(RedirectView):
 
@@ -200,10 +192,8 @@ class ShibbolethLogin(RedirectView):
 
         return super(ShibbolethLogin, self).get_redirect_url(*args, **kwargs)
 
-
 class ShibbolethDiscovery(TemplateView):
     template_name = 'registration/shib_discovery.html'
-
 
 class ShibbolethInstitution(RedirectView):
     def get_redirect_url(self, *args, **kwargs):
@@ -222,14 +212,12 @@ class ShibbolethInstitution(RedirectView):
 
         return super(ShibbolethInstitution, self).get_redirect_url(*args, **kwargs)
 
-
 class Logout(FAENavigationMixin, TemplateView):
     template_name = 'registration/logout.html'
 
     def get(self, request, *args, **kwargs):
         logout(request)
         return super(Logout, self).get(request, *args, **kwargs)
-
 
 class Login(FAENavigationMixin, TemplateView):
     template_name = 'registration/login.html'
@@ -243,7 +231,6 @@ class Login(FAENavigationMixin, TemplateView):
             context['user'] = 'none'
 
         return context
-
 
 class MyAccountView(FAENavigationMixin, TemplateView):
     template_name = 'accounts/my_account.html'
@@ -262,7 +249,6 @@ class MyAccountView(FAENavigationMixin, TemplateView):
 
         return context
 
-
 class UserProfileForm(forms.Form):
     first_name = forms.CharField(max_length=30)
     last_name = forms.CharField(max_length=30)
@@ -271,7 +257,6 @@ class UserProfileForm(forms.Form):
     dept = forms.CharField(label="Department", max_length=127, required=False)
     email_announcements = forms.BooleanField(required=False)
     timezone = TimeZoneFormField()
-
 
 class UpdateUserProfileView(LoginRequiredMixin, FAENavigationMixin, SuccessMessageMixin, FormView):
     template_name = 'accounts/update_profile.html'
@@ -327,7 +312,6 @@ class UpdateUserProfileView(LoginRequiredMixin, FAENavigationMixin, SuccessMessa
         context['user_profile'] = user_profile
 
         return context
-
 
 class UpdateSubscriptionView(LoginRequiredMixin, FAENavigationMixin, CreateView):
     model = Payment
@@ -450,7 +434,6 @@ class UpdateSubscriptionView(LoginRequiredMixin, FAENavigationMixin, CreateView)
         except:
             return False
 
-
 # ==============================================================
 #
 # Payment Views
@@ -466,7 +449,6 @@ class RegisterView(LoginRequiredMixin, FAENavigationMixin, TemplateView):
         context['payment'] = Payment.objects.get(reference_id=kwargs['reference_id'])
 
         return context
-
 
 class PaymentView(LoginRequiredMixin, FAENavigationMixin, TemplateView):
     template_name = 'accounts/payment.html'
@@ -554,7 +536,6 @@ class PaymentView(LoginRequiredMixin, FAENavigationMixin, TemplateView):
 
                 profile.save()
 
-
         except:
             payment = False
 
@@ -611,7 +592,6 @@ class PaymentView(LoginRequiredMixin, FAENavigationMixin, TemplateView):
         except:
             return False
 
-
 # ==============================================================
 #
 # Donation Views
@@ -623,7 +603,6 @@ class DonateForm(forms.Form):
     donor_email = forms.EmailField(max_length=60)
     donation_amount = forms.IntegerField()
     show_donation = forms.BooleanField(required=False)
-
 
 class DonateView(FAENavigationMixin, SuccessMessageMixin, FormView):
     template_name = 'accounts/donate.html'
@@ -662,7 +641,6 @@ class DonateView(FAENavigationMixin, SuccessMessageMixin, FormView):
 
         return initial
 
-
 class DonateSuccessView(FAENavigationMixin, TemplateView):
     template_name = 'accounts/donate_success.html'
 
@@ -671,7 +649,6 @@ class DonateSuccessView(FAENavigationMixin, TemplateView):
 
         return context
 
-
 class DonateFailView(FAENavigationMixin, TemplateView):
     template_name = 'accounts/donate_fail.html'
 
@@ -679,7 +656,6 @@ class DonateFailView(FAENavigationMixin, TemplateView):
         context = super(DonateFailView, self).get_context_data(**kwargs)
 
         return context
-
 
 # ==============================================================
 #
@@ -704,7 +680,6 @@ class StatusView(LoginRequiredMixin, FAENavigationMixin, TemplateView):
         context['processing_threads'] = PROCESSING_THREADS
 
         return context
-
 
 class AllUserInformationView(LoginRequiredMixin, FAENavigationMixin, TemplateView):
     template_name = 'accounts/all_user_information.html'
@@ -739,7 +714,6 @@ class AllUserInformationView(LoginRequiredMixin, FAENavigationMixin, TemplateVie
 
         return context
 
-
 class UserInformationView(LoginRequiredMixin, FAENavigationMixin, TemplateView):
     template_name = 'accounts/user_information.html'
 
@@ -766,7 +740,6 @@ class InstitutionalAdminView(LoginRequiredMixin, FAENavigationMixin, TemplateVie
 
         return context
 
-
 class InstitutionalInformationView(LoginRequiredMixin, FAENavigationMixin, TemplateView):
     template_name = 'accounts/institutional_information.html'
 
@@ -778,7 +751,6 @@ class InstitutionalInformationView(LoginRequiredMixin, FAENavigationMixin, Templ
         context['institutions'] = institutions
 
         return context
-
 
 class PaymentInformationView(LoginRequiredMixin, FAENavigationMixin, TemplateView):
     template_name = 'accounts/payment_information.html'
@@ -792,7 +764,6 @@ class PaymentInformationView(LoginRequiredMixin, FAENavigationMixin, TemplateVie
 
         return context
 
-
 class InvoiceView(LoginRequiredMixin, FAENavigationMixin, TemplateView):
     template_name = 'accounts/invoice.html'
 
@@ -804,7 +775,6 @@ class InvoiceView(LoginRequiredMixin, FAENavigationMixin, TemplateView):
         context['payment'] = payment
 
         return context
-
 
 class DisabledView(TemplateView):
     template_name = 'accounts/disabled.html'

@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -59,8 +59,6 @@ json_data.close()
 
 # Rule.objects.all().delete()
 
-
-
 def addRuleResultMessage(rule, label, message, date):
 
   if label == 'MANUAL_CHECK_S':
@@ -77,43 +75,42 @@ def addRuleResultMessage(rule, label, message, date):
     rule.rule_result_hidden_p  = message
   elif label == 'NOT_APPLICABLE':
      rule.rule_result_na       = message
-  
-  try:   
+
+  try:
     rule.save()
   except:
     print("  *** Error saving Rule Result Message: " + label + " : " + message)
-      
 
 def addNodeResultMessage(rule, label, message, date):
-  
-  if label != "" and message != "": 
-    try:   
+
+  if label != "" and message != "":
+    try:
       nrm = NodeResultMessage(rule=rule, label=label, message=message, updated_date=date)
       nrm.save()
     except:
       print("  *** Error saving Node Result Message: " + label + " : " + message)
 
-# Populate Rule Scope 
+# Populate Rule Scope
 
 try:
   RuleScope.objects.get(rule_scope_code=1)
-except ObjectDoesNotExist:  
+except ObjectDoesNotExist:
   rs = RuleScope(rule_scope_code=1, title='Element', slug="element", abbrev='E', description='Rules apply to the accessibility features of individual elements on a web page')
   rs.save()
 
 try:
   RuleScope.objects.get(rule_scope_code=2)
-except ObjectDoesNotExist:  
+except ObjectDoesNotExist:
   rs = RuleScope(rule_scope_code=2, title='Page',    slug="page", abbrev='P',   description='Rules apply to the accessibility of page layout, structure and identifying the content on the page')
   rs.save()
 
 try:
   RuleScope.objects.get(rule_scope_code=3)
-except ObjectDoesNotExist:  
+except ObjectDoesNotExist:
   rs = RuleScope(rule_scope_code=3, title='Website', slug="website", abbrev='W',   description='Rules apply to the consistency and ordering of content of the web pages within a website, website navigation features and titling that identifies the website and content of indivdiual pages')
   rs.save()
 
-# Populate Rule Group 
+# Populate Rule Group
 
 title = "Group 1"
 desc = 'First set of rules that should be learned and implemented'
@@ -121,7 +118,7 @@ try:
   rg = RuleGroup.objects.get(rule_group_code=1)
   rg.title       = title
   rg.description = desc
-except ObjectDoesNotExist:  
+except ObjectDoesNotExist:
   rg = RuleGroup(rule_group_code=1, title=title, description=desc)
 rg.save()
 
@@ -131,7 +128,7 @@ try:
   rg = RuleGroup.objects.get(rule_group_code=2)
   rg.title       = title
   rg.description = desc
-except ObjectDoesNotExist:  
+except ObjectDoesNotExist:
   rg = RuleGroup(rule_group_code=2, title=title, description=desc)
 rg.save()
 
@@ -141,10 +138,9 @@ try:
   rg = RuleGroup.objects.get(rule_group_code=4)
   rg.title       = title
   rg.description = desc
-except ObjectDoesNotExist:  
+except ObjectDoesNotExist:
   rg = RuleGroup(rule_group_code=4, title=title, description=desc)
 rg.save()
-
 
 for r in data['rules']:
 
@@ -154,14 +150,14 @@ for r in data['rules']:
 #     print("  Resource Properties: " + resource_properties)
 
 #   print("  Getting rule scope: " + str(r['rule_scope']))
-   scope = RuleScope.objects.get(rule_scope_code=r['rule_scope'])  
+   scope = RuleScope.objects.get(rule_scope_code=r['rule_scope'])
 
 #   print("  Getting rule group: " + str(r['rule_group']))
-   group = RuleGroup.objects.get(rule_group_code=r['rule_group'])  
-     
+   group = RuleGroup.objects.get(rule_group_code=r['rule_group'])
+
    try:
      print("  Updating Rule: " + r['nls_rule_id'])
-     
+
      rule = Rule.objects.get(rule_id=r['rule_id'])
      rule.scope=scope
      rule.category = RuleCategory.objects.get(rule_category_code=r['rule_category'])
@@ -172,26 +168,26 @@ for r in data['rules']:
      rule.validation=r['validate']
      rule.wcag_primary = SuccessCriterion.get_by_wcag_number(r['wcag_primary'])
      rule.updated_date=r['last_updated']
-     
-     NodeResultMessage.objects.filter(rule=rule).delete()  
-     
-   except ObjectDoesNotExist:  
+
+     NodeResultMessage.objects.filter(rule=rule).delete()
+
+   except ObjectDoesNotExist:
      print("  Creating Rule: " + r['nls_rule_id'])
      resource_properties = ",".join(r['resource_properties'])
      rule = Rule(rule_id=r['rule_id'],scope=scope,group=group,language_dependancy=r['language_dependency'],primary_property=r['primary_property'],resource_properties=resource_properties,validation=r['validate'],updated_date=r['last_updated'])
      rule.wcag_primary = SuccessCriterion.get_by_wcag_number(r['wcag_primary'])
      rule.category = RuleCategory.objects.get(rule_category_code=r['rule_category'])
-     
+
    rule.slug = r['rule_id'].lower().replace('_', '')
    rule.save()
 
-   rule.wcag_related.clear();  
+   rule.wcag_related.clear();
    for related in r['wcag_related']:
-      rule.wcag_related.add(SuccessCriterion.get_by_wcag_number(related)) 
+      rule.wcag_related.add(SuccessCriterion.get_by_wcag_number(related))
 
-   rule.target_resources.clear();  
+   rule.target_resources.clear();
    for m in r['target_resources']:
-     try: 
+     try:
        rule.target_resources.add(ElementDefinition.get_by_title(m))
      except:
        pass
@@ -202,7 +198,7 @@ for r in data['rules']:
    rule.nls_rule_id    = r['nls_rule_id']
    rule.definition     = r['definition']
    rule.summary        = r['summary']
-   
+
    rule.target_resource_desc = r['target_resource_desc']
 
    rule.purpose = ""
@@ -218,19 +214,18 @@ for r in data['rules']:
      rule.manual_checks += '* ' + OAAMarkupToHTML(mc) + '\n'
 
    rule.save()
-     
+
    rule.informational_links = ""
    for info in r['informational_links']:
-      rule.informational_links += '* [' + OAAMarkupToHTML(info['title']) + '](' + info['url'] + ')\n'    
+      rule.informational_links += '* [' + OAAMarkupToHTML(info['title']) + '](' + info['url'] + ')\n'
 
    for message in r['rule_result_messages']:
      addRuleResultMessage(rule, message, r['rule_result_messages'][message], r['last_updated'])
 
    for message in r['node_result_messages']:
      addNodeResultMessage(rule, message, r['node_result_messages'][message], r['last_updated'])
-   
+
    try:
      rule.save()
    except:
      print("*** Error saving relationships for rule: " + r['nls_rule_id']  )
-  

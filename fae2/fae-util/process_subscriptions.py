@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -67,13 +67,11 @@ ERROR=True
 
 log = open(os.path.join(APP_DIR + 'logs/subscriptions-reports.log'), 'w')
 
-
 def debug(s):
   if DEBUG and log:
     log.write("[SUBSCRIPTIONS][debug]: " + str(s) + "\n")
-    log.flush()  
+    log.flush()
     print("[SUBSCRIPTIONS][debug]: " + str(s))
-
 
 def info(s):
   if INFO and log:
@@ -89,12 +87,9 @@ def error(s):
     if DEBUG:
       print("[SUBSCRIPTIONS][**ERROR]: " + str(s))
 
-
 def update_subscriptions():
 
-
   info('Updating subscriptions: ' + datetime.datetime.now().strftime("%Y-%m-%d %H:%M") )
-
 
   if SHIBBOLETH_ENABLED:
 
@@ -117,27 +112,25 @@ def update_subscriptions():
 
     if SHIBBOLETH_ENABLED:
       up.update_institutional_subscription()
-    else:  
+    else:
       up.update_subscription_status()
       up.check_for_email_subscription_notifications()
 
     if up.subscription_status == 'EXPIRED':
       if up.subscription_days == -1:
         info(str(up) + ": Expired 1 day ago")
-      else:  
+      else:
         info(str(up) + ": Expired " + str(abs(up.subscription_days)) + " days ago")
     else:
       if up.subscription_status == 'CURRENT':
         if up.subscription_days == 1:
           info(str(up) + ": Current, 1 day left")
-        else:  
+        else:
           info(str(up) + ": Current, " + str(up.subscription_days) + " days left")
       else:
         info(str(up) + ": Free")
 
 
-
 if __name__ == "__main__":
 
   update_subscriptions()
-

@@ -8,13 +8,11 @@
     <li>Page {{page_rule_result.page_result.page_number}}</li>
 {% endblock %}
 
-
 {% block content_before_title %}
 
     {% include "reports/report_information.html"  with page=page_rule_result.page_result %}
 
 {% endblock %}
-
 
 {% block title %}
     {{page_rule_result.rule.summary_html|safe}}
@@ -30,7 +28,6 @@
   </a>
 </div>
 
-
 {% include "reports/result_messages.html" %}
 
   <nav id="view_options" aria-label="Page view options">
@@ -45,7 +42,6 @@
   {% include "reports/element_results.html" %}
 
 {% endblock %}
-
 
 {% block javascript %}
 <script src="{% static 'js/hide-show.js' %}"></script>

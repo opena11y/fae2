@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -90,7 +90,6 @@ def info(s):
       log.flush()
       print('[PROC_EVAL_REQ][INFO]: error in string "s" \n')
 
-
 def error(s):
   if log:
     try:
@@ -100,14 +99,12 @@ def error(s):
       log.write('[PROC_EVAL_REQ][**ERROR]: error in string "s" \n')
       log.flush()
 
-
 def init_oaa_script_file():
   f = open(fae_util_path + '/openajax_a11y/scripts.txt', 'w')
   f.write(fae_util_path + '/openajax_a11y/oaa_a11y_evaluation.js\n')
   f.write(fae_util_path + '/openajax_a11y/oaa_a11y_rules.js\n')
   f.write(fae_util_path + '/openajax_a11y/oaa_a11y_rulesets.js\n')
   f.close()
-
 
 def initWebsiteReport(ws_report):
 

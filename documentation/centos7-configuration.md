@@ -1,10 +1,10 @@
-# Setting up FAE 2.0 on CENTOS7 Linux
+# Setting up FAE 2.1 on CENTOS7 Linux
 
 All commands are assume you are logged in as `root` or are using `sudo`.
 
 ## Disable Selinux
 
-Disabiling SELinux will make it much easier to install and configure FAE 2.0
+Disabiling SELinux will make it much easier to install and configure FAE 2.1
 
 Edit the `/etc/sysconfig/selinux` file and change the `SELINUX=enforcing` to `SELINUX=disabled`.
 
@@ -142,7 +142,7 @@ Based on [How to Install Apache on CentOS 7](https://www.liquidweb.com/kb/how-to
 
 ## Install mod_wsgi
 
-This is a pyhon package needed for Apache to run FAE 2.0
+This is a python package needed for Apache to run FAE 2.1
 
 ```
 $ yum -y install mod_wsgi
@@ -213,7 +213,7 @@ $ yum -y install python-psycopg2
 
 ### Create a database user
 
-Use the createuser command to create a database user for FAE 2.0
+Use the createuser command to create a database user for FAE 2.1
 
 ```
 $ sudo -i -u postgres
@@ -242,9 +242,9 @@ If javac is not installed, install latest version:
 $ sudo yum install java-1.8.0-openjdk-devel
 ```
 
-## Create a place to put FAE 2.0 code and clone git repository 
+## Create a place to put FAE 2.1 code and clone git repository 
 
-Create a directory to put FAE 2.0 related files, in this example `/var/www/fae2`.
+Create a directory to put FAE 2.1 related files, in this example `/var/www/fae2`.
 
 ```
 $ cd \var\www
@@ -255,10 +255,10 @@ $ git clone https://github.com/opena11y/fae2.git
 
 ## Setup and Configure Virtual Environment for Python
 
-* FAE 2.0 need Python 2.7.x to run
+* FAE 2.1 need Python 2.7.x to run
 * The virtual environment is need for Apache configuration
 
-[Hitchhicke Guide to Virtual Environments](http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/)
+[Hitchhicker's Guide to Virtual Environments](https://python-guide-cn.readthedocs.io/en/latest/dev/virtualenvs.html)
 
 Install virtualenv via pip:
 
@@ -273,7 +273,7 @@ $ virtualenv --version
 ```
 
 
-Create a virtual environment for FAE 2.0
+Create a virtual environment for FAE 2.1
 
 ```
 $ virtualenv fae2env
@@ -316,10 +316,8 @@ $ (fae2env) nano secrets.json
 
 Edit the `secrets.json` file for your specific installation
 
-The `secrets.json` file is a JSON formatted file that contains configuration information for your local
-version of FAE 2.0.   A template of the contents of the file is in `secrets_template.json`.  You can copy 
-this file to `secretes.json` and then edit the file for you local configuration with the `nano` or other 
-text editor.
+The `secrets.json` file is a JSON formatted file that contains configuration information for your local version of FAE 2.1.
+A template of the contents of the file is in `secrets_template.json`.  You can copy this file to `secrets.json` and then edit the file for you local configuration with the `nano` or other text editor.
 
 ### Create and set file permissions for log and data directories
 * The `data` directory is where `fae-util` stores evaluation results
@@ -359,7 +357,7 @@ To test the configuration you will need to know the IP address of the computer o
 ```
 $ (fae2env) python manage.py runserver  127.0.0.1:8000
 ```
-You should be able to open and browser and go to the 127.0.0.1:8000, or if you used the computers actual IP address IP:8000, andFAE 2.0 login screen should apprear.   
+You should be able to open and browser and go to the 127.0.0.1:8000, or if you used the computers actual IP address IP:8000, and FAE 2.1 login screen should apprear.   
 
 ## Configure `fae-util` service
 
@@ -383,9 +381,9 @@ $ service fae-util start
 $ systemctl enable fae-util
 ```
 
-## Configure Apache to serve FAE 2.0 web interface
+## Configure Apache to serve FAE 2.1 web interface
 
-Add a `fae2.conf` to the `\etc\httpd\conf.d'
+Add a `fae2.conf` to the `/etc/httpd/conf.d'
 
 ```
 $ cd /etc/httpd/conf.d
@@ -410,8 +408,7 @@ The following is a sample `fae2.conf` file:
     </Files>
   </Directory>
 
-  WSGIDaemonProcess fae2 python-path=/var/www/fae2/fae2/fae:/var/www/fae2/fae2env/l
-ib/python2.7/site-packages/
+  WSGIDaemonProcess fae2 python-path=/var/www/fae2/fae2/fae:/var/www/fae2/fae2env/lib/python2.7/site-packages/
   WSGIProcessGroup  fae2
   WSGIScriptAlias / /var/www/fae2/fae2/fae2/fae2/wsgi.py process-group=fae2
 </VirtualHost>

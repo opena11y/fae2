@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -39,9 +39,7 @@ from websiteResults.models import WebsiteGuidelineResult
 from websiteResults.models import WebsiteRuleScopeResult
 from websiteResults.models import WebsiteRuleResult
 
-
 # Create your models here.
-
 
 # ---------------------------------------------------------------
 #
@@ -102,7 +100,6 @@ class PageResult(RuleGroupResult):
 
         return json
 
-
 # ---------------------------------------------------------------
 #
 # PageRuleCategoryResult
@@ -134,7 +131,6 @@ class PageRuleCategoryResult(RuleGroupResult):
 
     def get_id(self):
         return 'prcr_' + self.id
-
 
 # ---------------------------------------------------------------
 #
@@ -168,7 +164,6 @@ class PageGuidelineResult(RuleGroupResult):
     def get_id(self):
         return 'pglr_' + self.id
 
-
 # ---------------------------------------------------------------
 #
 # PageRuleScopeResult
@@ -200,7 +195,6 @@ class PageRuleScopeResult(RuleGroupResult):
 
     def get_id(self):
         return 'prsr_' + self.id
-
 
 # ---------------------------------------------------------------
 #

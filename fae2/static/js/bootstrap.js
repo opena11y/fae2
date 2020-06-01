@@ -1,13 +1,7 @@
-/*!
- * Bootstrap v3.3.5 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under the MIT license
- */
-
+/*! Bootstrap v3.3.5 (https://getbootstrap.com) Copyright 2011-2015 Twitter, Inc. Licensed under the MIT license */
 if (typeof jQuery === 'undefined') {
   throw new Error('Bootstrap\'s JavaScript requires jQuery')
 }
-
 +function ($) {
   'use strict';
   var version = $.fn.jquery.split(' ')[0].split('.')
@@ -18,17 +12,16 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
  * Bootstrap: transition.js v3.3.5
- * http://getbootstrap.com/javascript/#transitions
+ * https://getbootstrap.com/javascript/#transitions
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
-
 +function ($) {
   'use strict';
 
-  // CSS TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)
+  // CSS TRANSITION SUPPORT (Shoutout: https://www.modernizr.com/)
   // ============================================================
 
   function transitionEnd() {
@@ -50,7 +43,7 @@ if (typeof jQuery === 'undefined') {
     return false // explicit for ie8 (  ._.)
   }
 
-  // http://blog.alexmaccaw.com/css-transitions
+  // https://blog.alexmaccaw.com/css-transitions
   $.fn.emulateTransitionEnd = function (duration) {
     var called = false
     var $el = this
@@ -78,12 +71,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
  * Bootstrap: alert.js v3.3.5
- * http://getbootstrap.com/javascript/#alerts
+ * https://getbootstrap.com/javascript/#alerts
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
-
 
 +function ($) {
   'use strict';
@@ -135,7 +127,6 @@ if (typeof jQuery === 'undefined') {
       removeElement()
   }
 
-
   // ALERT PLUGIN DEFINITION
   // =======================
 
@@ -154,7 +145,6 @@ if (typeof jQuery === 'undefined') {
   $.fn.alert             = Plugin
   $.fn.alert.Constructor = Alert
 
-
   // ALERT NO CONFLICT
   // =================
 
@@ -162,7 +152,6 @@ if (typeof jQuery === 'undefined') {
     $.fn.alert = old
     return this
   }
-
 
   // ALERT DATA-API
   // ==============
@@ -173,12 +162,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
  * Bootstrap: button.js v3.3.5
- * http://getbootstrap.com/javascript/#buttons
+ * https://getbootstrap.com/javascript/#buttons
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
-
 
 +function ($) {
   'use strict';
@@ -244,7 +232,6 @@ if (typeof jQuery === 'undefined') {
     }
   }
 
-
   // BUTTON PLUGIN DEFINITION
   // ========================
 
@@ -266,7 +253,6 @@ if (typeof jQuery === 'undefined') {
   $.fn.button             = Plugin
   $.fn.button.Constructor = Button
 
-
   // BUTTON NO CONFLICT
   // ==================
 
@@ -274,7 +260,6 @@ if (typeof jQuery === 'undefined') {
     $.fn.button = old
     return this
   }
-
 
   // BUTTON DATA-API
   // ===============
@@ -294,12 +279,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
  * Bootstrap: carousel.js v3.3.5
- * http://getbootstrap.com/javascript/#carousel
+ * https://getbootstrap.com/javascript/#carousel
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
-
 
 +function ($) {
   'use strict';
@@ -463,7 +447,6 @@ if (typeof jQuery === 'undefined') {
     return this
   }
 
-
   // CAROUSEL PLUGIN DEFINITION
   // ==========================
 
@@ -486,7 +469,6 @@ if (typeof jQuery === 'undefined') {
   $.fn.carousel             = Plugin
   $.fn.carousel.Constructor = Carousel
 
-
   // CAROUSEL NO CONFLICT
   // ====================
 
@@ -494,7 +476,6 @@ if (typeof jQuery === 'undefined') {
     $.fn.carousel = old
     return this
   }
-
 
   // CAROUSEL DATA-API
   // =================
@@ -532,12 +513,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
  * Bootstrap: collapse.js v3.3.5
- * http://getbootstrap.com/javascript/#collapse
+ * https://getbootstrap.com/javascript/#collapse
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
-
 
 +function ($) {
   'use strict';
@@ -694,7 +674,6 @@ if (typeof jQuery === 'undefined') {
     return $(target)
   }
 
-
   // COLLAPSE PLUGIN DEFINITION
   // ==========================
 
@@ -715,7 +694,6 @@ if (typeof jQuery === 'undefined') {
   $.fn.collapse             = Plugin
   $.fn.collapse.Constructor = Collapse
 
-
   // COLLAPSE NO CONFLICT
   // ====================
 
@@ -723,7 +701,6 @@ if (typeof jQuery === 'undefined') {
     $.fn.collapse = old
     return this
   }
-
 
   // COLLAPSE DATA-API
   // =================
@@ -744,12 +721,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
  * Bootstrap: dropdown.js v3.3.5
- * http://getbootstrap.com/javascript/#dropdowns
+ * https://getbootstrap.com/javascript/#dropdowns
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
-
 
 +function ($) {
   'use strict';
@@ -867,7 +843,6 @@ if (typeof jQuery === 'undefined') {
     $items.eq(index).trigger('focus')
   }
 
-
   // DROPDOWN PLUGIN DEFINITION
   // ==========================
 
@@ -886,7 +861,6 @@ if (typeof jQuery === 'undefined') {
   $.fn.dropdown             = Plugin
   $.fn.dropdown.Constructor = Dropdown
 
-
   // DROPDOWN NO CONFLICT
   // ====================
 
@@ -894,7 +868,6 @@ if (typeof jQuery === 'undefined') {
     $.fn.dropdown = old
     return this
   }
-
 
   // APPLY TO STANDARD DROPDOWN ELEMENTS
   // ===================================
@@ -910,12 +883,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
  * Bootstrap: modal.js v3.3.5
- * http://getbootstrap.com/javascript/#modals
+ * https://getbootstrap.com/javascript/#modals
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
-
 
 +function ($) {
   'use strict';
@@ -1193,7 +1165,6 @@ if (typeof jQuery === 'undefined') {
     return scrollbarWidth
   }
 
-
   // MODAL PLUGIN DEFINITION
   // =======================
 
@@ -1214,7 +1185,6 @@ if (typeof jQuery === 'undefined') {
   $.fn.modal             = Plugin
   $.fn.modal.Constructor = Modal
 
-
   // MODAL NO CONFLICT
   // =================
 
@@ -1222,7 +1192,6 @@ if (typeof jQuery === 'undefined') {
     $.fn.modal = old
     return this
   }
-
 
   // MODAL DATA-API
   // ==============
@@ -1248,13 +1217,12 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
  * Bootstrap: tooltip.js v3.3.5
- * http://getbootstrap.com/javascript/#tooltip
+ * https://getbootstrap.com/javascript/#tooltip
  * Inspired by the original jQuery.tipsy by Jason Frame
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
-
 
 +function ($) {
   'use strict';
@@ -1729,7 +1697,6 @@ if (typeof jQuery === 'undefined') {
     })
   }
 
-
   // TOOLTIP PLUGIN DEFINITION
   // =========================
 
@@ -1750,7 +1717,6 @@ if (typeof jQuery === 'undefined') {
   $.fn.tooltip             = Plugin
   $.fn.tooltip.Constructor = Tooltip
 
-
   // TOOLTIP NO CONFLICT
   // ===================
 
@@ -1763,12 +1729,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
  * Bootstrap: popover.js v3.3.5
- * http://getbootstrap.com/javascript/#popovers
+ * https://getbootstrap.com/javascript/#popovers
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
-
 
 +function ($) {
   'use strict';
@@ -1790,7 +1755,6 @@ if (typeof jQuery === 'undefined') {
     content: '',
     template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
   })
-
 
   // NOTE: POPOVER EXTENDS tooltip.js
   // ================================
@@ -1838,7 +1802,6 @@ if (typeof jQuery === 'undefined') {
     return (this.$arrow = this.$arrow || this.tip().find('.arrow'))
   }
 
-
   // POPOVER PLUGIN DEFINITION
   // =========================
 
@@ -1859,7 +1822,6 @@ if (typeof jQuery === 'undefined') {
   $.fn.popover             = Plugin
   $.fn.popover.Constructor = Popover
 
-
   // POPOVER NO CONFLICT
   // ===================
 
@@ -1872,12 +1834,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
  * Bootstrap: scrollspy.js v3.3.5
- * http://getbootstrap.com/javascript/#scrollspy
+ * https://getbootstrap.com/javascript/#scrollspy
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
-
 
 +function ($) {
   'use strict';
@@ -2001,7 +1962,6 @@ if (typeof jQuery === 'undefined') {
       .removeClass('active')
   }
 
-
   // SCROLLSPY PLUGIN DEFINITION
   // ===========================
 
@@ -2021,7 +1981,6 @@ if (typeof jQuery === 'undefined') {
   $.fn.scrollspy             = Plugin
   $.fn.scrollspy.Constructor = ScrollSpy
 
-
   // SCROLLSPY NO CONFLICT
   // =====================
 
@@ -2029,7 +1988,6 @@ if (typeof jQuery === 'undefined') {
     $.fn.scrollspy = old
     return this
   }
-
 
   // SCROLLSPY DATA-API
   // ==================
@@ -2045,12 +2003,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
  * Bootstrap: tab.js v3.3.5
- * http://getbootstrap.com/javascript/#tabs
+ * https://getbootstrap.com/javascript/#tabs
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
-
 
 +function ($) {
   'use strict';
@@ -2156,7 +2113,6 @@ if (typeof jQuery === 'undefined') {
     $active.removeClass('in')
   }
 
-
   // TAB PLUGIN DEFINITION
   // =====================
 
@@ -2175,7 +2131,6 @@ if (typeof jQuery === 'undefined') {
   $.fn.tab             = Plugin
   $.fn.tab.Constructor = Tab
 
-
   // TAB NO CONFLICT
   // ===============
 
@@ -2183,7 +2138,6 @@ if (typeof jQuery === 'undefined') {
     $.fn.tab = old
     return this
   }
-
 
   // TAB DATA-API
   // ============
@@ -2201,12 +2155,11 @@ if (typeof jQuery === 'undefined') {
 
 /* ========================================================================
  * Bootstrap: affix.js v3.3.5
- * http://getbootstrap.com/javascript/#affix
+ * https://getbootstrap.com/javascript/#affix
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
-
 
 +function ($) {
   'use strict';
@@ -2313,7 +2266,6 @@ if (typeof jQuery === 'undefined') {
     }
   }
 
-
   // AFFIX PLUGIN DEFINITION
   // =======================
 
@@ -2333,7 +2285,6 @@ if (typeof jQuery === 'undefined') {
   $.fn.affix             = Plugin
   $.fn.affix.Constructor = Affix
 
-
   // AFFIX NO CONFLICT
   // =================
 
@@ -2341,7 +2292,6 @@ if (typeof jQuery === 'undefined') {
     $.fn.affix = old
     return this
   }
-
 
   // AFFIX DATA-API
   // ==============

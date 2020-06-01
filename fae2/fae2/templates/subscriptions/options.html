@@ -9,9 +9,9 @@
 {% endblock %}
 
 {% block content %}
-
-    <p style="margin-top: 1.5em"><a href="{% url 'vpat' %}">Voluntary Product Accessibility Tempate (VPAT) for FAE 2.0</a></p>
-
+    <p style="margin-top: 1.5em">
+        <a href="{% url 'vpat' %}">Voluntary Product Accessibility Tempate (VPAT) for FAE 2.1</a>
+    </p>
     <h2 id="summ">Summary of Options</h2>
     <table  class="details table table-striped"  aria-labelledby="summ">
         <thead>
@@ -35,7 +35,7 @@
                 <td><a href="#id_inst">Institutional</a></td>
                 <td>
                     <ul>
-                        <li>Multiple accounts based on <a href="">InCommon</a> authentication.  InCommon is used by most Higher Education Institutions to manage authentication to campus supported IT services.</li>
+                        <li>Multiple accounts based on <b>InCommon</b> authentication.  InCommon is used by most Higher Education Institutions to manage authentication to campus supported IT services.</li>
                         <li>Subscription costs based on the size of the institution.</li>
                         <li>There is one default subscription level for all sizes of institutions, but you can <a href="{% url 'contact_form' %}">contact the adminstrator</a> to request a custom level for your institution.</li>
                     </ul>
@@ -43,26 +43,17 @@
             </tr>
         </tbody>
     </table>
-
-
     <section aria-labelledby="id0">
-
         <h2 id="id0">Why Purchase a Subscription?</h2>
 
         {% include "subscriptions/use_of_funds.html"  with start="Your subscription " %}
 
     </section>
 
-
     {% include "subscriptions/option_individual.html"     with id="id_indiv" %}
-
 
     {% include "subscriptions/option_institutional.html"  with id="id_inst" %}
 
-
     {% include "subscriptions/refund_policy.html" %}
 
-
 {% endblock %}
-
-

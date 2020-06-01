@@ -24,7 +24,6 @@ Payment Error
 <div class="error">
   <p>Payment cancelled by card holder.</p>
 </div>
-
 {% else %}
 
   {% if payment.status == 'PMT_MAX_ATTEMPT' %}
@@ -32,7 +31,6 @@ Payment Error
 <div class="error">
   <p>Too many attempts to validate credit card purchase, please verify your credit card information and <a href="{% url 'update_subscription' %}">try again</a>.</p>
 </div>
-
   {% else %}
 
     {% if payment.status == 'PMT_EXPIRED' %}
@@ -40,7 +38,6 @@ Payment Error
 <div class="error">
   <p>Payment session has timed out, please <a href="{% url 'update_subscription' %}">try again</a>.</p>
 </div>
-
     {% else %}
 
       {% if payment.status == 'PMT_ERROR' %}
@@ -48,7 +45,6 @@ Payment Error
 <div class="error">
   <p>Unkown error processing your credit card information.</p>
 </div>
-
       {% else %}
 
         {% if payment.status == 'PMT_SESSION' %}
@@ -59,7 +55,6 @@ Payment Error
      You may want to close other browsers and other browser windows before proceeding with another payment attempt.
   </p>
 </div>
-
         {% else %}
           {% if payment.status == 'PMT_NOCOST' %}
 
@@ -81,16 +76,9 @@ Payment Error
     {% endif %}
   {% endif %}
 {% endif %}
-
-
 {% endblock %}
 
-
 {% block javascript %}
-
 <script type="text/javascript">
-
-
 </script>
-
 {% endblock %}

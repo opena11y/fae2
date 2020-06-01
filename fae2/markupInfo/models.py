@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -29,7 +29,6 @@ from django.db import models
 from reports.models import WebsiteReport
 from pageResults.models import PageResult
 
-
 class WebsiteMarkup(models.Model):
     id = models.AutoField(primary_key=True)
     ws_report = models.ForeignKey(WebsiteReport, on_delete=models.CASCADE, related_name="mi_ws_report")
@@ -41,14 +40,12 @@ class WebsiteMarkup(models.Model):
     frame_count = models.IntegerField(default=0)
     iframe_count = models.IntegerField(default=0)
 
-
 class WebsiteMarkupGroup(models.Model):
     id = models.AutoField(primary_key=True)
     ws_markup = models.ForeignKey(WebsiteMarkup, on_delete=models.CASCADE, related_name="ws_markups")
 
     name = models.CharField("Group Name", max_length=24)
     count = models.IntegerField(default=0)
-
 
 class WebsiteMarkupItem(models.Model):
     id = models.AutoField(primary_key=True)
@@ -58,7 +55,6 @@ class WebsiteMarkupItem(models.Model):
     attribute = models.CharField("Attribute", max_length=24)
     event = models.CharField("Event", max_length=24)
     count = models.IntegerField(default=0)
-
 
 class PageMarkup(models.Model):
     id = models.AutoField(primary_key=True)
@@ -71,7 +67,6 @@ class PageMarkup(models.Model):
     frame_count = models.IntegerField(default=0)
     iframe_count = models.IntegerField(default=0)
 
-
 class PageMarkupGroup(models.Model):
     id = models.AutoField(primary_key=True)
     page_markup = models.ForeignKey(PageMarkup, on_delete=models.CASCADE, related_name="page_markups")
@@ -81,7 +76,6 @@ class PageMarkupGroup(models.Model):
 
     ws_markup_group = models.ForeignKey(WebsiteMarkupGroup, related_name="page_ws_markup_groups",
                                         on_delete=models.CASCADE)
-
 
 class PageMarkupItem(models.Model):
     id = models.AutoField(primary_key=True)
@@ -93,7 +87,6 @@ class PageMarkupItem(models.Model):
     count = models.IntegerField(default=0)
 
     ws_markup_item = models.ForeignKey(WebsiteMarkupItem, on_delete=models.CASCADE, related_name="page_ws_markup_items")
-
 
 class MIpageSummary(models.Model):
     id = models.AutoField(primary_key=True)
@@ -110,7 +103,6 @@ class MIpageSummary(models.Model):
     class Meta:
         verbose_name = "Page Markup: Summary"
         verbose_name_plural = "Page Markup: Summary"
-
 
 class MIpageImages(models.Model):
     id = models.AutoField(primary_key=True)
@@ -131,7 +123,6 @@ class MIpageImages(models.Model):
         verbose_name = "Page Markup: Image"
         verbose_name_plural = "Page Markup: Images"
 
-
 class MIpageHeadings(models.Model):
     id = models.AutoField(primary_key=True)
 
@@ -148,7 +139,6 @@ class MIpageHeadings(models.Model):
     class Meta:
         verbose_name = "Page Markup: Heading (H1-H6)"
         verbose_name_plural = "Page Markup: Headings (H1-H6)"
-
 
 class MIpageSections(models.Model):
     id = models.AutoField(primary_key=True)
@@ -172,7 +162,6 @@ class MIpageSections(models.Model):
         verbose_name = "Page Markup: HTML5 Section"
         verbose_name_plural = "Page Markup: HTML5 Sections"
 
-
 class MIpageLists(models.Model):
     id = models.AutoField(primary_key=True)
 
@@ -191,7 +180,6 @@ class MIpageLists(models.Model):
         verbose_name = "Page Markup: List"
         verbose_name_plural = "Page Markup: Lists"
 
-
 class MIpageLinks(models.Model):
     id = models.AutoField(primary_key=True)
 
@@ -205,7 +193,6 @@ class MIpageLinks(models.Model):
     class Meta:
         verbose_name = "Page Markup: Link"
         verbose_name_plural = "Page Markup: Links"
-
 
 class MIpageTables(models.Model):
     id = models.AutoField(primary_key=True)
@@ -226,7 +213,6 @@ class MIpageTables(models.Model):
     class Meta:
         verbose_name = "Page Markup: Table"
         verbose_name_plural = "Page Markup: Tables"
-
 
 class MIpageForms(models.Model):
     id = models.AutoField(primary_key=True)
@@ -279,7 +265,6 @@ class MIpageForms(models.Model):
         verbose_name = "Page Markup: Form Controls"
         verbose_name_plural = "Page Markup: Form Controls"
 
-
 class MIpageMedia(models.Model):
     id = models.AutoField(primary_key=True)
 
@@ -296,7 +281,6 @@ class MIpageMedia(models.Model):
     class Meta:
         verbose_name = "Page Markup: Media"
         verbose_name_plural = "Page Markup: Media"
-
 
 class MIpageLandmarks(models.Model):
     id = models.AutoField(primary_key=True)
@@ -318,7 +302,6 @@ class MIpageLandmarks(models.Model):
         verbose_name = "Page Markup: Landmark"
         verbose_name_plural = "Page Markup: Landmarks"
 
-
 class MIpageStructures(models.Model):
     id = models.AutoField(primary_key=True)
 
@@ -336,7 +319,6 @@ class MIpageStructures(models.Model):
     class Meta:
         verbose_name = "Page Markup: ARIA Structure"
         verbose_name_plural = "Page Markup: ARIA Structures"
-
 
 class MIpageWidgets(models.Model):
     id = models.AutoField(primary_key=True)
@@ -363,7 +345,6 @@ class MIpageWidgets(models.Model):
         verbose_name = "Page Markup: ARIA Widget"
         verbose_name_plural = "Page Markup: ARIA Widgets"
 
-
 class MIpageLives(models.Model):
     id = models.AutoField(primary_key=True)
 
@@ -380,7 +361,6 @@ class MIpageLives(models.Model):
     class Meta:
         verbose_name = "Page Markup: ARIA Live Region"
         verbose_name_plural = "Page Markup: ARIA Live Regions"
-
 
 class MIpageEvents(models.Model):
     id = models.AutoField(primary_key=True)

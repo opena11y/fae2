@@ -1,24 +1,21 @@
 {% load tz %}
 <section id="information" aria-label="Website Report Information">
-
   <div class="title">Report Title: <strong>{{report.title}}</strong></div>
-    
   <div class="date">
     {{ report.created|date:"F d, Y H:i" }}
   </div>
-  
-    
+
   <div class="eval_info">
      <ul>
         <li>URL: <a href="{{ report.url }}" target="_page">{{  report.url }}</a></li>
         <li>Depth:     {{  report.depth }}</li>
         <li>Ruleset:   <a title="{{report.ruleset.title_text}}" href="{% url 'ruleset' report.ruleset.slug %}">{{ report.ruleset }}</a></li>
-     </ul>  
+     </ul>
   </div>
 
   <div class="domains">
      <ul>
-        {% if report.follow == 1 %} 
+        {% if report.follow == 1 %}
           {% if report.require_path %}
         <li>Followed links in specfied domain only, including specified path: <strong>/{{report.path}}/</strong></li>
           {% else %}
@@ -30,7 +27,7 @@
         <li>Followed links in specified domian and in:</li>
             <ul>
            <li>Next-level subdomains: <strong>{{ report.domain }}</strong></li>
-        </ul>   
+        </ul>
         {% endif %}
 
         {% if report.follow == 3 %}
@@ -48,10 +45,9 @@
 
                {% if report.enable_span_sub_domains %}
                <li>Next-level subdomains: <strong>{{ report.span_sub_domains }}</strong></li>
-               {% endif %}             
+               {% endif %}
 
              {% endif %}
-
 
              {% if report.enable_exclude_domains %}
              <li>Exclude domains: <strong>{{  report.exclude_domains }}</strong></li>
@@ -62,22 +58,22 @@
           </ul>
          {% endif %}
         {% endif %}
-     </ul>  
+     </ul>
   </div>
 
   <div class="eval_info">
       <ul>
           <li title="Number of pages evaluated">
-            Pages: {{ report.page_count }} 
+            Pages: {{ report.page_count }}
           </li>
 
           <li title="Page limit used when report was run">
             Page Limit: {{ report.max_pages }}
           </li>
-          
+
           {% if report.excluded_urls.count %}
           <li title="Number of non-HTML files found while spidering the website (e.g. PDF, Microsoft Office, XML, video..)">
-               Non-HTML Files: {{ report.excluded_urls.count }} 
+               Non-HTML Files: {{ report.excluded_urls.count }}
           </li>
           {% endif %}
 
@@ -85,21 +81,20 @@
             <a title="Details of the the URLs evaluated, excluded, failed and other non-HTML files found"
                href="{% url 'report_url_information' report.slug view %}">
               URL Evaluation Information
-            </a>  
+            </a>
           </li>
 
           {% if report.user != user %}
           <li>Created by: <a href="mailto:{{report.user.email}}">{{report.user.first_name}} {{report.user.last_name}}</a></li>
           {% endif %}
-      </ul>  
-  </div> 
+      </ul>
+  </div>
 
   {% if report.more_urls %}
   <details class="more_urls">
-    <summary class="highlight">Maximum page limit was reached</summary> 
+    <summary class="highlight">Maximum page limit was reached</summary>
     <div>You need to increase the page limit to evaluate more pages in the website, which may require purchasing or increasing your <a href="{% url 'update_subscription' %}">subscription</a> level.
     </div>
   </details>
   {% endif %}
-
 </section>

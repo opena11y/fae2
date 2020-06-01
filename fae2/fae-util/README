@@ -4,7 +4,7 @@ PROJECT DEPENDENCIES
 
 The following libraries must be in the CLASSPATH:
 
-* HTMLUnit version 2.13 (http://sourceforge.net/projects/htmlunit/)
+* HTMLUnit version 2.39.0 (http://sourceforge.net/projects/htmlunit/)
 * Apache Commons CLI 1.2 (http://commons.apache.org/cli/)
 
 BUILD INFORMATION
@@ -71,5 +71,3 @@ OTHER FILES
 * test/script2.js
 * test/scripts.txt
 * test/urls.txt
-
-

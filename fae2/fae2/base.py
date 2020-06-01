@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -23,6 +23,7 @@ Author: Jon Gunderson
 from __future__ import print_function
 from __future__ import absolute_import
 import json
+import os
 
 from django.core.exceptions import ImproperlyConfigured
 from os.path import join, abspath, dirname
@@ -44,7 +45,6 @@ print(" APP_DIR: " + APP_DIR)
 with open(join(BASE_DIR, "secrets.json")) as f:
     secrets = json.loads(f.read())
 
-
 def get_secret(setting, secrets=secrets):
     """(Get the secret variable or return explicit exception.)"""
     try:
@@ -53,9 +53,8 @@ def get_secret(setting, secrets=secrets):
         error_msg = "Set the {0} enviroment variable".format(setting)
         raise ImproperlyConfigured
 
-
 # Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
+# See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = get_secret('SECRET_KEY')
@@ -151,7 +150,12 @@ BOOTSTRAP3 = {
     'include_jquery': True,
 }
 
-INSTALLED_APPS = (
+DEBUG_APPS = [
+    'django_extensions',
+    'debug_toolbar',
+]
+
+INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -177,7 +181,10 @@ INSTALLED_APPS = (
     'websiteResults.apps.WebsiteResultsConfig',
     'websiteResultGroups.apps.WebsiteresultgroupsConfig',
     'stats.apps.StatsConfig',
-)
+    'gtm',
+    'logentry_admin',
+    'timezone_field',
+] + DEBUG_APPS
 
 if SHIBBOLETH_ENABLED:
     MIDDLEWARE = [
@@ -197,9 +204,9 @@ if SHIBBOLETH_ENABLED:
 
     LOGIN_URL = SHIBBOLETH_URL
 
-
 else:
     MIDDLEWARE = [
+        'debug_toolbar.middleware.DebugToolbarMiddleware',
         'django.contrib.sessions.middleware.SessionMiddleware',
         'django.middleware.common.CommonMiddleware',
         'django.middleware.csrf.CsrfViewMiddleware',
@@ -207,6 +214,7 @@ else:
         'django.contrib.messages.middleware.MessageMiddleware',
         'django.middleware.clickjacking.XFrameOptionsMiddleware',
         'django.middleware.security.SecurityMiddleware',
+        'fakebotdetector.middleware.FakeBotDetectorMiddleware',
     ]
 
 ROOT_URLCONF = 'fae2.urls'
@@ -237,17 +245,24 @@ TEMPLATES = [
 WSGI_APPLICATION = 'fae2.wsgi.application'
 
 # Database
-# https://docs.djangoproject.com/en/1.8/ref/settings/#databases
+# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#        # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+#        'NAME': get_secret('DATABASE_NAME'),  # Or path to database file if using sqlite3.
+#        'USER': get_secret('DATABASE_USER'),  # Not used with sqlite3.
+#        'PASSWORD': get_secret('DATABASE_PASSWORD'),  # Not used with sqlite3.
+#        'HOST': get_secret('DATABASE_HOST'),  # Set to empty string for localhost. Not used with sqlite3.
+#        'PORT': get_secret('DATABASE_PORT'),  # Set to empty string for default. Not used with sqlite3.
+#    }
+#}
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': get_secret('DATABASE_NAME'),  # Or path to database file if using sqlite3.
-        'USER': get_secret('DATABASE_USER'),  # Not used with sqlite3.
-        'PASSWORD': get_secret('DATABASE_PASSWORD'),  # Not used with sqlite3.
-        'HOST': get_secret('DATABASE_HOST'),  # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': get_secret('DATABASE_PORT'),  # Set to empty string for default. Not used with sqlite3.
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -270,12 +285,22 @@ LOGGING = {
     },
 }
 
+# Tells the debug_toolbar when to display
+INTERNAL_IPS = [
+    '127.0.0.1',
+]
+
+# Analytics implemented via GTM
+# https://pypi.org/project/django-google-tag-manager/
+
+GOOGLE_TAG_ID = get_secret('GOOGLE_TAG_ID')
+
 # Internationalization
-# https://docs.djangoproject.com/en/1.8/topics/i18n/
+# https://docs.djangoproject.com/en/2.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
@@ -284,15 +309,28 @@ USE_L10N = True
 USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.8/howto/static-files/
+# https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = join(BASE_DIR, 'static/')
+
+STATIC_ROOT = join(APP_DIR, 'public_html/static')
 
 print('STATIC ROOT: ' + STATIC_ROOT)
 
-STATICFILES_DIRS = (
-    join(APP_DIR, "fae2/static"),
-)
+STATICFILES_DIRS = [
+    '/opt/fae2/public_html/staticfiles',
+]
 
 LOGIN_REDIRECT_URL = '/'
+
+# Fake Bot Detector
+# https://pypi.org/project/django-fake-bot-detector/
+
+FAKE_BOT_DETECTOR_ENABLED = True
+
+FAKE_BOT_RESPONSE_CODE = 403
+
+## Pro tip: if you are running django behind an NGINX proxy,
+## you can set FAKE_BOT_RESPONSE_CODE to 444 to have NGINX close the connection
+## immediately without sending an HTTP response at all.
+

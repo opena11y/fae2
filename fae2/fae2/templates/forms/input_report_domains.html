@@ -3,15 +3,15 @@
         <legend class="error">{{form.follow.label}}: {% for error in form.follow.errors %}{{error}}{% endfor %}
         {% else %}
         <legend>
-        {{form.follow.label}} 
+        {{form.follow.label}}
          {% endif %}
           <span class="fae_info_button" aria-controls="id_inst_following"></span>
         </legend>
 
-        <div id="id_inst_following" class="fae_info">             
+        <div id="id_inst_following" class="fae_info">
             This option allows for additional control over which pages are included or excluded from an evaluation based on the domain names of each link in the website.
-            You can review the URLs of a report by selecting the "Included URLs" link in the Report Information section at the top of each page of a Report. 
-        </div>            
+            You can review the URLs of a report by selecting the "Included URLs" link in the Report Information section at the top of each page of a Report.
+        </div>
 
         <div>
             <div class="fae_radio">
@@ -32,10 +32,10 @@
             <div class="fae_indent">
                 <div class="fae_checkbox">
                     <label class="{% if not form.path.value %}disabled{% endif %}">
-                        <input 
-                            id="id_input_require_path" 
-                            type="checkbox" 
-                            name="require_path" 
+                        <input
+                            id="id_input_require_path"
+                            type="checkbox"
+                            name="require_path"
                             {% if form.require_path %}
                             check
                             {% endif %}
@@ -52,16 +52,13 @@
                     </label>
                     <span class="fae_info_button" aria-controls="id_inst_url"></span>
                 </div>
-                <div id="id_inst_url" class="fae_indent fae_info">             
-                    If a <code>/path/</code> is included in the Starting URL, checking this option will require the <code>/path/</code> for pages included in the evaluation.  
+                <div id="id_inst_url" class="fae_indent fae_info">
+                    If a <code>/path/</code> is included in the Starting URL, checking this option will require the <code>/path/</code> for pages included in the evaluation.
                 </div>
-            </div>    
+            </div>
         </div>
+       {% if not profile.account_type.advanced %}
 
-
-
-       {% if not profile.account_type.advanced %}   
- 
         <div class="fae_subgroup">
             <div class="fae_radio">
                 <label>
@@ -76,18 +73,14 @@
                     />
                     <span>Specified domain and all of its next-level subdomains</span>
                 </label>
-                <span class="fae_info_button" aria-controls="id_inst_follow_2"></span> 
+                <span class="fae_info_button" aria-controls="id_inst_follow_2"></span>
             </div>
-            <div id="id_inst_follow_2" class="fae_indent fae_info">             
+            <div id="id_inst_follow_2" class="fae_indent fae_info">
                 If the specified domain is <code>somewhere.org</code>, examples of its next-level subdomains would be <code>calendar.somewhere.org</code> and <code>events.somewhere.org</code>.
-            </div>    
+            </div>
         </div>
-
-
-       {% else %}   
-
+       {% else %}
         <div class="fae_subgroup">
-
             <div class="fae_radio">
                 <label>
                     <input
@@ -102,33 +95,31 @@
                     <span>Specified domain and the following inclusions and/or exclusions:</span>
                 </label>
             </div>
-
             <div class="fae_indent">
-
                 <!-- Next-Level sub domains of starting URL domain -->
 
                 <div class="fae_checkbox">
                     <label>
-                        <input id="id_enable_next_level_sub_domains" 
-                        type="checkbox" 
+                        <input id="id_enable_next_level_sub_domains"
+                        type="checkbox"
                         name="enable_next_level_sub_domains"
                         checked
                         />
                         <span>Any of its next-level subdomains</span>
                     </label>
                     <span class="fae_info_button" aria-controls="id_inst_next_level_sub_domains"></span>
-                </div>    
+                </div>
                 <div id="id_inst_next_level_sub_domains" class="fae_info fae_indent">
                     For the domain <code><span class="domain">somewhere.org</span></code>, examples of next-level subdomains are <code>calendar.<span class="domain">somewhere.org</span></code> and <code>events.<span class="domain">somewhere.org</span></code>.
-                </div>    
-     
+                </div>
+
                 <!-- Other next-Level sub domains -->
                 <div class="fae_subgroup">
                     <div class="fae_checkbox">
                         <label>
-                            <input id="id_enable_span_sub_domains" 
-                                type="checkbox" 
-                                name="enable_span_sub_domains" 
+                            <input id="id_enable_span_sub_domains"
+                                type="checkbox"
+                                name="enable_span_sub_domains"
                                 aria-controls="id_input_span_sub_domains"
                                 {% if form.enable_span_sub_domains.value == True %}checked{% endif %}
                                  onclick="updateDomainTextbox(event)"
@@ -136,15 +127,15 @@
                             <span>Include these additional domains and any of their next-level subdomains:</span>
                         </label>
                         <span class="fae_info_button" aria-controls="id_inst_span_sub_domains"></span>
-                    </div>    
+                    </div>
                     <div id="id_inst_span_sub_domains" class="fae_info fae_indent">
                         If an additional domain is <code>elsewhere.org</code>, examples of next-level subdomains are <code>news.elsewhere.org</code> and <code>directory.elsewhere.org</code>.
                         Use commas to separate more than one additional domain.
-                    </div>    
+                    </div>
 
                     <div {% if form.span_sub_domains.errors|length %}class="error"{% endif %}>
                         <div class="fae_textbox fae_indent">
-                          <input 
+                          <input
                               id="id_input_span_sub_domains"
                               type="text"
                               name="span_sub_domains"
@@ -154,13 +145,12 @@
                               placeholder="elsewhere.org"
                               aria-label="Additional domain names for including next level subsdomains{% for error in form.span_sub_domains.errors %}, {{error}}{% endfor %}"
                               />
-                        </div>    
+                        </div>
                         {% if form.span_sub_domains.errors|length %}
                         <label class="error" for="id_label_span_sub_domains">{% for error in form.span_sub_domains.errors %}{{error}}{% endfor %}</label>
                         {% endif %}
-                    </div>                
+                    </div>
                 </div>
-
 
                 <!-- Exclude domains -->
 
@@ -168,7 +158,7 @@
                     <div class="fae_checkbox">
                         <label>
                             <input id="id_enable_exclude_domains"
-                                type="checkbox" 
+                                type="checkbox"
                                 name="enable_exclude_domains"
                                 aria-controls="id_input_exclude_domains"
                                 {% if form.enable_exclude_domains.value == True %}checked{% endif %}
@@ -178,15 +168,15 @@
                         </label>
                         <span class="fae_info_button" aria-controls="id_inst_exclude_domains"></span>
                     </div>
-                        
-                    <div id="id_inst_exclude_domains" class="fae_info fae_indent">             
+
+                    <div id="id_inst_exclude_domains" class="fae_info fae_indent">
                         Links with any of the following domains (separated by commas) will be excluded in the evaluation.
-                    </div>    
+                    </div>
 
                     <div {% if form.exclude_domains.errors|length %}class="error"{% endif %}>
 
                         <div class="fae_textbox fae_indent">
-                          <input 
+                          <input
                               id="id_input_exclude_domains"
                               type="text"
                               name="exclude_domains"
@@ -196,13 +186,12 @@
                               placeholder="blog.somewhere.org,news.somewhere.org"
                               aria-label="Domain names to exclude{% for error in form.exclude_domains.errors %}, {{error}}{% endfor %}"
                               />
-                        </div>      
+                        </div>
                     {% if form.exclude_domains.errors|length %}
                     <label class="error" for="id_label_exclude_domains">{% for error in form.exclude_domains.errors %}{{error}}{% endfor %}</label>
                     {% endif %}
                     </div>
                 </div>
-
 
                 <!-- Include domains -->
 
@@ -210,8 +199,8 @@
                     <div class="fae_checkbox">
                         <label>
                             <input
-                                id="id_enable_include_domains" 
-                                type="checkbox" 
+                                id="id_enable_include_domains"
+                                type="checkbox"
                                 name="enable_include_domains"
                                 aria-controls="id_input_include_domains"
                                 {% if form.enable_include_domains.value == True %}checked{% endif %}
@@ -219,17 +208,14 @@
                                />
                             <span>Include the following domains:</span>
                         </label>
-
                         <span class="fae_info_button" aria-controls="id_inst_include_domains"></span>
                     </div>
-                        
-                    <div id="id_inst_include_domains" class="fae_info fae_indent">             
+                    <div id="id_inst_include_domains" class="fae_info fae_indent">
                         Links with any of the following domains (separated by commas) will be included in the evaluation.
-                    </div>    
-
+                    </div>
                     <div {% if form.include_domains.errors|length %}class="error"{% endif %}>
                         <div class="fae_textbox fae_indent">
-                            <input 
+                            <input
                                 id="id_input_include_domains"
                                 type="text"
                                 name="include_domains"
@@ -239,17 +225,13 @@
                                 placeholder="events.somewhere.org,calendar.somewhere.org"
                                 aria-label="Domain names to include{% for error in form.include_domains.errors %}, {{error}}{% endfor %}"
                               />
-                        </div>    
+                        </div>
                         {% if form.include_domains.errors|length %}
                         <label class="error" for="id_label_include_domains">{% for error in form.include_domains.errors %}{{error}}{% endfor %}</label>
                         {% endif %}
                     </div>
                 </div>
-
             </div>
-
         </div>
-
-        {% endif %}   
-
-    </fieldset>    
+        {% endif %}
+    </fieldset>

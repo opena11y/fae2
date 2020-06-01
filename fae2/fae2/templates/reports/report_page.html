@@ -179,17 +179,10 @@
                    <td class="text"  headers="id_r{{forloop.counter}} id_sta">
                     {% include 'reports/implementation_status.html' with is=summary.implementation_status pfs=summary.implementation_pass_fail_score pfmcs=summary.implementation_score %}
                     </td>
-
                 </tr>
              </tbody>
-
-
         </table>
     </section>
-
 {% include "reports/information_ainspector_sidebar.html" %}
-
 {% include "reports/implementation_information.html" %}
-
-
 {% endblock %}

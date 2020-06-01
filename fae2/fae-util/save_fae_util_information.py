@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -34,7 +34,6 @@ import shutil
 import json
 import csv
 
-
 import urllib
 
 from urllib.parse import urlparse
@@ -56,11 +55,9 @@ from reports.models import UnprocessedURL
 from reports.models import ExcludedURL
 from reports.models import ExcludedURLPageReference
 
-
 # from usage.models import Usage
 
 from django.db import connection, transaction
-
 
 DEBUG=False
 INFO=True
@@ -76,7 +73,6 @@ def debug(s):
     log.write("[SAVE_FAE_UTIL][debug  ]: " + str(s) + "\n")
     log.flush()
 
-
 def info(s):
   if INFO and log:
     log.write("[SAVE_FAE_UTIL][Info   ]: " + str(s) + "\n")
@@ -86,7 +82,6 @@ def error(s):
   if ERROR and log:
     log.write("[SAVE_FAE_UTIL][**ERROR]: " + str(s) + "\n")
     log.flush()
-
 
 def stripQuotes(s):
   if s.startswith('"') and s.endswith('"'):
@@ -326,7 +321,6 @@ def processedUrlsToDatabase(ws_report, fname, num):
     error("******** Error: " + fname + " cannot be opened")
     error("  I/O error({0}): {1}".format(e.errno, e.strerror))
 
-
 def excludedUrlsToDatabase(ws_report, fname, num):
 
   def getRowItems(r):
@@ -400,4 +394,3 @@ def excludedUrlsToDatabase(ws_report, fname, num):
   except IOError as e:
     error("******** Error: " + fname + " cannot be opened")
     error("  I/O error({0}): {1}".format(e.errno, e.strerror))
-

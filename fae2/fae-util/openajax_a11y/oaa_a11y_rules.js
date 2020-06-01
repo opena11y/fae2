@@ -5,7 +5,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -17,7 +17,6 @@
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -52,7 +51,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -64,7 +63,6 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -111,19 +109,19 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HMTL 5: The audio element',
-                url:   'http://www.w3.org/TR/html5/embedded-content-0.html#the-audio-element'
+                url:   'https://www.w3.org/TR/html5/embedded-content-0.html#the-audio-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HMTL 5: The track element',
-                url:   'http://www.w3.org/TR/html5/embedded-content-0.html#the-track-element'
+                url:   'https://www.w3.org/TR/html5/embedded-content-0.html#the-track-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'WebVTT: The Web Video Text Tracks Format',
-                url:   'http://dev.w3.org/html5/webvtt/'
+                url:   'https://dev.w3.org/html5/webvtt/'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (ARIA) 1.0: aria-describedby',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-describedby'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-describedby'
               }
             ]
         },
@@ -166,11 +164,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HMTL 5: The object element',
-                url:   'http://www.w3.org/TR/html5/embedded-content-0.html#the-object-element'
+                url:   'https://www.w3.org/TR/html5/embedded-content-0.html#the-object-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (ARIA) 1.0: aria-describedby',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-describedby'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-describedby'
               }
             ]
         },
@@ -213,11 +211,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HMTL 5: The embed element',
-                url:   'http://www.w3.org/TR/html5/embedded-content-0.html#the-embed-element'
+                url:   'https://www.w3.org/TR/html5/embedded-content-0.html#the-embed-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (ARIA) 1.0: aria-describedby',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-describedby'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-describedby'
               }
             ]
         },
@@ -243,11 +241,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
                             ],
             INFORMATIONAL_LINKS: [{ type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                                title: 'WCAG 2.0 Success Criterion 1.4.2 Audio Control',
-                               url:   'http://www.w3.org/TR/WCAG20/#visual-audio-contrast-dis-audio'
+                               url:   'https://www.w3.org/TR/WCAG20/#visual-audio-contrast-dis-audio'
                              },
                              { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                                title: 'How to meet Success Criterion 1.4.2 Audio Control',
-                               url:   'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-dis-audio'
+                               url:   'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-visual-audio-contrast-dis-audio'
                              }
                             ]
         }
@@ -260,7 +258,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -272,7 +270,6 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -324,15 +321,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: 12.2 The A element',
-                url:   'http://www.w3.org/TR/html4/struct/links.html#edef-A'
+                url:   'https://www.w3.org/TR/html4/struct/links.html#edef-A'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'WAI-ARIA 1.0 Authoring Practices: Using Tabindex to Manage Focus among Widgets',
-                url:   'http://www.w3.org/TR/2013/WD-wai-aria-practices-20130307/#focus_tabindex'
+                url:   'https://www.w3.org/TR/2013/WD-wai-aria-practices-20130307/#focus_tabindex'
               },
               { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
                 title: 'SkipTo plugin by PayPal Accessibility Team',
-                url:   'http://paypal.github.io/skipto/'
+                url:   'https://paypal.github.io/skipto/'
               }
             ]
       }
@@ -345,7 +342,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -357,7 +354,6 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -401,27 +397,27 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             ],
             INFORMATIONAL_LINKS: [{ type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                                title: 'WCAG 2.0 Success Criterion 1.4.3 Contrast (Minimum): The visual presentation of text and images of text has a contrast ratio of at least 4.5:1',
-                               url:   'http://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast'
+                               url:   'https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast'
                              },
                              { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                                title: 'How to meet Success Criterion 1.4.3 Contrast (Minimum): The visual presentation of text and images of text has a contrast ratio of at least 4.5:1',
-                               url:   'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast'
+                               url:   'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-visual-audio-contrast'
                              },
                             { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                               title: 'G17: Ensuring that a contrast ratio of at least 7:1 exists between text (and images of text) and background behind the text',
-                              url:   'http://www.w3.org/TR/WCAG20-TECHS/G17'
+                              url:   'https://www.w3.org/TR/WCAG20-TECHS/G17'
                             },
                             { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                               title: 'G18: Ensuring that a contrast ratio of at least 4.5:1 exists between text (and images of text) and background behind the text',
-                              url:   'http://www.w3.org/TR/WCAG20-TECHS/G18'
+                              url:   'https://www.w3.org/TR/WCAG20-TECHS/G18'
                             },
                             { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                               title: 'G148: Not specifying background color, not specifying text color, and not using technology features that change those default',
-                              url:   'http://www.w3.org/TR/WCAG20-TECHS/G148'
+                              url:   'https://www.w3.org/TR/WCAG20-TECHS/G148'
                             },
                             { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                               title: 'G174: Providing a control with a sufficient contrast ratio that allows users to switch to a presentation that uses sufficient contrast',
-                              url:   'http://www.w3.org/TR/WCAG20-TECHS/G174'
+                              url:   'https://www.w3.org/TR/WCAG20-TECHS/G174'
                             }
                             ]
         },
@@ -446,15 +442,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
                             ],
             INFORMATIONAL_LINKS: [{ type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                                title: 'WCAG 2.0 Success Criterion 1.4.1 Use of Color',
-                               url:   'http://www.w3.org/TR/WCAG20/#visual-audio-contrast-without-color'
+                               url:   'https://www.w3.org/TR/WCAG20/#visual-audio-contrast-without-color'
                              },
                              { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                                title: 'How to meet Success Criterion 1.4.1 Use of Color',
-                               url:   'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-without-color'
+                               url:   'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-visual-audio-contrast-without-color'
                              },
                             { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                               title: 'G14: Ensuring that information conveyed by color differences is also available in text',
-                              url:   'http://www.w3.org/TR/WCAG20-TECHS/G14'
+                              url:   'https://www.w3.org/TR/WCAG20-TECHS/G14'
                             }
                             ]
         }
@@ -467,7 +463,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -479,7 +475,6 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -526,19 +521,19 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: The @label@ element',
-                url:   'http://www.w3.org/TR/html4/interact/forms.html#edef-LABEL'
+                url:   'https://www.w3.org/TR/html4/interact/forms.html#edef-LABEL'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: aria-invalid',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-invalid'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-invalid'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H44: Using label elements to associate text labels with form controls',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H44'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H44'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA21: Using Aria-invalid to Indicate An Error Field',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA21'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA21'
               }
             ]
         },
@@ -581,15 +576,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: required attribute',
-                url:   'http://www.w3.org/TR/html5/forms.html#attr-input-required'
+                url:   'https://www.w3.org/TR/html5/forms.html#attr-input-required'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: aria-required',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-required'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-required'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA2: Identifying a required field with the aria-required property',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA2'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA2'
               }
             ]
         },
@@ -623,7 +618,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: aria-required',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-required'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-required'
               }
             ]
         },
@@ -659,23 +654,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: The @label@ element',
-                url:   'http://www.w3.org/TR/html4/interact/forms.html#edef-LABEL'
+                url:   'https://www.w3.org/TR/html4/interact/forms.html#edef-LABEL'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: aria-invalid',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-invalid'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-invalid'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H44: Using label elements to associate text labels with form controls',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H44'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H44'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA1: Using the aria-describedby property to provide a descriptive label for user interface controls',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA1.html'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA1.html'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA19: Using ARIA role=alert or Live Regions to Identify Errors',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA19.html'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA19.html'
               }             ]
         },
         ERROR_5: {
@@ -708,39 +703,39 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'Understanding SC 3.3.4 Error Prevention (Legal, Financial, Data.)',
-                url:   'http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html'
+                url:   'https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G164: Providing a stated time within which an online request (or transaction) may be amended or canceled by the user after making the request.',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G164'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G164'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G98: Providing the ability for the user to review and correct answers before submitting.',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G98'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G98'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G155: Providing a checkbox in addition to a submit button.',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G155'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G155'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G99: Providing the ability to recover deleted information.',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G99'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G99'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G168: Requesting confirmation to continue with selected action.',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G168'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G168'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G155: Providing a checkbox in addition to a submit button.',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G155'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G155'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G98: Providing the ability for the user to review and correct answers before submitting.',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G98'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G98'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: ' G168: Requesting confirmation to continue with selected action.',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G168'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G168'
               }
             ]
         }
@@ -753,7 +748,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -765,7 +760,6 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -812,11 +806,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G59: Placing the interactive elements in an order that follows sequences and relationships within the content',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G59'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G59'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H4: Creating a logical tab order through links, form controls, and objects',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H4'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H4'
               }
             ]
         },
@@ -858,11 +852,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'C15: Using CSS to change the presentation of a user interface component when it receives focus ',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/C15'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/C15'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G195: Using an author-supplied, highly visible focus indicator',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G195'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G195'
               }
             ]
         },
@@ -894,15 +888,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G200: Opening new windows and tabs from a link only when necessary',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G200'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G200'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G201: Giving users advanced warning when opening a new window',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G201'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G201'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'F52: Failure of Success Criterion 3.2.1 and 3.2.5 due to opening a new window as soon as a new page is loaded',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/F52'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/F52'
               }
             ]
         },
@@ -936,15 +930,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G200: Opening new windows and tabs from a link only when necessary',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G200'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G200'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G201: Giving users advanced warning when opening a new window',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G201'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G201'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'F52: Failure of Success Criterion 3.2.1 and 3.2.5 due to opening a new window as soon as a new page is loaded',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/F52'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/F52'
               }
             ]
         },
@@ -990,11 +984,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: The @input[type="submit"]@ element',
-                url:   'http://www.w3.org/TR/html4/interact/forms.html#edef-INPUT'
+                url:   'https://www.w3.org/TR/html4/interact/forms.html#edef-INPUT'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H32: Providing submit buttons',
-                url:   'http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/H32'
+                url:   'https://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/H32'
               }
             ]
         },
@@ -1027,19 +1021,19 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: The @input[type="checkbox"]@ and @input[type="radio"]@ element',
-                url:   'http://www.w3.org/TR/html4/interact/forms.html#edef-INPUT'
+                url:   'https://www.w3.org/TR/html4/interact/forms.html#edef-INPUT'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: Checkbox Role',
-                url:   'http://www.w3.org/TR/wai-aria/#checkbox'
+                url:   'https://www.w3.org/TR/wai-aria/#checkbox'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: Radio Role',
-                url:   'http://www.w3.org/TR/wai-aria/#radio'
+                url:   'https://www.w3.org/TR/wai-aria/#radio'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H32: Providing submit buttons',
-                url:   'http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/H32'
+                url:   'https://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/H32'
               }
             ]
         }
@@ -1052,7 +1046,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -1064,7 +1058,6 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -1104,35 +1097,35 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: The @label@ element',
-                url:   'http://www.w3.org/TR/html4/interact/forms.html#edef-LABEL'
+                url:   'https://www.w3.org/TR/html4/interact/forms.html#edef-LABEL'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-label@ attribute',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-label'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-label'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-labelledby@ attribute',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-labelledby'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-labelledby'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: The @title@ attribute',
-                url:   'http://www.w3.org/TR/html4/struct/global.html#adef-title'
+                url:   'https://www.w3.org/TR/html4/struct/global.html#adef-title'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H44: Using label elements to associate text labels with form controls',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H44'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H44'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H65: Using the title attribute to identify form controls when the label element cannot be used',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H65'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H65'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H71: Providing a description for groups of form controls using fieldset and legend elements',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H71'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H71'
               },
               { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
                 title: 'iCITA Best Practices: Labels for Form Controls Overview',
-                url:   'http://html.cita.illinois.edu/nav/form/'
+                url:   'https://html.cita.illinois.edu/nav/form/'
               }
             ]
         },
@@ -1168,27 +1161,27 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: The @input[type=image]@ element',
-                url:   'http://www.w3.org/TR/html4/interact/forms.html#adef-type-INPUT'
+                url:   'https://www.w3.org/TR/html4/interact/forms.html#adef-type-INPUT'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-label@ attribute',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-label'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-label'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-labelledby@ attribute',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-labelledby'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-labelledby'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: The @title@ attribute',
-                url:   'http://www.w3.org/TR/html4/struct/global.html#adef-title'
+                url:   'https://www.w3.org/TR/html4/struct/global.html#adef-title'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H36: Using alt attributes on images used as submit buttons',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H36'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H36'
               },
               { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
                 title: 'iCITA Best Practices: Labels for Form Controls Overview',
-                url:   'http://html.cita.illinois.edu/nav/form/'
+                url:   'https://html.cita.illinois.edu/nav/form/'
               }
             ]
         },
@@ -1225,7 +1218,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: The @fieldset@ and @legend@ elements',
-                url:   'http://www.w3.org/TR/html4/interact/forms.html#edef-FIELDSET'
+                url:   'https://www.w3.org/TR/html4/interact/forms.html#edef-FIELDSET'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @group@ role',
@@ -1233,15 +1226,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H71: Providing a description for groups of form controls using fieldset and legend elements',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H71'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H71'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'iCITA: Example 7: Fieldset/Legend for providing a grouping label for radio buttons',
-                url:   'http://html.cita.illinois.edu/nav/form/radio/index.php?example=6'
+                url:   'https://html.cita.illinois.edu/nav/form/radio/index.php?example=6'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'IBM Web checklist: HTML example 6',
-                url:   'http://www-03.ibm.com/able/guidelines/web/webstructure.html'
+                url:   'https://www-03.ibm.com/able/guidelines/web/webstructure.html'
               }
             ]
         },
@@ -1274,7 +1267,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: The @button@ elements',
-                url:   'http://www.w3.org/TR/html4/interact/forms.html#edef-BUTTON'
+                url:   'https://www.w3.org/TR/html4/interact/forms.html#edef-BUTTON'
               }
             ]
         },
@@ -1308,15 +1301,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: @id@ attribute',
-                url:   'http://www.w3.org/TR/html4/struct/global.html#adef-id'
+                url:   'https://www.w3.org/TR/html4/struct/global.html#adef-id'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'F77: Failure of Success Criterion 4.1.1 due to duplicate values of type ID',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/F77'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/F77'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H88: Using HTML according to spec',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H88'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H88'
               }
             ]
         },
@@ -1351,15 +1344,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: The @label@ element FOR attribute',
-                url:   'http://www.w3.org/TR/html4/interact/forms.html#adef-for'
+                url:   'https://www.w3.org/TR/html4/interact/forms.html#adef-for'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H44: Using label elements to associate text labels with form controls',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H44'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H44'
               },
               { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
                 title: 'iCITA: Using @label@ Element for Labeling Form Controls',
-                url:   'http://html.cita.illinois.edu/nav/form/form-label-markup.php'
+                url:   'https://html.cita.illinois.edu/nav/form/form-label-markup.php'
               }
             ]
         },
@@ -1391,19 +1384,19 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: The @label@ element @for@ attribute',
-                url:   'http://www.w3.org/TR/html4/interact/forms.html#adef-for'
+                url:   'https://www.w3.org/TR/html4/interact/forms.html#adef-for'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H44: Using @label@ elements to associate text labels with form controls',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H44'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H44'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H88: Using HTML according to spec',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H88'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H88'
               },
               { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
                 title: 'iCITA: Using @label@ element for Labeling Form Controls',
-                url:   'http://html.cita.illinois.edu/nav/form/form-label-markup.php'
+                url:   'https://html.cita.illinois.edu/nav/form/form-label-markup.php'
               }
             ]
         },
@@ -1437,19 +1430,19 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: Adding structure to forms: the @fieldset@ and @legend@ elements',
-                url:   'http://www.w3.org/TR/html4/interact/forms.html#edef-FIELDSET'
+                url:   'https://www.w3.org/TR/html4/interact/forms.html#edef-FIELDSET'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H71: Providing a description for groups of form controls using fieldset and legend elements',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H71'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H71'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H88: Using HTML according to spec',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H88'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H88'
               },
               { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
                 title: 'iCITA: Using @label@ element for Labeling Form Controls',
-                url:   'http://html.cita.illinois.edu/nav/form/form-label-markup.php'
+                url:   'https://html.cita.illinois.edu/nav/form/form-label-markup.php'
               }
             ]
         },
@@ -1488,15 +1481,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: Adding structure to forms: the @fieldset@ and @legend@ elements',
-                url:   'http://www.w3.org/TR/html4/interact/forms.html#edef-FIELDSET'
+                url:   'https://www.w3.org/TR/html4/interact/forms.html#edef-FIELDSET'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H88: Using HTML according to spec',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H88'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H88'
               },
               { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
                 title: 'iCITA: Using @label@ element for Labeling Form Controls',
-                url:   'http://html.cita.illinois.edu/nav/form/form-label-markup.php'
+                url:   'https://html.cita.illinois.edu/nav/form/form-label-markup.php'
               }
             ]
         },
@@ -1539,35 +1532,35 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: The @label@ element',
-                url:   'http://www.w3.org/TR/html4/interact/forms.html#edef-LABEL'
+                url:   'https://www.w3.org/TR/html4/interact/forms.html#edef-LABEL'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-label@ attribute',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-label'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-label'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-labelledby@ attribute',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-labelledby'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-labelledby'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: The @title@ attribute',
-                url:   'http://www.w3.org/TR/html4/struct/global.html#adef-title'
+                url:   'https://www.w3.org/TR/html4/struct/global.html#adef-title'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H44: Using label elements to associate text labels with form controls',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H44'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H44'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H65: Using the title attribute to identify form controls when the label element cannot be used',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H65'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H65'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H71: Providing a description for groups of form controls using fieldset and legend elements',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H71'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H71'
               },
               { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
                 title: 'iCITA Best Practices: Labels for Form Controls Overview',
-                url:   'http://html.cita.illinois.edu/nav/form/'
+                url:   'https://html.cita.illinois.edu/nav/form/'
               }
             ]
         },
@@ -1603,23 +1596,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: The @form@ element',
-                url:   'http://www.w3.org/TR/html4/interact/forms.html#edef-FORM'
+                url:   'https://www.w3.org/TR/html4/interact/forms.html#edef-FORM'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H44: Using label elements to associate text labels with form controls',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H44'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H44'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H65: Using the title attribute to identify form controls when the label element cannot be used',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H65'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H65'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H71: Providing a description for groups of form controls using fieldset and legend elements',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H71'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H71'
               },
               { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
                 title: 'iCITA Best Practices: Labels for Form Controls Overview',
-                url:   'http://html.cita.illinois.edu/nav/form/'
+                url:   'https://html.cita.illinois.edu/nav/form/'
               }
             ]
         }    }
@@ -1631,7 +1624,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -1683,11 +1676,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
       INFORMATIONAL_LINKS: [
                        { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                          title: 'WCAG 2.0 Success Criterion 2.4.1 Bypass Blocks: A mechanism is available to bypass blocks of content that are repeated on multiple Web pages',
-                         url:   'http://www.w3.org/TR/WCAG20/#navigation-mechanisms-skip'
+                         url:   'https://www.w3.org/TR/WCAG20/#navigation-mechanisms-skip'
                        },
                        { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                          title: 'H64: Using the title attribute of the frame and iframe elements',
-                         url:   'http://www.w3.org/TR/WCAG20-TECHS/H64.html'
+                         url:   'https://www.w3.org/TR/WCAG20-TECHS/H64.html'
                        }
                       ]
     },
@@ -1727,11 +1720,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
       INFORMATIONAL_LINKS: [
                       { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                         title: 'WCAG 2.0 Success Criterion 2.4.1 Bypass Blocks: A mechanism is available to bypass blocks of content that are repeated on multiple Web pages',
-                        url:   'http://www.w3.org/TR/WCAG20/#navigation-mechanisms-skip'
+                        url:   'https://www.w3.org/TR/WCAG20/#navigation-mechanisms-skip'
                       },
                       { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                         title: 'H64: Using the title attribute of the frame and iframe elements',
-                        url:   'http://www.w3.org/TR/WCAG20-TECHS/H64.html'
+                        url:   'https://www.w3.org/TR/WCAG20-TECHS/H64.html'
                       }
       ]
     }
@@ -1744,7 +1737,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -1756,7 +1749,6 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -1802,43 +1794,43 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
       INFORMATIONAL_LINKS: [
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'HTML 5 Specification: 12.2 The @img@ element',
-          url:   'http://www.w3.org/TR/html5/embedded-content-0.html#the-img-element'
+          url:   'https://www.w3.org/TR/html5/embedded-content-0.html#the-img-element'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @img@ role',
-          url:   'http://www.w3.org/TR/wai-aria/#img'
+          url:   'https://www.w3.org/TR/wai-aria/#img'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-label@ attribute',
-          url:   'http://www.w3.org/TR/wai-aria/#aria-label'
+          url:   'https://www.w3.org/TR/wai-aria/#aria-label'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-labelledby@ attribute',
-          url:   'http://www.w3.org/TR/wai-aria/#aria-labelledby'
+          url:   'https://www.w3.org/TR/wai-aria/#aria-labelledby'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'HTML 4.01 Specification: 13.8 How to specify alternate text',
-          url:   'http://www.w3.org/TR/html4/struct/objects.html#adef-alt'
+          url:   'https://www.w3.org/TR/html4/struct/objects.html#adef-alt'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'G94: Providing text alternative for non-text content that serves the same purpose and presents the same information as the non-text content',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/G94'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/G94'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'G95: Providing text alternatives that provide a brief description of the non-text content',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/G95'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/G95'
         },
         { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
           title: 'WebAIM: Alternative Text',
-          url:   'http://webaim.org/techniques/alttext/'
+          url:   'https://webaim.org/techniques/alttext/'
         },
         { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
           title: 'Accessibility at Penn State: Text Equivalents for Images',
-          url:   'http://accessibility.psu.edu/images/'
+          url:   'https://accessibility.psu.edu/images/'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'CSS Backgrounds and Borders Module Level 3: The @background-image@ property',
-          url:   'http://www.w3.org/TR/css3-background/#the-background-image'
+          url:   'https://www.w3.org/TR/css3-background/#the-background-image'
         }
       ]
     },
@@ -1882,43 +1874,43 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
       INFORMATIONAL_LINKS: [
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'HTML 5 Specification: 12.2 The @img@ element',
-          url:   'http://www.w3.org/TR/html5/embedded-content-0.html#the-img-element'
+          url:   'https://www.w3.org/TR/html5/embedded-content-0.html#the-img-element'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @img@ role',
-          url:   'http://www.w3.org/TR/wai-aria/#img'
+          url:   'https://www.w3.org/TR/wai-aria/#img'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-label@ attribute',
-          url:   'http://www.w3.org/TR/wai-aria/#aria-label'
+          url:   'https://www.w3.org/TR/wai-aria/#aria-label'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-labelledby@ attribute',
-          url:   'http://www.w3.org/TR/wai-aria/#aria-labelledby'
+          url:   'https://www.w3.org/TR/wai-aria/#aria-labelledby'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'HTML 4.01 Specification: 13.8 How to specify alternate text',
-          url:   'http://www.w3.org/TR/html4/struct/objects.html#adef-alt'
+          url:   'https://www.w3.org/TR/html4/struct/objects.html#adef-alt'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'G94: Providing text alternative for non-text content that serves the same purpose and presents the same information as the non-text content',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/G94'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/G94'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'G95: Providing text alternatives that provide a brief description of the non-text content',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/G95'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/G95'
         },
         { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
           title: 'WebAIM: Alternative Text',
-          url:   'http://webaim.org/techniques/alttext/'
+          url:   'https://webaim.org/techniques/alttext/'
         },
         { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
           title: 'Accessibility at Penn State: Text Equivalents for Images',
-          url:   'http://accessibility.psu.edu/images/'
+          url:   'https://accessibility.psu.edu/images/'
         },
         { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
           title: 'Diagram Center: Digital Image And Graphic Resources for Accessible Materials',
-          url:   'http://diagramcenter.org/'
+          url:   'https://diagramcenter.org/'
         }
 
       ]
@@ -1958,19 +1950,19 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
       INFORMATIONAL_LINKS: [
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'HTML 4.01 Specification: 13.8 How to specify alternate text',
-          url:   'http://www.w3.org/TR/html4/struct/objects.html#adef-alt'
+          url:   'https://www.w3.org/TR/html4/struct/objects.html#adef-alt'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'G94: Providing text alternative for non-text content that serves the same purpose and presents the same information as the non-text content',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/G94'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/G94'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'G95: Providing text alternatives that provide a brief description of the non-text content',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/G95'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/G95'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/F30'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/F30'
         }
       ]
     },
@@ -2006,19 +1998,19 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
       INFORMATIONAL_LINKS: [
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'HTML 4.01 Specification: 13.8 How to specify alternate text',
-          url:   'http://www.w3.org/TR/html4/struct/objects.html#adef-alt'
+          url:   'https://www.w3.org/TR/html4/struct/objects.html#adef-alt'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'G94: Providing text alternative for non-text content that serves the same purpose and presents the same information as the non-text content',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/G94'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/G94'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'G95: Providing text alternatives that provide a brief description of the non-text content',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/G95'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/G95'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/F30'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/F30'
         }
       ]
     },
@@ -2053,15 +2045,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
       INFORMATIONAL_LINKS: [
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'HTML 5 Specification: 12.2 The @img@ element',
-          url:   'http://www.w3.org/TR/html5/embedded-content-0.html#the-img-element'
+          url:   'https://www.w3.org/TR/html5/embedded-content-0.html#the-img-element'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @presentation@ role',
-          url:   'http://www.w3.org/TR/wai-aria/#presentation'
+          url:   'https://www.w3.org/TR/wai-aria/#presentation'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'CSS Backgrounds and Borders Module Level 3: The @background-image@ property',
-          url:   'http://www.w3.org/TR/css3-background/#the-background-image'
+          url:   'https://www.w3.org/TR/css3-background/#the-background-image'
         }
       ]
     },
@@ -2114,39 +2106,39 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
       INFORMATIONAL_LINKS: [
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'HTML 5 Specification: 12.2 The @img@ element',
-          url:   'http://www.w3.org/TR/html5/embedded-content-0.html#the-img-element'
+          url:   'https://www.w3.org/TR/html5/embedded-content-0.html#the-img-element'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @img@ role',
-          url:   'http://www.w3.org/TR/wai-aria/#img'
+          url:   'https://www.w3.org/TR/wai-aria/#img'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-describedby@ attribute',
-          url:   'http://www.w3.org/TR/wai-aria/#aria-describedby'
+          url:   'https://www.w3.org/TR/wai-aria/#aria-describedby'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'HTML5 Image Description Extension (longdesc)',
-          url:   'http://www.w3.org/TR/html-longdesc/'
+          url:   'https://www.w3.org/TR/html-longdesc/'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'HTML 4.01 Specification: 13.8 How to specify alternate text',
-          url:   'http://www.w3.org/TR/html4/struct/objects.html#adef-alt'
+          url:   'https://www.w3.org/TR/html4/struct/objects.html#adef-alt'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'G94: Providing text alternative for non-text content that serves the same purpose and presents the same information as the non-text content',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/G94'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/G94'
         },
         { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
           title: 'WebAIM: Alternative Text',
-          url:   'http://webaim.org/techniques/alttext/'
+          url:   'https://webaim.org/techniques/alttext/'
         },
         { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
           title: 'Accessibility at Penn State: Text Equivalents for Images',
-          url:   'http://accessibility.psu.edu/images/'
+          url:   'https://accessibility.psu.edu/images/'
         },
         { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
           title: 'Diagram Center: Digital Image And Graphic Resources for Accessible Materials',
-          url:   'http://diagramcenter.org/'
+          url:   'https://diagramcenter.org/'
         }
       ]
     },
@@ -2184,7 +2176,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
       INFORMATIONAL_LINKS: [
         {type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'Mathematical Markup Language (MathML) Version 3.0',
-          url:   'http://www.w3.org/TR/MathML/'
+          url:   'https://www.w3.org/TR/MathML/'
         },
         {type:  OpenAjax.a11y.REFERENCES.REFERENCE,
           title: 'MathJax Javascript Library',
@@ -2192,27 +2184,27 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
         },
         {type:  OpenAjax.a11y.REFERENCES.REFERENCE,
           title: 'PSU Accessibility: MathML and MathJax',
-          url:   'http://accessibility.psu.edu/math/mathml/'
+          url:   'https://accessibility.psu.edu/math/mathml/'
         },
         {type:  OpenAjax.a11y.REFERENCES.REFERENCE,
           title: 'Design Science: Math Type',
-          url:   'http://www.dessci.com/en/products/mathtype/'
+          url:   'https://www.dessci.com/en/products/mathtype/'
         },
         {type:  OpenAjax.a11y.REFERENCES.REFERENCE,
           title: 'Design Science: Math Player',
-          url:   'http://www.dessci.com/en/products/mathplayer/'
+          url:   'https://www.dessci.com/en/products/mathplayer/'
         },
         {type:  OpenAjax.a11y.REFERENCES.REFERENCE,
           title: 'MathML in Daisy',
-          url:   'http://www.daisy.org/project/mathml'
+          url:   'https://www.daisy.org/project/mathml'
         },
         {type:  OpenAjax.a11y.REFERENCES.REFERENCE,
           title: 'EPUB 3 Accessibility Guidelines: MathML',
-          url:   'http://www.idpf.org/accessibility/guidelines/content/mathml/desc.php'
+          url:   'https://www.idpf.org/accessibility/guidelines/content/mathml/desc.php'
         },
         {type:  OpenAjax.a11y.REFERENCES.REFERENCE,
           title: 'W3C Math Wiki: MathML Tools',
-          url:   'http://www.w3.org/Math/wiki/Tools'
+          url:   'https://www.w3.org/Math/wiki/Tools'
         }
       ]
     }
@@ -2225,7 +2217,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -2278,19 +2270,19 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
       INFORMATIONAL_LINKS: [
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'HTML 4.01 Specification: The @h1@ element',
-          url:   'http://www.w3.org/TR/html4/struct/global.html#edef-H1'
+          url:   'https://www.w3.org/TR/html4/struct/global.html#edef-H1'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'G130: Providing descriptive headings',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/G130'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/G130'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'G141: Organizing a page using headings',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/G141'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/G141'
         },
         { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
           title: 'iCITA Best Practices: Unique Title',
-          url:   'http://html.cita.illinois.edu/nav/title/'
+          url:   'https://html.cita.illinois.edu/nav/title/'
         }
       ]
     },
@@ -2329,15 +2321,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
       INFORMATIONAL_LINKS: [
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'HTML 4.01 Specification: The @h1@ element',
-          url:   'http://www.w3.org/TR/html4/struct/global.html#edef-H1'
+          url:   'https://www.w3.org/TR/html4/struct/global.html#edef-H1'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: @main@ role',
-          url:   'http://www.w3.org/TR/wai-aria/#main'
+          url:   'https://www.w3.org/TR/wai-aria/#main'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: @banner@ role',
-          url:   'http://www.w3.org/TR/wai-aria/#banner'
+          url:   'https://www.w3.org/TR/wai-aria/#banner'
         }
       ]
     },
@@ -2368,23 +2360,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
       INFORMATIONAL_LINKS: [
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'HTML 4.01 Specification: Headings: The H1, H2, H3, H4, H5, H6 elements',
-          url:   'http://www.w3.org/TR/html4/struct/global.html#edef-H1'
+          url:   'https://www.w3.org/TR/html4/struct/global.html#edef-H1'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'G130: Providing descriptive headings',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/G130'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/G130'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'G141: Organizing a page using headings',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/G141'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/G141'
         },
         { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
           title: 'iCITA Best Practices: Unique Title',
-          url:   'http://html.cita.illinois.edu/nav/title/'
+          url:   'https://html.cita.illinois.edu/nav/title/'
         },
         { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
           title: 'iCITA Best Practices: Sub Headings',
-          url:   'http://html.cita.illinois.edu/nav/heading/'
+          url:   'https://html.cita.illinois.edu/nav/heading/'
         }
       ]
     },
@@ -2422,23 +2414,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
       INFORMATIONAL_LINKS: [
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'HTML 4.01 Specification: Headings: The H1, H2, H3, H4, H5, H6 elements',
-          url:   'http://www.w3.org/TR/html4/struct/global.html#edef-H1'
+          url:   'https://www.w3.org/TR/html4/struct/global.html#edef-H1'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'G130: Providing descriptive headings',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/G130'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/G130'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'G141: Organizing a page using headings',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/G141'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/G141'
         },
         { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
           title: 'iCITA Best Practices: Unique Title',
-          url:   'http://html.cita.illinois.edu/nav/title/'
+          url:   'https://html.cita.illinois.edu/nav/title/'
         },
         { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
           title: 'iCITA Best Practices: Sub Headings',
-          url:   'http://html.cita.illinois.edu/nav/heading/'
+          url:   'https://html.cita.illinois.edu/nav/heading/'
         }
       ]
     },
@@ -2471,11 +2463,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
       INFORMATIONAL_LINKS: [
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'HTML 4.01 Specification: Headings: The H1, H2, H3, H4, H5, H6 elements',
-          url:   'http://www.w3.org/TR/html4/struct/global.html#edef-H1'
+          url:   'https://www.w3.org/TR/html4/struct/global.html#edef-H1'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'C22: Using CSS to control visual presentation of text',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/C22'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/C22'
         }
       ]
     },
@@ -2510,11 +2502,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
       INFORMATIONAL_LINKS: [
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: landmark roles',
-          url:   'http://www.w3.org/TR/wai-aria/#landmark'
+          url:   'https://www.w3.org/TR/wai-aria/#landmark'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'HTML 4.01 Specification: Headings: The H2 elements',
-          url:   'http://www.w3.org/TR/html4/struct/global.html#edef-H2'
+          url:   'https://www.w3.org/TR/html4/struct/global.html#edef-H2'
         }
       ]
     },
@@ -2559,7 +2551,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: contentinfo role',
-                url:   'http://www.w3.org/TR/wai-aria/#contentinfo'
+                url:   'https://www.w3.org/TR/wai-aria/#contentinfo'
               }
             ]
         }
@@ -2572,7 +2564,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -2584,7 +2576,6 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -2624,11 +2615,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: Headings: The em and strong elements',
-                url:   'http://www.w3.org/TR/html4/struct/text.html#edef-EM'
+                url:   'https://www.w3.org/TR/html4/struct/text.html#edef-EM'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: Headings: The H1-H6 elements',
-                url:   'http://www.w3.org/TR/html4/struct/global.html#edef-H2'
+                url:   'https://www.w3.org/TR/html4/struct/global.html#edef-H2'
               }
             ]
         },
@@ -2673,7 +2664,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -2745,11 +2736,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/G108'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/G108'
         },
         { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
           title: 'OAA Web Accessibility ARIA Examples',
-          url:   'http://oaa-accessibility.org/examples/'
+          url:   'https://oaa-accessibility.org/examples/'
         }
       ]
     },
@@ -2795,15 +2786,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
       INFORMATIONAL_LINKS: [
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'WAI-ARIA 1.0 Authoring Practices',
-          url:   'http://www.w3.org/WAI/PF/aria-practices/'
+          url:   'https://www.w3.org/WAI/PF/aria-practices/'
         },
         { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
           title: 'OAA Web Accessibility ARIA Examples',
-          url:   'http://oaa-accessibility.org/examples/'
+          url:   'https://oaa-accessibility.org/examples/'
         },
         { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
           title: 'Accessible jQuery-ui Components Demonstration',
-          url:   'http://access.aol.com/aegis/'
+          url:   'https://ecd.clark.edu/_resources/js/jquery/ui-accessable/'
         }
       ]
     },
@@ -2837,11 +2828,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
       INFORMATIONAL_LINKS: [
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/G108'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/G108'
         },
         { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
           title: 'OAA Web Accessibility ARIA Examples',
-          url:   'http://oaa-accessibility.org/examples/'
+          url:   'https://oaa-accessibility.org/examples/'
         }
       ]
     }
@@ -2854,7 +2845,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -2866,7 +2857,6 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -2914,23 +2904,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: main role',
-                url:   'http://www.w3.org/TR/wai-aria/#main'
+                url:   'https://www.w3.org/TR/wai-aria/#main'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: The MAIN element',
-                url:   'http://www.w3.org/TR/html5/sections.html#the-main-element'
+                url:   'https://www.w3.org/TR/html5/sections.html#the-main-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA11: Using ARIA landmarks to identify regions of a page',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA11'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA11'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA13: Using aria-labelledby to name regions and landmarks',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA13'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA13'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA14: Using aria-label to provide an invisible label where a visible label cannot be used',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA14'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA14'
               }
             ]
         },
@@ -2980,23 +2970,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: Landmark Roles',
-                url:   'http://www.w3.org/TR/wai-aria/#landmark_roles'
+                url:   'https://www.w3.org/TR/wai-aria/#landmark_roles'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: Sections',
-                url:   'http://www.w3.org/TR/html5/sections.html#sections'
+                url:   'https://www.w3.org/TR/html5/sections.html#sections'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA11: Using ARIA landmarks to identify regions of a page',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA11'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA11'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA13: Using aria-labelledby to name regions and landmarks',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA13'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA13'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA14: Using aria-label to provide an invisible label where a visible label cannot be used',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA14'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA14'
               }
             ]
         },
@@ -3045,23 +3035,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: navigation role',
-                url:   'http://www.w3.org/TR/wai-aria/#navigation'
+                url:   'https://www.w3.org/TR/wai-aria/#navigation'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: The NAV element',
-                url:   'http://www.w3.org/TR/html5/sections.html#the-nav-element'
+                url:   'https://www.w3.org/TR/html5/sections.html#the-nav-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H97: Grouping related links using the nav element',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H97.html'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H97.html'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA13: Using aria-labelledby to name regions and landmarks',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA13'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA13'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA14: Using aria-label to provide an invisible label where a visible label cannot be used',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA14'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA14'
               }
             ]
         },
@@ -3106,31 +3096,31 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: banner role',
-                url:   'http://www.w3.org/TR/wai-aria/#banner'
+                url:   'https://www.w3.org/TR/wai-aria/#banner'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: The FOOTER element',
-                url:   'http://www.w3.org/TR/html5/sections.html#the-footer-element'
+                url:   'https://www.w3.org/TR/html5/sections.html#the-footer-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: Sectioning content',
-                url:   'http://www.w3.org/TR/html5/dom.html#sectioning-content-0'
+                url:   'https://www.w3.org/TR/html5/dom.html#sectioning-content-0'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: Sectioning root',
-                url:   'http://www.w3.org/TR/html5/sections.html#sectioning-root'
+                url:   'https://www.w3.org/TR/html5/sections.html#sectioning-root'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA11: Using ARIA landmarks to identify regions of a page',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA11'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA11'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA13: Using aria-labelledby to name regions and landmarks',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA13'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA13'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA14: Using aria-label to provide an invisible label where a visible label cannot be used',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA14'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA14'
               }
             ]
         },
@@ -3176,23 +3166,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: banner role',
-                url:   'http://www.w3.org/TR/wai-aria/#banner'
+                url:   'https://www.w3.org/TR/wai-aria/#banner'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: The FOOTER element',
-                url:   'http://www.w3.org/TR/html5/sections.html#the-footer-element'
+                url:   'https://www.w3.org/TR/html5/sections.html#the-footer-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA11: Using ARIA landmarks to identify regions of a page',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA11'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA11'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA13: Using aria-labelledby to name regions and landmarks',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA13'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA13'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA14: Using aria-label to provide an invisible label where a visible label cannot be used',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA14'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA14'
               }
             ]
         },
@@ -3238,31 +3228,31 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: contentinfo role',
-                url:   'http://www.w3.org/TR/wai-aria/#contentinfo'
+                url:   'https://www.w3.org/TR/wai-aria/#contentinfo'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: The FOOTER element',
-                url:   'http://www.w3.org/TR/html5/sections.html#the-footer-element'
+                url:   'https://www.w3.org/TR/html5/sections.html#the-footer-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: Sectioning content',
-                url:   'http://www.w3.org/TR/html5/dom.html#sectioning-content-0'
+                url:   'https://www.w3.org/TR/html5/dom.html#sectioning-content-0'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: Sectioning root',
-                url:   'http://www.w3.org/TR/html5/sections.html#sectioning-root'
+                url:   'https://www.w3.org/TR/html5/sections.html#sectioning-root'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA11: Using ARIA landmarks to identify regions of a page',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA11'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA11'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA13: Using aria-labelledby to name regions and landmarks',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA13'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA13'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA14: Using aria-label to provide an invisible label where a visible label cannot be used',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA14'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA14'
               }
             ]
         },
@@ -3310,23 +3300,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: contentinfo role',
-                url:   'http://www.w3.org/TR/wai-aria/#contentinfo'
+                url:   'https://www.w3.org/TR/wai-aria/#contentinfo'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: The FOOTER element',
-                url:   'http://www.w3.org/TR/html5/sections.html#the-footer-element'
+                url:   'https://www.w3.org/TR/html5/sections.html#the-footer-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA11: Using ARIA landmarks to identify regions of a page',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA11'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA11'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA13: Using aria-labelledby to name regions and landmarks',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA13'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA13'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA14: Using aria-label to provide an invisible label where a visible label cannot be used',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA14'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA14'
               }
             ]
         },
@@ -3370,23 +3360,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: banner role',
-                url:   'http://www.w3.org/TR/wai-aria/#banner'
+                url:   'https://www.w3.org/TR/wai-aria/#banner'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: The HEADER element',
-                url:   'http://www.w3.org/TR/html5/sections.html#the-header-element'
+                url:   'https://www.w3.org/TR/html5/sections.html#the-header-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA11: Using ARIA landmarks to identify regions of a page',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA11'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA11'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA13: Using aria-labelledby to name regions and landmarks',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA13'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA13'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA14: Using aria-label to provide an invisible label where a visible label cannot be used',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA14'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA14'
               }
             ]
         },
@@ -3429,19 +3419,19 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: banner role',
-                url:   'http://www.w3.org/TR/wai-aria/#banner'
+                url:   'https://www.w3.org/TR/wai-aria/#banner'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: The HEADER element',
-                url:   'http://www.w3.org/TR/html5/sections.html#the-header-element'
+                url:   'https://www.w3.org/TR/html5/sections.html#the-header-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: Sections',
-                url:   'http://www.w3.org/TR/html5/sections.html#sections'
+                url:   'https://www.w3.org/TR/html5/sections.html#sections'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: Landmark Roles',
-                url:   'http://www.w3.org/TR/wai-aria/#landmark_roles'
+                url:   'https://www.w3.org/TR/wai-aria/#landmark_roles'
               }
             ]
         },
@@ -3484,11 +3474,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: navigation role',
-                url:   'http://www.w3.org/TR/wai-aria/#navigation'
+                url:   'https://www.w3.org/TR/wai-aria/#navigation'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: The NAV element',
-                url:   'http://www.w3.org/TR/html5/sections.html#the-nav-element'
+                url:   'https://www.w3.org/TR/html5/sections.html#the-nav-element'
               }
             ]
         },
@@ -3531,15 +3521,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: main role',
-                url:   'http://www.w3.org/TR/wai-aria/#main'
+                url:   'https://www.w3.org/TR/wai-aria/#main'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: The MAIN element',
-                url:   'http://www.w3.org/TR/html5/sections.html#the-main-element'
+                url:   'https://www.w3.org/TR/html5/sections.html#the-main-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA11: Using ARIA landmarks to identify regions of a page',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA11'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA11'
               }
             ]
         },
@@ -3582,15 +3572,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: contentinfo role',
-                url:   'http://www.w3.org/TR/wai-aria/#contentinfo'
+                url:   'https://www.w3.org/TR/wai-aria/#contentinfo'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: The FOOTER element',
-                url:   'http://www.w3.org/TR/html5/sections.html#the-footer-element'
+                url:   'https://www.w3.org/TR/html5/sections.html#the-footer-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA11: Using ARIA landmarks to identify regions of a page',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA11'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA11'
               }
             ]
         },
@@ -3633,19 +3623,19 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: contentinfo role',
-                url:   'http://www.w3.org/TR/wai-aria/#contentinfo'
+                url:   'https://www.w3.org/TR/wai-aria/#contentinfo'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: The FOOTER element',
-                url:   'http://www.w3.org/TR/html5/sections.html#the-footer-element'
+                url:   'https://www.w3.org/TR/html5/sections.html#the-footer-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: Sections',
-                url:   'http://www.w3.org/TR/html5/sections.html#sections'
+                url:   'https://www.w3.org/TR/html5/sections.html#sections'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: Landmark Roles',
-                url:   'http://www.w3.org/TR/wai-aria/#landmark_roles'
+                url:   'https://www.w3.org/TR/wai-aria/#landmark_roles'
               }
             ]
         },
@@ -3691,19 +3681,19 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: search role',
-                url:   'http://www.w3.org/TR/wai-aria/#search'
+                url:   'https://www.w3.org/TR/wai-aria/#search'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA11: Using ARIA landmarks to identify regions of a page',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA11'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA11'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA13: Using aria-labelledby to name regions and landmarks',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA13'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA13'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA14: Using aria-label to provide an invisible label where a visible label cannot be used',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA14'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA14'
               }
             ]
         },
@@ -3751,19 +3741,19 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: form role',
-                url:   'http://www.w3.org/TR/wai-aria/#form'
+                url:   'https://www.w3.org/TR/wai-aria/#form'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA11: Using ARIA landmarks to identify regions of a page',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA11'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA11'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA13: Using aria-labelledby to name regions and landmarks',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA13'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA13'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA14: Using aria-label to provide an invisible label where a visible label cannot be used',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA14'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA14'
               }
             ]
         },
@@ -3807,27 +3797,27 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: region role',
-                url:   'http://www.w3.org/TR/wai-aria/#region'
+                url:   'https://www.w3.org/TR/wai-aria/#region'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: The SECTION element',
-                url:   'http://www.w3.org/TR/html5/sections.html#the-section-element'
+                url:   'https://www.w3.org/TR/html5/sections.html#the-section-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA11: Using ARIA landmarks to identify regions of a page',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA11'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA11'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA13: Using aria-labelledby to name regions and landmarks',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA13'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA13'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA20: Using the region role to identify a region of the page',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA20'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA20'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA14: Using aria-label to provide an invisible label where a visible label cannot be used',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA14'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA14'
               }
 
             ]
@@ -3871,23 +3861,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: region role',
-                url:   'http://www.w3.org/TR/wai-aria/#region'
+                url:   'https://www.w3.org/TR/wai-aria/#region'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: Sections',
-                url:   'http://www.w3.org/TR/html5/sections.html#sections'
+                url:   'https://www.w3.org/TR/html5/sections.html#sections'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA11: Using ARIA landmarks to identify regions of a page',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA11'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA11'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA13: Using aria-labelledby to name regions and landmarks',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA13'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA13'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA14: Using aria-label to provide an invisible label where a visible label cannot be used',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA14'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA14'
               }
             ]
         },
@@ -3937,23 +3927,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: Landmark Roles',
-                url:   'http://www.w3.org/TR/wai-aria/#landmark_roles'
+                url:   'https://www.w3.org/TR/wai-aria/#landmark_roles'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: Sections',
-                url:   'http://www.w3.org/TR/html5/sections.html#sections'
+                url:   'https://www.w3.org/TR/html5/sections.html#sections'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA11: Using ARIA landmarks to identify regions of a page',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA11'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA11'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA13: Using aria-labelledby to name regions and landmarks',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA13'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA13'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA14: Using aria-label to provide an invisible label where a visible label cannot be used',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA14'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA14'
               }
 
             ]
@@ -3999,23 +3989,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: complementary role',
-                url:   'http://www.w3.org/TR/wai-aria/#complementary'
+                url:   'https://www.w3.org/TR/wai-aria/#complementary'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: The ASIDE element',
-                url:   'http://www.w3.org/TR/html5/sections.html#the-aside-element'
+                url:   'https://www.w3.org/TR/html5/sections.html#the-aside-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA11: Using ARIA landmarks to identify regions of a page',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA11'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA11'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA13: Using aria-labelledby to name regions and landmarks',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA13'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA13'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA14: Using aria-label to provide an invisible label where a visible label cannot be used',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA14'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA14'
               }
             ]
         }
@@ -4028,7 +4018,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -4040,7 +4030,6 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -4073,23 +4062,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML4: Specifying the language of content: the lang attribute',
-                url:   'http://www.w3.org/TR/html4/struct/dirlang.html#adef-lang'
+                url:   'https://www.w3.org/TR/html4/struct/dirlang.html#adef-lang'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: The lang and xml:lang attributes',
-                url:   'http://www.w3.org/TR/html5/dom.html#the-lang-and-xml:lang-attributes'
+                url:   'https://www.w3.org/TR/html5/dom.html#the-lang-and-xml:lang-attributes'
               },
               { type:  OpenAjax.a11y.REFERENCES.OTHER,
                 title: 'W3C Internationalization: Language tags in HTML and XML',
-                url:   'http://www.w3.org/International/articles/language-tags/'
+                url:   'https://www.w3.org/International/articles/language-tags/'
               },
               { type:  OpenAjax.a11y.REFERENCES.OTHER,
                 title: 'W3C Internationalization: Choosing a Language Tag',
-                url:   'http://www.w3.org/International/questions/qa-choosing-language-tags'
+                url:   'https://www.w3.org/International/questions/qa-choosing-language-tags'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H57: Using language attributes on the html element',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H57'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H57'
               }
             ]
         },
@@ -4128,23 +4117,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML4: Specifying the language of content: the lang attribute',
-                url:   'http://www.w3.org/TR/html4/struct/dirlang.html#adef-lang'
+                url:   'https://www.w3.org/TR/html4/struct/dirlang.html#adef-lang'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: The lang and xml:lang attributes',
-                url:   'http://www.w3.org/TR/html5/dom.html#the-lang-and-xml:lang-attributes'
+                url:   'https://www.w3.org/TR/html5/dom.html#the-lang-and-xml:lang-attributes'
               },
               { type:  OpenAjax.a11y.REFERENCES.OTHER,
                 title: 'W3C Internationalization: Language tags in HTML and XML',
-                url:   'http://www.w3.org/International/articles/language-tags/'
+                url:   'https://www.w3.org/International/articles/language-tags/'
               },
               { type:  OpenAjax.a11y.REFERENCES.OTHER,
                 title: 'W3C Internationalization: Choosing a Language Tag',
-                url:   'http://www.w3.org/International/questions/qa-choosing-language-tags'
+                url:   'https://www.w3.org/International/questions/qa-choosing-language-tags'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H58: Using language attributes to identify changes in the human language',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H58'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H58'
               }
             ]
         },
@@ -4173,19 +4162,19 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML4: Specifying the language of content: the lang attribute',
-                url:   'http://www.w3.org/TR/html4/struct/dirlang.html#adef-lang'
+                url:   'https://www.w3.org/TR/html4/struct/dirlang.html#adef-lang'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: The lang and xml:lang attributes',
-                url:   'http://www.w3.org/TR/html5/dom.html#the-lang-and-xml:lang-attributes'
+                url:   'https://www.w3.org/TR/html5/dom.html#the-lang-and-xml:lang-attributes'
               },
               { type:  OpenAjax.a11y.REFERENCES.OTHER,
                 title: 'W3C Internationalization: Language tags in HTML and XML',
-                url:   'http://www.w3.org/International/articles/language-tags/'
+                url:   'https://www.w3.org/International/articles/language-tags/'
               },
               { type:  OpenAjax.a11y.REFERENCES.OTHER,
                 title: 'W3C Internationalization: Choosing a Language Tag',
-                url:   'http://www.w3.org/International/questions/qa-choosing-language-tags'
+                url:   'https://www.w3.org/International/questions/qa-choosing-language-tags'
               }
             ]
         }
@@ -4198,7 +4187,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -4210,7 +4199,6 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -4255,47 +4243,47 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification: Visual formatting model',
-                url:   'http://www.w3.org/TR/CSS21/visuren.html'
+                url:   'https://www.w3.org/TR/CSS21/visuren.html'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G57: Ordering the content in a meaningful sequence',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G57'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G57'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'C6: Positioning content based on structural markup',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/C6'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/C6'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'C8: Using CSS letter-spacing to control spacing within a word',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/C8'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/C8'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'C27: Making the DOM order match the visual order',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/C27'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/C27'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'F1: Failure of Success Criterion 1.3.2 due to changing the meaning of content by positioning information with CSS',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/F1'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/F1'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'F33: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to create multiple columns in plain text content',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/F33'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/F33'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'F34: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to format tables in plain text content',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/F34'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/F34'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'F49: Failure of Success Criterion 1.3.2 due to using an HTML layout table that does not make sense when linearized',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/F49'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/F49'
               },
               { type:  OpenAjax.a11y.REFERENCES.OTHER,
                 title: 'Web Standards Group',
-                url:   'http://webstandardsgroup.org/standards/'
+                url:   'https://webstandardsgroup.org/standards/'
               },
               { type:  OpenAjax.a11y.REFERENCES.OTHER,
                 title: 'W3C Standards',
-                url:   'http://www.w3.org/standards/'
+                url:   'https://www.w3.org/standards/'
               }
             ]
         },
@@ -4331,23 +4319,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification: Visual formatting model',
-                url:   'http://www.w3.org/TR/CSS21/visuren.html'
+                url:   'https://www.w3.org/TR/CSS21/visuren.html'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'F33: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to create multiple columns in plain text content',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/F33'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/F33'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'F49: Failure of Success Criterion 1.3.2 due to using an HTML layout table that does not make sense when linearized',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/F49'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/F49'
               },
               { type:  OpenAjax.a11y.REFERENCES.OTHER,
                 title: 'Web Standards Group',
-                url:   'http://webstandardsgroup.org/standards/'
+                url:   'https://webstandardsgroup.org/standards/'
               },
               { type:  OpenAjax.a11y.REFERENCES.OTHER,
                 title: 'W3C Standards',
-                url:   'http://www.w3.org/standards/'
+                url:   'https://www.w3.org/standards/'
               }
             ]
         },
@@ -4395,7 +4383,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -4451,31 +4439,31 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
       INFORMATIONAL_LINKS: [
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'HTML 4.01 Specification: 12.2 The A element',
-          url:   'http://www.w3.org/TR/html4/struct/links.html#edef-A'
+          url:   'https://www.w3.org/TR/html4/struct/links.html#edef-A'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-label@ attribute',
-          url:   'http://www.w3.org/TR/wai-aria/#aria-label'
+          url:   'https://www.w3.org/TR/wai-aria/#aria-label'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-labelledby@ attribute',
-          url:   'http://www.w3.org/TR/wai-aria/#aria-labelledby'
+          url:   'https://www.w3.org/TR/wai-aria/#aria-labelledby'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-describedby@ attribute',
-          url:   'http://www.w3.org/TR/wai-aria/#aria-describedby'
+          url:   'https://www.w3.org/TR/wai-aria/#aria-describedby'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'HTML 4.01 Specification: The @title@ attribute',
-          url:   'http://www.w3.org/TR/html4/struct/global.html#adef-title'
+          url:   'https://www.w3.org/TR/html4/struct/global.html#adef-title'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'H30: Providing link text that describes the purpose of a link for anchor elements',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/H30'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/H30'
         },
         { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
           title: 'OAA Example 44 - Using aria-describedby to satisfy WCAG 2.4.4 Link Purpose in Context',
-          url:   'http://oaa-accessibility.org/example/44/'
+          url:   'https://oaa-accessibility.org/example/44/'
         }
       ]
     },
@@ -4508,43 +4496,43 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
       INFORMATIONAL_LINKS: [
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'HTML 4.01 Specification: 12.2 The A element',
-          url:   'http://www.w3.org/TR/html4/struct/links.html#edef-A'
+          url:   'https://www.w3.org/TR/html4/struct/links.html#edef-A'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-label@ attribute',
-          url:   'http://www.w3.org/TR/wai-aria/#aria-label'
+          url:   'https://www.w3.org/TR/wai-aria/#aria-label'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-labelledby@ attribute',
-          url:   'http://www.w3.org/TR/wai-aria/#aria-labelledby'
+          url:   'https://www.w3.org/TR/wai-aria/#aria-labelledby'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-describedby@ attribute',
-          url:   'http://www.w3.org/TR/wai-aria/#aria-describedby'
+          url:   'https://www.w3.org/TR/wai-aria/#aria-describedby'
         },
         { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'HTML 4.01 Specification: The @title@ attribute',
-          url:   'http://www.w3.org/TR/html4/struct/global.html#adef-title'
+          url:   'https://www.w3.org/TR/html4/struct/global.html#adef-title'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'H30: Providing link text that describes the purpose of a link for anchor elements',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/H30'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/H30'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'ARIA1: Using the aria-describedby property to provide a descriptive label for user interface controls',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA1'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA1'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'ARIA7: Using aria-labelledby for link purpose',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA7'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA7'
         },
         { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
           title: 'ARIA8: Using aria-label for link purpose',
-          url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA8'
+          url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA8'
         },
         { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
           title: 'OAA Example 44 - Using aria-describedby to satisfy WCAG 2.4.4 Link Purpose in Context',
-          url:   'http://oaa-accessibility.org/example/44/'
+          url:   'https://oaa-accessibility.org/example/44/'
         }
       ]
     }
@@ -4557,7 +4545,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -4569,7 +4557,6 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -4618,47 +4605,47 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: ol element',
-                url:   'http://www.w3.org/TR/html5/grouping-content.html#the-ol-element'
+                url:   'https://www.w3.org/TR/html5/grouping-content.html#the-ol-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: ul element',
-                url:   'http://www.w3.org/TR/html5/grouping-content.html#the-ul-element'
+                url:   'https://www.w3.org/TR/html5/grouping-content.html#the-ul-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: li element',
-                url:   'http://www.w3.org/TR/html5/grouping-content.html#the-li-element'
+                url:   'https://www.w3.org/TR/html5/grouping-content.html#the-li-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: dl element',
-                url:   'http://www.w3.org/TR/html5/grouping-content.html#the-dl-element'
+                url:   'https://www.w3.org/TR/html5/grouping-content.html#the-dl-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: dt element',
-                url:   'http://www.w3.org/TR/html5/grouping-content.html#the-dt-element'
+                url:   'https://www.w3.org/TR/html5/grouping-content.html#the-dt-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: dd element',
-                url:   'http://www.w3.org/TR/html5/grouping-content.html#the-dd-element'
+                url:   'https://www.w3.org/TR/html5/grouping-content.html#the-dd-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0; group role',
-                url:   'http://www.w3.org/TR/wai-aria/#group'
+                url:   'https://www.w3.org/TR/wai-aria/#group'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0; list role',
-                url:   'http://www.w3.org/TR/wai-aria/#list'
+                url:   'https://www.w3.org/TR/wai-aria/#list'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0; listitem role',
-                url:   'http://www.w3.org/TR/wai-aria/#listitem'
+                url:   'https://www.w3.org/TR/wai-aria/#listitem'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0; aria-posinset',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-posinset'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-posinset'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0; aria-setsize',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-setsize'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-setsize'
               }
             ]
         },
@@ -4692,35 +4679,35 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: ol element',
-                url:   'http://www.w3.org/TR/html5/grouping-content.html#the-ol-element'
+                url:   'https://www.w3.org/TR/html5/grouping-content.html#the-ol-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: ul element',
-                url:   'http://www.w3.org/TR/html5/grouping-content.html#the-ul-element'
+                url:   'https://www.w3.org/TR/html5/grouping-content.html#the-ul-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: dl element',
-                url:   'http://www.w3.org/TR/html5/grouping-content.html#the-dl-element'
+                url:   'https://www.w3.org/TR/html5/grouping-content.html#the-dl-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0; group role',
-                url:   'http://www.w3.org/TR/wai-aria/#group'
+                url:   'https://www.w3.org/TR/wai-aria/#group'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0; list role',
-                url:   'http://www.w3.org/TR/wai-aria/#list'
+                url:   'https://www.w3.org/TR/wai-aria/#list'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-label@ attribute',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-label'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-label'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-labelledby@ attribute',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-labelledby'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-labelledby'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: The @title@ attribute',
-                url:   'http://www.w3.org/TR/html4/struct/global.html#adef-title'
+                url:   'https://www.w3.org/TR/html4/struct/global.html#adef-title'
               }
             ]
         }
@@ -4734,7 +4721,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -4746,7 +4733,6 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -4785,31 +4771,31 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: Landmark Roles',
-                url:   'http://www.w3.org/TR/wai-aria/#landmark_roles'
+                url:   'https://www.w3.org/TR/wai-aria/#landmark_roles'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G63: Providing a site map',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G63'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G63'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G64: Providing a Table of Contents',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G64'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G64'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G125: Providing links to navigate to related Web pages',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G125'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G125'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G126: Providing a list of links to all other Web pages',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G126'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G126'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G161: Providing a search function to help users find content',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G161'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G161'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G185: Linking to all of the pages on the site from the home page',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G185'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G185'
               }
             ]
         },
@@ -4846,11 +4832,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: Landmark Roles',
-                url:   'http://www.w3.org/TR/wai-aria/#landmark_roles'
+                url:   'https://www.w3.org/TR/wai-aria/#landmark_roles'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G61: Presenting repeated components in the same relative order each time they appear',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G61'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G61'
               }
             ]
         },
@@ -4885,11 +4871,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: Landmark Roles',
-                url:   'http://www.w3.org/TR/wai-aria/#landmark_roles'
+                url:   'https://www.w3.org/TR/wai-aria/#landmark_roles'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G61: Presenting repeated components in the same relative order each time they appear',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G61'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G61'
               }
             ]
         },
@@ -4931,11 +4917,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: Landmark Roles',
-                url:   'http://www.w3.org/TR/wai-aria/#landmark_roles'
+                url:   'https://www.w3.org/TR/wai-aria/#landmark_roles'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G61: Presenting repeated components in the same relative order each time they appear',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G61'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G61'
               }
             ]
         },
@@ -4970,11 +4956,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: Landmark Roles',
-                url:   'http://www.w3.org/TR/wai-aria/#landmark_roles'
+                url:   'https://www.w3.org/TR/wai-aria/#landmark_roles'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G61: Presenting repeated components in the same relative order each time they appear',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G61'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G61'
               }
             ]
         }
@@ -4987,7 +4973,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -5038,12 +5024,12 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
         {
           type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'WCAG 2.0 Success Criterion 1.3.2 Meaningful Sequence',
-          url:   'http://www.w3.org/TR/WCAG20/#content-structure-separation-sequence'
+          url:   'https://www.w3.org/TR/WCAG20/#content-structure-separation-sequence'
         },
         {
           type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
           title: 'Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification: position property',
-          url:   'http://www.w3.org/TR/CSS2/visuren.html#propdef-position'
+          url:   'https://www.w3.org/TR/CSS2/visuren.html#propdef-position'
         }
       ]
     }
@@ -5056,7 +5042,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -5068,7 +5054,6 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -5100,7 +5085,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'How to meet 1.4.4 Resize Text',
-                url:   'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-scale'
+                url:   'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-visual-audio-contrast-scale'
               }
             ]
         }
@@ -5113,7 +5098,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -5125,7 +5110,6 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -5167,19 +5151,19 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 5 Specification: The main element',
-                url:   'http://www.w3.org/TR/html5/grouping-content.html#the-main-element'
+                url:   'https://www.w3.org/TR/html5/grouping-content.html#the-main-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Using WAI-ARIA in HTML',
-                url:   'http://www.w3.org/TR/aria-in-html/'
+                url:   'https://www.w3.org/TR/aria-in-html/'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: main role',
-                url:   'http://www.w3.org/TR/wai-aria/#main'
+                url:   'https://www.w3.org/TR/wai-aria/#main'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: presentation role',
-                url:   'http://www.w3.org/TR/wai-aria/#presentation'
+                url:   'https://www.w3.org/TR/wai-aria/#presentation'
               }
             ]
         },
@@ -5209,19 +5193,19 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 5 Specification: The body element',
-                url:   'http://www.w3.org/TR/html5/sections.html#the-body-element'
+                url:   'https://www.w3.org/TR/html5/sections.html#the-body-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: document role',
-                url:   'http://www.w3.org/TR/wai-aria/#document'
+                url:   'https://www.w3.org/TR/wai-aria/#document'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: application role',
-                url:   'http://www.w3.org/TR/wai-aria/#application'
+                url:   'https://www.w3.org/TR/wai-aria/#application'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Using WAI-ARIA in HTML',
-                url:   'http://www.w3.org/TR/aria-in-html/'
+                url:   'https://www.w3.org/TR/aria-in-html/'
               }
             ]
         },
@@ -5260,11 +5244,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 5 Specification: The ol element',
-                url:   'http://www.w3.org/TR/html5/grouping-content.html#the-ol-element'
+                url:   'https://www.w3.org/TR/html5/grouping-content.html#the-ol-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 5 Specification: The ul element',
-                url:   'http://www.w3.org/TR/html5/grouping-content.html#the-ul-element'
+                url:   'https://www.w3.org/TR/html5/grouping-content.html#the-ul-element'
               }
             ]
         },
@@ -5303,23 +5287,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 5 Specification: The article element',
-                url:   'http://www.w3.org/TR/html5/sections.html#the-article-element'
+                url:   'https://www.w3.org/TR/html5/sections.html#the-article-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: document role',
-                url:   'http://www.w3.org/TR/wai-aria/#document'
+                url:   'https://www.w3.org/TR/wai-aria/#document'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: application role',
-                url:   'http://www.w3.org/TR/wai-aria/#application'
+                url:   'https://www.w3.org/TR/wai-aria/#application'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: main role',
-                url:   'http://www.w3.org/TR/wai-aria/#main'
+                url:   'https://www.w3.org/TR/wai-aria/#main'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: article role',
-                url:   'http://www.w3.org/TR/wai-aria/#article'
+                url:   'https://www.w3.org/TR/wai-aria/#article'
               }
 
             ]
@@ -5368,55 +5352,55 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 5 Specification: The article element',
-                url:   'http://www.w3.org/TR/html5/sections.html#the-article-element'
+                url:   'https://www.w3.org/TR/html5/sections.html#the-article-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: alert role',
-                url:   'http://www.w3.org/TR/wai-aria/#alert'
+                url:   'https://www.w3.org/TR/wai-aria/#alert'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: alertdialog role',
-                url:   'http://www.w3.org/TR/wai-aria/#alertdialog'
+                url:   'https://www.w3.org/TR/wai-aria/#alertdialog'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: application role',
-                url:   'http://www.w3.org/TR/wai-aria/#application'
+                url:   'https://www.w3.org/TR/wai-aria/#application'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0:contentinfo role',
-                url:   'http://www.w3.org/TR/wai-aria/#contentinfo'
+                url:   'https://www.w3.org/TR/wai-aria/#contentinfo'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: dialog role',
-                url:   'http://www.w3.org/TR/wai-aria/#dialog'
+                url:   'https://www.w3.org/TR/wai-aria/#dialog'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: document role',
-                url:   'http://www.w3.org/TR/wai-aria/#document'
+                url:   'https://www.w3.org/TR/wai-aria/#document'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: log role',
-                url:   'http://www.w3.org/TR/wai-aria/#log'
+                url:   'https://www.w3.org/TR/wai-aria/#log'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: main role',
-                url:   'http://www.w3.org/TR/wai-aria/#main'
+                url:   'https://www.w3.org/TR/wai-aria/#main'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: marquee role',
-                url:   'http://www.w3.org/TR/wai-aria/#marquee'
+                url:   'https://www.w3.org/TR/wai-aria/#marquee'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: presentation role',
-                url:   'http://www.w3.org/TR/wai-aria/#presentation'
+                url:   'https://www.w3.org/TR/wai-aria/#presentation'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: search role',
-                url:   'http://www.w3.org/TR/wai-aria/#search'
+                url:   'https://www.w3.org/TR/wai-aria/#search'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: status role',
-                url:   'http://www.w3.org/TR/wai-aria/#status'
+                url:   'https://www.w3.org/TR/wai-aria/#status'
               }
             ]
         },
@@ -5452,15 +5436,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 5 Specification: The nav element',
-                url:   'http://www.w3.org/TR/html5/sections.html#the-nav-element'
+                url:   'https://www.w3.org/TR/html5/sections.html#the-nav-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: navigation role',
-                url:   'http://www.w3.org/TR/wai-aria/#navigation'
+                url:   'https://www.w3.org/TR/wai-aria/#navigation'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: presentation role',
-                url:   'http://www.w3.org/TR/wai-aria/#presentation'
+                url:   'https://www.w3.org/TR/wai-aria/#presentation'
               }
 
             ]
@@ -5500,23 +5484,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 5 Specification: The aside element',
-                url:   'http://www.w3.org/TR/html5/sections.html#the-aside-element'
+                url:   'https://www.w3.org/TR/html5/sections.html#the-aside-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: complementary role',
-                url:   'http://www.w3.org/TR/wai-aria/#complementary'
+                url:   'https://www.w3.org/TR/wai-aria/#complementary'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: note role',
-                url:   'http://www.w3.org/TR/wai-aria/#note'
+                url:   'https://www.w3.org/TR/wai-aria/#note'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: search role',
-                url:   'http://www.w3.org/TR/wai-aria/#search'
+                url:   'https://www.w3.org/TR/wai-aria/#search'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: presentation role',
-                url:   'http://www.w3.org/TR/wai-aria/#presentation'
+                url:   'https://www.w3.org/TR/wai-aria/#presentation'
               }
             ]
         },
@@ -5554,15 +5538,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 5 Specification: The main element',
-                url:   'http://www.w3.org/TR/html5/grouping-content.html#the-main-element'
+                url:   'https://www.w3.org/TR/html5/grouping-content.html#the-main-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: banner role',
-                url:   'http://www.w3.org/TR/wai-aria/#banner'
+                url:   'https://www.w3.org/TR/wai-aria/#banner'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: presentation role',
-                url:   'http://www.w3.org/TR/wai-aria/#presentation'
+                url:   'https://www.w3.org/TR/wai-aria/#presentation'
               }
             ]
         },
@@ -5600,15 +5584,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 5 Specification: The main element',
-                url:   'http://www.w3.org/TR/html5/grouping-content.html#the-main-element'
+                url:   'https://www.w3.org/TR/html5/grouping-content.html#the-main-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: contentinfo role',
-                url:   'http://www.w3.org/TR/wai-aria/#contentinfo'
+                url:   'https://www.w3.org/TR/wai-aria/#contentinfo'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: presentation role',
-                url:   'http://www.w3.org/TR/wai-aria/#presentation'
+                url:   'https://www.w3.org/TR/wai-aria/#presentation'
               }
             ]
         },
@@ -5645,19 +5629,19 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 5 Specification: The main element',
-                url:   'http://www.w3.org/TR/html5/grouping-content.html#the-main-element'
+                url:   'https://www.w3.org/TR/html5/grouping-content.html#the-main-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: heading role',
-                url:   'http://www.w3.org/TR/wai-aria/#heading'
+                url:   'https://www.w3.org/TR/wai-aria/#heading'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: tab role',
-                url:   'http://www.w3.org/TR/wai-aria/#tab'
+                url:   'https://www.w3.org/TR/wai-aria/#tab'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: presentation role',
-                url:   'http://www.w3.org/TR/wai-aria/#presentation'
+                url:   'https://www.w3.org/TR/wai-aria/#presentation'
               }
             ]
         },
@@ -5694,7 +5678,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 5 Specification: The li element',
-                url:   'http://www.w3.org/TR/html5/grouping-content.html#the-li-element'
+                url:   'https://www.w3.org/TR/html5/grouping-content.html#the-li-element'
               }
             ]
         },
@@ -5727,7 +5711,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 5 Specification: The a element',
-                url:   'http://www.w3.org/TR/html51/semantics.html#the-a-element'
+                url:   'https://www.w3.org/TR/html51/semantics.html#the-a-element'
               }
             ]
         },
@@ -5760,7 +5744,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 5 Specification: The select element',
-                url:   'http://www.w3.org/TR/html51/semantics.html#the-select-element'
+                url:   'https://www.w3.org/TR/html51/semantics.html#the-select-element'
               }
             ]
         },
@@ -5792,7 +5776,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 5 Specification: The textarea element',
-                url:   'http://www.w3.org/TR/html51/semantics.html#the-textarea-element'
+                url:   'https://www.w3.org/TR/html51/semantics.html#the-textarea-element'
               }
             ]
         }
@@ -5805,7 +5789,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -5817,7 +5801,6 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -5845,11 +5828,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
                             ],
             INFORMATIONAL_LINKS: [{ type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                                title: 'WCAG 2.0 Success Criterion 1.3.3 Sensory Characteristics',
-                               url:   'http://www.w3.org/TR/WCAG20/#content-structure-separation-understanding'
+                               url:   'https://www.w3.org/TR/WCAG20/#content-structure-separation-understanding'
                              },
                              { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                                title: 'How to meet Success Criterion 1.3.3 Sensory Characteristics',
-                               url:   'http://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-understanding'
+                               url:   'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-content-structure-separation-understanding'
                              }
                             ]
         }
@@ -5862,7 +5845,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -5874,7 +5857,6 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -5920,27 +5902,27 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: 11.2.6 Table cells: The TH and TD elements',
-                url:   'http://www.w3.org/TR/html4/struct/tables.html#edef-TD'
+                url:   'https://www.w3.org/TR/html4/struct/tables.html#edef-TD'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: scope attribute',
-                url:   'http://www.w3.org/TR/html4/struct/tables.html#adef-scope'
+                url:   'https://www.w3.org/TR/html4/struct/tables.html#adef-scope'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H51: Using table markup to present tabular information',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H51'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H51'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H63: Using the scope attribute to associate header cells and data cells in data tables',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H63'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H63'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'IBM Web checklist Checkpoint 1.3e: Tables',
-                url:   'http://www-03.ibm.com/able/guidelines/web/webtableheaders.html'
+                url:   'https://www-03.ibm.com/able/guidelines/web/webtableheaders.html'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'iCITA HTML Best Practices: Simple Data Table Example',
-                url:   'http://html.cita.illinois.edu/nav/dtable/dtable-example-simple.php'
+                url:   'https://html.cita.illinois.edu/nav/dtable/dtable-example-simple.php'
               }
             ]
         },
@@ -5984,47 +5966,47 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: 11.2.2 Table Captions: The CAPTION element',
-                url:   'http://www.w3.org/TR/html4/struct/tables.html#h-11.2.2'
+                url:   'https://www.w3.org/TR/html4/struct/tables.html#h-11.2.2'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: summary attribute',
-                url:   'http://www.w3.org/TR/html4/struct/tables.html#adef-summary'
+                url:   'https://www.w3.org/TR/html4/struct/tables.html#adef-summary'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-label@ attribute',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-label'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-label'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-labelledby@ attribute',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-labelledby'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-labelledby'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: The @title@ attribute',
-                url:   'http://www.w3.org/TR/html4/struct/global.html#adef-title'
+                url:   'https://www.w3.org/TR/html4/struct/global.html#adef-title'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H39: Using caption elements to associate data table captions with data tables',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H39'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H39'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H73: Using the summary attribute of the table element to give an overview of data tables',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H73'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H73'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'F46: Failure of Success Criterion 1.3.1 due to using th elements, caption elements, or non-empty summary attributes in layout tables',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/F46'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/F46'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'IBM Web checklist Checkpoint 1.3e: Tables',
-                url:   'http://www-03.ibm.com/able/guidelines/web/webtableheaders.html'
+                url:   'https://www-03.ibm.com/able/guidelines/web/webtableheaders.html'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'iCITA HTML Best Practices: Simple Data Table Example',
-                url:   'http://html.cita.illinois.edu/nav/dtable/dtable-example-simple.php'
+                url:   'https://html.cita.illinois.edu/nav/dtable/dtable-example-simple.php'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'iCITA HTML Best Practices: Complex Data Table Example',
-                url:   'http://html.cita.illinois.edu/nav/dtable/dtable-example-complex.php'
+                url:   'https://html.cita.illinois.edu/nav/dtable/dtable-example-complex.php'
               }
             ]
         },
@@ -6064,27 +6046,27 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: summary attribute',
-                url:   'http://www.w3.org/TR/html4/struct/tables.html#adef-summary'
+                url:   'https://www.w3.org/TR/html4/struct/tables.html#adef-summary'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-describedby@ attribute',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-describedby'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-describedby'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: The @title@ attribute',
-                url:   'http://www.w3.org/TR/html4/struct/global.html#adef-title'
+                url:   'https://www.w3.org/TR/html4/struct/global.html#adef-title'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'IBM Web checklist Checkpoint 1.3e: Tables',
-                url:   'http://www-03.ibm.com/able/guidelines/web/webtableheaders.html'
+                url:   'https://www-03.ibm.com/able/guidelines/web/webtableheaders.html'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'iCITA HTML Best Practices: Simple Data Table Example',
-                url:   'http://html.cita.illinois.edu/nav/dtable/dtable-example-simple.php'
+                url:   'https://html.cita.illinois.edu/nav/dtable/dtable-example-simple.php'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'iCITA HTML Best Practices: Complex Data Table Example',
-                url:   'http://html.cita.illinois.edu/nav/dtable/dtable-example-complex.php'
+                url:   'https://html.cita.illinois.edu/nav/dtable/dtable-example-complex.php'
               }
             ]
         },
@@ -6124,47 +6106,47 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: 11.2.2 Table Captions: The CAPTION element',
-                url:   'http://www.w3.org/TR/html4/struct/tables.html#h-11.2.2'
+                url:   'https://www.w3.org/TR/html4/struct/tables.html#h-11.2.2'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: summary attribute',
-                url:   'http://www.w3.org/TR/html4/struct/tables.html#adef-summary'
+                url:   'https://www.w3.org/TR/html4/struct/tables.html#adef-summary'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-label@ attribute',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-label'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-label'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-labelledby@ attribute',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-labelledby'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-labelledby'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: The @title@ attribute',
-                url:   'http://www.w3.org/TR/html4/struct/global.html#adef-title'
+                url:   'https://www.w3.org/TR/html4/struct/global.html#adef-title'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H39: Using caption elements to associate data table captions with data tables',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H39'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H39'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H73: Using the summary attribute of the table element to give an overview of data tables',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H73'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H73'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'F46: Failure of Success Criterion 1.3.1 due to using th elements, caption elements, or non-empty summary attributes in layout tables',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/F46'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/F46'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'IBM Web checklist Checkpoint 1.3e: Tables',
-                url:   'http://www-03.ibm.com/able/guidelines/web/webtableheaders.html'
+                url:   'https://www-03.ibm.com/able/guidelines/web/webtableheaders.html'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'iCITA HTML Best Practices: Simple Data Table Example',
-                url:   'http://html.cita.illinois.edu/nav/dtable/dtable-example-simple.php'
+                url:   'https://html.cita.illinois.edu/nav/dtable/dtable-example-simple.php'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'iCITA HTML Best Practices: Complex Data Table Example',
-                url:   'http://html.cita.illinois.edu/nav/dtable/dtable-example-complex.php'
+                url:   'https://html.cita.illinois.edu/nav/dtable/dtable-example-complex.php'
               }
             ]
         },
@@ -6211,39 +6193,39 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: presentation role',
-                url:   'http://www.w3.org/TR/wai-aria/#presentation'
+                url:   'https://www.w3.org/TR/wai-aria/#presentation'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: 11.2.6 Table cells: The TH and TD elements',
-                url:   'http://www.w3.org/TR/html4/struct/tables.html#edef-TD'
+                url:   'https://www.w3.org/TR/html4/struct/tables.html#edef-TD'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: 11.2.2 Table Captions: The CAPTION element',
-                url:   'http://www.w3.org/TR/html4/struct/tables.html#h-11.2.2'
+                url:   'https://www.w3.org/TR/html4/struct/tables.html#h-11.2.2'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: summary attribute',
-                url:   'http://www.w3.org/TR/html4/struct/tables.html#adef-summary'
+                url:   'https://www.w3.org/TR/html4/struct/tables.html#adef-summary'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H51: Using table markup to present tabular information',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H51'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H51'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H63: Using the scope attribute to associate header cells and data cells in data tables',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H63'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H63'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'IBM Web checklist Checkpoint 1.3e: Tables',
-                url:   'http://www-03.ibm.com/able/guidelines/web/webtableheaders.html'
+                url:   'https://www-03.ibm.com/able/guidelines/web/webtableheaders.html'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'iCITA HTML Best Practices: Simple Data Table Example',
-                url:   'http://html.cita.illinois.edu/nav/dtable/dtable-example-simple.php'
+                url:   'https://html.cita.illinois.edu/nav/dtable/dtable-example-simple.php'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'iCITA HTML Best Practices: Complex Data Table Example',
-                url:   'http://html.cita.illinois.edu/nav/dtable/dtable-example-complex.php'
+                url:   'https://html.cita.illinois.edu/nav/dtable/dtable-example-complex.php'
               }
             ]
         },
@@ -6278,27 +6260,27 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: 11.2.6 Table cells: The TH and TD elements',
-                url:   'http://www.w3.org/TR/html4/struct/tables.html#edef-TD'
+                url:   'https://www.w3.org/TR/html4/struct/tables.html#edef-TD'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H51: Using table markup to present tabular information',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H51'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H51'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H63: Using the scope attribute to associate header cells and data cells in data tables',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H63'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H63'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'IBM Web checklist Checkpoint 1.3e: Tables',
-                url:   'http://www-03.ibm.com/able/guidelines/web/webtableheaders.html'
+                url:   'https://www-03.ibm.com/able/guidelines/web/webtableheaders.html'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'iCITA HTML Best Practices: Simple Data Table Example',
-                url:   'http://html.cita.illinois.edu/nav/dtable/dtable-example-simple.php'
+                url:   'https://html.cita.illinois.edu/nav/dtable/dtable-example-simple.php'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'iCITA HTML Best Practices: Complex Data Table Example',
-                url:   'http://html.cita.illinois.edu/nav/dtable/dtable-example-complex.php'
+                url:   'https://html.cita.illinois.edu/nav/dtable/dtable-example-complex.php'
               }
             ]
         },
@@ -6338,15 +6320,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: 11.2.6 Table cells: The TH and TD elements',
-                url:   'http://www.w3.org/TR/html4/struct/tables.html#edef-TD'
+                url:   'https://www.w3.org/TR/html4/struct/tables.html#edef-TD'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'IBM Web checklist Checkpoint 1.3e: Tables',
-                url:   'http://www-03.ibm.com/able/guidelines/web/webtableheaders.html'
+                url:   'https://www-03.ibm.com/able/guidelines/web/webtableheaders.html'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'iCITA HTML Best Practices: Complex Data Table Example',
-                url:   'http://html.cita.illinois.edu/nav/dtable/dtable-example-complex.php'
+                url:   'https://html.cita.illinois.edu/nav/dtable/dtable-example-complex.php'
               }
             ]
         },
@@ -6387,7 +6369,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: 11.2.6 Table cells: The TH and TD elements',
-                url:   'http://www.w3.org/TR/html4/struct/tables.html#edef-TD'
+                url:   'https://www.w3.org/TR/html4/struct/tables.html#edef-TD'
               }
             ]
         }
@@ -6400,7 +6382,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -6412,7 +6394,6 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -6450,7 +6431,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'How to meet 2.2.1 Timing Adjustable',
-                url:   'http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-required-behaviors'
+                url:   'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-time-limits-required-behaviors'
               }
             ]
         },
@@ -6481,7 +6462,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'How to meet 2.2.2 Pause, Stop, Hide',
-                url:   'http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-pause'
+                url:   'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-time-limits-pause'
               }
             ]
         },
@@ -6512,7 +6493,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'How to meet 2.3.1 Three Flashes or Below Threshold',
-                url:   'http://www.w3.org/WAI/WCAG20/quickref/#qr-seizure-does-not-violate'
+                url:   'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-seizure-does-not-violate'
               }
             ]
         }
@@ -6525,7 +6506,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -6537,7 +6518,6 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -6574,15 +6554,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML TITLE Element Specification',
-                url:   'http://www.w3.org/TR/html4/struct/global.html#edef-TITLE'
+                url:   'https://www.w3.org/TR/html4/struct/global.html#edef-TITLE'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G88: Providing descriptive titles for Web pages',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G88'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G88'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H25: Providing a title using the title element',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H25'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H25'
               }
             ]
         },
@@ -6629,15 +6609,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML TITLE Element Specification',
-                url:   'http://www.w3.org/TR/html4/struct/global.html#edef-TITLE'
+                url:   'https://www.w3.org/TR/html4/struct/global.html#edef-TITLE'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G88: Providing descriptive titles for Web pages',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G88'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G88'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H25: Providing a title using the title element',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H25'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H25'
               }
             ]
         }
@@ -6650,7 +6630,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -6662,7 +6642,6 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -6705,15 +6684,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HMTL 5: The video element',
-                url:   'http://www.w3.org/TR/html5/embedded-content-0.html#the-video-element'
+                url:   'https://www.w3.org/TR/html5/embedded-content-0.html#the-video-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HMTL 5: The track element',
-                url:   'http://www.w3.org/TR/html5/embedded-content-0.html#the-track-element'
+                url:   'https://www.w3.org/TR/html5/embedded-content-0.html#the-track-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (ARIA) 1.0: aria-describedby',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-describedby'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-describedby'
               }
             ]
         },
@@ -6753,11 +6732,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HMTL 5: The object element',
-                url:   'http://www.w3.org/TR/html5/embedded-content-0.html#the-object-element'
+                url:   'https://www.w3.org/TR/html5/embedded-content-0.html#the-object-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (ARIA) 1.0: aria-describedby',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-describedby'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-describedby'
               }
             ]
         },
@@ -6797,11 +6776,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HMTL 5: The embed element',
-                url:   'http://www.w3.org/TR/html5/embedded-content-0.html#the-embed-element'
+                url:   'https://www.w3.org/TR/html5/embedded-content-0.html#the-embed-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (ARIA) 1.0: aria-describedby',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-describedby'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-describedby'
               }
             ]
         },
@@ -6843,11 +6822,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HMTL 5: The video element',
-                url:   'http://www.w3.org/TR/html5/embedded-content-0.html#the-video-element'
+                url:   'https://www.w3.org/TR/html5/embedded-content-0.html#the-video-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HMTL 5: The track element',
-                url:   'http://www.w3.org/TR/html5/embedded-content-0.html#the-track-element'
+                url:   'https://www.w3.org/TR/html5/embedded-content-0.html#the-track-element'
               }
             ]
         },
@@ -6886,7 +6865,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HMTL 5: The object element',
-                url:   'http://www.w3.org/TR/html5/embedded-content-0.html#the-object-element'
+                url:   'https://www.w3.org/TR/html5/embedded-content-0.html#the-object-element'
               }
             ]
         },
@@ -6925,7 +6904,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HMTL 5: The embed element',
-                url:   'http://www.w3.org/TR/html5/embedded-content-0.html#the-embed-element'
+                url:   'https://www.w3.org/TR/html5/embedded-content-0.html#the-embed-element'
               }
             ]
         },
@@ -6966,15 +6945,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HMTL 5: The video element',
-                url:   'http://www.w3.org/TR/html5/embedded-content-0.html#the-video-element'
+                url:   'https://www.w3.org/TR/html5/embedded-content-0.html#the-video-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HMTL 5: The track element',
-                url:   'http://www.w3.org/TR/html5/embedded-content-0.html#the-track-element'
+                url:   'https://www.w3.org/TR/html5/embedded-content-0.html#the-track-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (ARIA) 1.0: aria-describedby',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-describedby'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-describedby'
               }
             ]
         },
@@ -7013,11 +6992,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HMTL 5: The object element',
-                url:   'http://www.w3.org/TR/html5/embedded-content-0.html#the-object-element'
+                url:   'https://www.w3.org/TR/html5/embedded-content-0.html#the-object-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (ARIA) 1.0: aria-describedby',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-describedby'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-describedby'
               }
             ]
         },
@@ -7056,11 +7035,11 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HMTL 5: The embed element',
-                url:   'http://www.w3.org/TR/html5/embedded-content-0.html#the-embed-element'
+                url:   'https://www.w3.org/TR/html5/embedded-content-0.html#the-embed-element'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (ARIA) 1.0: aria-describedby',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-describedby'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-describedby'
               }
             ]
         }
@@ -7073,7 +7052,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -7085,7 +7064,6 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 /* --------------------------------------------------------------------------- */
 /*       OpenAjax Alliance Rules National Language Support (NLS): English      */
 /* --------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
 
@@ -7131,39 +7109,39 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: Accessible Name (e.g. label) Calculation',
-                url:   'http://www.w3.org/TR/wai-aria/#namecalculation'
+                url:   'https://www.w3.org/TR/wai-aria/#namecalculation'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: aria-labelledby',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-labelledby'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-labelledby'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: aria-label',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-label'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-label'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G108'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G108'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA6: Using aria-label to provide labels for objects',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA6'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA6'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA9: Using aria-labelledby to concatenate a label from several text nodes',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA9'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA9'
               },
               { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
                 title: 'WAI-ARIA 1.0 Authoring Practices',
-                url:   'http://www.w3.org/TR/wai-aria-practices/'
+                url:   'https://www.w3.org/TR/wai-aria-practices/'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'OAA Web Accessibility ARIA Examples',
-                url:   'http://oaa-accessibility.org/examples/'
+                url:   'https://oaa-accessibility.org/examples/'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'Accessible jQuery-ui Components Demonstration',
-                url:   'http://access.aol.com/aegis/#goto_slider'
+                url:   'https://ecd.clark.edu/_resources/js/jquery/ui-accessable/#goto_slider'
               }
             ]
         },
@@ -7200,27 +7178,27 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: Widget Roles',
-                url:   'http://www.w3.org/TR/wai-aria/#widget_roles'
+                url:   'https://www.w3.org/TR/wai-aria/#widget_roles'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'WAI-ARIA 1.0 Authoring Practices: Tabindex for managing focus',
-                url:   'http://www.w3.org/TR/2010/WD-wai-aria-practices-20100916/#kbd_focus'
+                url:   'https://www.w3.org/TR/2010/WD-wai-aria-practices-20100916/#kbd_focus'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G108'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G108'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA4: Using a WAI-ARIA role to expose the role of a user interface component',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA4.html'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA4.html'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'OAA Web Accessibility ARIA Examples',
-                url:   'http://oaa-accessibility.org/examples/'
+                url:   'https://oaa-accessibility.org/examples/'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'Accessible jQuery-ui Components Demonstration',
-                url:   'http://access.aol.com/aegis/#goto_slider'
+                url:   'https://ecd.clark.edu/_resources/js/jquery/ui-accessable/#goto_slider'
               }
             ]
         },
@@ -7258,31 +7236,31 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: Widget Roles',
-                url:   'http://www.w3.org/TR/wai-aria/#widget_roles'
+                url:   'https://www.w3.org/TR/wai-aria/#widget_roles'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: Landmark Roles',
-                url:   'http://www.w3.org/TR/wai-aria/#landmark_roles'
+                url:   'https://www.w3.org/TR/wai-aria/#landmark_roles'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G108'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G108'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA4: Using a WAI-ARIA role to expose the role of a user interface component',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA4.html'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA4.html'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA19: Using ARIA role=alert or Live Regions to Identify Errors',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA19.html'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA19.html'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'OAA Web Accessibility ARIA Examples',
-                url:   'http://oaa-accessibility.org/examples/'
+                url:   'https://oaa-accessibility.org/examples/'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'Accessible jQuery-ui Components Demonstration',
-                url:   'http://access.aol.com/aegis/#goto_slider'
+                url:   'https://ecd.clark.edu/_resources/js/jquery/ui-accessable/#goto_slider'
               }
             ]
         },
@@ -7318,23 +7296,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: Supported Property and States',
-                url:   'http://www.w3.org/TR/wai-aria/#states_and_properties'
+                url:   'https://www.w3.org/TR/wai-aria/#states_and_properties'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G108'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G108'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA5.html'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA5.html'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'OAA Web Accessibility ARIA Examples',
-                url:   'http://oaa-accessibility.org/examples/'
+                url:   'https://oaa-accessibility.org/examples/'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'Accessible jQuery-ui Components Demonstration',
-                url:   'http://access.aol.com/aegis/#goto_slider'
+                url:   'https://ecd.clark.edu/_resources/js/jquery/ui-accessable/#goto_slider'
               }
             ]
       },
@@ -7367,23 +7345,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: Supported Property and States',
-                url:   'http://www.w3.org/TR/wai-aria/#states_and_properties'
+                url:   'https://www.w3.org/TR/wai-aria/#states_and_properties'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G108'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G108'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA5.html'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA5.html'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'OAA Web Accessibility ARIA Examples',
-                url:   'http://oaa-accessibility.org/examples/'
+                url:   'https://oaa-accessibility.org/examples/'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'Accessible jQuery-ui Components Demonstration',
-                url:   'http://access.aol.com/aegis/#goto_slider'
+                url:   'https://ecd.clark.edu/_resources/js/jquery/ui-accessable/#goto_slider'
               }
             ]
       },
@@ -7415,23 +7393,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: Widget Roles',
-                url:   'http://www.w3.org/TR/wai-aria/#widget_roles'
+                url:   'https://www.w3.org/TR/wai-aria/#widget_roles'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G108'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G108'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA5.html'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA5.html'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'OAA Web Accessibility ARIA Examples',
-                url:   'http://oaa-accessibility.org/examples/'
+                url:   'https://oaa-accessibility.org/examples/'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'Accessible jQuery-ui Components Demonstration',
-                url:   'http://access.aol.com/aegis/#goto_slider'
+                url:   'https://ecd.clark.edu/_resources/js/jquery/ui-accessable/#goto_slider'
               }
             ]
         },
@@ -7463,23 +7441,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: Widget Roles',
-                url:   'http://www.w3.org/TR/wai-aria/#widget_roles'
+                url:   'https://www.w3.org/TR/wai-aria/#widget_roles'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G108'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G108'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA4: Using a WAI-ARIA role to expose the role of a user interface component',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA4.html'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA4.html'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'OAA Web Accessibility ARIA Examples',
-                url:   'http://oaa-accessibility.org/examples/'
+                url:   'https://oaa-accessibility.org/examples/'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'Accessible jQuery-ui Components Demonstration',
-                url:   'http://access.aol.com/aegis/#goto_slider'
+                url:   'https://ecd.clark.edu/_resources/js/jquery/ui-accessable/#goto_slider'
               }
             ]
         },
@@ -7512,23 +7490,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: Widget Roles',
-                url:   'http://www.w3.org/TR/wai-aria/#widget_roles'
+                url:   'https://www.w3.org/TR/wai-aria/#widget_roles'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G108'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G108'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA4: Using a WAI-ARIA role to expose the role of a user interface component',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA4.html'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA4.html'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'OAA Web Accessibility ARIA Examples',
-                url:   'http://oaa-accessibility.org/examples/'
+                url:   'https://oaa-accessibility.org/examples/'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'Accessible jQuery-ui Components Demonstration',
-                url:   'http://access.aol.com/aegis/#goto_slider'
+                url:   'https://ecd.clark.edu/_resources/js/jquery/ui-accessable/#goto_slider'
               }
             ]
         },
@@ -7560,15 +7538,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: Widget Roles',
-                url:   'http://www.w3.org/TR/wai-aria/#widget_roles'
+                url:   'https://www.w3.org/TR/wai-aria/#widget_roles'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G108'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G108'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'OAA Web Accessibility ARIA Examples',
-                url:   'http://oaa-accessibility.org/examples/'
+                url:   'https://oaa-accessibility.org/examples/'
               }
             ]
         },
@@ -7606,19 +7584,19 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: Widget Roles',
-                url:   'http://www.w3.org/TR/wai-aria/#widget_roles'
+                url:   'https://www.w3.org/TR/wai-aria/#widget_roles'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G108'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G108'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA5.html'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA5.html'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'OAA Web Accessibility ARIA Examples',
-                url:   'http://oaa-accessibility.org/examples/'
+                url:   'https://oaa-accessibility.org/examples/'
               }
             ]
         },
@@ -7659,7 +7637,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: Widget Roles',
-                url:   'http://www.w3.org/TR/wai-aria/#widget_roles'
+                url:   'https://www.w3.org/TR/wai-aria/#widget_roles'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML5: INPUT element widget role semantics',
@@ -7687,15 +7665,15 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes.',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G108'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G108'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes.',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G108'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G108'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'OAA Web Accessibility ARIA Examples',
-                url:   'http://oaa-accessibility.org/examples/'
+                url:   'https://oaa-accessibility.org/examples/'
               }
             ]
         },
@@ -7737,39 +7715,39 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: The @label@ element',
-                url:   'http://www.w3.org/TR/html4/interact/forms.html#edef-LABEL'
+                url:   'https://www.w3.org/TR/html4/interact/forms.html#edef-LABEL'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-label@ attribute',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-label'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-label'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.0: The @aria-labelledby@ attribute',
-                url:   'http://www.w3.org/TR/wai-aria/#aria-labelledby'
+                url:   'https://www.w3.org/TR/wai-aria/#aria-labelledby'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'HTML 4.01 Specification: The @title@ attribute',
-                url:   'http://www.w3.org/TR/html4/struct/global.html#adef-title'
+                url:   'https://www.w3.org/TR/html4/struct/global.html#adef-title'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H65: Using the title attribute to identify form controls when the label element cannot be used',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H65'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H65'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA6: Using aria-label to provide labels for objects',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA6'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA6'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'ARIA9: Using aria-labelledby to concatenate a label from several text nodes',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/ARIA9'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/ARIA9'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'H71: Providing a description for groups of form controls using fieldset and legend elements',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/H71'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/H71'
               },
               { type:  OpenAjax.a11y.REFERENCES.TECHNIQUE,
                 title: 'iCITA Best Practices: Labels for Form Controls Overview',
-                url:   'http://html.cita.illinois.edu/nav/form/'
+                url:   'https://html.cita.illinois.edu/nav/form/'
               }
             ]
         },
@@ -7804,23 +7782,23 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
             INFORMATIONAL_LINKS: [
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'Accessible Rich Internet Applications (WAI-ARIA) 1.1 Specification: Widget Roles',
-                url:   'http://www.w3.org/TR/wai-aria/#widget_roles'
+                url:   'https://www.w3.org/TR/wai-aria/#widget_roles'
               },
               { type:  OpenAjax.a11y.REFERENCES.SPECIFICATION,
                 title: 'WAI-ARIA 1.0 Authoring Practices: Tabindex for managing focus',
-                url:   'http://www.w3.org/TR/2010/WD-wai-aria-practices-20100916/#kbd_focus'
+                url:   'https://www.w3.org/TR/2010/WD-wai-aria-practices-20100916/#kbd_focus'
               },
               { type:  OpenAjax.a11y.REFERENCES.WCAG_TECHNIQUE,
                 title: 'G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes',
-                url:   'http://www.w3.org/TR/WCAG20-TECHS/G108'
+                url:   'https://www.w3.org/TR/WCAG20-TECHS/G108'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'OAA Web Accessibility ARIA Examples',
-                url:   'http://oaa-accessibility.org/examples/'
+                url:   'https://oaa-accessibility.org/examples/'
               },
               { type:  OpenAjax.a11y.REFERENCES.EXAMPLE,
                 title: 'Accessible jQuery-ui Components Demonstration',
-                url:   'http://access.aol.com/aegis/#goto_slider'
+                url:   'https://ecd.clark.edu/_resources/js/jquery/ui-accessable/#goto_slider'
               }
             ]
         },
@@ -7905,7 +7883,7 @@ OpenAjax.a11y.RuleManager.addRulesNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -8106,7 +8084,7 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -8245,7 +8223,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
 //
 OpenAjax.a11y.RuleManager.addRulesFromJSON([
 
-
   /**
    * @object COLOR_1
    *
@@ -8371,7 +8348,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
   }
 
 ]);
-
 
 
 
@@ -8632,7 +8608,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
     var widget_elements     = dom_cache.controls_cache.widget_elements;
     var widget_elements_len = widget_elements.length;
 
-
     var target_controls = [];
 
     // collect all the visible controls
@@ -8726,9 +8701,7 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
   } // end validate function
 }
 
-
 ]);
-
 
 
 
@@ -8837,7 +8810,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
 
      }
 
-
    } // end validation function
 },
 
@@ -8917,7 +8889,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
        }
 
      }
-
 
    } // end validation function
 
@@ -9285,9 +9256,7 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
   } // end validate function
 }
 
-
 ]);
-
 
 
 
@@ -9523,7 +9492,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
         var de = ce.dom_element;
         var cs = de.computed_style;
 
-
         if (ce.control_type === CONTROL_TYPE.BUTTON_ELEMENT) {
 
           if (cs.is_visible_to_at === VISIBILITY.VISIBLE) {
@@ -9564,7 +9532,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
 
   } // end validate function
 },
-
 
 /**
  * @object CONTROL_5
@@ -9725,7 +9692,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
    }
   } // end validate function
 },
-
 
 /**
  * @object CONTROL 8
@@ -9986,13 +9952,11 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
 
 
 
-
 //
 // OpenAjax Alliance Rules
 // Rule group: Styling Rules
 //
 OpenAjax.a11y.RuleManager.addRulesFromJSON([
-
 
   /**
    * @object FRAME_1
@@ -10102,12 +10066,10 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
         } // end loop
       }
 
-
     } // end validate function
   }
 
 ]);
-
 
 
 
@@ -10722,7 +10684,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
       return true;
     }
 
-
     var TEST_RESULT = OpenAjax.a11y.TEST_RESULT;
     var VISIBILITY  = OpenAjax.a11y.VISIBILITY;
     var SOURCE      = OpenAjax.a11y.SOURCE;
@@ -11047,7 +11008,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
 
 
 
-
 /**
  * Copyright 2011-2018  OpenAjax Alliance
  *
@@ -11055,7 +11015,7 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -11200,7 +11160,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
           if (kbd_events.length) return kbd_events;
 
 //           OpenAjax.a11y.logger.debug("[checkForKeyboardOnRequiredChildren] " + widget + ": " + we + " ("+ flag + ")");
-
 
           if (de.role_info && de.role_info.reqChildren && de.role_info.reqChildren.length) {
             kbd_events = checkChildren(we.child_cache_elements);
@@ -11408,7 +11367,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
   language_dependency : "",
   validate            : function (dom_cache, rule_result) {
 
-
      var VISIBILITY  = OpenAjax.a11y.VISIBILITY;
      var TEST_RESULT = OpenAjax.a11y.TEST_RESULT;
 
@@ -11416,7 +11374,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
 
      var media_elements      = dom_cache.media_cache.media_elements;
      var media_elements_len  = media_elements.length;
-
 
      for (var i = 0; i < media_elements_len; i++) {
 
@@ -11439,9 +11396,7 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
    } // end validation function
 }
 
-
 ]);
-
 
 
 
@@ -11601,7 +11556,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
     var page_element = dom_cache.headings_landmarks_cache.page_element;
 
     var i, ci, le, de, cs, li;
-
 
     var navigation_count = 0;
 
@@ -12192,7 +12146,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
       return fail_count;
     }
 
-
     var landmark_elements     = dom_cache.headings_landmarks_cache.landmark_elements;
     var landmark_elements_len = landmark_elements.length;
     var fail_count = 0;
@@ -12201,7 +12154,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
       var le = landmark_elements[i];
       var de = le.dom_element;
       var cs = de.computed_style;
-
 
       if (le.landmark === 'navigation') {
 
@@ -12502,7 +12454,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
       return fail_count;
     }
 
-
     var landmark_elements     = dom_cache.headings_landmarks_cache.landmark_elements;
     var landmark_elements_len = landmark_elements.length;
     var fail_count = 0;
@@ -12520,7 +12471,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
         var fail_list = '';
         var pass_list = '';
         var landmark_count = 0;
-
 
         if (cs.is_visible_to_at === VISIBILITY.VISIBLE) {
           fail_count = checkLandmarkChildren(le);
@@ -12596,7 +12546,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
 
       return fail_count;
     }
-
 
     var landmark_elements     = dom_cache.headings_landmarks_cache.landmark_elements;
     var landmark_elements_len = landmark_elements.length;
@@ -12909,7 +12858,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
        }
     }
 
-
   } // end validation function
 },
 
@@ -12979,7 +12927,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
 
 
 
-
 /**
  * Copyright 2011-2017  OpenAjax Alliance
  *
@@ -12987,7 +12934,7 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -13132,7 +13079,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
      var table_elements     = dom_cache.tables_cache.table_elements;
      var table_elements_len = table_elements.length;
 
-
      // Check to see if valid cache reference
      if (table_elements && table_elements_len) {
 
@@ -13212,7 +13158,7 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -13289,7 +13235,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
 
     }  // end loop
 
-
   } // end valifdation function
 },
 
@@ -13352,9 +13297,7 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
   } // end validate function
  }
 
-
 ]);
-
 
 
 
@@ -13365,7 +13308,7 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -13551,7 +13494,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
       else rule_result.addResult(TEST_RESULT.MANUAL_CHECK, page_element, 'WEBSITE_MC_2', []);
     }
 
-
   } // end validation function
 },
 
@@ -13664,7 +13606,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
         }
       }
 
-
     }
 
     if (page_element) {
@@ -13733,7 +13674,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
        if (heading_count) rule_result.addResult(TEST_RESULT.MANUAL_CHECK, page_element, 'WEBSITE_MC_1', []);
        else rule_result.addResult(TEST_RESULT.FAIL, page_element, 'WEBSITE_FAIL_1', []);
     }
-
 
   } // end validation function
 },
@@ -13820,7 +13760,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
       rule_result.addResult(TEST_RESULT.MANUAL_CHECK, page_element, 'WEBSITE_MC_1', []);
     }
 
-
   } // end validation function
 },
 
@@ -13882,7 +13821,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
 
 
 
-
 /**
  * Copyright 2011-2018 OpenAjax Alliance
  *
@@ -13890,7 +13828,7 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -13936,7 +13874,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
       var cs = de.computed_style;
       var tag_name = de.tag_name;
 
-
       if (cs.position === 'absolute' || cs.position === 'relative' || cs.position === 'fixed') {
 
         if (cs.is_visible_to_at  === VISIBILITY.VISIBLE) {
@@ -13953,7 +13890,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
   } // end validate function
 }
 
-
 ]);
 /**
  * Copyright 2011-2018 OpenAjax Alliance
@@ -13962,7 +13898,7 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -14017,7 +13953,7 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -14103,7 +14039,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
   resource_properties : [],
   language_dependency : '',
   validate          : function (dom_cache, rule_result) {
-
 
     var TEST_RESULT    = OpenAjax.a11y.TEST_RESULT;
     var VISIBILITY     = OpenAjax.a11y.VISIBILITY;
@@ -14203,7 +14138,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
   language_dependency : '',
   validate          : function (dom_cache, rule_result) {
 
-
     var TEST_RESULT    = OpenAjax.a11y.TEST_RESULT;
     var VISIBILITY     = OpenAjax.a11y.VISIBILITY;
 
@@ -14254,7 +14188,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
   resource_properties : [],
   language_dependency : '',
   validate          : function (dom_cache, rule_result) {
-
 
     var TEST_RESULT    = OpenAjax.a11y.TEST_RESULT;
     var VISIBILITY     = OpenAjax.a11y.VISIBILITY;
@@ -14318,7 +14251,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
   language_dependency : '',
   validate          : function (dom_cache, rule_result) {
 
-
     var TEST_RESULT    = OpenAjax.a11y.TEST_RESULT;
     var VISIBILITY     = OpenAjax.a11y.VISIBILITY;
 
@@ -14374,7 +14306,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
   language_dependency : '',
   validate          : function (dom_cache, rule_result) {
 
-
     var TEST_RESULT    = OpenAjax.a11y.TEST_RESULT;
     var VISIBILITY     = OpenAjax.a11y.VISIBILITY;
 
@@ -14429,7 +14360,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
   resource_properties : ['role'],
   language_dependency : '',
   validate          : function (dom_cache, rule_result) {
-
 
     var TEST_RESULT    = OpenAjax.a11y.TEST_RESULT;
     var VISIBILITY     = OpenAjax.a11y.VISIBILITY;
@@ -14489,7 +14419,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
   language_dependency : '',
   validate          : function (dom_cache, rule_result) {
 
-
     var TEST_RESULT    = OpenAjax.a11y.TEST_RESULT;
     var VISIBILITY     = OpenAjax.a11y.VISIBILITY;
 
@@ -14547,7 +14476,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
   resource_properties : [],
   language_dependency : '',
   validate          : function (dom_cache, rule_result) {
-
 
     var TEST_RESULT    = OpenAjax.a11y.TEST_RESULT;
     var VISIBILITY     = OpenAjax.a11y.VISIBILITY;
@@ -14792,8 +14720,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
 
 
 
-
-
 ]);
 /**
  * Copyright 2011-2018 OpenAjax Alliance
@@ -14802,7 +14728,7 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -14854,7 +14780,7 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -15201,7 +15127,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
         }
       } // end loop
 
-
       for (i = 0; i < table_visible.length; i++) {
         var te1 = table_visible[i];
         var count = 0;
@@ -15209,7 +15134,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
         for(j = 0; j < table_visible.length; j++) {
 
           var te2 = table_visible[j];
-
 
           if (te1.accessible_name_for_comparison === te2.accessible_name_for_comparison) {
             count += 1;
@@ -15427,7 +15351,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
 
 //         OpenAjax.a11y.logger.debug("[Table Rule 1] Cell: " + cell + " headers: " + cell.headers);
 
-
           for (var r = 0; r < max_row; r++) {
             for (var c = 0; c < max_column; c++) {
 
@@ -15493,7 +15416,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
   language_dependency : "",
   validate          : function (dom_cache, rule_result) {
 
-
     var TEST_RESULT   = OpenAjax.a11y.TEST_RESULT;
     var HEADER_SOURCE = OpenAjax.a11y.HEADER_SOURCE;
     var VISIBILITY    = OpenAjax.a11y.VISIBILITY;
@@ -15548,7 +15470,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
 
 
 
-
 /**
  * Copyright 2011-2018 OpenAjax Alliance
  *
@@ -15556,7 +15477,7 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -15695,7 +15616,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
 /* ---------------------------------------------------------------- */
 
 OpenAjax.a11y.RuleManager.addRulesFromJSON([
-
 
 /**
  * @object TITLE_1
@@ -15865,7 +15785,7 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -16823,7 +16743,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
   language_dependency : "",
   validate            : function (dom_cache, rule_result) {
 
-
      function getRequiredChildRolesString(required_children) {
 
        var str = "";
@@ -16899,7 +16818,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
   resource_properties : [],
   language_dependency : "",
   validate            : function (dom_cache, rule_result) {
-
 
      function getRequiredRolesString(required_roles) {
 
@@ -17283,7 +17201,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
   language_dependency : "",
   validate            : function (dom_cache, rule_result) {
 
-
      var VISIBILITY  = OpenAjax.a11y.VISIBILITY;
      var TEST_RESULT = OpenAjax.a11y.TEST_RESULT;
 
@@ -17333,7 +17250,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
     var dom_elements     = dom_cache.element_cache.dom_elements;
     var dom_elements_len = dom_elements.length;
 
-
     for (var i = 0; i < dom_elements_len; i++ ) {
 
       var de =dom_elements[i];
@@ -17343,7 +17259,6 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
       var has_failure = false;
 
       var has_live_role =  de.role && de.role.length && (" alert log status".indexOf(de.role) > 0);
-
 
       if (de.has_aria_live) {
         if (de.computed_style.is_visible_to_at === VISIBILITY.HIDDEN) {
@@ -17427,9 +17342,4 @@ OpenAjax.a11y.RuleManager.addRulesFromJSON([
     }
   } // end validation function
 }
-
 ]);
-
-
-
-

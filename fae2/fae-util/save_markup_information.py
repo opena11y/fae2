@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -47,10 +47,9 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.auth.models import User
 
 from django.db import connection, transaction
-   
+
 from ruleCategories.models import RuleCategory
 from rules.models          import Rule
-
 
 DEBUG=False
 INFO=True
@@ -74,36 +73,35 @@ class PageMarkupInformation:
     if ERROR and log:
       log.write("[SAVE MARKUP][ERROR]: " + str(s) + "\n")
 
-
   def saveMarkupGroup(self, page_result, group, cursor):
-  
+
     insert_str = "INSERT INTO \"markupInfo_mipage" + str(group) + "\" ( "
     insert_str += "page_result_id"
-    
+
     value_str  = ") VALUES ( "
-    value_str +=  str(page_result.id) 
-  
+    value_str +=  str(page_result.id)
+
     for item in self.markup_information[group]:
       insert_str += ", " + str(item)
       value_str  += ", " + str(self.markup_information[group][item])
-        
+
     insert_str = insert_str + value_str + ")"
-    
-#    debug("[PageMarkupInformation][saveMarkupGroup] " + insert_str) 
- 
+
+#    debug("[PageMarkupInformation][saveMarkupGroup] " + insert_str)
+
     try:
       # Data insertion operation - commit required
       cursor.execute(insert_str, [])
     except:
       self.error("[PageMarkupInformation][saveMarkupGroup] SQL insert error ")
-     
-  
+
+
   def saveToDjango(self, page_result):
-    
+
     try:
       cursor = connection.cursor()
       for group in self.markup_information:
         self.saveMarkupGroup(page_result, group, cursor)
     except:
       self.error("[PageMarkupInformation][saveToDango] SQL insert error ")
-      
+

@@ -1,6 +1,5 @@
 {% load staticfiles i18n %}
 <html>
-
 <head>
   <title>Functional Accessibility Evaluator Invoice: {{payment.invoice_number}}</title>
 
@@ -12,41 +11,32 @@
   <link rel="stylesheet" href="{% static 'css/bootstrap-accessibility.css' %}">
   <link rel="stylesheet" href="{% static 'css/bootstrap-sortable.css' %}">
 
-  <style>
+<style>
   body {
     margin: 1em;
   }
-
   main section {
     margin-top: 2em;
   }
-
   main section .title {
     font-weight: bold;
   }
-
   main table {
     width: 20em;
   }
-å
   main table thead th.num,
   main table tbody td.num {    width: 5em;
     text-align: right;
   }
-
-
   main table tbody td[colspan] {
     text-align: right;
   }
-
   main h2 {
     font-size: 150%;
   }
-
 </style>
 
 </head>
-
 <body>
 
   <header>
@@ -113,10 +103,7 @@
    <main>
 
   <footer>
-
   </footer>
 
 </body>
 </html>
-
-

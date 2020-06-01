@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -40,7 +40,7 @@ class RulesetsView(FAENavigationMixin, TemplateView):
 
         context['rule_categories'] = RuleCategory.objects.all()
         context['rulesets']        = Ruleset.objects.all()
-        
+
         return context
 
 class RulesetsWCAGView(FAENavigationMixin, TemplateView):
@@ -52,7 +52,7 @@ class RulesetsWCAGView(FAENavigationMixin, TemplateView):
 
         context['guidelines'] = Guideline.objects.all()
         context['rulesets']   = Ruleset.objects.all()
-        
+
         return context
 
 class RulesetsRuleView(FAENavigationMixin, TemplateView):
@@ -87,7 +87,6 @@ class RulesetView(FAENavigationMixin, TemplateView):
         context['rulesets_url']  = reverse('rulesets', args=[])
         context['ruleset']       = Ruleset.objects.get(slug=kwargs['slug'])
         return context
-
 
 class RulesetWCAGView(FAENavigationMixin, TemplateView):
     template_name = 'rulesets/ruleset_wcag_view.html'
@@ -126,5 +125,3 @@ class RulesetRuleWCAGView(FAENavigationMixin, TemplateView):
         context['rule']            = rule
         context['rule_mapping']    = RuleMapping.objects.get(ruleset=ruleset, rule=rule)
         return context
-
-

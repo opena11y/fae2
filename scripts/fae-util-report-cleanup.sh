@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-/var/www/fae2/fae2env/bin/python /var/www/fae2/fae2/fae2/fae-util/process_archived_reports.py
+/opt/fae2/venv/bin/python /opt/fae2/fae2/fae-util/process_archived_reports.py

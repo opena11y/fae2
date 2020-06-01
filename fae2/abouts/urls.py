@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -18,7 +18,6 @@ File: abouts/tests.py
 Author: Jon Gunderson
 
 """
-
 
 # abouts/urls.py
 from __future__ import absolute_import
@@ -33,7 +32,7 @@ from .views import VersionsView
 from .views import FAQView
 from .views import VPATView
 
-urlpatterns = [ 
+urlpatterns = [
     url(r'^$',            OverviewView.as_view(),       name='overview'),
     url(r'^concepts/$',   ConceptsTermsView.as_view(),  name='concepts_terms'),
     url(r'^disclaimer/$', DisclaimerView.as_view(),     name='disclaimer'),

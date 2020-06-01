@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -36,9 +36,7 @@ from django.utils.timezone import make_aware
 def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for _ in range(size))
 
-
 from accounts.models import AccountType
-
 
 # Create your models here.
 
@@ -71,7 +69,6 @@ class SubscriptionRate(models.Model):
 
         super(SubscriptionRate, self).save()  # Call the "real" save() method.
 
-
 PAYMENT_STATUS = (
     ('NEW', 'New un-initialized payment transaction'),
     ('PMT_REGISTERED', 'Payment registered'),
@@ -90,7 +87,6 @@ PAYMENT_DURATION = (
     ('6', 'Six months'),
     ('12', 'Twelve months'),
 )
-
 
 class Payment(models.Model):
     id = models.AutoField(primary_key=True)

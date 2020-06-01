@@ -5,7 +5,7 @@
 {% for rg in guidelines %}
     <h3 id="{{ rg.id }}" >Guideline {{ rg }}</h3>
 
-    {% for sc in rg.success_criteria.all %}    
+    {% for sc in rg.success_criteria.all %}
 
     {% if sc.rules.count %}
     <h4 id="{{ sc.id }}" >{{ sc }} ({{ sc.show_level }})</h4>
@@ -41,11 +41,9 @@
             </tr>
             {% endfor %}
         </tbody>
-    </table>    
+    </table>
     {% endif %}
     {% endfor %}
 {% endfor %}
 
 {% endblock %}
-
-

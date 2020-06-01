@@ -15,7 +15,6 @@
     {% endif %}
 {% endblock %}
 
-
 {% block content_before_title %}
 
     {% if report.page_count > 1 %}
@@ -29,7 +28,6 @@
     {% endif %}
 
 {% endblock %}
-
 
 {% block title %}
    {{page_rule_result.rule.summary_html|safe}}</span>
@@ -62,7 +60,6 @@
   </div>
 
 {% endblock %}
-
 
 {% block javascript %}
 <script src="{% static 'js/hide-show.js' %}"></script>

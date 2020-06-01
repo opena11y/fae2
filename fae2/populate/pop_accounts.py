@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -18,7 +18,6 @@ file: populate/pop_accounts.py
 Author: Jon Gunderson
 
 """
-
 
 from __future__ import print_function
 from __future__ import absolute_import
@@ -38,7 +37,6 @@ from django.conf import settings
 
 django.setup()
 
-
 """This file is for populating the database with markup information
 I empty it. Run as a standalone script!"""
 
@@ -48,9 +46,7 @@ from subscriptions.models    import SubscriptionRate
 
 from django.contrib.auth.models import User
 
-
 def create_acount_type(type_id, self, shib, host, sponsor, title, permanent, archive, depth, pages, default, adv, protected ):
-
 
   try:
     atype = AccountType.objects.get(type_id=type_id)
@@ -112,7 +108,6 @@ def set_subscription_rate(type_id, desc, one, three, six, twelve):
   sr.save()
   return atype
 
-
 at00 = create_acount_type(0, False, False, False, False,  'Anonymous',         1,  1, 1,    1, False,  False, False)
 
 at01 = create_acount_type(1, True, False, False, False,   'Free',               5,  10, 3,   25, True,   False, False)
@@ -144,7 +139,7 @@ a66 = create_acount_type(66, False, False, False, True, 'Special III', 40, 80, 4
 set_account_type_description(1, """The Free version provides basic website evaluation for any user.  If you use FAE and/or AInspector Sidebar on a regular basis we ask that you help support the development and maintenance of the tools by purchasing a paid level subscriptions.""")
 set_account_type_description(2, """The Standard subscription provides an inidividual, educational and/or other organization with more extensive website evaluation services including deeper spidering of pages in a website, higher maximum number of pages, more saved and permanent reports than the Free account type.""")
 set_account_type_description(3, """The Advanced subscription provides an inidividual, educational and/or other organization with more extensive website evaluation services including deeper spidering of pages in a website, higher maximum number of pages, more saved and permanent reports than the Standard II subscription and also includes more advanced control over website spidering through the specification of include and exclude domain names.""")
-  
+
 set_account_type_description(16, """Free version for educational institutions.""")
 set_account_type_description(17, """For educational institutions of less than 2,000 students.""")
 set_account_type_description(18, """For educational institutions of 2,000-3,999 students.""")
@@ -162,5 +157,3 @@ set_subscription_rate(18, "",    0,  810, 1530, 2700)
 set_subscription_rate(19, "",    0, 1215, 2295, 4050)
 set_subscription_rate(20, "",    0, 1890, 3570, 6300)
 set_subscription_rate(21, "",    0, 2700, 5100, 9000)
-
-

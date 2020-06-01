@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -48,23 +48,23 @@ from wcag20.models import Principle, Guideline, SuccessCriterion
 def create_wcag20(wcag20):
     print("wcag 2.0")
     for principle in wcag20:
-        principle_url = 'http://www.w3.org/TR/WCAG20/#' + principle[2]
+        principle_url = 'https://www.w3.org/TR/WCAG20/#' + principle[2]
         try:
           wcag20_principle = Principle.objects.get(num=principle[0])
           print("  " +  wcag20_principle.title + " (found)")
-          
+
           wcag20_principle.title = principle[1]
           wcag20_principle.url = principle_url
           print(principle[1] + " (updated) " + principle[0])
-        
+
         except:
           wcag20_principle = Principle(num=principle[0], title=principle[1], url=principle_url)
           print(principle[1] + " (CREATED)")
-          
+
         wcag20_principle.save()
-        
+
         for guideline in principle[3]:
-            guideline_url = 'http://www.w3.org/TR/WCAG20/#' + guideline[2]
+            guideline_url = 'https://www.w3.org/TR/WCAG20/#' + guideline[2]
             guideline_slug = 'p' + principle[0] + 'g' + str(guideline[0])
             try:
               wcag20_guideline       = Guideline.objects.get(principle=wcag20_principle, num=guideline[0])
@@ -73,20 +73,20 @@ def create_wcag20(wcag20):
               wcag20_guideline.url   = guideline_url
               wcag20_guideline.slug  = guideline_slug
               print("  " + guideline[1] + " (updated)")
-              
-            except:  
+
+            except:
               wcag20_guideline = Guideline(principle=wcag20_principle, num=guideline[0], title=guideline[1], url=guideline_url, slug=guideline_slug)
               print("  " + guideline[1] + " (CREATED)")
-              
+
             wcag20_guideline.save()
-            
+
             for requirement in guideline[3]:
-                requirement_url = 'http://www.w3.org/TR/WCAG20/#' + requirement[2]
-                meet_url        = 'http://www.w3.org/WAI/WCAG20/quickref/#qr-' + requirement[2] + '.html'
-                understand_url  = 'http://www.w3.org/TR/WCAG20/' + requirement[2] + '.html'
+                requirement_url = 'https://www.w3.org/TR/WCAG20/#' + requirement[2]
+                meet_url        = 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-' + requirement[2] + '.html'
+                understand_url  = 'https://www.w3.org/TR/WCAG20/' + requirement[2] + '.html'
                 requirement_slug = guideline_slug + 'sc' + str(requirement[0])
-                
-                try: 
+
+                try:
                   wcag20_requirement = SuccessCriterion.objects.get(guideline=wcag20_guideline, num=requirement[0])
                   print("  " +  wcag20_requirement.title + " (found)")
                   wcag20_requirement.title = requirement[1]
@@ -99,7 +99,7 @@ def create_wcag20(wcag20):
                 except:
                   wcag20_requirement = SuccessCriterion(guideline=wcag20_guideline, num=requirement[0], title=requirement[1], url=requirement_url, url_meet=meet_url, url_understand=understand_url, level=requirement[3], slug=requirement_slug)
                   print("    " + requirement[1]  + " (CREATED)")
-                  
+
                 wcag20_requirement.save()
 
 wcag20 = (
@@ -110,7 +110,7 @@ wcag20 = (
         ('1', 'Non-text Content', 'text-equiv', '1',),
       ),
     ),
-    ('2', 'Time-based Media', 'media-equiv', 
+    ('2', 'Time-based Media', 'media-equiv',
       (
         ('1', 'Audio-only and Video-only (Prerecorded)', 'media-equiv-av-only-alt','1',),
         ('2', 'Captions (Prerecorded)', 'media-equiv-captions','1',),
@@ -143,7 +143,7 @@ wcag20 = (
         ('9', 'Images of Text (No Exception)', 'visual-audio-contrast-text-images','3',),
       ),
     ),
-   ), 
+   ),
   ),
   ('2', 'Operable - User interface components and navigation must be operable.', 'perceivable',
    (
@@ -183,7 +183,7 @@ wcag20 = (
         ('10', 'Section Headings', 'navigation-mechanisms-headings', '3',),
       ),
     ),
-   ), 
+   ),
   ),
   ('3', 'Understandable - Information and the operation of user interface must be understandable.', 'understandable',
    (
@@ -216,7 +216,7 @@ wcag20 = (
         ('6', 'Error Prevention (All)', 'minimize-error-reversible-all', '3',),
       ),
     ),
-  ),  
+  ),
  ),
   ('4', 'Robust - Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.', 'robust',
    (

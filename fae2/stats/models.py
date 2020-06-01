@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -51,7 +51,6 @@ class StatsAll(models.Model):
     def __str__(self):
         return "All Years"
 
-
 # ---------------------------------------------------------------
 #
 # StatsYear
@@ -84,7 +83,6 @@ class StatsYear(models.Model):
 
     def title(self):
         return self.year
-
 
 # ---------------------------------------------------------------
 #
@@ -125,7 +123,6 @@ class StatsMonth(models.Model):
         months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
         return months[self.month-1] + ' ' + str(self.stats_year.title())
-
 
 # ---------------------------------------------------------------
 #
@@ -170,13 +167,11 @@ class StatsDay(models.Model):
 
         return previous_day
 
-
 class UsageInfo:
 
     def __init__(self):
         self.num_reports = 0
         self.num_pages = 0;
-
 
 # ---------------------------------------------------------------
 #
@@ -254,7 +249,6 @@ class StatsRegisteredUsers(models.Model):
 
     def __str__(self):
         return "Stats Registered Users"
-
 
 # ---------------------------------------------------------------
 #

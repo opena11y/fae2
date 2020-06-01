@@ -1,21 +1,20 @@
-    <fieldset class="fae_group">   
+    <fieldset class="fae_group">
         {% if form.ruleset.errors|length %}
         <legend class="error">
-          {{form.ruleset.label}}: 
-          {% for error in form.ruleset.errors %}{{error}}{% endfor %} 
+          {{form.ruleset.label}}:
+          {% for error in form.ruleset.errors %}{{error}}{% endfor %}
         {% else %}
         <legend>
-          {{form.ruleset.label}} 
+          {{form.ruleset.label}}
         {% endif %}
-        
+
           <span class="fae_info_button" aria-controls="id_inst_ruleset"></span>
         </legend>
-        <div id="id_inst_ruleset" class="fae_info">    
+        <div id="id_inst_ruleset" class="fae_info">
             Both rulesets support the evaluation of web resources for WCAG 2.0 requirements, but require different techniques based on the technologies used to author the web resouce.
-            The <em>HTML5 and ARIA Techniques</em> ruleset is for new and recent development that uses the HTML5 features.  The <em>HTML4 Legacy Techniques</em> is for older development based on HTML4 technologies, that pre-date the availability of ARIA.             
+            The <em>HTML5 and ARIA Techniques</em> ruleset is for new and recent development that uses the HTML5 features.  The <em>HTML4 Legacy Techniques</em> is for older development based on HTML4 technologies, that pre-date the availability of ARIA.
             <div style="margin-top: 1em;"><a href="{% url 'rulesets' %}">Link to more detailed ruleset information</a>.</div>
         </div>
-
 
         <div class="fae_radio">
             <label title="WCAG 2.0 Level A and AA requirements using ARIA and HTML5 accessibility features.">
@@ -29,7 +28,6 @@
                 />
                 <span>HTML5 and ARIA Techniques</span>
             </label>
-
 
         <div class="fae_radio">
             <label title="WCAG 2.0 Level A and AA requirements using legacy HTML4 features, but allowing the use of ARIA and HTML5 accessibility features.">
@@ -45,4 +43,3 @@
             </label>
         </div>
     </fieldset>
-

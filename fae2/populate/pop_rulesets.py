@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -18,7 +18,6 @@ file: populate/pop_rulesets.py
 Author: Jon Gunderson
 
 """
-
 
 from __future__ import print_function
 from __future__ import absolute_import
@@ -66,7 +65,6 @@ RuleCategoryRuleMapping.objects.all().delete()
 GuidelineRuleMapping.objects.all().delete()
 SuccessCriterionRuleMapping.objects.all().delete()
 
-
 def create_ruleset(ruleset_id, version, title, tooltip, desc, author, author_url, date, editor):
 
   # ignore test ruleset
@@ -89,13 +87,13 @@ def create_ruleset(ruleset_id, version, title, tooltip, desc, author, author_url
     ruleset = Ruleset(ruleset_id=ruleset_id, version=version, title=title, tooltip=tooltip, description=desc, author=author, author_url=author_url, updated_date=date)
   ruleset.save()
   return ruleset
-    
-  
+
+
 def create_rule_mapping(ruleset, rule_id, required, enabled):
   try:
     rule = Rule.objects.get(rule_id=rule_id)
     print("  " + ruleset.ruleset_id + " " + rule.nls_rule_id + " " + str(required) + " " + str(enabled))
-    
+
     try:
       rm = RuleMapping.objects.get(ruleset=ruleset, rule=rule)
       print("  Updating Rule Mapping for " + ruleset.ruleset_id + " and rule " + rule.nls_rule_id)
@@ -112,25 +110,25 @@ def create_rule_mapping(ruleset, rule_id, required, enabled):
       rcrm = RuleCategoryRuleMapping.objects.get(ruleset=ruleset, rule_category=rule.category)
     except ObjectDoesNotExist:
       rcrm = RuleCategoryRuleMapping(ruleset=ruleset, rule_category=rule.category)
-      rcrm.save()  
+      rcrm.save()
     rcrm.rule_mappings.add(rm)
-    rcrm.save()  
+    rcrm.save()
 
     try:
       grm = GuidelineRuleMapping.objects.get(ruleset=ruleset, guideline=rule.wcag_primary.guideline)
     except ObjectDoesNotExist:
       grm = GuidelineRuleMapping(ruleset=ruleset, guideline=rule.wcag_primary.guideline)
-      grm.save()  
+      grm.save()
     grm.rule_mappings.add(rm)
-    grm.save()  
+    grm.save()
 
     try:
       scrm = SuccessCriterionRuleMapping.objects.get(guideline_rule_mapping=grm, success_criterion=rule.wcag_primary)
     except ObjectDoesNotExist:
       scrm = SuccessCriterionRuleMapping(guideline_rule_mapping=grm, success_criterion=rule.wcag_primary)
-      scrm.save()  
+      scrm.save()
     scrm.primary_mappings.add(rm)
-    scrm.save()  
+    scrm.save()
 
     return rm
   except ObjectDoesNotExist:
@@ -139,11 +137,10 @@ def create_rule_mapping(ruleset, rule_id, required, enabled):
 
 for rs in data['rulesets']:
    print("\nRuleset: " + rs['ruleset_id'])
-   
+
    rs2 = create_ruleset(rs['ruleset_id'], rs['ruleset_version'], rs['ruleset_title'], rs['ruleset_tooltip'], rs['ruleset_description'], rs['ruleset_author_name'], rs['ruleset_author_url'], rs['ruleset_updated'], u)
-   
+
    if rs2:
      for rm in rs['rule_mappings']:
        print("\n    " + rm)
        create_rule_mapping(rs2, rm, rs['rule_mappings'][rm]['required'], rs['rule_mappings'][rm]['enabled'])
-      

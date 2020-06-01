@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -60,7 +60,6 @@ from contact.models import Announcement
 
 from userProfiles.models import get_profile
 
-
 # ==============================================================
 #
 # Utiltiy functions
@@ -76,7 +75,6 @@ def check_url(url):
         return url
 
     return 'http://' + url
-
 
 def formatted_result_messages(result_message):
     class FormattedResultMessage:
@@ -121,7 +119,6 @@ def formatted_result_messages(result_message):
         frms.append(frm)
     return frms
 
-
 def getPreviousNextRule(rule_results, current_slug):
     p = False
     n = False
@@ -140,7 +137,6 @@ def getPreviousNextRule(rule_results, current_slug):
             flag = True
 
     return [p, n]
-
 
 def getPreviousNextGroup(groups, current_slug):
     p = False
@@ -162,10 +158,9 @@ def getPreviousNextGroup(groups, current_slug):
 
     return [p, n]
 
-
 # ==============================================================
 #
-# FAE 2.0 Navigation Mixin
+# FAE 2.1 Navigation Mixin
 #
 # ==============================================================
 
@@ -174,7 +169,6 @@ class FilterViewItem:
     def __init__(self, label, url):
         self.label = label
         self.url = url
-
 
 class FAENavigtionObject:
     slug = False
@@ -364,7 +358,6 @@ class FAENavigtionObject:
         for rs in rss:
             self.add_filter_item(rs.slug, rs.title)
 
-
 class FAENavigationMixin(object):
 
     def get_context_data(self, **kwargs):
@@ -373,7 +366,6 @@ class FAENavigationMixin(object):
         context['report_nav'] = FAENavigtionObject(self.request.session, self.request.user)
 
         return context
-
 
 # ==============================================================
 #
@@ -404,7 +396,6 @@ class RunAnonymousReportView(FAENavigationMixin, CreateView):
 
         return context
 
-
 class ProcessingAnonymousReportView(FAENavigationMixin, TemplateView):
     template_name = 'reports/processing_anonymous.html'
 
@@ -419,7 +410,6 @@ class ProcessingAnonymousReportView(FAENavigationMixin, TemplateView):
         context['report'] = report
 
         return context
-
 
 # ==============================================================
 #
@@ -455,7 +445,6 @@ class RunRefererReportView(FAENavigationMixin, TemplateView):
 
         return context
 
-
 # ==============================================================
 #
 # Authenticated Report Views
@@ -468,13 +457,11 @@ def check_for_announcements(profile, request):
     for a in announcements:
         a.check_to_show(profile, request)
 
-
 def get_default_url():
     if ANONYMOUS_ENABLED:
         return reverse_lazy('run_anonymous_report')
     else:
         return reverse_lazy('login')
-
 
 class RunReportView(LoginRequiredMixin, FAENavigationMixin, CreateView):
     model = WebsiteReport
@@ -521,7 +508,6 @@ class RunReportView(LoginRequiredMixin, FAENavigationMixin, CreateView):
 
         return context
 
-
 class ProcessingReportView(LoginRequiredMixin, FAENavigationMixin, TemplateView):
     template_name = 'reports/processing.html'
 
@@ -541,7 +527,6 @@ class ProcessingReportView(LoginRequiredMixin, FAENavigationMixin, TemplateView)
         context['complete_reports'] = user_reports.filter(status='C').order_by('-created')[:2]
 
         return context
-
 
 class ProcessingStatusAllJSON(LoginRequiredMixin, TemplateView):
 
@@ -564,7 +549,6 @@ class ProcessingStatusAllJSON(LoginRequiredMixin, TemplateView):
 
         return context
 
-
 class ProcessingStatusJSON(TemplateView):
 
     def render_to_response(self, context, **response_kwargs):
@@ -578,7 +562,6 @@ class ProcessingStatusJSON(TemplateView):
         context['report'] = report
 
         return context
-
 
 class SetReportPermanentView(LoginRequiredMixin, TemplateView):
 
@@ -603,7 +586,6 @@ class SetReportPermanentView(LoginRequiredMixin, TemplateView):
 
         return context
 
-
 class ArchivedReportView(LoginRequiredMixin, FAENavigationMixin, TemplateView):
     template_name = 'reports/archived.html'
 
@@ -623,7 +605,6 @@ class ArchivedReportView(LoginRequiredMixin, FAENavigationMixin, TemplateView):
         context['user_profile'] = user_profile
 
         return context
-
 
 class ManageReportView(LoginRequiredMixin, FAENavigationMixin, TemplateView):
     template_name = 'reports/manage.html'
@@ -647,7 +628,6 @@ class ManageReportView(LoginRequiredMixin, FAENavigationMixin, TemplateView):
 
         return context
 
-
 class DeleteReportView(LoginRequiredMixin, TemplateView):
 
     def get(self, request, *args, **kwargs):
@@ -659,7 +639,6 @@ class DeleteReportView(LoginRequiredMixin, TemplateView):
             report.set_status_deleted()
 
         return HttpResponseRedirect(reverse('manage_reports'))
-
 
 class RestoreReportView(LoginRequiredMixin, TemplateView):
 
@@ -673,13 +652,11 @@ class RestoreReportView(LoginRequiredMixin, TemplateView):
 
         return HttpResponseRedirect(reverse('manage_reports'))
 
-
 # ==============================================================
 #
 # Report Views
 #
 # ==============================================================
-
 
 class ReportJSON(TemplateView):
 
@@ -695,7 +672,6 @@ class ReportJSON(TemplateView):
 
         return context
 
-
 class ReportNotFoundView(FAENavigationMixin, TemplateView):
     template_name = 'reports/report_not_found.html'
 
@@ -705,7 +681,6 @@ class ReportNotFoundView(FAENavigationMixin, TemplateView):
         context['report_slug'] = kwargs['report']
 
         return context
-
 
 class ReportRulesView(FAENavigationMixin, TemplateView):
     template_name = 'reports/report_rules.html'
@@ -753,7 +728,6 @@ class ReportRulesView(FAENavigationMixin, TemplateView):
         context['groups'] = groups
 
         return context
-
 
 class ReportRulesGroupView(FAENavigationMixin, TemplateView):
     template_name = 'reports/report_rules_group.html'
@@ -812,7 +786,6 @@ class ReportRulesGroupView(FAENavigationMixin, TemplateView):
 
         return context
 
-
 class ReportRulesGroupRuleView(FAENavigationMixin, TemplateView):
     template_name = 'reports/report_rules_group_rule.html'
 
@@ -868,7 +841,6 @@ class ReportRulesGroupRuleView(FAENavigationMixin, TemplateView):
         context['ws_rule_result'] = ws_rule_result
 
         return context
-
 
 class ReportRulesGroupRulePageView(FAENavigationMixin, TemplateView):
     template_name = 'reports/report_rules_group_rule_page.html'
@@ -927,7 +899,6 @@ class ReportRulesGroupRulePageView(FAENavigationMixin, TemplateView):
         context['result_messages'] = formatted_result_messages(page_rule_result.result_message)
         return context
 
-
 class ReportRulesGroupRulePageElementResultsJSON(TemplateView):
     template_name = 'reports/report_rules_group_rule_page.html'
 
@@ -958,7 +929,6 @@ class ReportRulesGroupRulePageElementResultsJSON(TemplateView):
         context['summary'] = page_rule_result
         context['page_rule_result'] = page_rule_result
         return context
-
 
 class ReportPagesView(FAENavigationMixin, TemplateView):
     template_name = 'reports/report_pages.html'
@@ -1000,7 +970,6 @@ class ReportPagesView(FAENavigationMixin, TemplateView):
         context['groups'] = groups
 
         return context
-
 
 class ReportPagesGroupView(FAENavigationMixin, TemplateView):
     template_name = 'reports/report_pages_group.html'
@@ -1075,7 +1044,6 @@ class ReportPagesGroupView(FAENavigationMixin, TemplateView):
 
         return context
 
-
 class ReportPageView(FAENavigationMixin, TemplateView):
     template_name = 'reports/report_page.html'
 
@@ -1124,7 +1092,6 @@ class ReportPageView(FAENavigationMixin, TemplateView):
         context['page'] = page
 
         return context
-
 
 class ReportPageGroupView(FAENavigationMixin, TemplateView):
     template_name = 'reports/report_page_group.html'
@@ -1182,7 +1149,6 @@ class ReportPageGroupView(FAENavigationMixin, TemplateView):
         context['page'] = page
 
         return context
-
 
 class ReportPageGroupRuleView(FAENavigationMixin, TemplateView):
     template_name = 'reports/report_page_group_rule.html'
@@ -1245,7 +1211,6 @@ class ReportPageGroupRuleView(FAENavigationMixin, TemplateView):
         context['page_rule_result'] = page_rule_result
 
         return context
-
 
 class URLInformationView(FAENavigationMixin, TemplateView):
     template_name = 'reports/url_information.html'

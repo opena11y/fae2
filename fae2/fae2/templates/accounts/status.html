@@ -9,7 +9,6 @@ Report Processing Status
 {% endblock %}
 
 {% block content %}
-
 <p>Processing threads: {{processing_threads}}</p>
 
 {% include "accounts/report_list.html" with id="id_proc"  title="Processing"  reports=processing %}
@@ -21,7 +20,4 @@ Report Processing Status
 {% include "accounts/report_list.html" with id="id_crea"  title="Created"     reports=created %}
 
 {% include "accounts/report_list.html" with id="id_error" title="Errors"      reports=errors %}
-
 {% endblock %}
-
-

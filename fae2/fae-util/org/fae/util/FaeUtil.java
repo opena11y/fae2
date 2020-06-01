@@ -284,7 +284,7 @@ class FaeUtil {
         if (m_props.containsKey(m_ctrl.path.getLongOpt()))
             m_ctrl.PATH = m_props.getProperty(m_ctrl.path.getLongOpt());
         m_props.remove(m_ctrl.path.getLongOpt());
-        
+
       }
       catch (FileNotFoundException e) {
         e.printStackTrace();
@@ -586,9 +586,9 @@ class FaeUtil {
 	        		url_str = url_str + path + "/";
 				} else {
 					url_str = url_str + "/" + path + "/";
-				}	
+				}
         	}
-        	
+
           // IF TRAVERSING
           URL url = new URL(url_str);
           System.out.println("url: " + url);
@@ -681,7 +681,7 @@ class FaeUtil {
     return m_authorizationURLs;
   }
 
-  //=============================================================================================	
+  //=============================================================================================
   public Document getAuthorizationDoc() {
     return m_authorizationDoc;
   }
@@ -728,7 +728,7 @@ class FaeUtil {
     Logger.getLogger("com.gargoylesoftware.htmlunit.html.HtmlScript").setLevel(Level.OFF);
     Logger.getLogger("com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter").setLevel(Level.OFF);
     Logger.getLogger("com.gargoylesoftware.htmlunit.javascript.background.JavaScriptJobManagerImpl").setLevel(Level.OFF);
-    
+
     // Disallow exceptions of these types when getPage() is called
     webClient.getOptions().setThrowExceptionOnFailingStatusCode(false);
     webClient.setRefreshHandler(new RefreshHandler() {
@@ -895,7 +895,7 @@ class FaeUtil {
           //System.out.println(tmp + ": " + tmp.getHrefAttribute());
           //System.out.println(indent + tmp + ": " + tmp.getHrefAttribute());
 
-          // example: http://www.w3.org/Consortium/Legal/ipr-notice#Copyright
+          // example: https://www.w3.org/Consortium/Legal/ipr-notice#Copyright
           if (link.contains("#")) {
             //System.out.println(" &&&&&&&&& " + link);
             link = link.substring(0, link.indexOf("#"));
@@ -1119,7 +1119,7 @@ class FaeUtil {
 
     // ------------------------------------------------------------------------
     // ------------------------------------------------------------------------
-    
+
     if (m_excludedURLs.size() > 0) {
         try {
           Thread.sleep(2000);
@@ -1196,7 +1196,7 @@ class FaeUtil {
   private static String[] m_args;
   public Properties m_props = null;
   public static Controller m_ctrl = new Controller("java org.fae.util.FaeUtil <options>");
-  
+
   public static BrowserVersion BROWSER_VERSION = BrowserVersion.FIREFOX_68;
   public boolean DEBUG = false;
   public int DEPTH = 1;

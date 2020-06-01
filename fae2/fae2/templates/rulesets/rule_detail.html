@@ -1,4 +1,3 @@
-
 <table class="table table-striped table-hover rule" aria-label="Information on rule, {{rule.summary_text}}" style="margin-top: 1em">
     <tbody>
         <tr>
@@ -18,7 +17,7 @@
             <td class="yes">Yes for <em>{{ rule_mapping.ruleset.title }}</em> ruleset mapping</td>
             {% else %}
             <td clas="no">No for <em>{{ rule_mapping.ruleset.title }}</em> ruleset mapping</td>
-            {% endif %}  
+            {% endif %}
         </tr>
         {% else %}
         <tr>
@@ -46,15 +45,15 @@
         <tr>
             <th>WCAG 2.0 Success Criteria</th>
             <td>
-                <p class="primary"><a href="{{rule.wcag_primary.url}}" target="_requirement_ref">{{rule.wcag_primary.number}} {{rule.wcag_primary.title}} ({{rule.wcag_primary.show_level}}, <em>Primary Success Criterion</em>)</a></p> 
+                <p class="primary"><a href="{{rule.wcag_primary.url}}" target="_requirement_ref">{{rule.wcag_primary.number}} {{rule.wcag_primary.title}} ({{rule.wcag_primary.show_level}}, <em>Primary Success Criterion</em>)</a></p>
                 <p class="related">Other Related Success Criterion: </p>
                 <ul class="related">
                     {% if rule.wcag_related.all.count %}
                     {% for sc in rule.wcag_related.all %}
-                    <li class="related"><a href="{{sc.url}}" target="_requirement_ref">{{sc.number}} {{sc.title}} ({{sc.show_level}})</a></li>   
+                    <li class="related"><a href="{{sc.url}}" target="_requirement_ref">{{sc.number}} {{sc.title}} ({{sc.show_level}})</a></li>
                     {% endfor %}
                     {% endif %}
-                </ul>                
+                </ul>
             </td>
         </tr>
         <tr>
@@ -73,7 +72,7 @@
                     {% for tr in rule.target_resources.all %}
                     <li><code>{{ tr.title }}</code></li>
                     {% endfor %}
-                </ul>                
+                </ul>
             </td>
         </tr>
         <tr>
@@ -98,6 +97,3 @@
         </tr>
     </tbody>
 </table>
-
-
-

@@ -2,11 +2,9 @@
 {% load staticfiles i18n %}
 {% load tz %}
 
-
 {% block breadcrumb %}
     <li>Processing</li>
 {% endblock %}
-
 
 {% block title %}
 Report Processing
@@ -14,16 +12,12 @@ Report Processing
 
 {% block content %}
 {% localtime on %}
-
 <section aria-labelledby="id_processing_label">
-
   <h2 id="id_processing_label" class="sr-only">Reports currently being processed</h2>
-
-
   <table id="id_table_processing" class="details table table-striped table-hover sortable" aria-labelledby="id_processing_label">
     <thead>
       <tr>
-          <th class="text">Title</th>      
+          <th class="text">Title</th>
           <th class="text" title="Date and time of evaluation">Date/Time</th>
           <th class="text">Status</th>
           <th class="text">Ruleset</th>
@@ -31,7 +25,6 @@ Report Processing
           <th class="num" >Depth</th>
       </tr>
     </thead>
-
     <tbody id="id_tbody">
       {% if processing_reports.count == 0 %}
         {% for r in complete_reports %}
@@ -44,15 +37,11 @@ Report Processing
           <td>{{r.depth}}</td>
         </tr>
         {% endfor %}
-      {% endif %}  
+      {% endif %}
     </tbody>
-        
-  </table>  
-
+  </table>
 </section>
-
 <section id="id_errors" aria-labelledby="id_errors_label" style="margin-top: 5em;">
-
   <h2 id="id_errors_label">Reports with Invalid URLs or Errors in Processing</h2>
 
   <p>These reports will be deleted automatically within the next 24 hours</p>
@@ -60,7 +49,7 @@ Report Processing
   <table id="id_table_errors" class="details table table-striped table-hover sortable" aria-labelledby="id_errors_label">
     <thead>
             <tr>
-                <th class="text">Title</th>      
+                <th class="text">Title</th>
                 <th class="text" title="Date and time of evaluation">Date/Time</th>
                 <th class="text">Status</th>
                 <th class="text">Ruleset</th>
@@ -71,71 +60,59 @@ Report Processing
     <tbody id="id_tbody_errors" role="alert">
     </tbody>
   </table>
-
   <h3>Reports with Invalid URLs</h3>
-
   <p>
     The most common reason for reports with 0 pages is that the url requested is not the actual url that is returned by the server or there is a typo in the URL requested resulting in no page being returned.
     Some URLs cause redirections to other URLs.
     When this happens the filtering features of FAE exclude the redirection URL from being analyzed, since the redirection URL is not part of the domain of original URL requested.
     Try using the URL actually appearing in the browser address bar when viewing the web page or website to be analyzed as the start URL for a report to fix this problem.
  </p>
-
   <h3>Reports with Errors</h3>
   <p> The most common reason for a report with an error is the use of problem javascripts on the initial page returned by the URL requested.
     The javascript engine of FAE does its best to emulate the capabilities of the Firefox browser, but some scripting may cause too many exceptions and cause the engine to fail.
     The page may appear to be working fine in some desktop or mobile browsers, but is probably generating a lot of errors due to malformed script or the use of browser specific DOM extensions the engine is not able to ignore.
   </p>
-
-</section>         
-
+</section>
 {% endlocaltime %}
-
 {% endblock %}
 
 {% block javascript %}
-
 <script type="text/javascript">
-
 var report_status_url = "{{site.domain}}/processing/status/all/";
 
 function updateReports(reportInfoArray) {
-
   var processing_count = 0;
-
   function getStatusNLS(s, pages) {
-  
     var s1 = "Undefined";
-  
     switch (s) {
 
     case '-':
       s1 = "Initializing...";
       processing_count += 1;
       break;
-    
+
     case 'I':
       s1 = "Initializing...";
       processing_count += 1;
       break;
-    
+
     case 'A':
       if (pages < 1) s1 = "Starting evaluation";
       else if (pages === 1) s1 = "1 page evaluated";
       else s1 = pages + " pages evaluated";
       processing_count += 1;
       break;
-    
+
     case 'S':
       if (pages === 1) s1 = "Saving results: 1 page evaluated";
       else s1 = "Saving results: " + pages + " pages evaluated";
       processing_count += 1;
       break;
-    
+
     case 'C':
       s1 = "Complete";
       break;
-    
+
     case 'E':
       s1 = "Error in processing";
       break;
@@ -143,26 +120,23 @@ function updateReports(reportInfoArray) {
     case 'B':
       s1 = "Invalid URL";
       break;
-    
-    
+
     default:
       break;
     }
-  
     return s1;
   }
-
   function updateProcessingReports(id, status, title, url, pages) {
     var rows = tbody_proc.getElementsByTagName('tr');
-    
+
     for (var i = 0; i < rows.length; i++) {
       var row = rows[i];
       var row_id = row.getAttribute('id');
-      
+
       if (row_id === ('row_' + id)) {
         var s = document.getElementById('status_' + id);
         if (s) s.innerHTML = getStatusNLS(status, pages);
-        
+
         if (status === 'C') {
           if (pages > 0) {
             var td = row.getElementsByTagName('td');
@@ -170,20 +144,17 @@ function updateReports(reportInfoArray) {
           }
           else {
             row.style.display = "none";
-          }  
+          }
         }
         return false;
       }
     }
-    
     if (status === 'E' || status == 'B' || status === 'C' || status === 'D') return false;
-    
     return true;
   }
-
   function updateReportWithErrors(id, status, pages) {
     var rows = tbody_errors.getElementsByTagName('tr');
-    
+
     for (var i = 0; i < rows.length; i++) {
       var row = rows[i];
       var row_id = row.getAttribute('id');
@@ -191,42 +162,36 @@ function updateReports(reportInfoArray) {
         return false;
       }
     }
-    
     if (status === 'E') return true;
     if ((status === 'C') && (pages === 0)) return true;
-    
     return false;
   }
-
-
   var i, tr;
 
   var tbody_proc = document.getElementById("id_tbody");
 
   var section_errors    = document.getElementById("id_errors");
   var tbody_errors = document.getElementById("id_tbody_errors");
-    
 
   for (i = 0; i < reportInfoArray.length; i++) {
-  
+
     var ri = reportInfoArray[i];
 
     var localDate = new Date(ri['date']);
     localDate = fae2TableUtils.formatDate(localDate);
 
     var report_id = ri['id'];
-    
+
     if (updateProcessingReports(ri['id'], ri['status'], ri['title'], ri['report_url'], ri['page_count'])) {
 
         tr = fae2TableUtils.addRow(tbody_proc, 'row_' + report_id, '')
 
         if (ri['status'] === 'C') {
           fae2TableUtils.addCellLink(tr, ri['title'], ri['report_url'], '', 'text');
-        } 
+        }
         else {
           fae2TableUtils.addCell(tr, ri['title'], '', 'text');
         }
-
         fae2TableUtils.addCell(tr, localDate, '', 'text');
 
         fae2TableUtils.addCell(tr, getStatusNLS(ri['status'], ri['page_count']), ('status_' + report_id), 'text');
@@ -236,14 +201,11 @@ function updateReports(reportInfoArray) {
         fae2TableUtils.addCell(tr, ri['url'], '', 'text');
 
         fae2TableUtils.addCell(tr, ri['depth'], '', 'num');
-
     }
-
     var msg1 = "FAE Processing...";
     var msg2 = "FAE Complete";
-
     if (processing_count) document.title = msg1;
-    else if (document.title === msg1) document.title = msg2;  
+    else if (document.title === msg1) document.title = msg2;
 
     if (updateReportWithErrors(ri['id'], ri['status'], ri['page_count'])) {
 
@@ -258,23 +220,20 @@ function updateReports(reportInfoArray) {
         }
         else {
           fae2TableUtils.addCell(tr, getStatusNLS('E', ri['page_count']), ('status_' + report_id), 'text');
-        }  
-
+        }
         fae2TableUtils.addCellLink(tr, ri['ruleset'], ri['ruleset_url'], '', 'text');
 
         fae2TableUtils.addCell(tr, ri['url'], '', 'text');
 
         fae2TableUtils.addCell(tr, ri['depth'], '', 'num');
     }
-  }  
-
+  }
   if (tbody_errors.innerHTML.indexOf("tr") < 0) {
      section_errors.style.display = "none";
   }
   else {
      section_errors.style.display = "block";
   }
-
   if (tbody_proc.innerHTML.indexOf("tr") < 0) {
     tr = fae2TableUtils.addRow(tbody_proc, 'row_none', '')
     fae2TableUtils.addCell(tr, 'No reports being processed', '', 'text');
@@ -284,12 +243,8 @@ function updateReports(reportInfoArray) {
     fae2TableUtils.addCell(tr, '', '', 'text');
     fae2TableUtils.addCell(tr, '', '', 'num');
   }
-  
   setTimeout(function () {fae2TableUtils.getJSON( report_status_url, updateReports);}, 3000);
 }
-
 fae2TableUtils.getJSON(report_status_url, updateReports);
-
 </script>
-
 {% endblock %}

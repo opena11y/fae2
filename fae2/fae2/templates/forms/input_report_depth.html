@@ -7,7 +7,7 @@
         {% endif %}
             <span class="fae_info_button" aria-controls="id_inst_depth"></span>
         </legend>
-        <div id="id_inst_depth" class="fae_info">             
+        <div id="id_inst_depth" class="fae_info">
             This option is for setting how "deep" FAE will look for pages within a website to include in the evaluation.   Increasing the depth typically results in more pages evaluated.
 
             {% if payment_enabled %}
@@ -18,7 +18,7 @@
                 {% endif %}
             {% endif %}
 
-        </div>            
+        </div>
         {% for choice in form.depth.field.choices %}
             {% if forloop.counter <= user.profile.account_type.max_depth %}
             <div class="fae_radio">
@@ -39,6 +39,4 @@
         {% endfor %}
         {% if user.profile.account_type.next_account_type %}
         {% endif %}
-
-
     </fieldset>

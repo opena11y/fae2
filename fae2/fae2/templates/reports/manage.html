@@ -12,9 +12,8 @@ Manage Reports
 
 {% block content %}
 {% localtime on %}
-
 <section aria-labelledby="id_reports_label">
-   <h2 id="id_reports_label" class="sr-only">{{ reports.count }} reports</h2> 
+   <h2 id="id_reports_label" class="sr-only">{{ reports.count }} reports</h2>
 
    {% include "reports/manage_report_list.html" with label_id="id_reports_label" report_list=reports %}
 
@@ -23,45 +22,30 @@ Manage Reports
         <li>Maximum permanent reports: <strong>{{user_profile.account_type.max_permanent}}</strong></li>
     </ul>
 </section>
-
-
 {% if other_reports.count %}
-
 <section aria-labelledby="id_other_reports_label" style="margin-top: 4em;">
-    <h2 id="id_other_reports_label">Non-Archived Reports</h2> 
-    <p>Non-archived reports will be automatically deleted within the next 24 hours unless you add it to your group of permanent reports.  
+    <h2 id="id_other_reports_label">Non-Archived Reports</h2>
+    <p>Non-archived reports will be automatically deleted within the next 24 hours unless you add it to your group of permanent reports.
 
    {% include "reports/manage_report_list.html" with label_id="id_other_reports_label" report_list=other_reports %}
-
 </section>
-
 {% endif %}
-    
-
 {% if deleted_reports.count %}
-
 <section aria-labelledby="id_deleted_reports_label" style="margin-top: 4em;">
-    <h2 id="id_deleted_reports_label">Deleted Reports</h2> 
-    <p>Deleted reports have been removed from the list of archived reports and will be deleted within the next 24 hours unless you restore the report or add it to your group of permanent reports.  
+    <h2 id="id_deleted_reports_label">Deleted Reports</h2>
+    <p>Deleted reports have been removed from the list of archived reports and will be deleted within the next 24 hours unless you restore the report or add it to your group of permanent reports.
 
    {% include "reports/manage_report_list.html" with label_id="id_deleted_reports_label" report_list=deleted_reports restore=True %}
-
 </section>
-
 {% endif %}
-
 {% endlocaltime %}
-
 {% endblock %}
 
 {% block javascript %}
-
 <script type="text/javascript">
-
 var report_status_url = "{{site.domain}}/processing/status/all/";
 
 function updateDisabledCheckboxes() {
-
 
   function getCheckboxes() {
     var inputs = document.getElementsByTagName('input');
@@ -71,10 +55,9 @@ function updateDisabledCheckboxes() {
       if (input.type === 'checkbox') {
         checkboxes.push(input);
         if(input.checked) count += 1;
-      }  
+      }
     }
   }
-
   var count = 0;
   var checkboxes = [];
   getCheckboxes();
@@ -86,14 +69,10 @@ function updateDisabledCheckboxes() {
     }
     else {
       cb.disabled = false;
-    }    
+    }
   }
-
-
 };
-
 function checkboxArchiveEvent(event, slug) {
-
   var url;
   var cb = event.currentTarget;
   var del_button = document.getElementById(cb.id + '_delete')
@@ -106,32 +85,24 @@ function checkboxArchiveEvent(event, slug) {
     url = "{{site.domain}}/report/" + slug +"/permanent/false/";
     del_button.disabled = false;
   }
-
   fae2TableUtils.getJSON(url, false);
 
   updateDisabledCheckboxes();
 
   event.stopPropagation();
-
 }
-
 function buttonDeleteEvent(event, slug) {
 
   var url = "{{site.domain}}/report/" + slug + "/delete/";
 
   location.href=url;
-
 }
-
 function buttonRestoreEvent(event, slug) {
 
   var url = "{{site.domain}}/report/" + slug + "/restore/";
 
   location.href=url;
-
 }
-
 window.addEventListener('load',updateDisabledCheckboxes());
 </script>
-
 {% endblock %}

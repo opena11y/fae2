@@ -16,7 +16,6 @@ from ruleCategories.models import RuleCategory
 from wcag20.models import Guideline
 from rules.models import RuleScope
 
-
 def get_implementation_status(impl_status):
     if impl_status in ['C', 'AC', 'AC-MC', 'PI', 'PI-MC', 'NI', 'NI-MC', 'MC']:
         if 'MC' in impl_status:
@@ -25,7 +24,6 @@ def get_implementation_status(impl_status):
             return impl_status
     else:
         return 'na'
-
 
 def get_result(result_value):
     if result_value == 5:
@@ -39,7 +37,6 @@ def get_result(result_value):
     elif result_value == 1:
         return 'Not Applicable'
 
-
 def get_element_result(result_value):
     if result_value == 5:
         return 'Violation'
@@ -51,7 +48,6 @@ def get_element_result(result_value):
         return 'Hidden'
     elif result_value == 1:
         return 'Pass'
-
 
 def addReportInformation(report_obj, writer, path):
     writer.writerow(['Meta Label', 'Meta Value'])
@@ -89,14 +85,12 @@ def addPageInformation(page, writer):
 
     writer.writerow([])
 
-
 def cleanMessage(message):
 
     message = message.replace('<code>', '\'')
     message = message.replace('</code>', '\'')
 
     return message
-
 
 def ReportRulesViewCSV(request, report, view):
     # Create the HttpResponse object with the appropriate CSV header.
@@ -141,7 +135,6 @@ def ReportRulesViewCSV(request, report, view):
          get_implementation_status(report_obj.implementation_status)])
     return response
 
-
 def ReportRulesGroupViewCSV(request, report, view, group):
     response = HttpResponse(content_type='text/csv')
     response['Content-Disposition'] = 'attachment; filename="' + \
@@ -172,7 +165,6 @@ def ReportRulesGroupViewCSV(request, report, view, group):
 
     return response
 
-
 def ReportRulesGroupRuleViewCSV(request, report, view, group, rule):
     response = HttpResponse(content_type='text/csv')
     response['Content-Disposition'] = 'attachment; filename="' + \
@@ -194,7 +186,6 @@ def ReportRulesGroupRuleViewCSV(request, report, view, group, rule):
 
     addRuleInformation(ws_rule_result.rule, writer)
 
-
     writer.writerow(
         ['Page', 'Page Title', 'Result', 'Elements Violation', 'Elements Warning', 'Elements Manual Check', 'Elements Passed', 'Score', 'Status'])
 
@@ -210,7 +201,6 @@ def ReportRulesGroupRuleViewCSV(request, report, view, group, rule):
                      get_implementation_status(ws_rule_result.implementation_status)])
 
     return response
-
 
 def ReportRulesGroupRulePageViewCSV(request, report, view, group, rule, page):
     response = HttpResponse(content_type='text/csv')
@@ -243,7 +233,6 @@ def ReportRulesGroupRulePageViewCSV(request, report, view, group, rule, page):
              cleanMessage(prr['message'])])
 
     return response
-
 
 def ReportPagesViewCSV(request, report, view):
     response = HttpResponse(content_type='text/csv')
@@ -303,7 +292,6 @@ def ReportPagesGroupViewCSV(request, report, view, group):
             [pr.page_result.page_number, pr.page_result.get_title(), pr.page_result.url, get_result(pr.result_value), pr.rules_violation,
              pr.rules_warning, pr.rules_manual_check, pr.rules_passed, pr.rules_na, pr.implementation_score,
              get_implementation_status(pr.implementation_status)])
-
 
     return response
 
@@ -369,4 +357,3 @@ def ReportPageGroupViewCSV(request, report, view, group, page):
 
 def ReportPageGroupRuleViewCSV(request, report, view, group, page, rule):
     return ReportRulesGroupRulePageViewCSV(request, report, view, group, rule, page)
-

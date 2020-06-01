@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -13,12 +13,12 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-file: populate/pop_subscriptions.py
+###file: populate/pop_subscriptions.py
+file: populate/update_user_profiles.py
 
 Author: Jon Gunderson
 
 """
-
 
 from __future__ import print_function
 from __future__ import absolute_import
@@ -38,9 +38,7 @@ from django.conf import settings
 
 from fae2.settings import SHIBBOLETH_ENABLED
 
-
 django.setup()
-
 
 """This file is for populating the database with markup information
 I empty it. Run as a standalone script!"""
@@ -77,9 +75,8 @@ def update_user_profiles():
 
       if u.username == 'anonymous':
         p.account_type = AccountType.objects.get(type_id=0)
-      else:  
+      else:
         p.account_type = AccountType.objects.get(type_id=DEFAULT_ACCOUNT_TYPE)
       p.save()
-
 
 update_user_profiles()

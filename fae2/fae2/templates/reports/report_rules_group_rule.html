@@ -7,7 +7,6 @@
     <li>{{ws_rule_result.rule.nls_rule_id}}</li>
 {% endblock %}
 
-
 {% block content_before_title %}
 
     {% if page %}
@@ -22,11 +21,9 @@
 
 {% endblock %}
 
-
 {% block title %}
     {{ws_rule_result.rule.summary_html|safe}}
 {% endblock %}
-
 
 {% block content %}
 
@@ -39,7 +36,7 @@
             <li><a href="#id_rule_details">Rule Details</a></li>
             <li class="active"><a href="#id_page_results">Page Results</a></li>
         </ul>
-    </nav>  
+    </nav>
 
     {% include "reports/rule_details.html" with rule=ws_rule_result.rule %}
 
@@ -52,4 +49,3 @@
 {% block javascript %}
 <script src="{% static 'js/hide-show.js' %}"></script>
 {% endblock javascript %}
- 

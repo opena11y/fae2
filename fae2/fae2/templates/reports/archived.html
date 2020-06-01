@@ -13,9 +13,8 @@ Archived Reports
 
 {% block content %}
 
-
 <section aria-labelledby="id_reports_label">
-   <h2 id="id_reports_label" class="sr-only">{{ reports.count }} reports</h2> 
+   <h2 id="id_reports_label" class="sr-only">{{ reports.count }} reports</h2>
 
    {% include "reports/archived_report_list.html" with label_id="id_reports_label" report_list=reports %}
 
@@ -28,14 +27,11 @@ Archived Reports
 {% if other_reports.count %}
 
 <section aria-labelledby="id_other_reports_label" style="margin-top: 4em;">
-    <h2 id="id_other_reports_label">Non-Archived Reports</h2> 
-    <p>Non-archived reports will be automatically deleted within the next 24 hours.  
+    <h2 id="id_other_reports_label">Non-Archived Reports</h2>
+    <p>Non-archived reports will be automatically deleted within the next 24 hours.
     Use the <a href="{% url 'manage_reports' %}">Manage Reports</a> option to delete a report immediately or to make the report part of your group of permanent reports.</p>
 
    {% include "reports/archived_report_list.html" with label_id="id_other_reports_label" report_list=other_reports %}
-
 </section>
-
 {% endif %}
-    
 {% endblock %}

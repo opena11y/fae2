@@ -1,9 +1,9 @@
     <div class="fae_group" >
         <label for="id_input_url">Starting URL</label>
-        
+
         <div {% if form.url.errors|length %}class="error"{% endif %}>
         <div class="fae_textbox">
-            <input 
+            <input
                 id="id_input_url"
                 name="url"
                 type="url"
@@ -11,9 +11,9 @@
                 value="{{form.url.value}}"
                 {% if form.url.errors|length %}aria-invalid="true"{% endif %}
                 size="60"
-                placeholder="http://somewhere.org/path/"
-                title="URL must start with http:// or https://, example: http://example.org"/> 
-        </div>    
+                placeholder="https://example.com/page/"
+                title="URL must start with http:// or https://, example: https://example.org"/>
+        </div>
         {% if form.url.errors|length %}
         <label class="error" for="id_input_url">{% for error in form.url.errors %}{{error}}{% endfor %}</label>
         {% endif %}

@@ -9,8 +9,8 @@ This utility is used to analyze web pages using the OpenAjax Evaluation library 
 
 The following libraries must be in the CLASSPATH:
 
-* HTMLUnit version 2.13 (http://sourceforge.net/projects/htmlunit/)
-* Apache Commons CLI 1.2 (http://commons.apache.org/cli/)
+* HTMLUnit version 2.39 (https://sourceforge.net/projects/htmlunit/)
+* Apache Commons CLI 1.2 (https://commons.apache.org/cli/)
 
 ## Build Information
 
@@ -25,7 +25,7 @@ You can use the build script in the main project directory (i.e. trunk) to build
 You can use the run script in the main project directory (i.e. trunk) to run the project:
 
 ```
-$ . run -u http://msn.com/
+$ . run -u https://msn.com/
 ```
 
 Examples use of a config file:

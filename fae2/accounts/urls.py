@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -42,7 +42,6 @@ from .views import AllUserInformationView
 from .views import PaymentInformationView
 from .views import InvoiceView
 
-
 urlpatterns = [
     url(r'^$',         MyAccountView.as_view(),          name='my_account'),
     url(r'^profile/$', UpdateUserProfileView.as_view(),  name='update_profile'),
@@ -63,5 +62,3 @@ urlpatterns = [
     url(r'^payments/$',  PaymentInformationView.as_view(),   name='payment_information'),
     url(r'^invoice/(?P<reference_id>\w+)/$',  InvoiceView.as_view(),   name='invoice'),
 ]
-
-

@@ -15,7 +15,6 @@
 {% if self_registration_enabled %}
 <p><a href="{% url "password_reset_recover" %}">Change Password</a></p>
 {% endif %}
-
 <form action="{% url 'update_profile' %}"
       method="POST">
     {% csrf_token %}
@@ -29,22 +28,15 @@
     <div class="fae_group" >
     {% include "forms/input_checkbox.html" with checkbox=form.email_announcements %}
     </div>
-    
+
     {% include "forms/input_select.html" with select=form.timezone %}
 
     <div class="fae_button">
       <input type="submit" value="Update Profile" />
     </div>
 </form>
-
-
 {% endblock %}
 
 {% block javascript %}
-
 <script src="{% static 'js/form-control-focus.js' %}" type="text/javascript"></script>
-
 {% endblock %}
-
-
-

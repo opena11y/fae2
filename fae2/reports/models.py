@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -28,7 +28,6 @@ from datetime import datetime
 from django.conf import settings
 from django.utils.timezone import make_aware
 
-
 from os.path import join
 
 from django.db import models
@@ -44,7 +43,6 @@ from django.contrib.auth.models import User
 from rulesets.models            import Ruleset
 
 from fae2.settings import APP_DIR
-
 
 # Create your models here.
 
@@ -68,7 +66,6 @@ IMPLEMENTATION_STATUS_CHOICES = (
     ('AC-MC',  'Almost Complete with manual checks required'),
     ('C',   'Complete'),
 )
-
 
 MC_STATUS_CHOICES = (
     ('NC',  'Not Checked'),
@@ -110,7 +107,6 @@ class PagesSummary:
     elif result == RESULT_VALUE['NOT_APPLICABLE']:
       self.pages_not_applicable += 1
 
-
 # ---------------------------------------------------------------
 #
 # RuleResult
@@ -131,7 +127,6 @@ class RuleResult(models.Model):
   class Meta:
         abstract = True
 
-
 # ---------------------------------------------------------------
 #
 # RuleGroupResult
@@ -150,9 +145,7 @@ class RuleGroupResult(RuleResult):
   class Meta:
         abstract = True
 
-
 # Create your models here.
-
 
 EVAL_STATUS = (
     ('-', 'Created'),
@@ -170,7 +163,6 @@ FOLLOW_CHOICES = (
   (2, 'Next-level subdomains'),
   (3, 'Include or exclude based on set of domains')
 )
-
 
 DEPTH_CHOICES = (
   (1, 'Top-level page only'),
@@ -381,7 +373,6 @@ class WebsiteReport(RuleGroupResult):
       elif self.follow == 3:
         self.require_path = False
 
-
       DIR = APP_DIR
 
       count = len(WebsiteReport.objects.filter(user=self.user)) + 1
@@ -407,7 +398,6 @@ class WebsiteReport(RuleGroupResult):
     for pr in self.page_all_results.all():
       pr.delete()
 
-
   def delete_data_files(self):
     path = self.data_directory + '/data'
 #    print('[delete_data_files]: ' + path)
@@ -423,7 +413,6 @@ class WebsiteReport(RuleGroupResult):
       return False
 
     return True
-
 
   def set_status_initialized(self):
     self.status = 'I'
@@ -499,8 +488,6 @@ class WebsiteReport(RuleGroupResult):
     self.save()
 #    print('[LAST_VIEWED][' +  self.title + ']: ' + str(self.last_viewed))
 
-
-
   def get_pages_summary(self, view=False, group=False):
       ps = PagesSummary()
 
@@ -515,7 +502,6 @@ class WebsiteReport(RuleGroupResult):
         ps.update_summary(pr.result_value)
 
       return ps
-
 
   def get_page_count(self):
     if self.status == 'C' or self.status == 'E' or self.status == 'D':
@@ -544,9 +530,7 @@ class WebsiteReport(RuleGroupResult):
     for pr in self.page_all_results.all():
       json['page_results'].append(pr.to_json_results())
 
-
     return json
-
 
   def to_json_status(self):
     tz = timezone(str(self.user.profile.timezone))
@@ -569,7 +553,6 @@ class WebsiteReport(RuleGroupResult):
     json['page_count']  = self.get_page_count()
 
     return json
-
 
   def get_processing_status(self):
 
@@ -628,7 +611,6 @@ class WebsiteReport(RuleGroupResult):
 
     return urls
 
-
 # ---------------------------------------------------------------
 #
 # ProcessedURL
@@ -640,7 +622,6 @@ def short_url(url):
     return url[0:20] + '......' + url[len(url)-20:]
   else:
     return url
-
 
 class ProcessedURL(models.Model):
   processed_url_id = models.AutoField(primary_key=True)
@@ -754,7 +735,6 @@ class FilteredURL(models.Model):
 
     return parsed.netloc
 
-
   def get_reference_url(self):
     if len(self.url_referenced) > 50:
       return self.url_referenced[:50] + '...... '
@@ -790,7 +770,6 @@ class ExcludedURL(models.Model):
     else:
       return self.url
 
-
 # ---------------------------------------------------------------
 #
 # ExcludedURL
@@ -817,4 +796,3 @@ class ExcludedURLPageReference(models.Model):
       return self.url[0:20] + '......' + self.url[len(self.url)-20:]
     else:
       return self.url
-

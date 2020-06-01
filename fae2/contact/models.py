@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -49,7 +49,6 @@ CONTACT_STATUS = (
     ('R', 'Responded'),
 )
 
-
 # User Contact (associated with contact form)
 class Contact(models.Model):
     id = models.AutoField(primary_key=True)
@@ -70,7 +69,6 @@ class Contact(models.Model):
             if shortp == self.status:
                 return longp
 
-
 ANNOUNCEMENT_SCOPE = (
     ('All', 'All Users'),
     ('Sub', 'Users who have a paid subscription'),
@@ -83,7 +81,6 @@ ANNOUNCEMENT_STATUS = (
     ('Visible', 'Announcement is visible in web views.'),
     ('Arch', 'Announcement is only available in the archive.'),
 )
-
 
 class Announcement(models.Model):
     id = models.AutoField(primary_key=True)

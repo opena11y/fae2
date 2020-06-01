@@ -10,27 +10,19 @@ Payment Register
 {% endblock %}
 
 {% block content %}
-
 {% if payment.status == 'PMT_REGISTERED' or payment.status == 'PMT_NOCOST' %}
-
 <div class="redirect">
   <p>You should be automatically redirected to the following URL:<br/><a href="{{payment.redirect_url}}?token={{payment.token}}">{{payment.redirect_url}}?token={{payment.token}}</a></p>
 </div>
-
 {% else %}
-
 <div class="error">
   <p>Error in registering payment: {{payment.register_response_msg}}</p>
   <p><a href="{% url 'update_subscription' %}">Go back to update subscription</a></p>
 </div>
-
 {% endif %}
- 
 {% endblock %}
 
-
 {% block javascript %}
-
 {% if payment.status == 'PMT_REGISTERED' or payment.status == 'PMT_NOCOST' %}
 <script type="text/javascript">
 
@@ -40,9 +32,7 @@ function paymentRedirect() {
 
   window.location.href=url;
 }
-
 window.addEventListener('load', paymentRedirect);
 </script>
-{% endif %} 
-
+{% endif %}
 {% endblock %}

@@ -5,11 +5,11 @@
 # Required-Stop:     $local_fs $network $named $time $syslog
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# Description:       Script processes evaluation requests for FAE 2.0
+# Description:       Script processes evaluation requests for FAE 2.1
 ### END INIT INFO
 
 # Edit the command path to local locations of virtual environment and fae-utl directories
-SCRIPT='/var/www/fae2/fae2env/bin/python /var/www/fae2/fae2/fae2/fae-util/process_evaluation_requests.py'
+SCRIPT='/opt/fae2/venv/bin/python /opt/fae2/fae2/fae-util/process_evaluation_requests.py'
 RUNAS=root
 
 PIDFILE=/var/run/fae-util.pid

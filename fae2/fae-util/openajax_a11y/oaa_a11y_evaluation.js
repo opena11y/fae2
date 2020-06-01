@@ -5,7 +5,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -43,7 +43,6 @@ catch(e) {
 /* ---------------------------------------------------------------- */
 /*                       OpenAjax Constants                         */
 /* ---------------------------------------------------------------- */
-
 
 /**
  * @namespace OpenAjax
@@ -140,7 +139,6 @@ OpenAjax.a11y.SUPPORTS_URL_TESTING = true;
  */
 OpenAjax.a11y.DATA_TABLE_ASSUMPTION  = true;
 
-
 /**
  * @constant ELEMENT_FORMATING
  * @memberOf OpenAjax.a11y
@@ -149,7 +147,6 @@ OpenAjax.a11y.DATA_TABLE_ASSUMPTION  = true;
  * @desc Defines the formating of element names in NLS message strings
  */
 OpenAjax.a11y.ELEMENT_FORMATING = 'CAPS';
-
 
 /**
  * @constant RESULT_FILTER
@@ -192,7 +189,6 @@ OpenAjax.a11y.DEFAULT_PREFS = OpenAjax.a11y.DEFAULT_PREFS || {
   WCAG20_LEVEL   : 3,
   BROKEN_LINKS   : false
 };
-
 
 /**
  * @constant WCAG20_PRINCIPLE
@@ -436,7 +432,6 @@ OpenAjax.a11y.ELEMENT_TYPE = OpenAjax.a11y.ELEMENT_TYPE || {
   LAYOUT_TABLES      : 101
 };
 
-
 /**
  * @constant CACHE_NAMES
  * @memberOf OpenAjax.a11y
@@ -458,7 +453,6 @@ OpenAjax.a11y.CACHE_NAMES = ['abbreviations_cache',
                              'tables_cache',
                              'text_cache',
                              'timing_cache'];
-
 
 /**
  * @constant WCAG20_LEVEL
@@ -495,7 +489,6 @@ OpenAjax.a11y.EVALUATION_LEVELS = OpenAjax.a11y.EVALUATION_LEVELS || {
   A_AA_AAA : 7
 };
 
-
 /**
  * @constant RULE_GROUP
  * @memberOf OpenAjax.a11y
@@ -518,7 +511,6 @@ OpenAjax.a11y.RULE_GROUP = OpenAjax.a11y.RULE_GROUP || {
 };
 
 
-
 /**
  * @constant RULE_SCOPE
  * @memberOf OpenAjax.a11y
@@ -537,7 +529,6 @@ OpenAjax.a11y.RULE_SCOPE = OpenAjax.a11y.RULE_SCOPE || {
   PAGE    : 2,
   WEBSITE : 3
 };
-
 
 /**
  * @constant TEST_RESULT
@@ -633,7 +624,6 @@ OpenAjax.a11y.IMPLEMENTATION_VALUE = OpenAjax.a11y.IMPLEMENTATION_VALUE || {
   MANUAL_CHECKS_ONLY          : 7
 };
 
-
 /**
  * @constant STATUS
  * @memberOf OpenAjax.a11y
@@ -718,7 +708,6 @@ OpenAjax.a11y.ID = OpenAjax.a11y.ID || {
   UNIQUE       : 2,
   NOT_UNIQUE   : 3
 };
-
 
 /**
  * @constant LIST
@@ -825,7 +814,6 @@ OpenAjax.a11y.DESCRIPTION_SOURCE = OpenAjax.a11y.DESCRIPTION_SOURCE || {
   TABLE_SUMMARY        : 4
 };
 
-
 /**
  * @constant HEADER_SOURCE
  * @memberOf OpenAjax.a11y
@@ -841,7 +829,6 @@ OpenAjax.a11y.HEADER_SOURCE = OpenAjax.a11y.HEADER_SOURCE || {
   HEADERS_ATTRIBUTE     : 2,
   ROW_OR_COLUMN_HEADERS : 3
 };
-
 
 /**
  * @constant CONTROL_TYPE
@@ -1033,9 +1020,7 @@ OpenAjax.a11y.FILTERED_RULE_RESULT_RETURN_VALUE = OpenAjax.a11y.FILTERED_RULE_RE
 OpenAjax.a11y.LANGUAGE_CODES = OpenAjax.a11y.LANGUAGE_CODES || {
       subtags : "aa ab ae af ak am an ar as av ay az ba be bg bh bi bm bn bo br bs ca ce ch co cr cs cu cv cy da de dv dz ee el en eo es et eu fa ff fi fj fo fr fy ga gd gl gn gu gv ha he hi ho hr ht hu hy hz ia id ie ig ii ik in io is it iu iw ja ji jv jw ka kg ki kj kk kl km kn ko kr ks ku kv kw ky la lb lg li ln lo lt lu lv mg mh mi mk ml mn mo mr ms mt my na nb nd ne ng nl nn no nr nv ny oc oj om or os pa pi pl ps pt qu rm rn ro ru rw sa sc sd se sg sh si sk sl sm sn so sq sr ss st su sv sw ta te tg th ti tk tl tn to tr ts tt tw ty ug uk ur uz ve vi vo wa wo xh yi yo za zh zu aaa aab aac aad aae aaf aag aah aai aak aal aam aan aao aap aaq aas aat aau aav aaw aax aaz aba abb abc abd abe abf abg abh abi abj abl abm abn abo abp abq abr abs abt abu abv abw abx aby abz aca acb acd ace acf ach aci ack acl acm acn acp acq acr acs act acu acv acw acx acy acz ada adb add ade adf adg adh adi adj adl adn ado adp adq adr ads adt adu adw adx ady adz aea aeb aec aed aee aek ael aem aen aeq aer aes aeu aew aey aez afa afb afd afe afg afh afi afk afn afo afp afs aft afu afz aga agb agc agd age agf agg agh agi agj agk agl agm agn ago agp agq agr ags agt agu agv agw agx agy agz aha ahb ahg ahh ahi ahk ahl ahm ahn aho ahp ahr ahs aht aia aib aic aid aie aif aig aih aii aij aik ail aim ain aio aip aiq air ais ait aiw aix aiy aja ajg aji ajn ajp ajt aju ajw ajz akb akc akd ake akf akg akh aki akj akk akl akm ako akp akq akr aks akt aku akv akw akx aky akz ala alc ald ale alf alg alh ali alj alk all alm aln alo alp alq alr als alt alu alv alw alx aly alz ama amb amc ame amf amg ami amj amk aml amm amn amo amp amq amr ams amt amu amv amw amx amy amz ana anb anc and ane anf ang anh ani anj ank anl anm ann ano anp anq anr ans ant anu anv anw anx any anz aoa aob aoc aod aoe aof aog aoh aoi aoj aok aol aom aon aor aos aot aou aox aoz apa apb apc apd ape apf apg aph api apj apk apl apm apn apo app apq apr aps apt apu apv apw apx apy apz aqa aqc aqd aqg aql aqm aqn aqp aqr aqz arb arc ard are arh ari arj ark arl arn aro arp arq arr ars art aru arv arw arx ary arz asa asb asc asd ase asf asg ash asi asj ask asl asn aso asp asq asr ass ast asu asv asw asx asy asz ata atb atc atd ate atg ath ati atj atk atl atm atn ato atp atq atr ats att atu atv atw atx aty atz aua aub auc aud aue auf aug auh aui auj auk aul aum aun auo aup auq aur aus aut auu auw aux auy auz avb avd avi avk avl avm avn avo avs avt avu avv awa awb awc awd awe awg awh awi awk awm awn awo awr aws awt awu awv aww awx awy axb axe axg axk axl axm axx aya ayb ayc ayd aye ayg ayh ayi ayk ayl ayn ayo ayp ayq ayr ays ayt ayu ayx ayy ayz aza azb azc azd azg azj azm azn azo azt azz baa bab bac bad bae baf bag bah bai baj bal ban bao bap bar bas bat bau bav baw bax bay baz bba bbb bbc bbd bbe bbf bbg bbh bbi bbj bbk bbl bbm bbn bbo bbp bbq bbr bbs bbt bbu bbv bbw bbx bby bbz bca bcb bcc bcd bce bcf bcg bch bci bcj bck bcl bcm bcn bco bcp bcq bcr bcs bct bcu bcv bcw bcy bcz bda bdb bdc bdd bde bdf bdg bdh bdi bdj bdk bdl bdm bdn bdo bdp bdq bdr bds bdt bdu bdv bdw bdx bdy bdz bea beb bec bed bee bef beg beh bei bej bek bem beo bep beq ber bes bet beu bev bew bex bey bez bfa bfb bfc bfd bfe bff bfg bfh bfi bfj bfk bfl bfm bfn bfo bfp bfq bfr bfs bft bfu bfw bfx bfy bfz bga bgb bgc bgd bge bgf bgg bgi bgj bgk bgl bgm bgn bgo bgp bgq bgr bgs bgt bgu bgv bgw bgx bgy bgz bha bhb bhc bhd bhe bhf bhg bhh bhi bhj bhk bhl bhm bhn bho bhp bhq bhr bhs bht bhu bhv bhw bhx bhy bhz bia bib bic bid bie bif big bij bik bil bim bin bio bip biq bir bit biu biv biw bix biy biz bja bjb bjc bjd bje bjf bjg bjh bji bjj bjk bjl bjm bjn bjo bjp bjq bjr bjs bjt bju bjv bjw bjx bjy bjz bka bkb bkc bkd bkf bkg bkh bki bkj bkk bkl bkm bkn bko bkp bkq bkr bks bkt bku bkv bkw bkx bky bkz bla blb blc bld ble blf blg blh bli blj blk bll blm bln blo blp blq blr bls blt blv blw blx bly blz bma bmb bmc bmd bme bmf bmg bmh bmi bmj bmk bml bmm bmn bmo bmp bmq bmr bms bmt bmu bmv bmw bmx bmy bmz bna bnb bnc bnd bne bnf bng bni bnj bnk bnl bnm bnn bno bnp bnq bnr bns bnt bnu bnv bnw bnx bny bnz boa bob boe bof bog boh boi boj bok bol bom bon boo bop boq bor bot bou bov bow box boy boz bpa bpb bpd bpg bph bpi bpj bpk bpl bpm bpn bpo bpp bpq bpr bps bpt bpu bpv bpw bpx bpy bpz bqa bqb bqc bqd bqf bqg bqh bqi bqj bqk bql bqm bqn bqo bqp bqq bqr bqs bqt bqu bqv bqw bqx bqy bqz bra brb brc brd brf brg brh bri brj brk brl brm brn bro brp brq brr brs brt bru brv brw brx bry brz bsa bsb bsc bse bsf bsg bsh bsi bsj bsk bsl bsm bsn bso bsp bsq bsr bss bst bsu bsv bsw bsx bsy bta btb btc btd bte btf btg bth bti btj btk btl btm btn bto btp btq btr bts btt btu btv btw btx bty btz bua bub buc bud bue buf bug buh bui buj buk bum bun buo bup buq bus but buu buv buw bux buy buz bva bvb bvc bvd bve bvf bvg bvh bvi bvj bvk bvl bvm bvn bvo bvp bvq bvr bvt bvu bvv bvw bvx bvy bvz bwa bwb bwc bwd bwe bwf bwg bwh bwi bwj bwk bwl bwm bwn bwo bwp bwq bwr bws bwt bwu bww bwx bwy bwz bxa bxb bxc bxd bxe bxf bxg bxh bxi bxj bxk bxl bxm bxn bxo bxp bxq bxr bxs bxu bxv bxw bxx bxz bya byb byc byd bye byf byg byh byi byj byk byl bym byn byo byp byq byr bys byt byv byw byx byy byz bza bzb bzc bzd bze bzf bzg bzh bzi bzj bzk bzl bzm bzn bzo bzp bzq bzr bzs bzt bzu bzv bzw bzx bzy bzz caa cab cac cad cae caf cag cah cai caj cak cal cam can cao cap caq car cas cau cav caw cax cay caz cba cbb cbc cbd cbe cbg cbh cbi cbj cbk cbl cbn cbo cbr cbs cbt cbu cbv cbw cby cca ccc ccd cce ccg cch ccj ccl ccm ccn cco ccp ccq ccr ccs cda cdc cdd cde cdf cdg cdh cdi cdj cdm cdn cdo cdr cds cdy cdz cea ceb ceg cek cel cen cet cfa cfd cfg cfm cga cgc cgg cgk chb chc chd chf chg chh chj chk chl chm chn cho chp chq chr cht chw chx chy chz cia cib cic cid cie cih cik cim cin cip cir ciw ciy cja cje cjh cji cjk cjm cjn cjo cjp cjr cjs cjv cjy cka ckb ckh ckl ckn cko ckq ckr cks ckt cku ckv ckx cky ckz cla clc cld cle clh cli clj clk cll clm clo clt clu clw cly cma cmc cme cmg cmi cmk cml cmm cmn cmo cmr cms cmt cna cnb cnc cng cnh cni cnk cnl cno cns cnt cnu cnw cnx coa cob coc cod coe cof cog coh coj cok col com con coo cop coq cot cou cov cow cox coy coz cpa cpb cpc cpe cpf cpg cpi cpn cpo cpp cps cpu cpx cpy cqd cqu cra crb crc crd crf crg crh cri crj crk crl crm crn cro crp crq crr crs crt crv crw crx cry crz csa csb csc csd cse csf csg csh csi csj csk csl csm csn cso csq csr css cst csu csv csw csy csz cta ctc ctd cte ctg cth ctl ctm ctn cto ctp cts ctt ctu ctz cua cub cuc cug cuh cui cuj cuk cul cum cuo cup cuq cur cus cut cuu cuv cuw cux cvg cvn cwa cwb cwd cwe cwg cwt cya cyb cyo czh czk czn czo czt daa dac dad dae daf dag dah dai daj dak dal dam dao dap daq dar das dau dav daw dax day daz dba dbb dbd dbe dbf dbg dbi dbj dbl dbm dbn dbo dbp dbq dbr dbt dbu dbv dbw dby dcc dcr dda ddd dde ddg ddi ddj ddn ddo ddr dds ddw dec ded dee def deg deh dei dek del dem den dep deq der des dev dez dga dgb dgc dgd dge dgg dgh dgi dgk dgl dgn dgo dgr dgs dgt dgu dgw dgx dgz dha dhd dhg dhi dhl dhm dhn dho dhr dhs dhu dhv dhw dhx dia dib dic did dif dig dih dii dij dik dil dim din dio dip diq dir dis dit diu diw dix diy diz dja djb djc djd dje djf dji djj djk djl djm djn djo djr dju djw dka dkk dkl dkr dks dkx dlg dlk dlm dln dma dmb dmc dmd dme dmg dmk dml dmm dmn dmo dmr dms dmu dmv dmw dmx dmy dna dnd dne dng dni dnj dnk dnn dnr dnt dnu dnv dnw dny doa dob doc doe dof doh doi dok dol don doo dop doq dor dos dot dov dow dox doy doz dpp dra drb drc drd dre drg drh dri drl drn dro drq drr drs drt dru drw dry dsb dse dsh dsi dsl dsn dso dsq dta dtb dtd dth dti dtk dtm dto dtp dtr dts dtt dtu dty dua dub duc dud due duf dug duh dui duj duk dul dum dun duo dup duq dur dus duu duv duw dux duy duz dva dwa dwl dwr dws dww dya dyb dyd dyg dyi dym dyn dyo dyu dyy dza dzd dze dzg dzl dzn eaa ebg ebk ebo ebr ebu ecr ecs ecy eee efa efe efi ega egl ego egx egy ehu eip eit eiv eja eka ekc eke ekg eki ekk ekl ekm eko ekp ekr eky ele elh eli elk elm elo elp elu elx ema emb eme emg emi emk emm emn emo emp ems emu emw emx emy ena enb enc end enf enh enm enn eno enq enr enu env enw eot epi era erg erh eri erk ero err ers ert erw ese esh esi esk esl esm esn eso esq ess esu esx etb etc eth etn eto etr ets ett etu etx etz euq eve evh evn ewo ext eya eyo eza eze faa fab fad faf fag fah fai faj fak fal fam fan fap far fat fau fax fay faz fbl fcs fer ffi ffm fgr fia fie fil fip fir fit fiu fiw fkk fkv fla flh fli fll fln flr fly fmp fmu fng fni fod foi fom fon for fos fox fpe fqs frc frd frk frm fro frp frq frr frs frt fse fsl fss fub fuc fud fue fuf fuh fui fuj fum fun fuq fur fut fuu fuv fuy fvr fwa fwe gaa gab gac gad gae gaf gag gah gai gaj gak gal gam gan gao gap gaq gar gas gat gau gav gaw gax gay gaz gba gbb gbc gbd gbe gbf gbg gbh gbi gbj gbk gbl gbm gbn gbo gbp gbq gbr gbs gbu gbv gbw gbx gby gbz gcc gcd gce gcf gcl gcn gcr gct gda gdb gdc gdd gde gdf gdg gdh gdi gdj gdk gdl gdm gdn gdo gdq gdr gds gdt gdu gdx gea geb gec ged geg geh gei gej gek gel gem geq ges gew gex gey gez gfk gft gfx gga ggb ggd gge ggg ggk ggl ggn ggo ggr ggt ggu ggw gha ghc ghe ghh ghk ghl ghn gho ghr ghs ght gia gib gic gid gig gih gil gim gin gio gip giq gir gis git giu giw gix giy giz gji gjk gjm gjn gju gka gke gkn gko gkp glc gld glh gli glj glk gll glo glr glu glw gly gma gmb gmd gme gmh gml gmm gmn gmq gmu gmv gmw gmx gmy gmz gna gnb gnc gnd gne gng gnh gni gnk gnl gnm gnn gno gnq gnr gnt gnu gnw gnz goa gob goc god goe gof gog goh goi goj gok gol gom gon goo gop goq gor gos got gou gow gox goy goz gpa gpe gpn gqa gqi gqn gqr gqu gra grb grc grd grg grh gri grj grk grm gro grq grr grs grt gru grv grw grx gry grz gse gsg gsl gsm gsn gso gsp gss gsw gta gti gtu gua gub guc gud gue guf gug guh gui guk gul gum gun guo gup guq gur gus gut guu guv guw gux guz gva gvc gve gvf gvj gvl gvm gvn gvo gvp gvr gvs gvy gwa gwb gwc gwd gwe gwf gwg gwi gwj gwm gwn gwr gwt gwu gww gwx gxx gya gyb gyd gye gyf gyg gyi gyl gym gyn gyr gyy gza gzi gzn haa hab hac had hae haf hag hah hai haj hak hal ham han hao hap haq har has hav haw hax hay haz hba hbb hbn hbo hbu hca hch hdn hds hdy hea hed heg heh hei hem hgm hgw hhi hhr hhy hia hib hid hif hig hih hii hij hik hil him hio hir hit hiw hix hji hka hke hkk hks hla hlb hld hle hlt hlu hma hmb hmc hmd hme hmf hmg hmh hmi hmj hmk hml hmm hmn hmp hmq hmr hms hmt hmu hmv hmw hmx hmy hmz hna hnd hne hnh hni hnj hnn hno hns hnu hoa hob hoc hod hoe hoh hoi hoj hok hol hom hoo hop hor hos hot hov how hoy hoz hpo hps hra hrc hre hrk hrm hro hrp hrr hrt hru hrw hrx hrz hsb hsh hsl hsn hss hti hto hts htu htx hub huc hud hue huf hug huh hui huj huk hul hum huo hup huq hur hus hut huu huv huw hux huy huz hvc hve hvk hvn hvv hwa hwc hwo hya hyx iai ian iap iar iba ibb ibd ibe ibg ibi ibl ibm ibn ibr ibu iby ica ich icl icr ida idb idc idd ide idi idr ids idt idu ifa ifb ife iff ifk ifm ifu ify igb ige igg igl igm ign igo igs igw ihb ihi ihp ihw iin iir ijc ije ijj ijn ijo ijs ike iki ikk ikl iko ikp ikr ikt ikv ikw ikx ikz ila ilb ilg ili ilk ill ilo ils ilu ilv ilw ima ime imi iml imn imo imr ims imy inb inc ine ing inh inj inl inm inn ino inp ins int inz ior iou iow ipi ipo iqu iqw ira ire irh iri irk irn iro irr iru irx iry isa isc isd ise isg ish isi isk ism isn iso isr ist isu itb itc ite iti itk itl itm ito itr its itt itv itw itx ity itz ium ivb ivv iwk iwm iwo iws ixc ixl iya iyo iyx izh izi izr izz jaa jab jac jad jae jaf jah jaj jak jal jam jan jao jaq jar jas jat jau jax jay jaz jbe jbi jbj jbk jbn jbo jbr jbt jbu jbw jcs jct jda jdg jdt jeb jee jeg jeh jei jek jel jen jer jet jeu jgb jge jgk jgo jhi jhs jia jib jic jid jie jig jih jii jil jim jio jiq jit jiu jiv jiy jjr jkm jko jkp jkr jku jle jls jma jmb jmc jmd jmi jml jmn jmr jms jmw jmx jna jnd jng jni jnj jnl jns job jod jor jos jow jpa jpr jpx jqr jra jrb jrr jrt jru jsl jua jub juc jud juh jui juk jul jum jun juo jup jur jus jut juu juw juy jvd jvn jwi jya jye jyy kaa kab kac kad kae kaf kag kah kai kaj kak kam kao kap kaq kar kav kaw kax kay kba kbb kbc kbd kbe kbf kbg kbh kbi kbj kbk kbl kbm kbn kbo kbp kbq kbr kbs kbt kbu kbv kbw kbx kby kbz kca kcb kcc kcd kce kcf kcg kch kci kcj kck kcl kcm kcn kco kcp kcq kcr kcs kct kcu kcv kcw kcx kcy kcz kda kdc kdd kde kdf kdg kdh kdi kdj kdk kdl kdm kdn kdo kdp kdq kdr kdt kdu kdv kdw kdx kdy kdz kea keb kec ked kee kef keg keh kei kej kek kel kem ken keo kep keq ker kes ket keu kev kew kex key kez kfa kfb kfc kfd kfe kff kfg kfh kfi kfj kfk kfl kfm kfn kfo kfp kfq kfr kfs kft kfu kfv kfw kfx kfy kfz kga kgb kgc kgd kge kgf kgg kgh kgi kgj kgk kgl kgm kgn kgo kgp kgq kgr kgs kgt kgu kgv kgw kgx kgy kha khb khc khd khe khf khg khh khi khj khk khl khn kho khp khq khr khs kht khu khv khw khx khy khz kia kib kic kid kie kif kig kih kii kij kil kim kio kip kiq kis kit kiu kiv kiw kix kiy kiz kja kjb kjc kjd kje kjf kjg kjh kji kjj kjk kjl kjm kjn kjo kjp kjq kjr kjs kjt kju kjx kjy kjz kka kkb kkc kkd kke kkf kkg kkh kki kkj kkk kkl kkm kkn kko kkp kkq kkr kks kkt kku kkv kkw kkx kky kkz kla klb klc kld kle klf klg klh kli klj klk kll klm kln klo klp klq klr kls klt klu klv klw klx kly klz kma kmb kmc kmd kme kmf kmg kmh kmi kmj kmk kml kmm kmn kmo kmp kmq kmr kms kmt kmu kmv kmw kmx kmy kmz kna knb knc knd kne knf kng kni knj knk knl knm knn kno knp knq knr kns knt knu knv knw knx kny knz koa koc kod koe kof kog koh koi koj kok kol koo kop koq kos kot kou kov kow kox koy koz kpa kpb kpc kpd kpe kpf kpg kph kpi kpj kpk kpl kpm kpn kpo kpp kpq kpr kps kpt kpu kpv kpw kpx kpy kpz kqa kqb kqc kqd kqe kqf kqg kqh kqi kqj kqk kql kqm kqn kqo kqp kqq kqr kqs kqt kqu kqv kqw kqx kqy kqz kra krb krc krd kre krf krh kri krj krk krl krm krn kro krp krr krs krt kru krv krw krx kry krz ksa ksb ksc ksd kse ksf ksg ksh ksi ksj ksk ksl ksm ksn kso ksp ksq ksr kss kst ksu ksv ksw ksx ksy ksz kta ktb ktc ktd kte ktf ktg kth kti ktj ktk ktl ktm ktn kto ktp ktq ktr kts ktt ktu ktv ktw ktx kty ktz kub kuc kud kue kuf kug kuh kui kuj kuk kul kum kun kuo kup kuq kus kut kuu kuv kuw kux kuy kuz kva kvb kvc kvd kve kvf kvg kvh kvi kvj kvk kvl kvm kvn kvo kvp kvq kvr kvs kvt kvu kvv kvw kvx kvy kvz kwa kwb kwc kwd kwe kwf kwg kwh kwi kwj kwk kwl kwm kwn kwo kwp kwq kwr kws kwt kwu kwv kww kwx kwy kwz kxa kxb kxc kxd kxe kxf kxh kxi kxj kxk kxl kxm kxn kxo kxp kxq kxr kxs kxt kxu kxv kxw kxx kxy kxz kya kyb kyc kyd kye kyf kyg kyh kyi kyj kyk kyl kym kyn kyo kyp kyq kyr kys kyt kyu kyv kyw kyx kyy kyz kza kzb kzc kzd kze kzf kzg kzh kzi kzj kzk kzl kzm kzn kzo kzp kzq kzr kzs kzt kzu kzv kzw kzx kzy kzz laa lab lac lad lae laf lag lah lai laj lak lal lam lan lap laq lar las lau law lax lay laz lba lbb lbc lbe lbf lbg lbi lbj lbk lbl lbm lbn lbo lbq lbr lbs lbt lbu lbv lbw lbx lby lbz lcc lcd lce lcf lch lcl lcm lcp lcq lcs lda ldb ldd ldg ldh ldi ldj ldk ldl ldm ldn ldo ldp ldq lea leb lec led lee lef leg leh lei lej lek lel lem len leo lep leq ler les let leu lev lew lex ley lez lfa lfn lga lgb lgg lgh lgi lgk lgl lgm lgn lgq lgr lgt lgu lgz lha lhh lhi lhl lhm lhn lhp lhs lht lhu lia lib lic lid lie lif lig lih lii lij lik lil lio lip liq lir lis liu liv liw lix liy liz lja lje lji ljl ljp ljw ljx lka lkb lkc lkd lke lkh lki lkj lkl lkm lkn lko lkr lks lkt lku lky lla llb llc lld lle llf llg llh lli llj llk lll llm lln llo llp llq lls llu llx lma lmb lmc lmd lme lmf lmg lmh lmi lmj lmk lml lmm lmn lmo lmp lmq lmr lmu lmv lmw lmx lmy lmz lna lnb lnd lng lnh lni lnj lnl lnm lnn lno lns lnu lnw lnz loa lob loc loe lof log loh loi loj lok lol lom lon loo lop loq lor los lot lou lov low lox loy loz lpa lpe lpn lpo lpx lra lrc lre lrg lri lrk lrl lrm lrn lro lrr lrt lrv lrz lsa lsd lse lsg lsh lsi lsl lsm lso lsp lsr lss lst lsy ltc ltg lti ltn lto lts ltu lua luc lud lue luf lui luj luk lul lum lun luo lup luq lur lus lut luu luv luw luy luz lva lvk lvs lvu lwa lwe lwg lwh lwl lwm lwo lwt lwu lww lya lyg lyn lzh lzl lzn lzz maa mab mad mae maf mag mai maj mak mam man map maq mas mat mau mav maw max maz mba mbb mbc mbd mbe mbf mbh mbi mbj mbk mbl mbm mbn mbo mbp mbq mbr mbs mbt mbu mbv mbw mbx mby mbz mca mcb mcc mcd mce mcf mcg mch mci mcj mck mcl mcm mcn mco mcp mcq mcr mcs mct mcu mcv mcw mcx mcy mcz mda mdb mdc mdd mde mdf mdg mdh mdi mdj mdk mdl mdm mdn mdp mdq mdr mds mdt mdu mdv mdw mdx mdy mdz mea meb mec med mee mef meg meh mei mej mek mel mem men meo mep meq mer mes met meu mev mew mey mez mfa mfb mfc mfd mfe mff mfg mfh mfi mfj mfk mfl mfm mfn mfo mfp mfq mfr mfs mft mfu mfv mfw mfx mfy mfz mga mgb mgc mgd mge mgf mgg mgh mgi mgj mgk mgl mgm mgn mgo mgp mgq mgr mgs mgt mgu mgv mgw mgx mgy mgz mha mhb mhc mhd mhe mhf mhg mhh mhi mhj mhk mhl mhm mhn mho mhp mhq mhr mhs mht mhu mhw mhx mhy mhz mia mib mic mid mie mif mig mih mii mij mik mil mim min mio mip miq mir mis mit miu miw mix miy miz mja mjc mjd mje mjg mjh mji mjj mjk mjl mjm mjn mjo mjp mjq mjr mjs mjt mju mjv mjw mjx mjy mjz mka mkb mkc mke mkf mkg mkh mki mkj mkk mkl mkm mkn mko mkp mkq mkr mks mkt mku mkv mkw mkx mky mkz mla mlb mlc mld mle mlf mlh mli mlj mlk mll mlm mln mlo mlp mlq mlr mls mlu mlv mlw mlx mlz mma mmb mmc mmd mme mmf mmg mmh mmi mmj mmk mml mmm mmn mmo mmp mmq mmr mmt mmu mmv mmw mmx mmy mmz mna mnb mnc mnd mne mnf mng mnh mni mnj mnk mnl mnm mnn mno mnp mnq mnr mns mnt mnu mnv mnw mnx mny mnz moa moc mod moe mof mog moh moi moj mok mom moo mop moq mor mos mot mou mov mow mox moy moz mpa mpb mpc mpd mpe mpg mph mpi mpj mpk mpl mpm mpn mpo mpp mpq mpr mps mpt mpu mpv mpw mpx mpy mpz mqa mqb mqc mqe mqf mqg mqh mqi mqj mqk mql mqm mqn mqo mqp mqq mqr mqs mqt mqu mqv mqw mqx mqy mqz mra mrb mrc mrd mre mrf mrg mrh mrj mrk mrl mrm mrn mro mrp mrq mrr mrs mrt mru mrv mrw mrx mry mrz msb msc msd mse msf msg msh msi msj msk msl msm msn mso msp msq msr mss mst msu msv msw msx msy msz mta mtb mtc mtd mte mtf mtg mth mti mtj mtk mtl mtm mtn mto mtp mtq mtr mts mtt mtu mtv mtw mtx mty mua mub muc mud mue mug muh mui muj muk mul mum mun muo mup muq mur mus mut muu muv mux muy muz mva mvb mvd mve mvf mvg mvh mvi mvk mvl mvm mvn mvo mvp mvq mvr mvs mvt mvu mvv mvw mvx mvy mvz mwa mwb mwc mwd mwe mwf mwg mwh mwi mwj mwk mwl mwm mwn mwo mwp mwq mwr mws mwt mwu mwv mww mwx mwy mwz mxa mxb mxc mxd mxe mxf mxg mxh mxi mxj mxk mxl mxm mxn mxo mxp mxq mxr mxs mxt mxu mxv mxw mxx mxy mxz myb myc myd mye myf myg myh myi myj myk myl mym myn myo myp myq myr mys myt myu myv myw myx myy myz mza mzb mzc mzd mze mzg mzh mzi mzj mzk mzl mzm mzn mzo mzp mzq mzr mzs mzt mzu mzv mzw mzx mzy mzz naa nab nac nad nae naf nag nah nai naj nak nal nam nan nao nap naq nar nas nat naw nax nay naz nba nbb nbc nbd nbe nbf nbg nbh nbi nbj nbk nbm nbn nbo nbp nbq nbr nbs nbt nbu nbv nbw nbx nby nca ncb ncc ncd nce ncf ncg nch nci ncj nck ncl ncm ncn nco ncp ncr ncs nct ncu ncx ncz nda ndb ndc ndd ndf ndg ndh ndi ndj ndk ndl ndm ndn ndp ndq ndr nds ndt ndu ndv ndw ndx ndy ndz nea neb nec ned nee nef neg neh nei nej nek nem nen neo neq ner nes net neu nev new nex ney nez nfa nfd nfl nfr nfu nga ngb ngc ngd nge ngf ngg ngh ngi ngj ngk ngl ngm ngn ngo ngp ngq ngr ngs ngt ngu ngv ngw ngx ngy ngz nha nhb nhc nhd nhe nhf nhg nhh nhi nhk nhm nhn nho nhp nhq nhr nht nhu nhv nhw nhx nhy nhz nia nib nic nid nie nif nig nih nii nij nik nil nim nin nio niq nir nis nit niu niv niw nix niy niz nja njb njd njh nji njj njl njm njn njo njr njs njt nju njx njy njz nka nkb nkc nkd nke nkf nkg nkh nki nkj nkk nkm nkn nko nkp nkq nkr nks nkt nku nkv nkw nkx nkz nla nlc nle nlg nli nlj nlk nll nln nlo nlq nlr nlu nlv nlw nlx nly nlz nma nmb nmc nmd nme nmf nmg nmh nmi nmj nmk nml nmm nmn nmo nmp nmq nmr nms nmt nmu nmv nmw nmx nmy nmz nna nnb nnc nnd nne nnf nng nnh nni nnj nnk nnl nnm nnn nnp nnq nnr nns nnt nnu nnv nnw nnx nny nnz noa noc nod noe nof nog noh noi noj nok nol nom non noo nop noq nos not nou nov now noy noz npa npb npg nph npi npl npn npo nps npu npy nqg nqk nqm nqn nqo nqq nqy nra nrb nrc nre nrg nri nrk nrl nrm nrn nrp nrr nrt nru nrx nrz nsa nsc nsd nse nsf nsg nsh nsi nsk nsl nsm nsn nso nsp nsq nsr nss nst nsu nsv nsw nsx nsy nsz nte ntg nti ntj ntk ntm nto ntp ntr nts ntu ntw ntx nty ntz nua nub nuc nud nue nuf nug nuh nui nuj nuk nul num nun nuo nup nuq nur nus nut nuu nuv nuw nux nuy nuz nvh nvm nvo nwa nwb nwc nwe nwg nwi nwm nwo nwr nwx nwy nxa nxd nxe nxg nxi nxk nxl nxm nxn nxq nxr nxu nxx nyb nyc nyd nye nyf nyg nyh nyi nyj nyk nyl nym nyn nyo nyp nyq nyr nys nyt nyu nyv nyw nyx nyy nza nzb nzi nzk nzm nzs nzu nzy nzz oaa oac oar oav obi obk obl obm obo obr obt obu oca och oco ocu oda odk odt odu ofo ofs ofu ogb ogc oge ogg ogo ogu oht ohu oia oin ojb ojc ojg ojp ojs ojv ojw oka okb okd oke okg okh oki okj okk okl okm okn oko okr oks oku okv okx ola old ole olk olm olo olr oma omb omc ome omg omi omk oml omn omo omp omq omr omt omu omv omw omx ona onb one ong oni onj onk onn ono onp onr ons ont onu onw onx ood oog oon oor oos opa opk opm opo opt opy ora orc ore org orh orn oro orr ors ort oru orv orw orx ory orz osa osc osi oso osp ost osu osx ota otb otd ote oti otk otl otm otn oto otq otr ots ott otu otw otx oty otz oua oub oue oui oum oun owi owl oyb oyd oym oyy ozm paa pab pac pad pae paf pag pah pai pak pal pam pao pap paq par pas pat pau pav paw pax pay paz pbb pbc pbe pbf pbg pbh pbi pbl pbn pbo pbp pbr pbs pbt pbu pbv pby pbz pca pcb pcc pcd pce pcf pcg pch pci pcj pck pcl pcm pcn pcp pcr pcw pda pdc pdi pdn pdo pdt pdu pea peb ped pee pef peg peh pei pej pek pel pem peo pep peq pes pev pex pey pez pfa pfe pfl pga pgg pgi pgk pgl pgn pgs pgu pgy pha phd phg phh phi phk phl phm phn pho phq phr pht phu phv phw pia pib pic pid pie pif pig pih pii pij pil pim pin pio pip pir pis pit piu piv piw pix piy piz pjt pka pkb pkc pkg pkh pkn pko pkp pkr pks pkt pku pla plb plc pld ple plf plg plh plj plk pll pln plo plp plq plr pls plt plu plv plw ply plz pma pmb pmc pmd pme pmf pmh pmi pmj pmk pml pmm pmn pmo pmq pmr pms pmt pmu pmw pmx pmy pmz pna pnb pnc pne png pnh pni pnj pnk pnl pnm pnn pno pnp pnq pnr pns pnt pnu pnv pnw pnx pny pnz poc pod poe pof pog poh poi pok pom pon poo pop poq pos pot pov pow pox poy poz ppa ppe ppi ppk ppl ppm ppn ppo ppp ppq ppr pps ppt ppu pqa pqe pqm pqw pra prb prc prd pre prf prg prh pri prk prl prm prn pro prp prq prr prs prt pru prw prx pry prz psa psc psd pse psg psh psi psl psm psn pso psp psq psr pss pst psu psw psy pta pth pti ptn pto ptp ptr ptt ptu ptv ptw pty pua pub puc pud pue puf pug pui puj puk pum puo pup puq pur put puu puw pux puy puz pwa pwb pwg pwi pwm pwn pwo pwr pww pxm pye pym pyn pys pyu pyx pyy pzn qaa..qtz qua qub quc qud quf qug quh qui quk qul qum qun qup quq qur qus quv quw qux quy quz qva qvc qve qvh qvi qvj qvl qvm qvn qvo qvp qvs qvw qvy qvz qwa qwc qwe qwh qwm qws qwt qxa qxc qxh qxl qxn qxo qxp qxq qxr qxs qxt qxu qxw qya qyp raa rab rac rad raf rag rah rai raj rak ral ram ran rao rap raq rar ras rat rau rav raw rax ray raz rbb rbk rbl rbp rcf rdb rea reb ree reg rei rej rel rem ren rer res ret rey rga rge rgk rgn rgr rgs rgu rhg rhp ria rie rif ril rim rin rir rit riu rjg rji rjs rka rkb rkh rki rkm rkt rkw rma rmb rmc rmd rme rmf rmg rmh rmi rmk rml rmm rmn rmo rmp rmq rmr rms rmt rmu rmv rmw rmx rmy rmz rna rnd rng rnl rnn rnp rnr rnw roa rob roc rod roe rof rog rol rom roo rop ror rou row rpn rpt rri rro rrt rsb rsi rsl rtc rth rtm rtw rub ruc rue ruf rug ruh rui ruk ruo rup ruq rut ruu ruy ruz rwa rwk rwm rwo rwr rxd rxw ryn rys ryu saa sab sac sad sae saf sah sai saj sak sal sam sao sap saq sar sas sat sau sav saw sax say saz sba sbb sbc sbd sbe sbf sbg sbh sbi sbj sbk sbl sbm sbn sbo sbp sbq sbr sbs sbt sbu sbv sbw sbx sby sbz sca scb sce scf scg sch sci sck scl scn sco scp scq scs scu scv scw scx sda sdb sdc sde sdf sdg sdh sdj sdk sdl sdm sdn sdo sdp sdr sds sdt sdu sdv sdx sdz sea seb sec sed see sef seg seh sei sej sek sel sem sen seo sep seq ser ses set seu sev sew sey sez sfb sfe sfm sfs sfw sga sgb sgc sgd sge sgg sgh sgi sgj sgk sgl sgm sgn sgo sgp sgr sgs sgt sgu sgw sgx sgy sgz sha shb shc shd she shg shh shi shj shk shl shm shn sho shp shq shr shs sht shu shv shw shx shy shz sia sib sid sie sif sig sih sii sij sik sil sim sio sip siq sir sis sit siu siv siw six siy siz sja sjb sjd sje sjg sjk sjl sjm sjn sjo sjp sjr sjs sjt sju sjw ska skb skc skd ske skf skg skh ski skj skk skm skn sko skp skq skr sks skt sku skv skw skx sky skz sla slc sld sle slf slg slh sli slj sll slm sln slp slq slr sls slt slu slw slx sly slz sma smb smc smd smf smg smh smi smj smk sml smm smn smp smq smr sms smt smu smv smw smx smy smz snb snc sne snf sng snh sni snj snk snl snm snn sno snp snq snr sns snu snv snw snx sny snz soa sob soc sod soe sog soh soi soj sok sol son soo sop soq sor sos sou sov sow sox soy soz spb spc spd spe spg spi spk spl spm spo spp spq spr sps spt spu spv spx spy sqa sqh sqj sqk sqm sqn sqo sqq sqr sqs sqt squ sra srb src sre srf srg srh sri srk srl srm srn sro srq srr srs srt sru srv srw srx sry srz ssa ssb ssc ssd sse ssf ssg ssh ssi ssj ssk ssl ssm ssn sso ssp ssq ssr sss sst ssu ssv ssx ssy ssz sta stb std ste stf stg sth sti stj stk stl stm stn sto stp stq str sts stt stu stv stw sty sua sub suc sue sug sui suj suk sul sum suq sur sus sut suv suw sux suy suz sva svb svc sve svk svm svr svs svx swb swc swf swg swh swi swj swk swl swm swn swo swp swq swr sws swt swu swv sww swx swy sxb sxc sxe sxg sxk sxl sxm sxn sxo sxr sxs sxu sxw sya syb syc syd syi syk syl sym syn syo syr sys syw syy sza szb szc szd sze szg szl szn szp szv szw taa tab tac tad tae taf tag tai taj tak tal tan tao tap taq tar tas tau tav taw tax tay taz tba tbb tbc tbd tbe tbf tbg tbh tbi tbj tbk tbl tbm tbn tbo tbp tbq tbr tbs tbt tbu tbv tbw tbx tby tbz tca tcb tcc tcd tce tcf tcg tch tci tck tcl tcm tcn tco tcp tcq tcs tct tcu tcw tcx tcy tcz tda tdb tdc tdd tde tdf tdg tdh tdi tdj tdk tdl tdn tdo tdq tdr tds tdt tdu tdv tdx tdy tea teb tec ted tee tef teg teh tei tek tem ten teo tep teq ter tes tet teu tev tew tex tey tfi tfn tfo tfr tft tga tgb tgc tgd tge tgf tgg tgh tgi tgj tgn tgo tgp tgq tgr tgs tgt tgu tgv tgw tgx tgy tgz thc thd the thf thh thi thk thl thm thn thp thq thr ths tht thu thv thw thx thy thz tia tic tid tie tif tig tih tii tij tik til tim tin tio tip tiq tis tit tiu tiv tiw tix tiy tiz tja tjg tji tjl tjm tjn tjo tjs tju tjw tka tkb tkd tke tkf tkg tkk tkl tkm tkn tkp tkq tkr tks tkt tku tkw tkx tkz tla tlb tlc tld tlf tlg tlh tli tlj tlk tll tlm tln tlo tlp tlq tlr tls tlt tlu tlv tlw tlx tly tma tmb tmc tmd tme tmf tmg tmh tmi tmj tmk tml tmm tmn tmo tmp tmq tmr tms tmt tmu tmv tmw tmy tmz tna tnb tnc tnd tne tnf tng tnh tni tnk tnl tnm tnn tno tnp tnq tnr tns tnt tnu tnv tnw tnx tny tnz tob toc tod toe tof tog toh toi toj tol tom too top toq tor tos tou tov tow tox toy toz tpa tpc tpe tpf tpg tpi tpj tpk tpl tpm tpn tpo tpp tpq tpr tpt tpu tpv tpw tpx tpy tpz tqb tql tqm tqn tqo tqp tqq tqr tqt tqu tqw tra trb trc trd tre trf trg trh tri trj trk trl trm trn tro trp trq trr trs trt tru trv trw trx try trz tsa tsb tsc tsd tse tsf tsg tsh tsi tsj tsk tsl tsm tsp tsq tsr tss tst tsu tsv tsw tsx tsy tsz tta ttb ttc ttd tte ttf ttg tth tti ttj ttk ttl ttm ttn tto ttp ttq ttr tts ttt ttu ttv ttw tty ttz tua tub tuc tud tue tuf tug tuh tui tuj tul tum tun tuo tup tuq tus tut tuu tuv tuw tux tuy tuz tva tvd tve tvk tvl tvm tvn tvo tvs tvt tvu tvw tvy twa twb twc twd twe twf twg twh twl twm twn two twp twq twr twt twu tww twx twy txa txb txc txe txg txh txi txm txn txo txq txr txs txt txu txx txy tya tye tyh tyi tyj tyl tyn typ tyr tys tyt tyu tyv tyx tyz tza tzh tzj tzl tzm tzn tzo tzx uam uan uar uba ubi ubl ubr ubu uby uda ude udg udi udj udl udm udu ues ufi uga ugb uge ugn ugo ugy uha uhn uis uiv uji uka ukg ukh ukl ukp ukq uks uku ukw uky ula ulb ulc ule ulf uli ulk ull ulm uln ulu ulw uma umb umc umd umg umi umm umn umo ump umr ums umu una und une ung unk unm unn unp unr unu unx unz uok upi upv ura urb urc ure urf urg urh uri urj urk url urm urn uro urp urr urt uru urv urw urx ury urz usa ush usi usk usp usu uta ute utp utr utu uum uun uur uuu uve uvh uvl uwa uya uzn uzs vaa vae vaf vag vah vai vaj val vam van vao vap var vas vau vav vay vbb vbk vec ved vel vem veo vep ver vgr vgt vic vid vif vig vil vin vis vit viv vka vki vkj vkk vkl vkm vko vkp vkt vku vlp vls vma vmb vmc vmd vme vmf vmg vmh vmi vmj vmk vml vmm vmp vmq vmr vms vmu vmv vmw vmx vmy vmz vnk vnm vnp vor vot vra vro vrs vrt vsi vsl vsv vto vum vun vut vwa waa wab wac wad wae waf wag wah wai waj wak wal wam wan wao wap waq war was wat wau wav waw wax way waz wba wbb wbe wbf wbh wbi wbj wbk wbl wbm wbp wbq wbr wbt wbv wbw wca wci wdd wdg wdj wdk wdu wdy wea wec wed weg weh wei wem wen weo wep wer wes wet weu wew wfg wga wgb wgg wgi wgo wgu wgw wgy wha whg whk whu wib wic wie wif wig wih wii wij wik wil wim win wir wit wiu wiv wiw wiy wja wji wka wkb wkd wkl wku wkw wky wla wlc wle wlg wli wlk wll wlm wlo wlr wls wlu wlv wlw wlx wly wma wmb wmc wmd wme wmh wmi wmm wmn wmo wms wmt wmw wmx wnb wnc wnd wne wng wni wnk wnm wnn wno wnp wnu wnw wny woa wob woc wod woe wof wog woi wok wom won woo wor wos wow woy wpc wra wrb wrd wrg wrh wri wrk wrl wrm wrn wro wrp wrr wrs wru wrv wrw wrx wry wrz wsa wsi wsk wsr wss wsu wsv wtf wth wti wtk wtm wtw wua wub wud wuh wul wum wun wur wut wuu wuv wux wuy wwa wwb wwo wwr www wxa wxw wya wyb wyi wym wyr wyy xaa xab xac xad xae xag xai xal xam xan xao xap xaq xar xas xat xau xav xaw xay xba xbb xbc xbd xbe xbg xbi xbj xbm xbn xbo xbp xbr xbw xbx xby xcb xcc xce xcg xch xcl xcm xcn xco xcr xct xcu xcv xcw xcy xda xdc xdk xdm xdy xeb xed xeg xel xem xep xer xes xet xeu xfa xga xgb xgd xgf xgg xgi xgl xgm xgn xgr xgu xgw xha xhc xhd xhe xhr xht xhu xhv xia xib xii xil xin xip xir xiv xiy xjb xjt xka xkb xkc xkd xke xkf xkg xkh xki xkj xkk xkl xkn xko xkp xkq xkr xks xkt xku xkv xkw xkx xky xkz xla xlb xlc xld xle xlg xli xln xlo xlp xls xlu xly xma xmb xmc xmd xme xmf xmg xmh xmj xmk xml xmm xmn xmo xmp xmq xmr xms xmt xmu xmv xmw xmx xmy xmz xna xnb xnd xng xnh xni xnk xnn xno xnr xns xnt xnu xny xnz xoc xod xog xoi xok xom xon xoo xop xor xow xpa xpc xpe xpg xpi xpj xpk xpm xpn xpo xpp xpq xpr xps xpt xpu xpy xqa xqt xra xrb xrd xre xrg xri xrm xrn xrq xrr xrt xru xrw xsa xsb xsc xsd xse xsh xsi xsj xsl xsm xsn xso xsp xsq xsr xss xsu xsv xsy xta xtb xtc xtd xte xtg xth xti xtj xtl xtm xtn xto xtp xtq xtr xts xtt xtu xtv xtw xty xtz xua xub xud xug xuj xul xum xun xuo xup xur xut xuu xve xvi xvn xvo xvs xwa xwc xwd xwe xwg xwj xwk xwl xwo xwr xwt xww xxb xxk xxm xxr xxt xya xyb xyj xyk xyl xyt xyy xzh xzm xzp yaa yab yac yad yae yaf yag yah yai yaj yak yal yam yan yao yap yaq yar yas yat yau yav yaw yax yay yaz yba ybb ybd ybe ybh ybi ybj ybk ybl ybm ybn ybo ybx yby ych ycl ycn ycp yda ydd yde ydg ydk yds yea yec yee yei yej yel yen yer yes yet yeu yev yey yga ygi ygl ygm ygp ygr ygu ygw yha yhd yhl yia yif yig yih yii yij yik yil yim yin yip yiq yir yis yit yiu yiv yix yiy yiz yka ykg yki ykk ykl ykm ykn yko ykr ykt yku yky yla ylb yle ylg yli yll ylm yln ylo ylr ylu yly yma ymb ymc ymd yme ymg ymh ymi ymk yml ymm ymn ymo ymp ymq ymr yms ymt ymx ymz yna ynd yne yng ynh ynk ynl ynn yno ynq yns ynu yob yog yoi yok yol yom yon yos yot yox yoy ypa ypb ypg yph ypk ypm ypn ypo ypp ypz yra yrb yre yri yrk yrl yrm yrn yrs yrw yry ysc ysd ysg ysl ysn yso ysp ysr yss ysy yta ytl ytp ytw yty yua yub yuc yud yue yuf yug yui yuj yuk yul yum yun yup yuq yur yut yuu yuw yux yuy yuz yva yvt ywa ywg ywl ywn ywq ywr ywt ywu yww yxa yxg yxl yxm yxu yxy yyr yyu yyz yzg yzk zaa zab zac zad zae zaf zag zah zai zaj zak zal zam zao zap zaq zar zas zat zau zav zaw zax zay zaz zbc zbe zbl zbt zbw zca zch zdj zea zeg zeh zen zga zgb zgh zgm zgn zgr zhb zhd zhi zhn zhw zhx zia zib zik zil zim zin zir ziw ziz zka zkb zkd zkg zkh zkk zkn zko zkp zkr zkt zku zkv zkz zle zlj zlm zln zlq zls zlw zma zmb zmc zmd zme zmf zmg zmh zmi zmj zmk zml zmm zmn zmo zmp zmq zmr zms zmt zmu zmv zmw zmx zmy zmz zna znd zne zng znk zns zoc zoh zom zoo zoq zor zos zpa zpb zpc zpd zpe zpf zpg zph zpi zpj zpk zpl zpm zpn zpo zpp zpq zpr zps zpt zpu zpv zpw zpx zpy zpz zqe zra zrg zrn zro zrp zrs zsa zsk zsl zsm zsr zsu zte ztg ztl ztm ztn ztp ztq zts ztt ztu ztx zty zua zuh zum zun zuy zwa zxx zyb zyg zyj zyn zyp zza zzj aao abh abv acm acq acw acx acy adf ads aeb aec aed aen afb afg ajp apc apd arb arq ars ary arz ase asf asp asq asw auz avl ayh ayl ayn ayp bbz bfi bfk bjn bog bqn bqy btj bve bvl bvu bzs cdo cds cjy cmn coa cpx csc csd cse csf csg csl csn csq csr czh czo doq dse dsl dup ecs esl esn eso eth fcs fse fsl fss gan gds gom gse gsg gsm gss gus hab haf hak hds hji hks hos hps hsh hsl hsn icl ils inl ins ise isg isr jak jax jcs jhs jls jos jsl jus kgi knn kvb kvk kvr kxd lbs lce lcf liw lls lsg lsl lso lsp lst lsy ltg lvs lzh max mdl meo mfa mfb mfs min mnp mqg mre msd msi msr mui mzc mzg mzy nan nbs ncs nsi nsl nsp nsr nzs okl orn ors pel pga pks prl prz psc psd pse psg psl pso psp psr pys rms rsi rsl sdl sfb sfs sgg sgx shu slf sls sqk sqs ssh ssp ssr svk swc swh swl syy tmw tse tsm tsq tss tsy tza ugn ugy ukl uks urk uzn uzs vgt vkk vkt vsi vsl vsv wuu xki xml xmm xms yds ysl yue zib zlm zmi zsl zsm afak aghb arab armi armn avst bali bamu bass batk beng blis bopo brah brai bugi buhd cakm cans cari cham cher cirt copt cprt cyrl cyrs deva dsrt dupl egyd egyh egyp elba ethi geok geor glag goth gran grek gujr guru hang hani hano hans hant hebr hira hluw hmng hrkt hung inds ital java jpan jurc kali kana khar khmr khoj knda kore kpel kthi lana laoo latf latg latn lepc limb lina linb lisu loma lyci lydi mahj mand mani maya mend merc mero mlym mong moon mroo mtei mymr narb nbat nkgb nkoo nshu ogam olck orkh orya osma palm perm phag phli phlp phlv phnx plrd prti qaaa..qabx rjng roro runr samr sara sarb saur sgnw shaw shrd sind sinh sora sund sylo syrc syre syrj syrn tagb takr tale talu taml tang tavt telu teng tfng tglg thaa thai tibt tirh ugar vaii visp wara wole xpeo xsux yiii zinh zmth zsym zxxx zyyy zzzz aa ac ad ae af ag ai al am an ao aq ar as at au aw ax az ba bb bd be bf bg bh bi bj bl bm bn bo bq br bs bt bu bv bw by bz ca cc cd cf cg ch ci ck cl cm cn co cp cr cs cu cv cw cx cy cz dd de dg dj dk dm do dz ea ec ee eg eh er es et eu fi fj fk fm fo fr fx ga gb gd ge gf gg gh gi gl gm gn gp gq gr gs gt gu gw gy hk hm hn hr ht hu ic id ie il im in io iq ir is it je jm jo jp ke kg kh ki km kn kp kr kw ky kz la lb lc li lk lr ls lt lu lv ly ma mc md me mf mg mh mk ml mm mn mo mp mq mr ms mt mu mv mw mx my mz na nc ne nf ng ni nl no np nr nt nu nz om pa pe pf pg ph pk pl pm pn pr ps pt pw py qa qm..qz re ro rs ru rw sa sb sc sd se sg sh si sj sk sl sm sn so sr ss st su sv sx sy sz ta tc td tf tg th tj tk tl tm tn to tp tr tt tv tw tz ua ug um us uy uz va vc ve vg vi vn vu wf ws xa..xz yd ye yt yu za zm zr zw zz 001 002 003 005 009 011 013 014 015 017 018 019 021 029 030 034 035 039 053 054 057 061 142 143 145 150 151 154 155 419 1606nict 1694acad 1901 1959acad 1994 1996 alalc97 aluku arevela arevmda baku1926 bauddha biscayan biske bohoric boont dajnko emodeng fonipa fonupa fonxsamp hepburn heploc hognorsk itihasa jauer jyutping kkcor kscor laukika lipaw luna1918 metelko monoton ndyuka nedis njiva nulik osojs pamaka petr1708 pinyin polyton puter rigik rozaj rumgr scotland scouse solba surmiran sursilv sutsilv tarask uccor ucrcor ulster unifon vaidika valencia vallader wadegile ",
 
-
          tags : "art-lojban cel-gaulish en-gb-oed i-ami i-bnn i-default i-enochian i-hak i-klingon i-lux i-mingo i-navajo i-pwn i-tao i-tay i-tsu no-bok no-nyn sgn-be-fr sgn-be-nl sgn-ch-de zh-guoyu zh-hakka zh-min zh-min-nan zh-xiang az-arab az-cyrl az-latn be-latn bs-cyrl bs-latn de-1901 de-1996 de-at-1901 de-at-1996 de-ch-1901 de-ch-1996 de-de-1901 de-de-1996 en-boont en-scouse es-419 iu-cans iu-latn mn-cyrl mn-mong sgn-br sgn-co sgn-de sgn-dk sgn-es sgn-fr sgn-gb sgn-gr sgn-ie sgn-it sgn-jp sgn-mx sgn-ni sgn-nl sgn-no sgn-pt sgn-se sgn-us sgn-za sl-nedis sl-rozaj sr-cyrl sr-latn tg-arab tg-cyrl uz-cyrl uz-latn yi-latn zh-cmn zh-cmn-hans zh-cmn-hant zh-gan zh-hans zh-hans-cn zh-hans-hk zh-hans-mo zh-hans-sg zh-hans-tw zh-hant zh-hant-cn zh-hant-hk zh-hant-mo zh-hant-sg zh-hant-tw zh-wuu zh-yue "
-
 
 };
 /*
@@ -1045,7 +1030,7 @@ OpenAjax.a11y.LANGUAGE_CODES = OpenAjax.a11y.LANGUAGE_CODES || {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -1054,18 +1039,16 @@ OpenAjax.a11y.LANGUAGE_CODES = OpenAjax.a11y.LANGUAGE_CODES || {
  * limitations under the License.
  */
 
-
 /* ---------------------------------------------------------------- */
 /*              ARIA Defintions and Validation Methods              */
 /* ---------------------------------------------------------------- */
-
 
 if (typeof OpenAjax.a11y.aria == "undefined") {
   OpenAjax.a11y.aria = {
 
     /*
      * array of WAI-ARIA global states and properties
-     * @see http://www.w3.org/TR/wai-aria/#global_states
+     * @see https://www.w3.org/TR/wai-aria-1.0/#global_states
      */
     globalProperties : [
             "aria-atomic",
@@ -1251,7 +1234,7 @@ if (typeof OpenAjax.a11y.aria == "undefined") {
         /*
          * list of abstract roles - used to support the WAI-ARIA role taxonomy and
          * not to be used by content authors
-         * @see http://www.w3.org/TR/wai-aria/roles#isAbstract
+         * @see https://www.w3.org/TR/wai-aria-1.0/roles#isAbstract
          */
         abstractRoles : [
             "command",
@@ -2194,7 +2177,7 @@ if (typeof OpenAjax.a11y.aria == "undefined") {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -2212,7 +2195,6 @@ if (typeof OpenAjax.a11y.aria == "undefined") {
  */
 
 OpenAjax.a11y.util = OpenAjax.a11y.util || {};
-
 
 
 /**
@@ -2239,7 +2221,6 @@ OpenAjax.a11y.util.cleanForUTF8 = function(str) {
 
   return nstr;
 };
-
 
 /**
  * @function getFormattedDate
@@ -2272,7 +2253,6 @@ OpenAjax.a11y.util.getFormattedDate = function(str) {
 
 };
 
-
 /**
  * @function getStringUsingURL
  *
@@ -2300,7 +2280,6 @@ OpenAjax.a11y.util.initStringUsingURL = function(url) {
   return str;
 
 };
-
 
 
 /**
@@ -2340,7 +2319,6 @@ OpenAjax.a11y.util.validLanguageCode = function(code) {
   return false;
 
 };
-
 
 /**
  * @function transformElementMarkup
@@ -2490,7 +2468,6 @@ OpenAjax.a11y.util.RGBToHEX = function( rgb_color ) {
  return color_hex;
 };
 
-
 /**
  * @function normalizeSpace
  * @memberOf OpenAjax.a11y.util
@@ -2585,7 +2562,7 @@ OpenAjax.a11y.util.replaceAll = function(s, str1, str2, ignore) {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -2593,7 +2570,6 @@ OpenAjax.a11y.util.replaceAll = function(s, str1, str2, ignore) {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 
 /* ---------------------------------------------------------------- */
 /*                      AbbreviationsCache                          */
@@ -3009,7 +2985,6 @@ OpenAjax.a11y.cache.AbbreviationItem.prototype.getCacheProperties = function (un
 
 };
 
-
 /**
  * @method getCachePropertyValue
  *
@@ -3049,7 +3024,6 @@ OpenAjax.a11y.cache.AbbreviationItem.prototype.getEvents = function () {
 };
 
 
-
 /**
  * @method toString
  *
@@ -3066,7 +3040,6 @@ OpenAjax.a11y.cache.AbbreviationItem.prototype.toString = function () {
 };
 
 
-
 /*
  * Copyright 2011-2018 OpenAjax Alliance
  *
@@ -3074,7 +3047,7 @@ OpenAjax.a11y.cache.AbbreviationItem.prototype.toString = function () {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -3124,7 +3097,6 @@ OpenAjax.a11y.cache.ColorContrastCache = function (dom_cache) {
 
   this.up_to_date = false;
   this.length = 0;
-
 
 };
 
@@ -3250,7 +3222,6 @@ OpenAjax.a11y.cache.ColorContrastCache.prototype.getItemByCacheId = function (ca
 
   return null;
 };
-
 
 /**
  * @method emptyCache
@@ -3633,7 +3604,6 @@ OpenAjax.a11y.cache.ColorContrastItem.prototype.getEvents = function () {
 
 };
 
-
 /**
  * @member toString
  *
@@ -3660,7 +3630,7 @@ OpenAjax.a11y.cache.ColorContrastItem.prototype.toString = function () {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -3918,7 +3888,6 @@ OpenAjax.a11y.cache.ControlsCache.prototype.addGroupingElement = function (group
 
 };
 
-
 /**
  * @method emptyCache
  *
@@ -4011,7 +3980,6 @@ OpenAjax.a11y.cache.ControlsCache.prototype.updateCacheItems = function (dom_ele
     this.elements_with_aria_attributes.push(dom_element);
   }
 
-
   if (dom_element.is_widget) {
 
     we = new OpenAjax.a11y.cache.WidgetElement(dom_element, control_info);
@@ -4033,7 +4001,6 @@ OpenAjax.a11y.cache.ControlsCache.prototype.updateCacheItems = function (dom_ele
 
   }
   else {
-
 
     switch (dom_element.tag_name) {
 
@@ -4137,7 +4104,6 @@ OpenAjax.a11y.cache.ControlsCache.prototype.updateCacheItems = function (dom_ele
         }
       }
 
-
       if (!interactive_element_added) {
         ie = new OpenAjax.a11y.cache.InteractiveElement(dom_element, false, false);
 
@@ -4182,7 +4148,6 @@ OpenAjax.a11y.cache.ControlsCache.prototype.updateCacheItems = function (dom_ele
         interactive_element_added = true;
       }
 
-
       break;
 
     case 'meter':
@@ -4208,7 +4173,6 @@ OpenAjax.a11y.cache.ControlsCache.prototype.updateCacheItems = function (dom_ele
 
       break;
 
-
     case 'progress':
       pe = new OpenAjax.a11y.cache.ProgressElement(dom_element, control_info);
       this.addLabel(pe, "", OpenAjax.a11y.SOURCE.NONE);
@@ -4229,7 +4193,6 @@ OpenAjax.a11y.cache.ControlsCache.prototype.updateCacheItems = function (dom_ele
       if (control_info.grouping_element) {
         control_info.grouping_element.number_of_controls += 1;
       }
-
 
       break;
 
@@ -4255,7 +4218,6 @@ OpenAjax.a11y.cache.ControlsCache.prototype.updateCacheItems = function (dom_ele
       }
 
       break;
-
 
     case 'textarea':
       te = new OpenAjax.a11y.cache.TextareaElement(dom_element, control_info);
@@ -4349,7 +4311,6 @@ OpenAjax.a11y.cache.ControlsCache.prototype.updateCacheItems = function (dom_ele
       oe.computed_label_for_comparison = normalizeSpace(oe.computed_label.toLowerCase());
       oe.computed_label_length = oe.computed_label_for_comparison.length;
 
-
       if (control_info.control_element) {
         control_info.control_element.addChildControl(oe);
       }
@@ -4436,7 +4397,6 @@ OpenAjax.a11y.cache.ControlsCache.prototype.updateCacheItems = function (dom_ele
         interactive_element_added = true;
       }
     }
-
 
     // if we are in a widget there a few HTML elements with implied roles
 
@@ -4619,7 +4579,6 @@ OpenAjax.a11y.cache.ControlsCache.prototype.getRuleResults = function (filter) {
   return cache_items;
 
 };
-
 
 
 /**
@@ -4879,7 +4838,6 @@ OpenAjax.a11y.cache.ControlsCache.prototype.calculateLabelsUsingARIA = function 
   }
 };
 
-
 /**
  * @method getGroupingLabel
  *
@@ -4955,7 +4913,6 @@ OpenAjax.a11y.cache.ControlsCache.prototype.addLabel = function (control, label,
   control.computed_label_length         = control.computed_label_for_comparison.length;
 
 };
-
 
 /**
  * @method calculateLabelsByReference
@@ -5209,7 +5166,6 @@ OpenAjax.a11y.cache.ControlsCache.prototype.applyAriaOwns = function () {
 
 };
 
-
 /**
  * @method removeFromChildCacheElements
  *
@@ -5239,7 +5195,6 @@ OpenAjax.a11y.cache.ControlsCache.prototype.removeFromChildCacheElements = funct
   removeItem(this.child_cache_elements);
 
 };
-
 
 /* ---------------------------------------------------------------- */
 /*                       FormElement                                */
@@ -5343,7 +5298,6 @@ OpenAjax.a11y.cache.FormElement.prototype.getStyle = function () {
 
 };
 
-
 /**
  * @method getAttributes
  *
@@ -5404,7 +5358,6 @@ OpenAjax.a11y.cache.FormElement.prototype.getCachePropertyValue = function (prop
   return this[property];
 };
 
-
 /**
  * @method getEvents
  *
@@ -5420,7 +5373,6 @@ OpenAjax.a11y.cache.FormElement.prototype.getEvents = function (unsorted) {
   return this.dom_element.getEvents();
 
 };
-
 
 /**
  * @method toString
@@ -5612,7 +5564,6 @@ OpenAjax.a11y.cache.FieldsetElement.prototype.getCachePropertyValue = function (
 
   return this[property];
 };
-
 
 /**
  * @method getEvents
@@ -5818,7 +5769,6 @@ OpenAjax.a11y.cache.GroupingElement.prototype.getCachePropertyValue = function (
 
   return this[property];
 };
-
 
 /**
  * @method getEvents
@@ -6032,7 +5982,6 @@ OpenAjax.a11y.cache.LegendElement.prototype.getCachePropertyValue = function (pr
 
   return this[property];
 };
-
 
 
 /**
@@ -6441,7 +6390,6 @@ OpenAjax.a11y.cache.InputElement = function (dom_element, control_info) {
     this.has_pattern = dom_element.has_pattern;
     break;
 
-
   case 'file':
     this.control_type  = OpenAjax.a11y.CONTROL_TYPE.FILE;
     this.needs_label  = true;
@@ -6655,7 +6603,6 @@ OpenAjax.a11y.cache.InputElement.prototype.getCachePropertyValue = function (pro
   return this[property];
 };
 
-
 /**
  * @method getEvents
  *
@@ -6719,7 +6666,6 @@ OpenAjax.a11y.cache.InputElement.prototype.getLabelSourceNLS = function () {
   return cache_nls.getValueNLS('computed_label_source', this.computed_label_source);
 
 };
-
 
 
 /**
@@ -6827,7 +6773,6 @@ OpenAjax.a11y.cache.ButtonElement.prototype.addOwnerControl = function (owner_co
    this.owner_controls.push(owner_control);
   }
 };
-
 
 /**
  * @method addChildControl
@@ -6948,7 +6893,6 @@ OpenAjax.a11y.cache.ButtonElement.prototype.getCachePropertyValue = function (pr
 
   return this[property];
 };
-
 
 /**
  * @method getEvents
@@ -7283,7 +7227,6 @@ OpenAjax.a11y.cache.TextareaElement.prototype.getLabelNLS = function () {
 
 };
 
-
 /**
  * @method getLabelSourceNLS
  *
@@ -7572,7 +7515,6 @@ OpenAjax.a11y.cache.ProgressElement.prototype.getLabelNLS = function () {
 
 };
 
-
 /**
  * @method getLabelSourceNLS
  *
@@ -7844,7 +7786,6 @@ OpenAjax.a11y.cache.OutputElement.prototype.getLabelNLS = function () {
 
 };
 
-
 /**
  * @method getLabelSourceNLS
  *
@@ -7881,7 +7822,6 @@ OpenAjax.a11y.cache.OutputElement.prototype.toString = function () {
 
   return "Output: " + label;
 };
-
 
 /* ---------------------------------------------------------------- */
 /*                    MeterElement                               */
@@ -8387,7 +8327,6 @@ OpenAjax.a11y.cache.SelectElement.prototype.getCachePropertyValue = function (pr
   return this[property];
 };
 
-
 /**
  * @method getEvents
  *
@@ -8431,7 +8370,6 @@ OpenAjax.a11y.cache.SelectElement.prototype.getLabelNLS = function () {
   }
 
 };
-
 
 /**
  * @method getLabelSourceNLS
@@ -8659,7 +8597,6 @@ OpenAjax.a11y.cache.OptgroupElement.prototype.getCachePropertyValue = function (
 
   return this[property];
 };
-
 
 /**
  * @method getEvents
@@ -9195,7 +9132,6 @@ OpenAjax.a11y.cache.WidgetElement.prototype.getCachePropertyValue = function (pr
   return this[property];
 };
 
-
 /**
  * @method getEvents
  *
@@ -9211,7 +9147,6 @@ OpenAjax.a11y.cache.WidgetElement.prototype.getEvents = function () {
   return this.dom_element.getEvents();
 
 };
-
 
 /**
  * @method getLabelNLS
@@ -9260,7 +9195,6 @@ OpenAjax.a11y.cache.WidgetElement.prototype.getLabelSourceNLS = function () {
   return cache_nls.getValueNLS('computed_label_source', this.computed_label_source);
 
 };
-
 
 
 /**
@@ -9337,7 +9271,6 @@ OpenAjax.a11y.cache.InteractiveElement = function (dom_element, has_tabindex, ha
     this.element_id += tag_name;
   }
 };
-
 
 /**
  * @method getStyle
@@ -9423,7 +9356,6 @@ OpenAjax.a11y.cache.InteractiveElement.prototype.getCachePropertyValue = functio
   return this[property];
 };
 
-
 /**
  * @method getEvents
  *
@@ -9439,7 +9371,6 @@ OpenAjax.a11y.cache.InteractiveElement.prototype.getEvents = function () {
   return this.dom_element.getEvents();
 
 };
-
 
 /**
  * @method getLabelNLS
@@ -9489,7 +9420,6 @@ OpenAjax.a11y.cache.InteractiveElement.prototype.getLabelSourceNLS = function ()
 
 };
 
-
 /**
  * @method toString
  *
@@ -9516,7 +9446,7 @@ OpenAjax.a11y.cache.InteractiveElement.prototype.toString = function () {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -9698,7 +9628,6 @@ OpenAjax.a11y.cache.DOMElementCache.prototype.getDOMElementById = function (id) 
   return null;
 };
 
-
 /**
  * @method getDOMElementByName
  *
@@ -9772,7 +9701,6 @@ OpenAjax.a11y.cache.DOMElementCache.prototype.getItemByCacheId = function (cache
   return null;
 };
 
-
 /**
  * @method getItemsByElementResults
  *
@@ -9791,7 +9719,6 @@ OpenAjax.a11y.cache.DOMElementCache.prototype.getItemsByElementResults = functio
   return OpenAjax.a11y.util.getItemsByElementResults(this.dom_elements, filter, all_flag);
 
 };
-
 
 /**
  * @method getTextFromIds
@@ -9855,7 +9782,6 @@ OpenAjax.a11y.cache.DOMElementCache.prototype.getUndefinedIds = function( ids ) 
   return invalid_ids.join(' ');
 };
 
-
 /**
  * @method checkForUniqueIDs
  *
@@ -9890,7 +9816,6 @@ OpenAjax.a11y.cache.DOMElementCache.prototype.checkForUniqueIDs = function () {
     }
   }
 };
-
 
 /* ---------------------------------------------------------------- */
 /*                       DOMText Object                             */
@@ -9985,7 +9910,6 @@ OpenAjax.a11y.cache.DOMText.prototype.addText = function (text) {
   this.text_length = text_length;
 
 };
-
 
 /**
  * @method getId
@@ -10142,7 +10066,6 @@ OpenAjax.a11y.cache.DOMText.prototype.getEvents = function (unsorted) {
 
 };
 
-
 /**
  * @method getCacheProperties
  *
@@ -10264,7 +10187,6 @@ OpenAjax.a11y.cache.DOMText.prototype.getCachePropertyValue = function (property
   return this[property];
 };
 
-
 /**
  * @method getColorContrastElementResult
  *
@@ -10346,7 +10268,6 @@ OpenAjax.a11y.cache.DOMText.prototype.toString = function(option) {
 
   return str;
 };
-
 
 /* ---------------------------------------------------------------- */
 /*                       DOMElement Object                          */
@@ -10534,7 +10455,6 @@ OpenAjax.a11y.cache.DOMElement = function (node, parent_dom_element, doc) {
 
     }   // end addAriaAttribute function
 
-
     var property_info = OpenAjax.a11y.aria.propertyDataTypes[name];
 
     var av = {};
@@ -10560,7 +10480,6 @@ OpenAjax.a11y.cache.DOMElement = function (node, parent_dom_element, doc) {
     aria_attributes.push(av);
   }
 
-
   function addOtherAttribute (name, value) {
 
     var oa = {};
@@ -10581,7 +10500,6 @@ OpenAjax.a11y.cache.DOMElement = function (node, parent_dom_element, doc) {
     }
   }
 
-
   var i;
   var attr;
   var attributes;
@@ -10590,7 +10508,6 @@ OpenAjax.a11y.cache.DOMElement = function (node, parent_dom_element, doc) {
 
   // check to make sure it is a valid node
   if (!node) return null;
-
 
   this.document = doc;
 
@@ -10602,7 +10519,6 @@ OpenAjax.a11y.cache.DOMElement = function (node, parent_dom_element, doc) {
   this.tag_name       = node.tagName.toLowerCase();
   this.id             = node.id;
   this.name           = "";
-
 
   if (!this.id || this.id.length === 0) {
     this.id_unique  = OpenAjax.a11y.ID.NOT_DEFINED;
@@ -10708,7 +10624,6 @@ OpenAjax.a11y.cache.DOMElement = function (node, parent_dom_element, doc) {
   this.has_tabindex              = false;
   this.has_title                 = false;
 
-
   this.role           = "";
   this.role_info      = null;
   this.aria_invalid   = false;
@@ -10806,7 +10721,6 @@ OpenAjax.a11y.cache.DOMElement = function (node, parent_dom_element, doc) {
       addAriaAttribute('aria-owns', attr_value);
       break;
 
-
     case 'aria-required':
       this.aria_required = attr_value.toLowerCase() === 'true';
       addAriaAttribute('aria-required', attr_value);
@@ -10874,7 +10788,6 @@ OpenAjax.a11y.cache.DOMElement = function (node, parent_dom_element, doc) {
         this.type_attr     = attr_value.toLowerCase();
       }
       break;
-
 
     case 'role':
 
@@ -10960,7 +10873,6 @@ OpenAjax.a11y.cache.DOMElement = function (node, parent_dom_element, doc) {
       if (attr_value.length > 0) this.has_title = true;
       break;
 
-
     default:
 
       if (attr.name.indexOf('aria-') === 0 ) {
@@ -10998,7 +10910,6 @@ OpenAjax.a11y.cache.DOMElement = function (node, parent_dom_element, doc) {
     this.events = this.EnumerateInlineEvents(node, parent_dom_element);
     break;
   }
-
 
   // Create areas to store rule results associates with this node
   this.has_rule_results = false;
@@ -11122,7 +11033,6 @@ OpenAjax.a11y.cache.DOMElement.prototype.getClassName = function () {
 
 };
 
-
 /**
  * @method getParentLandmark
  *
@@ -11140,7 +11050,6 @@ OpenAjax.a11y.cache.DOMElement.prototype.getParentLandmark = function () {
   return "none";
 
 };
-
 
 /**
  * @method hasAttrWithValue
@@ -11253,7 +11162,6 @@ OpenAjax.a11y.cache.DOMElement.prototype.containsInteractiveElements = function 
 
 };
 
-
 /**
  * @method hasParentRole
  *
@@ -11346,7 +11254,6 @@ OpenAjax.a11y.cache.DOMElement.prototype.getAccessibility = function () {
 
 };
 
-
 /**
  * @method getAttributes
  *
@@ -11426,7 +11333,6 @@ OpenAjax.a11y.cache.DOMElement.prototype.hasEvents = function () {
 
   return has_events;
 };
-
 
 /**
  * @method   var SOURCE = OpenAjax.a11y.SOURCE;
@@ -11513,7 +11419,6 @@ OpenAjax.a11y.cache.DOMElement.prototype.getChangeEvents = function () {
 
 };
 
-
 /**
  * @method hasFocusEvents
  *
@@ -11578,7 +11483,6 @@ OpenAjax.a11y.cache.DOMElement.prototype.getFocusEvents = function () {
   return events;
 
 };
-
 
 
 /**
@@ -11872,7 +11776,6 @@ OpenAjax.a11y.cache.DOMElement.prototype.getKeyboardEvents = function () {
 };
 
 
-
 /**
  * @method getEvents
  *
@@ -11949,7 +11852,6 @@ OpenAjax.a11y.cache.DOMElement.prototype.getEvents = function () {
   return events;
 
 };
-
 
 /**
  * @method getStyle
@@ -12092,7 +11994,6 @@ OpenAjax.a11y.cache.DOMElement.prototype.getCachePropertyValue = function (prope
   return this[property];
 
 };
-
 
 /**
  * @method sortItems
@@ -12616,7 +12517,6 @@ OpenAjax.a11y.cache.DOMElement.prototype.EnumerateInlineEvents = function (node,
 
   }
 
-
   var events = this.initEvents(parent_dom_element);
 
   var attributes = node.attributes;
@@ -12780,7 +12680,6 @@ OpenAjax.a11y.cache.DOMElement.prototype.EnumerateInlineEvents = function (node,
   events.has_touch_cancel  = testForPropertyAndJQueryEvent('touchcancel');
 
 
-
   if (parent_dom_element && parent_dom_element.events) {
     events.ancestor_has_blur         = parent_dom_element.events.has_blur         || parent_dom_element.events.ancestor_has_blur;
     events.ancestor_has_change       = parent_dom_element.events.has_change       || parent_dom_element.events.ancestor_has_change;
@@ -12827,7 +12726,6 @@ OpenAjax.a11y.cache.DOMElement.prototype.EnumerateInlineEvents = function (node,
   return events;
 
 };
-
 
 
 /**
@@ -12947,7 +12845,6 @@ OpenAjax.a11y.cache.DOMElement.prototype.calculateXPath = function (parent_eleme
  }
 
 };
-
 
 /**
  * @method getText
@@ -13072,7 +12969,6 @@ OpenAjax.a11y.cache.DOMElement.prototype.getTextObject = function(visible) {
   o.width = 0;
   o.image_count = 0;
 
-
   if (!visible || this.computed_style.is_visible_onscreen) {
     getText(this, name_array, name_from_text_nodes_array, name_from_image_alt_array);
   }
@@ -13085,7 +12981,6 @@ OpenAjax.a11y.cache.DOMElement.prototype.getTextObject = function(visible) {
   return o;
 
 }; // end function OpenAjax.cache.util.getAccessibleText
-
 
 /**
  * @method getElementCount
@@ -13118,7 +13013,6 @@ OpenAjax.a11y.cache.DOMElement.prototype.getElementCount = function() {
 
 };
 
-
 /**
  * @method toString
  *
@@ -13147,7 +13041,7 @@ OpenAjax.a11y.cache.DOMElement.prototype.toString = function() {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -13378,7 +13272,6 @@ OpenAjax.a11y.cache.DOMCache.prototype.traverseDOMElementsForAllCaches = functio
 
 };
 
-
 /**
  * @method updateAllCaches
  * @memberOf OpenAjax.a11y.cache.DOMCache
@@ -13400,7 +13293,6 @@ OpenAjax.a11y.cache.DOMCache.prototype.updateAllCaches = function () {
   var li = new OpenAjax.a11y.cache.ListInfo(null);
   var mi = new OpenAjax.a11y.cache.MediaInfo();
   var fi = new OpenAjax.a11y.cache.FrameInfo(null);
-
 
   for (var i = 0; i < children_len; i++) {
     this.traverseDOMElementsForAllCaches(children[i], hi, hi_g, ti, ci, li, mi, fi);
@@ -13524,7 +13416,6 @@ OpenAjax.a11y.cache.DOMCache.prototype.addTitleDOMElement = function () {
 
 OpenAjax.a11y.cache.DOMCache.prototype.updateDOMElements = function (node, parent_dom_element, previous_sibling) {
 
-
   var n;
   var de;
   var dom_element;
@@ -13561,7 +13452,6 @@ OpenAjax.a11y.cache.DOMCache.prototype.updateDOMElements = function (node, paren
 //    if (dom_element.tag_name === 'h2')       OpenAjax.a11y.logger.debug("[updateDOMElements][ELEMENT_NODE][DOMElement]: " + dom_element);
 //    if (dom_element.tag_name === 'input')    OpenAjax.a11y.logger.debug("[updateDOMElements][ELEMENT_NODE][DOMElement]: " + dom_element);
 //    if (dom_element.tag_name === 'textarea') OpenAjax.a11y.logger.debug("[updateDOMElements][ELEMENT_NODE][DOMElement]: " + dom_element);
-
 
     if (dom_element.id && dom_element.id.length) {
       // use append so that document_order of the dom_element does not get updated
@@ -13653,7 +13543,6 @@ OpenAjax.a11y.cache.DOMCache.prototype.updateDOMElements = function (node, paren
 
 };
 
-
 /**
  * @method calculateDescriptions
  *
@@ -13721,7 +13610,6 @@ OpenAjax.a11y.cache.DOMCache.prototype.getNameForLink = function (link) {
   this.getDescriptionFromARIADescribedby(link);
 };
 
-
 /**
  * @method getCaptionForTable
  *
@@ -13778,7 +13666,6 @@ OpenAjax.a11y.cache.DOMCache.prototype.getAccessibleNameDescriptionForTable = fu
 //  OpenAjax.a11y.logger.debug("[getAccessibleNameDescriptionForTable] has_summary: " + de.has_summary);
 //  OpenAjax.a11y.logger.debug("[getAccessibleNameDescriptionForTable]     summary: " + de.summary);
 
-
   if ((table.accessible_name_source === SOURCE.TABLE_CAPTION) ||
       (table.accessible_name_source === SOURCE.ARIA_LABELLEDBY) ||
       (table.accessible_name_source === SOURCE.ARIA_LABEL)) {
@@ -13817,7 +13704,6 @@ OpenAjax.a11y.cache.DOMCache.prototype.getAccessibleNameDescriptionForTable = fu
 
   table.accessible_description_for_comparison = OpenAjax.a11y.util.normalizeSpace(table.accessible_description.toLowerCase());
   table.accessible_description_length         = table.accessible_description_for_comparison.length;
-
 
 };
 
@@ -13907,7 +13793,6 @@ OpenAjax.a11y.cache.DOMCache.prototype.getDescriptionFromARIADescribedby = funct
 
 };
 
-
 /**
  * @method getTextFromIDs
  * @memberOf OpenAjax.a11y.cache.DOMCache
@@ -13945,7 +13830,6 @@ OpenAjax.a11y.cache.DOMCache.prototype.getUndefinedIDs = function (ids) {
   return this.element_with_id_cache.getUndefinedIds(ids);
 
 };
-
 
 /**
  * @method sortArrayOfObjects
@@ -14065,11 +13949,9 @@ OpenAjax.a11y.cache.DOMCache.prototype.getDuplicateObjects = function(objects, p
     i++;
   }
 
-
   return return_objects;
 
 };
-
 
 
 /*
@@ -14079,7 +13961,7 @@ OpenAjax.a11y.cache.DOMCache.prototype.getDuplicateObjects = function(objects, p
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -14087,7 +13969,6 @@ OpenAjax.a11y.cache.DOMCache.prototype.getDuplicateObjects = function(objects, p
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 
 /* ---------------------------------------------------------------- */
 /*                              FrameInfo                            */
@@ -14180,7 +14061,6 @@ OpenAjax.a11y.cache.FramesCache.prototype.addFrameElement = function (frame_elem
 };
 
 
-
 /**
  * @method updateCacheItems
  *
@@ -14226,7 +14106,6 @@ OpenAjax.a11y.cache.FramesCache.prototype.updateCacheItems = function (dom_eleme
 
     break;
 
-
   default:
     break;
 
@@ -14235,7 +14114,6 @@ OpenAjax.a11y.cache.FramesCache.prototype.updateCacheItems = function (dom_eleme
   return fi;
 
 };
-
 
 /**
  * @method addChildElement
@@ -14250,7 +14128,6 @@ OpenAjax.a11y.cache.FramesCache.prototype.updateCacheItems = function (dom_eleme
  */
 
 OpenAjax.a11y.cache.FramesCache.prototype.addChildElement = function (frame_element) {
-
 
   if (frame_element) {
     this.child_cache_elements.push(frame_element);
@@ -14280,7 +14157,6 @@ OpenAjax.a11y.cache.FramesCache.prototype.emptyCache = function () {
   this.iframe_elements = [];
 };
 
-
 /**
  * @method toString
  *
@@ -14303,7 +14179,6 @@ OpenAjax.a11y.cache.FramesCache.prototype.toString = function () {
 
  return str;
 };
-
 
 /* ---------------------------------------------------------------- */
 /*                           FrameElement                       */
@@ -14348,7 +14223,6 @@ OpenAjax.a11y.cache.FrameElement = function (dom_element, frame_info) {
 
 };
 
-
 /**
  * @method addChildElement
  *
@@ -14374,7 +14248,6 @@ OpenAjax.a11y.cache.FrameElement.prototype.addChildElement = function (frame_ele
   return false;
 
 };
-
 
 
 
@@ -14519,9 +14392,7 @@ OpenAjax.a11y.cache.FrameElement.prototype.toString = function () {
 
   return str;
 
-
 };
-
 
 
 /**
@@ -14531,7 +14402,7 @@ OpenAjax.a11y.cache.FrameElement.prototype.toString = function () {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -14847,7 +14718,6 @@ OpenAjax.a11y.cache.HeadingsLandmarksCache.prototype.addMainElement = function (
   return this.length;
 };
 
-
 /**
  * @method getItemByCacheId
  *
@@ -14961,7 +14831,6 @@ OpenAjax.a11y.cache.HeadingsLandmarksCache.prototype.initCache = function () {
   this.heading_length = 0;
   this.headings_sort_property = 'document_order';
 
-
   this.main_elements = [];
   this.main_length   = 0;
 
@@ -15007,7 +14876,6 @@ OpenAjax.a11y.cache.HeadingsLandmarksCache.prototype.getListOfSectionElements = 
   getChildren(this.section_elements);
 
   return list;
-
 
 };
 
@@ -15057,7 +14925,6 @@ OpenAjax.a11y.cache.HeadingsLandmarksCache.prototype.updateCacheItems = function
       default:
         break;
     }
-
 
     // Collect section elements for role restriction rules
     switch(tag_name) {
@@ -15134,7 +15001,6 @@ OpenAjax.a11y.cache.HeadingsLandmarksCache.prototype.updateCacheItems = function
 
         }
       }
-
 
       return li;
     }
@@ -15254,7 +15120,6 @@ OpenAjax.a11y.cache.HeadingsLandmarksCache.prototype.updateCacheItems = function
       }
       else {
 
-
         if (dom_element.has_role) {
           le = new OpenAjax.a11y.cache.LandmarkElement(dom_element);
           this.dom_cache.getNameFromARIALabel(le, dom_element.role.toUpperCase());
@@ -15299,7 +15164,6 @@ OpenAjax.a11y.cache.HeadingsLandmarksCache.prototype.updateCacheItems = function
           }
         }
 
-
         this.addLandmarkElement(le);
 
         if (landmark_info.landmark_element) {
@@ -15336,7 +15200,6 @@ OpenAjax.a11y.cache.HeadingsLandmarksCache.prototype.updateCacheItems = function
 
       return li;
     }
-
 
 
     // elements that contain rendered content without having child dom text nodes
@@ -15381,7 +15244,6 @@ OpenAjax.a11y.cache.HeadingsLandmarksCache.prototype.updateCacheItems = function
       li.body_element = dom_element;
       return li;
     }
-
 
   }
   else {
@@ -15429,7 +15291,6 @@ OpenAjax.a11y.cache.HeadingsLandmarksCache.prototype.traverseDOMElementsForLandm
   }
 };
 
-
 /**
  * @method updateCache
  *
@@ -15459,7 +15320,6 @@ OpenAjax.a11y.cache.HeadingsLandmarksCache.prototype.updateCache = function () {
 
   this.up_to_date = true;
 };
-
 
 /**
  * @method sortLandmarkElements
@@ -15627,7 +15487,6 @@ OpenAjax.a11y.cache.SectionElement.prototype.addChildElement = function (child_e
 
 };
 
-
 /**
  * @method getElementResults
  *
@@ -15716,7 +15575,6 @@ OpenAjax.a11y.cache.SectionElement.prototype.getCachePropertyValue = function (p
   return this[property];
 };
 
-
 /**
  * @method getEvents
  *
@@ -15751,7 +15609,6 @@ OpenAjax.a11y.cache.SectionElement.prototype.toString = function () {
 
  return s;
 };
-
 
 
 /* ---------------------------------------------------------------- */
@@ -15825,7 +15682,6 @@ OpenAjax.a11y.cache.LandmarkElement.prototype.addChildElement = function (child_
 
 };
 
-
 /**
  * @method getElementResults
  *
@@ -15855,7 +15711,6 @@ OpenAjax.a11y.cache.LandmarkElement.prototype.addToElementCount = function (n) {
   if (n > 0) this.elements_with_content_count += n;
 
 };
-
 
 /**
  * @method getElementsWithContentCount
@@ -15914,7 +15769,6 @@ OpenAjax.a11y.cache.LandmarkElement.prototype.getHeadings = function () {
 
   return headings;
 };
-
 
 /**
  * @method getStyle
@@ -16006,7 +15860,6 @@ OpenAjax.a11y.cache.LandmarkElement.prototype.getCachePropertyValue = function (
   return this[property];
 };
 
-
 /**
  * @method getEvents
  *
@@ -16078,7 +15931,6 @@ OpenAjax.a11y.cache.LandmarkElement.prototype.toString = function () {
  */
 
 OpenAjax.a11y.cache.HeadingElement = function (dom_element, landmark_info, heading_info) {
-
 
   this.dom_element     = dom_element;
   this.cache_id        = "";
@@ -16237,7 +16089,6 @@ OpenAjax.a11y.cache.HeadingElement = function (dom_element, landmark_info, headi
 
 };
 
-
 /**
  * @method getElementResults
  *
@@ -16370,7 +16221,6 @@ OpenAjax.a11y.cache.HeadingElement.prototype.getEvents = function () {
 
 };
 
-
 /**
  * @method toString
  *
@@ -16431,7 +16281,6 @@ OpenAjax.a11y.cache.MainElement = function (dom_element) {
   var hi = new OpenAjax.a11y.cache.HeadingInfo(null);
   this.heading_info = hi;
 
-
   this.child_cache_elements = [];
   this.h1_elements          = [];
   this.main_type            = OpenAjax.a11y.MAIN.ROLE_MAIN;
@@ -16445,7 +16294,6 @@ OpenAjax.a11y.cache.MainElement = function (dom_element) {
   this.elements_with_content_count = 0;
 
 };
-
 
 /**
  * @method addChildElement
@@ -16482,7 +16330,6 @@ OpenAjax.a11y.cache.MainElement.prototype.addH1Element = function (h1_element) {
   }
 
 };
-
 
 /**
  * @method addToElementCount
@@ -16662,7 +16509,6 @@ OpenAjax.a11y.cache.MainElement.prototype.getCachePropertyValue = function (prop
   return this[property];
 };
 
-
 /**
 
  * @method getEvents
@@ -16744,7 +16590,6 @@ OpenAjax.a11y.cache.H1Element = function (dom_element, main_landmark) {
   this.child_cache_elements = [];   // The child array is always empty for an H1Element
   this.level = 1;
 
-
   this.main_type            = OpenAjax.a11y.MAIN.H1_ELEMENT;
   this.is_label_for_main    = false;
 
@@ -16775,7 +16620,6 @@ OpenAjax.a11y.cache.H1Element = function (dom_element, main_landmark) {
     this.last_landmark_parent_heading = null;
     this.landmark_parent_heading      = null;
   }
-
 
 };
 
@@ -16929,7 +16773,6 @@ OpenAjax.a11y.cache.H1Element.prototype.getEvents = function () {
   return this.dom_element.getEvents();
 
 };
-
 
 /**
  * @method toString
@@ -17096,7 +16939,6 @@ OpenAjax.a11y.cache.TitleElement.prototype.getCachePropertyValue = function (pro
 };
 
 
-
 /**
  * @method getEvents
  *
@@ -17131,7 +16973,6 @@ OpenAjax.a11y.cache.TitleElement.prototype.toString = function () {
 
   return str;
 };
-
 
 /* ---------------------------------------------------------------- */
 /*                       PageElementHeadingsLandmarks                               */
@@ -17292,7 +17133,6 @@ OpenAjax.a11y.cache.PageElementHeadingsLandmarks.prototype.getCachePropertyValue
 };
 
 
-
 /**
  * @method getEvents
  *
@@ -17330,7 +17170,7 @@ OpenAjax.a11y.cache.PageElementHeadingsLandmarks.prototype.toString = function (
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -17438,7 +17278,6 @@ OpenAjax.a11y.cache.ImagesCache.prototype.addCanvasElement = function (canvas_el
 
 };
 
-
 /**
  * @method addSVGElement
  *
@@ -17509,7 +17348,6 @@ OpenAjax.a11y.cache.ImagesCache.prototype.getItemByCacheId = function (cache_id)
  return null;
 };
 
-
 /**
  * @method emptyCache
  *
@@ -17561,7 +17399,6 @@ OpenAjax.a11y.cache.ImagesCache.prototype.updateCacheItems = function (dom_eleme
 
   }
 
-
   if (dom_element.tag_name === 'svg') {
 
     var svg_element = new OpenAjax.a11y.cache.SVGElement(dom_element, this.dom_cache.base_url);
@@ -17569,7 +17406,6 @@ OpenAjax.a11y.cache.ImagesCache.prototype.updateCacheItems = function (dom_eleme
     this.addSVGElement(svg_element);
 
   }
-
 
 };
 
@@ -17790,7 +17626,6 @@ OpenAjax.a11y.cache.ImageElement = function (dom_element, base_url) {
     }
   }
 
-
   this.height   = node.offsetHeight;
   this.width    = node.offsetWidth;
 
@@ -17927,7 +17762,6 @@ OpenAjax.a11y.cache.ImageElement.prototype.getEvents = function () {
 
 };
 
-
 /**
  * @method getAltTextNLS
  *
@@ -17990,7 +17824,6 @@ OpenAjax.a11y.cache.ImageElement.prototype.getAltTextNLS = function () {
      return s;
 
    }
-
 
    if (typeof option === 'string') {
      option = option.toLowerCase();
@@ -18066,7 +17899,6 @@ OpenAjax.a11y.cache.ImageElement.prototype.getAltTextNLS = function () {
    return str;
 };
 
-
 /* ---------------------------------------------------------------- */
 /*                            CanvasElement                          */
 /* ---------------------------------------------------------------- */
@@ -18092,7 +17924,6 @@ OpenAjax.a11y.cache.ImageElement.prototype.getAltTextNLS = function () {
  */
 
 OpenAjax.a11y.cache.CanvasElement = function (dom_element) {
-
 
   if (!dom_element) return null;
 
@@ -18243,7 +18074,6 @@ OpenAjax.a11y.cache.CanvasElement.prototype.getEvents = function () {
 
 };
 
-
 /**
  * @method toString
  *
@@ -18268,7 +18098,6 @@ OpenAjax.a11y.cache.CanvasElement.prototype.getEvents = function () {
 
    return str;
 };
-
 
 /* ---------------------------------------------------------------- */
 /*                            SVGElement                          */
@@ -18295,7 +18124,6 @@ OpenAjax.a11y.cache.CanvasElement.prototype.getEvents = function () {
  */
 
 OpenAjax.a11y.cache.SVGElement = function (dom_element) {
-
 
   if (!dom_element) return null;
 
@@ -18447,7 +18275,6 @@ OpenAjax.a11y.cache.SVGElement.prototype.getEvents = function () {
 
 };
 
-
 /**
  * @method toString
  *
@@ -18475,7 +18302,6 @@ OpenAjax.a11y.cache.SVGElement.prototype.getEvents = function () {
 
 
 
-
 /*
  * Copyright 2011-2018 OpenAjax Alliance
  *
@@ -18483,7 +18309,7 @@ OpenAjax.a11y.cache.SVGElement.prototype.getEvents = function () {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -18491,7 +18317,6 @@ OpenAjax.a11y.cache.SVGElement.prototype.getEvents = function () {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 
 /* ---------------------------------------------------------------- */
 /*                            LanguagesCache                        */
@@ -18547,7 +18372,6 @@ OpenAjax.a11y.cache.LanguagesCache.prototype.addLanguageItem = function (dom_ele
    this.dom_elements.push(dom_element);
 
 };
-
 
 /**
  * @method emptyCache
@@ -18628,7 +18452,6 @@ OpenAjax.a11y.cache.LanguagesCache.prototype.updateCache = function () {
     this.up_to_date = true;
 };
 
-
 /**
  * @method toString
  *
@@ -18663,7 +18486,7 @@ OpenAjax.a11y.cache.LanguagesCache.prototype.toString = function () {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -18741,7 +18564,6 @@ OpenAjax.a11y.cache.LinksCache.prototype.getLinkElementsSortedByName = function 
 
   }
 
-
   if (!this.sorted_by_name_ready) {
 
     this.links_sorted_by_name.sort(compare);
@@ -18800,7 +18622,6 @@ OpenAjax.a11y.cache.LinksCache.prototype.getLinksThatShareTheSameName = function
     }
 
   }
-
 
 
   var VISIBILITY  = OpenAjax.a11y.VISIBILITY;
@@ -18899,7 +18720,6 @@ OpenAjax.a11y.cache.LinksCache.prototype.getLinkElementsSortedByHREF = function 
 
   }
 
-
   if (!this.sorted_by_href_ready) {
     this.links_sorted_by_href.sort(compare);
     this.sorted_by_href_ready = true;
@@ -18908,7 +18728,6 @@ OpenAjax.a11y.cache.LinksCache.prototype.getLinkElementsSortedByHREF = function 
   return this.links_sorted_by_href;
 
 };
-
 
 /**
  * @method getLinksThatShareTheSameHREF
@@ -18986,7 +18805,6 @@ OpenAjax.a11y.cache.LinksCache.prototype.getLinksThatShareTheSameHREF = function
 
   if (same_hrefs) list_of_same_hrefs.push(same_hrefs);
 
-
 //  OpenAjax.a11y.logger.debug( "Number of DUP HREF objects: " + list_of_same_hrefs.length);
 
   for (i = 0; i < list_of_same_hrefs.length; i++ ) {
@@ -18997,7 +18815,6 @@ OpenAjax.a11y.cache.LinksCache.prototype.getLinksThatShareTheSameHREF = function
   return list_of_same_hrefs;
 
 };
-
 
 /**
  * @method addLinkElement
@@ -19151,7 +18968,6 @@ OpenAjax.a11y.cache.LinksCache.prototype.traverseDOMElementsForLinkElements = fu
 
 };
 
-
 /**
  * @method updateCache
  *
@@ -19177,7 +18993,6 @@ OpenAjax.a11y.cache.LinksCache.prototype.updateCache = function () {
   this.up_to_date = true;
 
 };
-
 
 /* ---------------------------------------------------------------- */
 /*                            LinkElement                           */
@@ -19238,7 +19053,7 @@ OpenAjax.a11y.cache.LinkElement = function (dom_element) {
 
     if (href === '#') return OpenAjax.a11y.LINK_TYPE.EMPTY;
 
-    if (href.indexOf('http://') >= 0) return OpenAjax.a11y.LINK_TYPE.HTTP;
+    if (href.indexOf('https://') >= 0) return OpenAjax.a11y.LINK_TYPE.HTTP;
     else
       if (href.indexOf('https://') >= 0) return OpenAjax.a11y.LINK_TYPE.HTTPS;
       else
@@ -19257,12 +19072,11 @@ OpenAjax.a11y.cache.LinkElement = function (dom_element) {
     return OpenAjax.a11y.LINK_TYPE.HTTP;
   }
 
-
   function testIfHrefIsURL(url) {
 
     if (typeof href != 'string') return false;
 
-    if (url.indexOf('http://') >= 0) return true;
+    if (url.indexOf('https://') >= 0) return true;
     else
       if (url.indexOf('https://') >= 0) return true;
       else
@@ -19506,7 +19320,6 @@ OpenAjax.a11y.cache.LinkElement.prototype.getLinkType = function () {
    return str;
  };
 
-
 /*
  * Copyright 2011-2018 OpenAjax Alliance
  *
@@ -19514,7 +19327,7 @@ OpenAjax.a11y.cache.LinkElement.prototype.getLinkType = function () {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -19522,7 +19335,6 @@ OpenAjax.a11y.cache.LinkElement.prototype.getLinkType = function () {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 
 /* ---------------------------------------------------------------- */
 /*                              ListInfo                            */
@@ -19715,7 +19527,6 @@ OpenAjax.a11y.cache.ListsCache.prototype.updateCacheItems = function (dom_elemen
     }
 
 
-
   }
 
   return li;
@@ -19788,7 +19599,6 @@ OpenAjax.a11y.cache.ListsCache.prototype.updateCache = function () {
 
 OpenAjax.a11y.cache.ListsCache.prototype.addChildElement = function (list_element) {
 
-
   if (list_element) {
     this.child_cache_elements.push(list_element);
     return true;
@@ -19814,7 +19624,6 @@ OpenAjax.a11y.cache.ListsCache.prototype.getListElementByCacheId = function (cac
  return this.getItemByCacheId(cache_id);
 };
 
-
 /**
  * @method emptyCache
  *
@@ -19832,7 +19641,6 @@ OpenAjax.a11y.cache.ListsCache.prototype.emptyCache = function () {
 
   this.container_elements = [];
 };
-
 
 /**
  * @method toString
@@ -20042,7 +19850,6 @@ OpenAjax.a11y.cache.ListElement.prototype.getEvents = function () {
 };
 
 
-
 /**
  * @method toString
  *
@@ -20122,7 +19929,6 @@ OpenAjax.a11y.cache.ContainerElement = function (dom_element, list_info) {
   this.accessible_name = "";
 
 };
-
 
 /**
  * @method addChildElement
@@ -20414,7 +20220,6 @@ OpenAjax.a11y.cache.ContainerElement.prototype.toString = function () {
 
   if (this.computed_label.length) str += ': ' + this.computed_label;
 
-
   if (count === 1) str += ' (1 list item)';
   else str += ' (' + count + ' list items)';
 
@@ -20425,7 +20230,6 @@ OpenAjax.a11y.cache.ContainerElement.prototype.toString = function () {
 };
 
 
-
 /*
  * Copyright 2011-2018 OpenAjax Alliance
  *
@@ -20433,7 +20237,7 @@ OpenAjax.a11y.cache.ContainerElement.prototype.toString = function () {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -20468,7 +20272,6 @@ OpenAjax.a11y.cache.MediaInfo = function (media_info) {
   this.media_element  = null;
  }
 };
-
 
 
 /**
@@ -20648,7 +20451,6 @@ OpenAjax.a11y.cache.MediaCache.prototype.updateCacheItems = function (dom_elemen
     return mi;
   }
 
-
   if ((tag_name === 'object') ||
       (tag_name === 'applet') ||
       (tag_name === 'embed') ||
@@ -20710,7 +20512,6 @@ OpenAjax.a11y.cache.MediaCache.prototype.traverseDOMElementsForMediaElements = f
   }
 
 };
-
 
 /**
  * @method updateCache
@@ -20799,7 +20600,6 @@ OpenAjax.a11y.cache.MediaCache.prototype.sortMediaElements = function(property, 
   return true;
 
 };
-
 
 /* ---------------------------------------------------------------- */
 /*                            MediaElement                          */
@@ -21009,7 +20809,6 @@ OpenAjax.a11y.cache.MediaElement.prototype.getCachePropertyValue = function (pro
   return this[property];
 };
 
-
 /**
  * @method getEvents
  *
@@ -21179,7 +20978,6 @@ OpenAjax.a11y.cache.MediaElement.prototype.isTypeAudio = function () {
    return str;
  };
 
-
 /* ---------------------------------------------------------------- */
 /*                            MediaChildElement                          */
 /* ---------------------------------------------------------------- */
@@ -21214,7 +21012,6 @@ OpenAjax.a11y.cache.MediaChildElement = function (dom_element) {
   this.srclang      = node.getAttribute('srclang');
   this.label        = node.getAttribute('label');
   this.default_attr = node.getAttribute('default');
-
 
 };
 
@@ -21321,7 +21118,6 @@ OpenAjax.a11y.cache.MediaChildElement.prototype.getCachePropertyValue = function
   return this[property];
 };
 
-
 /**
  * @method getEvents
  *
@@ -21391,7 +21187,6 @@ OpenAjax.a11y.cache.PageElementMedia = function (dom_element) {
   this.child_cache_elements = []; // this is always empty for the body element
 
 };
-
 
 /**
  * @method getElementResults
@@ -21492,7 +21287,6 @@ OpenAjax.a11y.cache.PageElementMedia.prototype.getCachePropertyValue = function 
 };
 
 
-
 /**
  * @method getEvents
  *
@@ -21530,7 +21324,7 @@ OpenAjax.a11y.cache.PageElementMedia.prototype.toString = function () {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -21538,7 +21332,6 @@ OpenAjax.a11y.cache.PageElementMedia.prototype.toString = function () {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 
 /**
  * @constructor DOMElementComputedStyle
@@ -21644,7 +21437,6 @@ OpenAjax.a11y.cache.DOMElementComputedStyle = function (dom_element, parent_elem
       return parseInt(value,10);
     }
   } // end function
-
 
   function  normalizePositionTop(value, parent_element) {
     if (value.toLowerCase() == 'inherit') {
@@ -21761,7 +21553,6 @@ OpenAjax.a11y.cache.DOMElementComputedStyle = function (dom_element, parent_elem
     pv = focus.getPropertyValue("background-image");
     if (pv && pv.length) this.focus  += "background-image :" + pv + "; ";
 
-
     pv = focus.getPropertyValue("border-style");
     if (pv && pv.length) this.focus  += "border-style :" + pv + "; ";
 
@@ -21770,7 +21561,6 @@ OpenAjax.a11y.cache.DOMElementComputedStyle = function (dom_element, parent_elem
 
     pv = focus.getPropertyValue("border-color");
     if (pv && pv.length) this.focus  += "border-color :" + pv + "; ";
-
 
     pv = focus.getPropertyValue("outline-style");
     if (pv && pv.length) this.focus  += "outline-style :" + pv + "; ";
@@ -21932,7 +21722,6 @@ OpenAjax.a11y.cache.DOMElementComputedStyle.prototype.calculateColorContrastRati
 
 };
 
-
 /**
  * @method getLuminance
  *
@@ -21987,7 +21776,7 @@ OpenAjax.a11y.cache.DOMElementComputedStyle.prototype.toString = function (color
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -22072,7 +21861,6 @@ OpenAjax.a11y.cache.TablesCache = function (dom_cache) {
   this.length         = 0;
 
   this.page_element  = null;
-
 
 };
 
@@ -22239,7 +22027,6 @@ OpenAjax.a11y.cache.TablesCache = function (dom_cache) {
   return null;
 };
 
-
 /**
  * @method updateCacheItems
  *
@@ -22355,7 +22142,6 @@ OpenAjax.a11y.cache.TablesCache = function (dom_cache) {
 
        break;
 
-
      case 'td':
      case 'th':
        tce = new OpenAjax.a11y.cache.TableCellElement(dom_element, table_info);
@@ -22433,7 +22219,6 @@ OpenAjax.a11y.cache.TablesCache = function (dom_cache) {
    var children_len = children.length;
 
    var table_info = new OpenAjax.a11y.cache.TableInfo(null);
-
 
    for (i=0; i < children_len; i++) {
      this.traverseDOMElementsForTableElements(children[i], table_info);
@@ -22623,7 +22408,6 @@ OpenAjax.a11y.cache.TableElement.prototype.setIsLayoutTable = function () {
 
 };
 
-
 /**
  * @method getTableElementByCacheId
  *
@@ -22679,7 +22463,6 @@ OpenAjax.a11y.cache.TableElement.prototype.getItemByCacheId = function (cache_id
    return traverseTableElements(this.child_cache_elements);
 
  };
-
 
 /**
  * @method addTableElement
@@ -22750,7 +22533,6 @@ OpenAjax.a11y.cache.TableElement.prototype.addTableElement = function (table_ele
 
    default:
      break;
-
 
    } // end switch
 
@@ -23155,7 +22937,6 @@ OpenAjax.a11y.cache.TableElement.prototype.multipleTHInRow = function(row) {
    return -1;
  };
 
-
 /**
  * @method headerCellsInFirstRow
  *
@@ -23314,7 +23095,6 @@ OpenAjax.a11y.cache.TableElement.prototype.getEvents = function (unsorted) {
 
 };
 
-
 /**
  * @method getStyle
  *
@@ -23385,7 +23165,6 @@ OpenAjax.a11y.cache.TableElement.prototype.getCachePropertyValue = function (pro
   return this[property];
 };
 
-
 /**
  * @method toString
  *
@@ -23419,7 +23198,6 @@ OpenAjax.a11y.cache.TableElement.prototype.getCachePropertyValue = function (pro
    return str;
 
  };
-
 
 /* ---------------------------------------------------------------- */
 /*                         CaptionElement Object                    */
@@ -23570,7 +23348,6 @@ OpenAjax.a11y.cache.CaptionElement.prototype.getCachePropertyValue = function (p
   return this[property];
 };
 
-
 /**
  * @method toString
  *
@@ -23679,7 +23456,6 @@ OpenAjax.a11y.cache.THeadElement.prototype.getAttributes = function () {
 };
 
 
-
 /**
  * @method getStyle
  *
@@ -23736,7 +23512,6 @@ OpenAjax.a11y.cache.THeadElement.prototype.getCachePropertyValue = function (pro
   return this[property];
 };
 
-
 /**
  * @method getEvents
  *
@@ -23769,7 +23544,6 @@ OpenAjax.a11y.cache.THeadElement.prototype.getEvents = function (unsorted) {
 
    return str;
  };
-
 
 /* ---------------------------------------------------------------- */
 /*                         TBodyElement Object                      */
@@ -23861,7 +23635,6 @@ OpenAjax.a11y.cache.TBodyElement.prototype.getAttributes = function () {
   return attributes;
 };
 
-
 /**
  * @method getStyle
  *
@@ -23918,7 +23691,6 @@ OpenAjax.a11y.cache.TBodyElement.prototype.getCachePropertyValue = function (pro
   return this[property];
 };
 
-
 /**
  * @method getEvents
  *
@@ -23951,7 +23723,6 @@ OpenAjax.a11y.cache.TBodyElement.prototype.getEvents = function (unsorted) {
 
    return str;
  };
-
 
 /* ---------------------------------------------------------------- */
 /*                       TableRowElement Object                     */
@@ -24157,7 +23928,6 @@ OpenAjax.a11y.cache.TableRowElement.prototype.getEvents = function (unsorted) {
    return str;
  };
 
-
 /* ---------------------------------------------------------------- */
 /*                            TableCellElement                      */
 /* ---------------------------------------------------------------- */
@@ -24275,7 +24045,6 @@ OpenAjax.a11y.cache.TableCellElement = function (dom_element, table_info) {
 
 };
 
-
 /**
  * @method addChild
  *
@@ -24323,7 +24092,6 @@ OpenAjax.a11y.cache.TableCellElement.prototype.getStyle = function () {
   return this.dom_element.getStyle();
 
 };
-
 
 /**
  * @method getAttributes
@@ -24398,7 +24166,6 @@ OpenAjax.a11y.cache.TableCellElement.prototype.getCachePropertyValue = function 
 
   return this[property];
 };
-
 
 /**
  * @method getEvents
@@ -24607,7 +24374,6 @@ OpenAjax.a11y.cache.PageElementLayout.prototype.getCachePropertyValue = function
 };
 
 
-
 /**
  * @method getEvents
  *
@@ -24644,7 +24410,7 @@ OpenAjax.a11y.cache.PageElementLayout.prototype.toString = function () {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -24700,7 +24466,6 @@ OpenAjax.a11y.cache.TextCache = function (dom_cache) {
 
 OpenAjax.a11y.cache.TextCache.prototype.addTextNode = function (text_node) {
 
-
   // item must exist and have the position property
   if (text_node) {
 
@@ -24716,7 +24481,6 @@ OpenAjax.a11y.cache.TextCache.prototype.addTextNode = function (text_node) {
   return this.length;
 
 };
-
 
 /**
  * @deprecated getTextNodeByCacheId
@@ -24761,7 +24525,6 @@ OpenAjax.a11y.cache.TextCache.prototype.getItemByCacheId = function (cache_id) {
 
  return null;
 };
-
 
 /**
  * @method emptyCache
@@ -24858,7 +24621,7 @@ OpenAjax.a11y.cache.TextCache.prototype.updateCache = function () {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -24899,7 +24662,6 @@ OpenAjax.a11y.cache.KeyboardFocusCache = function (dom_cache) {
 };
 
 
-
 /**
  * @method createKeyboardFocusCache
  *
@@ -24919,7 +24681,6 @@ OpenAjax.a11y.cache.KeyboardFocusCache.prototype.createKeyboardFocusCache = func
   this.interactive_elements = this.interactive_elements.concat(this.dom_cache.media_cache.object_elements);
 
 };
-
 
 /**
  * @method getItemByCacheId
@@ -24965,7 +24726,6 @@ OpenAjax.a11y.cache.KeyboardFocusCache.prototype.emptyCache = function () {
   this.up_to_date = false;
 
 };
-
 
 /* ---------------------------------------------------------------- */
 /*                       PageElementKeyboardFocus                   */
@@ -25086,7 +24846,6 @@ OpenAjax.a11y.cache.PageElementKeyboardFocus.prototype.getCachePropertyValue = f
 };
 
 
-
 /**
  * @method getEvents
  *
@@ -25117,7 +24876,6 @@ OpenAjax.a11y.cache.PageElementKeyboardFocus.prototype.toString = function () {
   return "page";
 };
 
-
 /*
  * Copyright 2011-2018 OpenAjax Alliance
  *
@@ -25125,7 +24883,7 @@ OpenAjax.a11y.cache.PageElementKeyboardFocus.prototype.toString = function () {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -25166,7 +24924,6 @@ OpenAjax.a11y.cache.TimingFlashingCache = function (dom_cache) {
 };
 
 
-
 /**
  * @method createTimingFlashingCache
  *
@@ -25187,7 +24944,6 @@ OpenAjax.a11y.cache.TimingFlashingCache.prototype.createTimingFlashingCache = fu
   this.timing_elements = this.timing_elements.concat(this.dom_cache.media_cache.media_elements);
 
 };
-
 
 /**
  * @method getItemByCacheId
@@ -25233,7 +24989,6 @@ OpenAjax.a11y.cache.TimingFlashingCache.prototype.emptyCache = function () {
   this.up_to_date = false;
 
 };
-
 
 /* ---------------------------------------------------------------- */
 /*                       PageElementTimingFlashing                   */
@@ -25354,7 +25109,6 @@ OpenAjax.a11y.cache.PageElementTimingFlashing.prototype.getCachePropertyValue = 
 };
 
 
-
 /**
  * @method getEvents
  *
@@ -25385,7 +25139,6 @@ OpenAjax.a11y.cache.PageElementTimingFlashing.prototype.toString = function () {
   return "page";
 };
 
-
   /*
  * Copyright 2011-2018 OpenAjax Alliance
  *
@@ -25393,7 +25146,7 @@ OpenAjax.a11y.cache.PageElementTimingFlashing.prototype.toString = function () {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -25401,7 +25154,6 @@ OpenAjax.a11y.cache.PageElementTimingFlashing.prototype.toString = function () {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 
 
 /* ---------------------------------------------------------------- */
@@ -25623,7 +25375,6 @@ OpenAjax.a11y.cache.ElementInformation = function () {
   this.mouse_events_count     = 0;
   this.touch_events_count     = 0;
   this.pointer_events_count   = 0;
-
 
 };
 
@@ -26059,7 +25810,6 @@ OpenAjax.a11y.cache.ElementInformation.prototype.countElement = function (dom_el
     break;
 
   }
-
 
   if (dom_element.has_role) {
 
@@ -26522,7 +26272,7 @@ OpenAjax.a11y.cache.ElementInformation.prototype.toJSON = function (add_comma, p
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -26589,7 +26339,6 @@ OpenAjax.a11y.info.InformationalLinkInfo = function (rt, t, u) {
   };
 
 };
-
 
 
 /* ---------------------------------------------------------------- */
@@ -26701,7 +26450,6 @@ OpenAjax.a11y.info.RulesetInfo = function (i1, i2, i3, a1, a2, d1, d2, d3, d4, d
 
 };
 
-
 /* ---------------------------------------------------------------- */
 /*                    SuccessCriterionInfo                */
 /* ---------------------------------------------------------------- */
@@ -26780,7 +26528,6 @@ OpenAjax.a11y.info.SuccessCriterionInfo = function (sc_id) {
   };
 
 };
-
 
 /* ---------------------------------------------------------------- */
 /*                    RuleCategoryInfo                              */
@@ -26877,7 +26624,6 @@ OpenAjax.a11y.info.GuidelineInfo = function (g_id) {
 };
 
 
-
 /* ---------------------------------------------------------------- */
 /*                    RuleGroupInfo                              */
 /* ---------------------------------------------------------------- */
@@ -26929,7 +26675,6 @@ OpenAjax.a11y.info.RuleGroupInfo = function (t, u, d, req, rec) {
      incRecommendedRuleCount : function() {
        rules_recommended += 1;
      },
-
 
      toString : function() { return title; }
   };
@@ -27126,7 +26871,6 @@ OpenAjax.a11y.info.PageInfo = function (dom_cache) {
 
 
 
-
 /*
  * Copyright 2011-2018 OpenAjax Alliance
  *
@@ -27134,7 +26878,7 @@ OpenAjax.a11y.info.PageInfo = function (dom_cache) {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -27142,7 +26886,6 @@ OpenAjax.a11y.info.PageInfo = function (dom_cache) {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 
 
 /* ---------------------------------------------------------------- */
@@ -27180,7 +26923,6 @@ OpenAjax.a11y.info.ElementResultsSummary = function (required) {
   var w   = 0;  // Fail result (f)
   var mc  = 0;
   var h   = 0;
-
 
   return {
 
@@ -27240,7 +26982,6 @@ OpenAjax.a11y.info.ElementResultsSummary = function (required) {
         w += n;
       }
     },
-
 
     /**
      * @method addManualChecks
@@ -27306,7 +27047,6 @@ OpenAjax.a11y.info.ElementResultsSummary = function (required) {
     }
   };
 };
-
 
 /* ---------------------------------------------------------------- */
 /*                             RuleResultsSummary                        */
@@ -27448,7 +27188,7 @@ OpenAjax.a11y.info.RuleResultsSummary = function () {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -27456,7 +27196,6 @@ OpenAjax.a11y.info.RuleResultsSummary = function () {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 
 /* ---------------------------------------------------------------- */
 /*                       EvaluationResult                           */
@@ -27543,7 +27282,6 @@ OpenAjax.a11y.EvaluationResult.prototype.getDOM = function () {
   return this.dom;
 };
 
-
 /**
  * @method getRuleset
  *
@@ -27572,7 +27310,6 @@ OpenAjax.a11y.EvaluationResult.prototype.getRuleset = function () {
 OpenAjax.a11y.EvaluationResult.prototype.getPageInfo = function () {
   return this.page_information;
 };
-
 
 /**
  * @method getTitle
@@ -27634,7 +27371,6 @@ OpenAjax.a11y.EvaluationResult.prototype.addRuleResult = function (rule_result) 
 
 };
 
-
  /**
  * @method getRuleResult
  *
@@ -27658,7 +27394,6 @@ OpenAjax.a11y.EvaluationResult.prototype.getRuleResult = function (rule_id) {
   return null;
 
 };
-
 
 
 /**
@@ -27730,7 +27465,6 @@ OpenAjax.a11y.EvaluationResult.prototype.getRuleResultsByGuideline = function (g
   return rgr;
 
 };
-
 
 /**
  * @method getRuleResultsByCategory
@@ -27839,7 +27573,7 @@ OpenAjax.a11y.EvaluationResult.prototype.toJSON = function (include_element_resu
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -27925,7 +27659,6 @@ OpenAjax.a11y.RuleResult.prototype.hasElemetResults = function () {
    return false;
 
 };
-
 
  /**
  * @method hasHiddenElementResults
@@ -28085,7 +27818,6 @@ OpenAjax.a11y.RuleResult.prototype.getElementResultsSummary = function () {
 };
 
 
-
  /**
  * @method getResultValue
  *
@@ -28114,7 +27846,6 @@ OpenAjax.a11y.RuleResult.prototype.getResultValue = function () {
   return RULE_RESULT_VALUE.NOT_APPLICABLE;
 
 };
-
 
  /**
  * @method getResultValueNLS
@@ -28223,7 +27954,6 @@ OpenAjax.a11y.RuleResult.prototype.getMessage = function (id, prefix) {
   return message;
 
 };
-
 
  /**
  * @method getResultMessagesArray
@@ -28335,7 +28065,6 @@ OpenAjax.a11y.RuleResult.prototype.getPrimaryLabel = function () {
 
 };
 
-
 /**
  * @method getElementResultsArray
  *
@@ -28368,7 +28097,6 @@ OpenAjax.a11y.RuleResult.prototype.getElementResultsArray = function () {
   return element_results;
 
 };
-
 
 /**
  * @method addResult
@@ -28518,7 +28246,6 @@ OpenAjax.a11y.RuleResult.prototype.getRule = function () {
 
 };
 
-
 /**
  * @method getRuleDefinition
  *
@@ -28551,7 +28278,6 @@ OpenAjax.a11y.RuleResult.prototype.getRuleSummary = function () {
   return this.getRule().getSummary(this.rule_required);
 
 };
-
 
 
 /**
@@ -28621,7 +28347,6 @@ OpenAjax.a11y.RuleResult.prototype.getRuleScopeNLS = function () {
   return this.getRule().getScopeNLS();
 
 };
-
 
 
 
@@ -28712,7 +28437,6 @@ OpenAjax.a11y.RuleResult.prototype.toJSON = function(prefix, flag) {
 };
 
 
-
 /**
  * @method toString
  *
@@ -28736,7 +28460,7 @@ OpenAjax.a11y.RuleResult.prototype.toString = function () {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -28776,14 +28500,12 @@ OpenAjax.a11y.info.ElementInfo = function (name, value, desc) {
      get value()         { return v;  },
      get description()   { return d;  },
 
-
     toString : function() {
       return "Name: " + n + " Value: " + v;
     }
 
   };
 };
-
 
 /* ---------------------------------------------------------------- */
 /*                             ElementResult                           */
@@ -28847,7 +28569,6 @@ OpenAjax.a11y.ElementResult = function (rule_result, result_value, cache_item, m
 
 };
 
-
  /**
  * @method getRule
  *
@@ -28861,7 +28582,6 @@ OpenAjax.a11y.ElementResult = function (rule_result, result_value, cache_item, m
 OpenAjax.a11y.ElementResult.prototype.getRule = function () {
    return this.getRuleResult().getRule();
 };
-
 
 
  /**
@@ -28891,7 +28611,6 @@ OpenAjax.a11y.ElementResult.prototype.getRuleResult = function () {
 OpenAjax.a11y.ElementResult.prototype.getElementIdentifier = function () {
    return this.element_identifier;
 };
-
 
  /**
  * @method getResultValue
@@ -28928,7 +28647,6 @@ OpenAjax.a11y.ElementResult.prototype.getResultValue = function () {
 OpenAjax.a11y.ElementResult.prototype.getResultValueNLS = function () {
   return OpenAjax.a11y.nls.Cache.getElementResultValueNLS(this.result_value);
 };
-
 
 
  /**
@@ -28970,7 +28688,6 @@ OpenAjax.a11y.ElementResult.prototype.computeMessage = function () {
 
   // If no message id return the empty string
   if (this.message_id.length === 0) return "";
-
 
 //  OpenAjax.a11y.logger.debug("Rule: " + rule_id);
 
@@ -29083,7 +28800,6 @@ OpenAjax.a11y.ElementResult.prototype.getElementInfoPrimary = function () {
 
 };
 
-
 /**
  * @method getElementInfoSecondaryArray
  *
@@ -29116,7 +28832,6 @@ OpenAjax.a11y.ElementResult.prototype.getElementInfoSecondaryArray = function ()
 };
 
 
-
 /**
  * @method getOrdinalPosition
  *
@@ -29139,7 +28854,6 @@ OpenAjax.a11y.ElementResult.prototype.getOrdinalPosition = function () {
   return position;
 
 };
-
 
 /**
  * @method getDOMElement
@@ -29305,7 +29019,6 @@ OpenAjax.a11y.ElementResult.prototype.getAccessibleName = function () {
 
 };
 
-
 /**
  * @method getRelatedElementsArray
  *
@@ -29322,7 +29035,6 @@ OpenAjax.a11y.ElementResult.prototype.getRelatedElementsArray = function () {
 
 };
 
-
 /**
  * @method toString
  *
@@ -29338,7 +29050,6 @@ OpenAjax.a11y.ElementResult.prototype.toString = function () {
   return this.related_elements;
 
 };
-
 
 /**
  * @method toJSON
@@ -29409,7 +29120,6 @@ OpenAjax.a11y.info.RelatedElementInfo = function (identifier, node) {
      get element_identifier() { return i;  },
      get dom_node()           { return n;  },
 
-
     toString : function() {
       return "Element: " + i;
     }
@@ -29477,7 +29187,6 @@ OpenAjax.a11y.RelatedElements.prototype.getRelatedElementsArray = function () {
   return this.related_elements_info;
 };
 
-
 /**
  * @method toString
  *
@@ -29498,7 +29207,7 @@ OpenAjax.a11y.RelatedElements.prototype.toString = function () {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -29632,7 +29341,6 @@ OpenAjax.a11y.FilteredCacheItemResults.prototype.isTree = function() {
   return this.is_tree;
 };
 
-
  /**
  * @method getElementResultSummary
  *
@@ -29663,7 +29371,6 @@ OpenAjax.a11y.FilteredCacheItemResults.prototype.getRuleResultsSummary = functio
   return this.rule_results_summary;
 
 };
-
 
 
 
@@ -29860,7 +29567,6 @@ OpenAjax.a11y.FilteredCacheItemResults.prototype.filterCacheItemsByElementResult
 
 };
 
-
 /**
  * @method filterCacheItemsByElementResultsFromTree
  *
@@ -29943,7 +29649,6 @@ OpenAjax.a11y.FilteredCacheItemResults.prototype.filterCacheItemsByElementResult
 
 };
 
-
 /**
  * @method toJSON
  *
@@ -29991,7 +29696,6 @@ OpenAjax.a11y.FilteredCacheItemResults.prototype.toJSON = function(prefix, eleme
   json += prefix + "  \"eval_url\"      : " + JSON.stringify(eval_url)   + ",";
   json += prefix + "  \"eval_date\"     : " + JSON.stringify(eval_date)  + ",";
   json += prefix + "  \"eval_time\"     : " + JSON.stringify(eval_time)  + ",";
-
 
   if (this.is_tree) json += prefix + "  \"is_tree\" : true,";
   else json += prefix + "  \"is_tree\" : false,";
@@ -30146,7 +29850,6 @@ OpenAjax.a11y.FilteredCacheItemResults.prototype.toCSV = function(title) {
   return csv;
 };
 
-
 /* ---------------------------------------------------------------- */
 /*                           CacheItemResult                        */
 /* ---------------------------------------------------------------- */
@@ -30244,7 +29947,6 @@ OpenAjax.a11y.FilteredCacheItemResults.prototype.toCSV = function(title) {
     return node_results_len;
   }
 
-
   this.cache_item = cache_item;
 
   this.filtered_node_results     = [];
@@ -30282,7 +29984,6 @@ OpenAjax.a11y.FilteredCacheItemResults.prototype.toCSV = function(title) {
 
   this.node_result_summary = rs;
 
-
 };
 
 /**
@@ -30303,7 +30004,6 @@ OpenAjax.a11y.CacheItemResult.prototype.addChildCacheItemResult = function(cache
   }
 
 };
-
 
 /**
  * @method isTree
@@ -30335,7 +30035,6 @@ OpenAjax.a11y.CacheItemResult.prototype.getCacheItem = function() {
   return this.cache_item;
 
 };
-
 
 /**
  * @method getElementResultSummary
@@ -30396,7 +30095,6 @@ OpenAjax.a11y.CacheItemResult.prototype.getHighestResultValueConstant = function
 
 };
 
-
 /**
  * @method getElementResults
  *
@@ -30428,7 +30126,6 @@ OpenAjax.a11y.CacheItemResult.prototype.getOrdinalPosition = function() {
   return this.ordinal_position;
 
 };
-
 
 /**
  * @method toJSON
@@ -30515,7 +30212,7 @@ OpenAjax.a11y.CacheItemResult.prototype.toJSON = function(prefix) {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -30524,11 +30221,9 @@ OpenAjax.a11y.CacheItemResult.prototype.toJSON = function(prefix) {
  * limitations under the License.
  */
 
-
 /* ---------------------------------------------------------------- */
 /*                      RuleGroupResult                             */
 /* ---------------------------------------------------------------- */
-
 
 /**
  * @constructor RuleGroupResult
@@ -30557,7 +30252,6 @@ OpenAjax.a11y.CacheItemResult.prototype.toJSON = function(prefix) {
  *                                                           the group
  */
 
-
 OpenAjax.a11y.RuleGroupResult = function(eval_result, title, url, desc) {
 
   if (typeof title !== 'string') title = "no title";
@@ -30575,7 +30269,6 @@ OpenAjax.a11y.RuleGroupResult = function(eval_result, title, url, desc) {
   this.implementation_nls = "";
 
 };
-
 
 /**
  * @method getEvaluationResult
@@ -30604,7 +30297,6 @@ OpenAjax.a11y.RuleGroupResult.prototype.getEvaluationResult = function () {
 OpenAjax.a11y.RuleGroupResult.prototype.getImplementationScore = function () {
   return this.rule_results_summary.implementation_score;
 };
-
 
 /**
  * @method getImplementationValue
@@ -30684,7 +30376,6 @@ OpenAjax.a11y.RuleGroupResult.prototype.getRuleResultsArray = function () {
 };
 
 
-
 /**
  * @method getRuleResultsSummary
  *
@@ -30714,7 +30405,6 @@ OpenAjax.a11y.RuleGroupResult.prototype.getRuleResultsSummary = function () {
 OpenAjax.a11y.RuleGroupResult.prototype.getRuleGroupInfo = function () {
   return this.rule_group_information;
 };
-
 
 /**
  * @method hasRuleResults
@@ -30750,7 +30440,6 @@ OpenAjax.a11y.RuleGroupResult.prototype.hasRules = function () {
 
 };
 
-
 /**
  * @method addRuleResult
  * @private
@@ -30771,7 +30460,6 @@ OpenAjax.a11y.RuleGroupResult.prototype.addRuleResult = function(rule_result) {
   else this.getRuleGroupInfo().incRecommendedRuleCount();
 
 };
-
 
 /**
  * @method toJSON
@@ -30852,7 +30540,6 @@ OpenAjax.a11y.RuleGroupResult.prototype.toJSON = function(prefix, flag) {
 
 
 
-
 /*
  * Copyright 2011-2018 OpenAjax Alliance
  *
@@ -30860,7 +30547,7 @@ OpenAjax.a11y.RuleGroupResult.prototype.toJSON = function(prefix, flag) {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -30959,7 +30646,6 @@ OpenAjax.a11y.nls.Cache = function() {
       return cache_nls[locale].rule_result_nls[result_value];
     },
 
-
     /**
      * @method getLabelAndValueNLS
      *
@@ -31003,7 +30689,6 @@ OpenAjax.a11y.nls.Cache = function() {
           if (value !== "") info.value = value;
           else info.value = "no " + info.label + " defined";
           break;
-
 
         case 'object':
 
@@ -31183,7 +30868,6 @@ OpenAjax.a11y.nls.Cache = function() {
       return locale_nls.boolean_values.false_value;
     },
 
-
     /**
      * @method getNLSMissingLabelMessage
      *
@@ -31276,7 +30960,6 @@ OpenAjax.a11y.nls.Cache = function() {
       return label_style;
     },
 
-
     /**
      * @method addPropertyIfDefined
      *
@@ -31299,7 +30982,6 @@ OpenAjax.a11y.nls.Cache = function() {
       } // endif
 
     },
-
 
     /**
      * @method addPropertyIfUnefined
@@ -31380,7 +31062,6 @@ OpenAjax.a11y.nls.Cache = function() {
 
     },
 
-
     /**
      * @method toJSON
      *
@@ -31433,7 +31114,7 @@ OpenAjax.a11y.nls.Cache = function() {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -31443,7 +31124,6 @@ OpenAjax.a11y.nls.Cache = function() {
  */
 
 OpenAjax.a11y.nls = OpenAjax.a11y.nls || {};
-
 
 /* ---------------------------------------------------------------- */
 /*                       Rule Categories                            */
@@ -31482,7 +31162,6 @@ OpenAjax.a11y.nls.RuleCategories = function() {
 
       rcs_nls[loc] = new OpenAjax.a11y.nls.RuleCategoriesNLS(loc, nls_info.abbreviation, nls_info.title, nls_info.url, nls_info.rule_categories);
 
-
     },
 
     /**
@@ -31507,7 +31186,6 @@ OpenAjax.a11y.nls.RuleCategories = function() {
     }
   };
 }();
-
 
 /* ---------------------------------------------------------------- */
 /*                       RuleCategoryNLS                            */
@@ -31578,7 +31256,6 @@ OpenAjax.a11y.nls.RuleCategoriesNLS.prototype.getRuleCategory = function(id) {
 
   return null;
 };
-
 
 
 /**
@@ -31683,7 +31360,7 @@ OpenAjax.a11y.nls.RuleCategoryNLS.prototype.toJSON = function(prefix) {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -31693,7 +31370,6 @@ OpenAjax.a11y.nls.RuleCategoryNLS.prototype.toJSON = function(prefix) {
  */
 
 OpenAjax.a11y.nls = OpenAjax.a11y.nls || {};
-
 
 /* ---------------------------------------------------------------- */
 /*                       WCAG20                                     */
@@ -31815,7 +31491,6 @@ OpenAjax.a11y.nls.WCAG20 = function() {
   };
 }();
 
-
 /* ---------------------------------------------------------------- */
 /*                       WCAG20NLS                                     */
 /* ---------------------------------------------------------------- */
@@ -31855,7 +31530,6 @@ OpenAjax.a11y.nls.WCAG20NLS = function(locale, abbrev, title, url, levels, evalu
   this.principles = [];
 
 };
-
 
 /**
  * @method getNLSItemById
@@ -31906,7 +31580,6 @@ OpenAjax.a11y.nls.WCAG20NLS.prototype.getNLSItemById = function(id) {
   return null;
 };
 
-
 /**
  * @method getSuccessCriteriaLevel
  *
@@ -31946,7 +31619,6 @@ OpenAjax.a11y.nls.WCAG20NLS.prototype.getSuccessCriteriaLevel = function (sc_id)
 };
 
 
-
 /**
  * @method getWCAG20LevelNLS
  *
@@ -31968,7 +31640,6 @@ OpenAjax.a11y.nls.WCAG20NLS.prototype.getWCAG20LevelNLS = function (level) {
   return this.levels[level];
 
 };
-
 
 /**
  * @method getEvaluationLevelsNLS
@@ -32085,7 +31756,6 @@ OpenAjax.a11y.nls.WCAG20NLSPrinciple.prototype.toJSON = function(prefix) {
   return json;
 };
 
-
 /* ---------------------------------------------------------------- */
 /*                       WCAG20NLSGuideline                           */
 /* ---------------------------------------------------------------- */
@@ -32158,7 +31828,6 @@ OpenAjax.a11y.nls.WCAG20NLSGuideline.prototype.toJSON = function(prefix) {
 
   return json;
 };
-
 
 
 /* ---------------------------------------------------------------- */
@@ -32259,7 +31928,7 @@ OpenAjax.a11y.nls.WCAG20NLSSuccessCriterion.prototype.toJSON = function(prefix) 
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -32304,8 +31973,7 @@ OpenAjax.a11y.setLogger = function (logger) {
 
 // basic info about version of ruleset and rules
 OpenAjax.a11y.name = "OpenAjax Alliance Accessibility Tools Task Force";
-OpenAjax.a11y.baseUri = "http://www.openajax.org/member/wiki/Accessibility";
-
+OpenAjax.a11y.baseUri = "https://www.openajax.org/member/wiki/Accessibility";
 
 
 /*
@@ -32315,7 +31983,7 @@ OpenAjax.a11y.baseUri = "http://www.openajax.org/member/wiki/Accessibility";
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -32323,7 +31991,6 @@ OpenAjax.a11y.baseUri = "http://www.openajax.org/member/wiki/Accessibility";
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 
 /* ---------------------------------------------------------------- */
 /*                             Rule                                 */
@@ -32375,7 +32042,6 @@ OpenAjax.a11y.baseUri = "http://www.openajax.org/member/wiki/Accessibility";
 
 OpenAjax.a11y.Rule = function (rule_item, rules_nls, locale) {
 
-
   this.locale     = "en-us";
   this.rule_nls   = {};
   this.common_nls = {};
@@ -32388,7 +32054,6 @@ OpenAjax.a11y.Rule = function (rule_item, rules_nls, locale) {
   var indexes      = rule_item.wcag_primary_id.split('.');
   var gl_id = indexes[0] + "." + indexes[1];
   this.wcag_guideline_code = gl_id;
-
 
   if (rules_nls &&
       rules_nls[this.locale] &&
@@ -32469,7 +32134,6 @@ OpenAjax.a11y.Rule = function (rule_item, rules_nls, locale) {
   this.language_dependency = rule_item.language_dependency;
   this.validate            = rule_item.validate;
 
-
 };
 
 /**
@@ -32512,7 +32176,6 @@ OpenAjax.a11y.Rule.prototype.getId = function () {
 
 };
 
-
 /**
  * @method getNLS
  *
@@ -32545,7 +32208,6 @@ OpenAjax.a11y.Rule.prototype.getCommonNLS = function () {
 
 };
 
-
 /**
  * @method getIdNLS
  *
@@ -32577,7 +32239,6 @@ OpenAjax.a11y.Rule.prototype.getGuideline = function () {
    return this.wcag_guideline_id;
 
 };
-
 
 
 /**
@@ -32627,7 +32288,6 @@ OpenAjax.a11y.Rule.prototype.getCategoryInfo = function () {
   return this.rule_category_info;
 
 };
-
 
 /**
  * @method getGroup
@@ -32698,7 +32358,6 @@ OpenAjax.a11y.Rule.prototype.getScope = function () {
 
 };
 
-
 /**
  * @method getScopeNLS
  *
@@ -32718,7 +32377,6 @@ OpenAjax.a11y.Rule.prototype.getScopeNLS = function () {
 };
 
 
-
 /**
  * @method getDefinition
  *
@@ -32733,9 +32391,7 @@ OpenAjax.a11y.Rule.prototype.getScopeNLS = function () {
  */
 OpenAjax.a11y.Rule.prototype.getDefinition = function (required) {
 
-
 //  OpenAjax.a11y.logger.debug("  Rule ID: " + this.rule_id);
-
 
   var str = this.rule_nls['DEFINITION'];
 
@@ -32904,7 +32560,6 @@ OpenAjax.a11y.Rule.prototype.getTargetResourcePrimaryProperty = function () {
 
 };
 
-
 /**
  * @method getTargetResourceSecondaryProperties
  *
@@ -32922,7 +32577,6 @@ OpenAjax.a11y.Rule.prototype.getTargetResourceSecondaryProperties = function () 
   return [];
 
 };
-
 
 /**
  * @method getTechniques
@@ -33001,7 +32655,6 @@ OpenAjax.a11y.Rule.prototype.getManualCheckProcedures = function () {
 };
 
 
-
 /**
  * @method getInformationalLinks
  *
@@ -33053,7 +32706,6 @@ OpenAjax.a11y.Rule.prototype.getInformationalLinks = function () {
   return [];
 
 };
-
 
 /**
  * @method getPrimarySuccessCriterion
@@ -33136,7 +32788,6 @@ OpenAjax.a11y.Rule.prototype.getWCAG20Level = function () {
 
 };
 
-
 /**
  * @method toJSON
  *
@@ -33207,7 +32858,6 @@ OpenAjax.a11y.Rule.prototype.toJSON = function (prefix, required) {
 
   }
 
-
   function addListOfStrings(name, list, last) {
 
     json += prefix + "    \"" + name + "\" : [\n";
@@ -33224,7 +32874,6 @@ OpenAjax.a11y.Rule.prototype.toJSON = function (prefix, required) {
     else json += prefix + "    ],\n";
 
   }
-
 
 
   function addInformationalLinks(last) {
@@ -33274,7 +32923,6 @@ OpenAjax.a11y.Rule.prototype.toJSON = function (prefix, required) {
     else json += "\n" + prefix + "    },\n";
 
   }
-
 
 
 
@@ -33334,7 +32982,6 @@ OpenAjax.a11y.Rule.prototype.toJSON = function (prefix, required) {
   return json;
 
 };
-
 
 /* ---------------------------------------------------------------- */
 /*                             RuleManager                                */
@@ -33612,7 +33259,6 @@ OpenAjax.a11y.RuleManager = function () {
    };
 }();
 
-
 /*
  * Copyright 2011-2018 OpenAjax Alliance
  *
@@ -33620,7 +33266,7 @@ OpenAjax.a11y.RuleManager = function () {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -33656,7 +33302,6 @@ OpenAjax.a11y.RulesetFactory = {
    *
    * @return  {RulesetFactory}  see description
    */
-
 
   newInstance : function() {
     var ruleset_info = null;
@@ -33781,7 +33426,6 @@ OpenAjax.a11y.RulesetFactory = {
 };
 
 
-
 /* ---------------------------------------------------------------- */
 /*                       Ruleset                              */
 /* ---------------------------------------------------------------- */
@@ -33894,7 +33538,6 @@ OpenAjax.a11y.Ruleset = function (ruleset_info, rule_mapping_info, loc) {
   else {
     OpenAjax.a11y.logger.warning("[OpenAjax A11y][Ruleset]  ** Ruleset " + id + " missing author URL");
   }
-
 
   // Check for localized ruleset title
 
@@ -34140,7 +33783,6 @@ OpenAjax.a11y.Ruleset = function (ruleset_info, rule_mapping_info, loc) {
 
       } // end function
 
-
       if (typeof prefix !== 'string' || prefix.length === 0) {
         prefix = "";
       }
@@ -34193,7 +33835,6 @@ OpenAjax.a11y.Ruleset = function (ruleset_info, rule_mapping_info, loc) {
 };
 
 
-
 /* ---------------------------------------------------------------- */
 /*                       RuleMapping                          */
 /* ---------------------------------------------------------------- */
@@ -34216,13 +33857,11 @@ OpenAjax.a11y.Ruleset = function (ruleset_info, rule_mapping_info, loc) {
  * @property  {Boolean}  required  - Boolean indicating if the rule is enabled or disabled
  */
 
-
 OpenAjax.a11y.RuleMapping = function (rule, required, enabled) {
    this.rule         = rule;
    this.required     = required;
    this.enabled      = enabled;
 };
-
 
 
 /* ---------------------------------------------------------------- */
@@ -34345,7 +33984,7 @@ OpenAjax.a11y.RulesetManager = function() {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -34353,7 +33992,6 @@ OpenAjax.a11y.RulesetManager = function() {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 
 /* ---------------------------------------------------------------- */
 /*                       EvaluatorFactory                           */
@@ -34440,7 +34078,6 @@ OpenAjax.a11y.EvaluatorFactory = {
           }
           break;
 
-
         case 'eventprocessing':
 
           if (typeof value === 'string') {
@@ -34500,7 +34137,6 @@ OpenAjax.a11y.EvaluatorFactory = {
     };
   }
 };
-
 
 /* ---------------------------------------------------------------- */
 /*                       Evaluator                                  */
@@ -34660,7 +34296,7 @@ OpenAjax.a11y.Evaluator = function (r, blt, ep, grps) {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -34672,7 +34308,6 @@ OpenAjax.a11y.Evaluator = function (r, blt, ep, grps) {
 /* -------------------------------------------------------------------------------------- */
 /* OpenAjax Alliance Cache Properties and Values National Language Support (NLS): English */
 /* -------------------------------------------------------------------------------------- */
-
 
 OpenAjax.a11y.nls.Cache.addCacheNLSFromJSON('en-us', {
 
@@ -34709,7 +34344,6 @@ OpenAjax.a11y.nls.Cache.addCacheNLSFromJSON('en-us', {
     rule      : "rule",
 
     noAction  : "No action needed",
-
 
     /*
      * Relative implementation priorities of complying to rule requirements
@@ -34874,7 +34508,6 @@ OpenAjax.a11y.nls.Cache.addCacheNLSFromJSON('en-us', {
         description : 'If element is part of an aria widget'
       },
 
-
     /*
      * Calculated values based on CSS properties
      */
@@ -34898,7 +34531,6 @@ OpenAjax.a11y.nls.Cache.addCacheNLSFromJSON('en-us', {
         description : 'Is the element and its content visible on screen',
         values : ['undefined', 'unknown', 'hidden', 'visible']
       },
-
 
     /*
      * Run time CSS style properties
@@ -34976,7 +34608,6 @@ OpenAjax.a11y.nls.Cache.addCacheNLSFromJSON('en-us', {
         label       : 'src',
         description : 'Value of the src attribute'
       },
-
 
     /*
      * Control Cache object attributes
@@ -35263,7 +34894,7 @@ OpenAjax.a11y.nls.Cache.addCacheNLSFromJSON('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -35370,7 +35001,7 @@ OpenAjax.a11y.nls.RuleCategories.addNLS('en-us', {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -35384,12 +35015,11 @@ OpenAjax.a11y.nls.RuleCategories.addNLS('en-us', {
 /* --------------------------------------------------------------------------- */
 
 
-
 OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
 
   abbreviation : 'WCAG 2.0',
   title        : 'Web Content Accessibility Guidelines 2.0',
-  url          : 'http://www.w3c.org/TR/WCAG20',
+  url          : 'https://www.w3c.org/TR/WCAG20',
 
   level : "Level ",
 
@@ -35400,7 +35030,7 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
   all_guidelines : {
       title       : 'All Guidelines',
       description : 'All the rules related to WCAG 2.0.',
-      url_spec    : 'http://www.w3.org/TR/WCAG20/'
+      url_spec    : 'https://www.w3.org/TR/WCAG20/'
   },
 
   principles : {
@@ -35411,7 +35041,7 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
       id          : OpenAjax.a11y.WCAG20_PRINCIPLE.P_1,
       title       : '1. Perceivable',
       description : 'Information and user interface components must be presentable to users in ways they can perceive.',
-      url_spec    : 'http://www.w3.org/TR/WCAG20/#perceivable',
+      url_spec    : 'https://www.w3.org/TR/WCAG20/#perceivable',
       guidelines : {
         //
         // Guideline 1.1 Text Alternatives
@@ -35420,7 +35050,7 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
           id          : OpenAjax.a11y.WCAG20_GUIDELINE.G_1_1,
           title       : '1.1 Text Alternatives',
           description : 'Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.',
-          url_spec    : 'http://www.w3.org/TR/WCAG20/#text-equiv',
+          url_spec    : 'https://www.w3.org/TR/WCAG20/#text-equiv',
           success_criteria : {
             //
             // Success Criterion 1.1.1 Non-text Content: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below.
@@ -35430,9 +35060,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.A,
               title          : '1.1.1 Non-text Content',
               description    : 'All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#text-equiv',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-text-equiv-all',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#text-equiv',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-text-equiv-all',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html',
               references     : []
             }
           }
@@ -35444,7 +35074,7 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
           id          : OpenAjax.a11y.WCAG20_GUIDELINE.G_1_2,
           title       : '1.2 Time-based Media',
           description : 'Provide alternatives for time-based media.',
-          url_spec    : 'http://www.w3.org/TR/WCAG20/#media-equiv',
+          url_spec    : 'https://www.w3.org/TR/WCAG20/#media-equiv',
           success_criteria : {
             //
             // Success Criterion 1.2.1 Audio-only and Video-only (Prerecorded)
@@ -35454,9 +35084,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level       : OpenAjax.a11y.WCAG20_LEVEL.A,
               title       : '1.2.1 Audio-only and Video-only (Prerecorded)',
               description : 'For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such: (1) Prerecorded Audio-only: An alternative for time-based media is provided that presents equivalent information for prerecorded audio-only content. (2) Prerecorded Video-only: Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content.',
-              url_spec    : 'http://www.w3.org/TR/WCAG20/#media-equiv-av-only-alt',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-av-only-alt',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html',
+              url_spec    : 'https://www.w3.org/TR/WCAG20/#media-equiv-av-only-alt',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-av-only-alt',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html',
               references     : []
             },
             //
@@ -35467,9 +35097,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level       : OpenAjax.a11y.WCAG20_LEVEL.A,
               title       : '1.2.2 Captions (Prerecorded)',
               description : 'Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.',
-              url_spec    : 'http://www.w3.org/TR/WCAG20/#media-equiv-captions',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-captions',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html',
+              url_spec    : 'https://www.w3.org/TR/WCAG20/#media-equiv-captions',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-captions',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html',
               references     : []
             },
             //
@@ -35480,9 +35110,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level       : OpenAjax.a11y.WCAG20_LEVEL.A,
               title       : '1.2.3 Audio Description or Media Alternative (Prerecorded)',
               description : 'An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such.',
-              url_spec    : 'http://www.w3.org/TR/WCAG20/#media-equiv-audio-desc',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html',
+              url_spec    : 'https://www.w3.org/TR/WCAG20/#media-equiv-audio-desc',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html',
               references     : []
             },
             //
@@ -35493,9 +35123,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level       : OpenAjax.a11y.WCAG20_LEVEL.AA,
               title       : '1.2.4 Captions (Live)',
               description : 'Captions are provided for all live audio content in synchronized media. ',
-              url_spec    : 'http://www.w3.org/TR/WCAG20/#media-equiv-real-time-captions',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-real-time-captions',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html',
+              url_spec    : 'https://www.w3.org/TR/WCAG20/#media-equiv-real-time-captions',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-real-time-captions',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html',
               references     : []
             },
             //
@@ -35506,9 +35136,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level       : OpenAjax.a11y.WCAG20_LEVEL.AA,
               title       : '1.2.5 Audio Description (Prerecorded)',
               description : 'Audio description is provided for all prerecorded video content in synchronized media.',
-              url_spec    : 'http://www.w3.org/TR/WCAG20/#media-equiv-audio-desc-only',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc-only',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html',
+              url_spec    : 'https://www.w3.org/TR/WCAG20/#media-equiv-audio-desc-only',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc-only',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html',
               references     : []
             },
             //
@@ -35519,9 +35149,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level       : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title       : '1.2.6 Sign Language (Prerecorded)',
               description : 'Sign language interpretation is provided for all prerecorded audio content in synchronized media.',
-              url_spec    : 'http://www.w3.org/TR/WCAG20/#media-equiv-sign',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-sign',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-sign.html',
+              url_spec    : 'https://www.w3.org/TR/WCAG20/#media-equiv-sign',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-sign',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-sign.html',
               references     : []
             },
             //
@@ -35532,9 +35162,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level       : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title       : '1.2.7 Extended Audio Description (Prerecorded)',
               description : 'Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video, extended audio description is provided for all prerecorded video content in synchronized media.',
-              url_spec    : 'http://www.w3.org/TR/WCAG20/#media-equiv-extended-ad',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-extended-ad',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html',
+              url_spec    : 'https://www.w3.org/TR/WCAG20/#media-equiv-extended-ad',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-extended-ad',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html',
               references     : []
             },
             //
@@ -35545,9 +35175,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level       : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title       : '1.2.8 Media Alternative (Prerecorded)',
               description : 'An alternative for time-based media is provided for all prerecorded synchronized media and for all prerecorded video-only media.',
-              url_spec    : 'http://www.w3.org/TR/WCAG20/#media-equiv-text-doc',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-text-doc',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-text-doc.html',
+              url_spec    : 'https://www.w3.org/TR/WCAG20/#media-equiv-text-doc',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-text-doc',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-text-doc.html',
               references     : []
             },
             //
@@ -35558,9 +35188,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level       : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title       : '1.2.9 Audio-only (Live)',
               description : 'An alternative for time-based media that presents equivalent information for live audio-only content is provided. ',
-              url_spec    : 'http://www.w3.org/TR/WCAG20/#media-equiv-live-audio-only',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-live-audio-only',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-live-audio-only.html',
+              url_spec    : 'https://www.w3.org/TR/WCAG20/#media-equiv-live-audio-only',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-live-audio-only',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-live-audio-only.html',
               references     : []
             }
           }
@@ -35572,7 +35202,7 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
           id          : OpenAjax.a11y.WCAG20_GUIDELINE.G_1_3,
           title       : '1.3 Adaptable',
           description : 'Create content that can be presented in different ways (for example simpler layout) without losing information or structure.',
-          url_spec    : 'http://www.w3.org/TR/WCAG20/#content-structure-separation',
+          url_spec    : 'https://www.w3.org/TR/WCAG20/#content-structure-separation',
           success_criteria : {
             //
             // Success Criterion 1.3.1 Info and Relationships
@@ -35582,9 +35212,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level       : OpenAjax.a11y.WCAG20_LEVEL.A,
               title       : '1.3.1 Info and Relationships',
               description : 'Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.',
-              url_spec    : 'http://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html',
+              url_spec    : 'https://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-content-structure-separation-programmatic',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html',
               references     : []
             },
             //
@@ -35595,9 +35225,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level       : OpenAjax.a11y.WCAG20_LEVEL.A,
               title       : '1.3.2 Meaningful Sequence',
               description : 'When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.',
-              url_spec    : 'http://www.w3.org/TR/WCAG20/#content-structure-separation-sequence',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-sequence',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-sequence.html',
+              url_spec    : 'https://www.w3.org/TR/WCAG20/#content-structure-separation-sequence',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-content-structure-separation-sequence',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-sequence.html',
               references     : []
             },
             //
@@ -35608,9 +35238,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level       : OpenAjax.a11y.WCAG20_LEVEL.A,
               title       : '1.3.3 Sensory Characteristics',
               description : 'Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, size, visual location, orientation, or sound.',
-              url_spec    : 'http://www.w3.org/TR/WCAG20/#content-structure-separation-understanding',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-understanding',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html',
+              url_spec    : 'https://www.w3.org/TR/WCAG20/#content-structure-separation-understanding',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-content-structure-separation-understanding',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html',
               references     : []
             }
           }
@@ -35622,7 +35252,7 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
           id          : OpenAjax.a11y.WCAG20_GUIDELINE.G_1_4,
           title       : '1.4 Distinguishable',
           description : 'Make it easier for users to see and hear content including separating foreground from background.',
-          url_spec    : 'http://www.w3.org/TR/WCAG20/#visual-audio-contrast',
+          url_spec    : 'https://www.w3.org/TR/WCAG20/#visual-audio-contrast',
           success_criteria : {
             //
             // Success Criterion 1.4.1 Use of Color
@@ -35632,9 +35262,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.A,
               title          : '1.4.1 Use of Color',
               description    : 'Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#visual-audio-contrast-without-color',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-without-color',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#visual-audio-contrast-without-color',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#use-of-color',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html',
               references     : []
             },
             //
@@ -35645,9 +35275,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.A,
               title          : '1.4.2 Audio Control',
               description    : 'If any audio on a Web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#visual-audio-contrast-dis-audio',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-dis-audio',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-dis-audio.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#visual-audio-contrast-dis-audio',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0?versions=2.0#visual-audio-contrast-dis-audio',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-dis-audio.html',
               references     : []
             },
             //
@@ -35658,9 +35288,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AA,
               title          : '1.4.3 Contrast (Minimum)',
               description    : 'The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following: \n(1) Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 3:1;\n(2) Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.\n(3) Logotypes: Text that is part of a logo or brand name has no minimum contrast requirement.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-contrast',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0?versions=2.0#visual-audio-contrast-contrast',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html',
               references     : []
             },
             //
@@ -35671,9 +35301,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AA,
               title          : '1.4.4 Resize text',
               description    : 'Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#visual-audio-contrast-scale',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-scale',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#visual-audio-contrast-scale',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0?versions=2.0#visual-audio-contrast-scale',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html',
               references     : []
             },
             //
@@ -35684,9 +35314,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AA,
               title          : '1.4.5 Images of Text',
               description    : 'If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text except for the following: (1) Customizable: The image of text can be visually customized to the user\'s requirements; (2) Essential: A particular presentation of text is essential to the information being conveyed.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#visual-audio-contrast-text-presentation',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-text-presentation',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#visual-audio-contrast-text-presentation',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0?versions=2.0#visual-audio-contrast-text-presentation',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html',
               references     : []
             },
             //
@@ -35697,9 +35327,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title          : '1.4.6 Contrast (Enhanced)',
               description    : 'The visual presentation of text and images of text has a contrast ratio of at least 7:1, except for the following: (1) Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 4.5:1; (2) Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement. (3) Logotypes: Text that is part of a logo or brand name has no minimum contrast requirement.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#visual-audio-contrast7',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast7',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#visual-audio-contrast7',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0?versions=2.0#visual-audio-contrast7',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html',
               references     : []
             },
             //
@@ -35710,9 +35340,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title          : '1.4.7 Low or No Background Audio',
               description    : 'For prerecorded audio-only content that (1) contains primarily speech in the foreground, (2) is not an audio CAPTCHA or audio logo, and (3) is not vocalization intended to be primarily musical expression such as singing or rapping, at least one of the following is true: (4a) No Background: The audio does not contain background sounds. (4b) Turn Off: The background sounds can be turned off. (4c) 20 dB: The background sounds are at least 20 decibels lower than the foreground speech content, with the exception of occasional sounds that last for only one or two seconds.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#visual-audio-contrast-noaudio',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-noaudio',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-noaudio.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#visual-audio-contrast-noaudio',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0?versions=2.0#visual-audio-contrast-noaudio',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-noaudio.html',
               references     : []
             },
             //
@@ -35723,9 +35353,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title          : '1.4.8 Visual Presentation',
               description    : 'For the visual presentation of blocks of text, a mechanism is available to achieve the following: (1) Foreground and background colors can be selected by the user; (2) Width is no more than 80 characters or glyphs (40 if CJK); (3) Text is not justified (aligned to both the left and the right margins); (4) Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing; (5) Text can be resized without assistive technology up to 200 percent in a way that does not require the user to scroll horizontally to read a line of text on a full-screen window.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#visual-audio-contrast-visual-presentation',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-visual-presentation',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#visual-audio-contrast-visual-presentation',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0?versions=2.0#visual-audio-contrast-visual-presentation',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html',
               references     : []
             },
             //
@@ -35736,9 +35366,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title          : '1.4.9 Images of Text (No Exception)',
               description    : 'Images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#visual-audio-contrast-text-images',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-text-images',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#visual-audio-contrast-text-images',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0?versions=2.0#visual-audio-contrast-text-images',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html',
               references     : []
             }
           }
@@ -35752,7 +35382,7 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
       id          : OpenAjax.a11y.WCAG20_PRINCIPLE.P_2,
       title       : '2. Operable',
       description : 'User interface components and navigation must be operable.',
-      url_spec    : 'http://www.w3.org/TR/WCAG20/#operable',
+      url_spec    : 'https://www.w3.org/TR/WCAG20/#operable',
       guidelines : {
         //
         // Guideline 2.1 Keyboard Accessible
@@ -35761,7 +35391,7 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
           id          : OpenAjax.a11y.WCAG20_GUIDELINE.G_2_1,
           title       : '2.1 Keyboard Accessible',
           description : 'Make all functionality available from a keyboard.',
-          url_spec    : 'http://www.w3.org/TR/WCAG20/#keyboard-operation',
+          url_spec    : 'https://www.w3.org/TR/WCAG20/#keyboard-operation',
           success_criteria : {
             //
             // Success Criterion 2.1.1 Keyboard
@@ -35771,9 +35401,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.A,
               title          : '2.1.1 Keyboard',
               description    : 'All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user\'s movement and not just the endpoints.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#keyboard-operation-keyboard-operable',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-keyboard-operation-keyboard-operable',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#keyboard-operation-keyboard-operable',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-keyboard-operation-keyboard-operable',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html',
               references     : []
             },
             //
@@ -35784,9 +35414,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.A,
               title          : '2.1.2 No Keyboard Trap',
               description    : 'If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#keyboard-operation-trapping',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-keyboard-operation-trapping',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-trapping.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#keyboard-operation-trapping',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-keyboard-operation-trapping',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-trapping.html',
               references     : []
             },
             //
@@ -35797,9 +35427,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title          : '2.1.3 Keyboard (No Exception)',
               description    : 'All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#keyboard-operation-all-funcs',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-keyboard-operation-all-funcs',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-all-funcs.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#keyboard-operation-all-funcs',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-keyboard-operation-all-funcs',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-all-funcs.html',
               references     : []
             }
           }
@@ -35811,7 +35441,7 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
           id          : OpenAjax.a11y.WCAG20_GUIDELINE.G_2_2,
           title       : '2.2 Enough Time',
           description : 'Provide users enough time to read and use content.',
-          url_spec    : 'http://www.w3.org/TR/WCAG20/#time-limits',
+          url_spec    : 'https://www.w3.org/TR/WCAG20/#time-limits',
           success_criteria : {
             //
             // Success Criterion 2.2.1 Timing Adjustable
@@ -35821,9 +35451,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.A,
               title          : '2.2.1 Timing Adjustable',
               description    : 'For each time limit that is set by the content, at least one of the following is true: (1) Turn off: The user is allowed to turn off the time limit before encountering it; or (2) Adjust: The user is allowed to adjust the time limit before encountering it over a wide range that is at least ten times the length of the default setting; or (3) Extend: The user is warned before time expires and given at least 20 seconds to extend the time limit with a simple action (for example, "press the space bar"), and the user is allowed to extend the time limit at least ten times; or (4) Real-time Exception: The time limit is a required part of a real-time event (for example, an auction), and no alternative to the time limit is possible; or (5) Essential Exception: The time limit is essential and extending it would invalidate the activity; or (6) 20 Hour Exception: The time limit is longer than 20 hours.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#time-limits-required-behaviors',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-required-behaviors',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#time-limits-required-behaviors',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-time-limits-required-behaviors',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html',
               references     : []
             },
             //
@@ -35834,9 +35464,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.A,
               title          : '2.2.2 Pause, Stop, Hide',
               description    : 'For moving, blinking, scrolling, or auto-updating information, all of the following are true: Moving, blinking, scrolling: For any moving, blinking or scrolling information that (1) starts automatically, (2) lasts more than five seconds, and (3) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is essential; and Auto-updating: For any auto-updating information that (1) starts automatically and (2) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#time-limits-pause',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-pause',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#time-limits-pause',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-time-limits-pause',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html',
               references     : []
             },
             //
@@ -35847,9 +35477,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title          : '2.2.3 No Timing',
               description    : 'Timing is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#time-limits-no-exceptions',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-no-exceptions',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-no-exceptions.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#time-limits-no-exceptions',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-time-limits-no-exceptions',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-no-exceptions.html',
               references     : []
             },
             //
@@ -35860,9 +35490,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title          : '2.2.4 Interruptions',
               description    : 'Interruptions can be postponed or suppressed by the user, except interruptions involving an emergency.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#time-limits-postponed',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-postponed',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-postponed.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#time-limits-postponed',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-time-limits-postponed',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-postponed.html',
               references     : []
             },
             //
@@ -35873,9 +35503,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title          : '2.2.5 Re-authenticating',
               description    : 'When an authenticated session expires, the user can continue the activity without loss of data after re-authenticating.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#time-limits-server-timeout',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-server-timeout',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-server-timeout.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#time-limits-server-timeout',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-time-limits-server-timeout',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-server-timeout.html',
               references     : []
             }
           }
@@ -35887,7 +35517,7 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
           id          : OpenAjax.a11y.WCAG20_GUIDELINE.G_2_3,
           title       : '2.3 Seizures',
           description : 'Do not design content in a way that is known to cause seizures.',
-          url_spec    : 'http://www.w3.org/TR/WCAG20/#seizure',
+          url_spec    : 'https://www.w3.org/TR/WCAG20/#seizure',
           success_criteria : {
             //
             // Success Criterion 2.3.1 Three Flashes or Below Threshold
@@ -35897,9 +35527,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.A,
               title          : '2.3.1 Three Flashes or Below Threshold',
               description    : 'Web pages do not contain anything that flashes more than three times in any one second period, or the flash is below the general flash and red flash thresholds.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#seizure-does-not-violate',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-seizure-does-not-violate',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#seizure-does-not-violate',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-seizure-does-not-violate',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html',
               references     : []
             },
             //
@@ -35910,9 +35540,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title          : '2.3.2 Three Flashes',
               description    : 'Web pages do not contain anything that flashes more than three times in any one second period.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#seizure-three-times',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-seizure-three-times',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-three-times.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#seizure-three-times',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-seizure-three-times',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-three-times.html',
               references     : []
             }
           }
@@ -35924,7 +35554,7 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
           id          : OpenAjax.a11y.WCAG20_GUIDELINE.G_2_4,
           title       : '2.4 Navigable',
           description : 'Provide ways to help users navigate, find content, and determine where they are.',
-          url_spec    : 'http://www.w3.org/TR/WCAG20/#navigation-mechanisms',
+          url_spec    : 'https://www.w3.org/TR/WCAG20/#navigation-mechanisms',
           success_criteria : {
             //
             // Success Criterion 2.4.1 Bypass Blocks
@@ -35934,9 +35564,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.A,
               title          : '2.4.1 Bypass Blocks',
               description    : 'A mechanism is available to bypass blocks of content that are repeated on multiple Web pages.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#navigation-mechanisms-skip',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-skip',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#navigation-mechanisms-skip',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-skip',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html',
               references     : []
             },
             //
@@ -35947,9 +35577,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.A,
               title          : '2.4.2 Page Titled',
               description    : 'Web pages have titles that describe topic or purpose.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#navigation-mechanisms-title',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-title',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#navigation-mechanisms-title',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-title',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html',
               references     : []
             },
             //
@@ -35960,9 +35590,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.A,
               title          : '2.4.3 Focus Order',
               description    : 'If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-order',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-focus-order',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-order',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-focus-order',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html',
               references     : []
             },
             //
@@ -35973,9 +35603,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AA,
               title          : '2.4.4 Link Purpose (In Context)',
               description    : 'The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#navigation-mechanisms-refs',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#navigation-mechanisms-refs',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html',
               references     : []
             },
             //
@@ -35986,9 +35616,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.A,
               title          : '2.4.5 Multiple Ways',
               description    : 'More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#navigation-mechanisms-mult-loc',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-mult-loc',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#navigation-mechanisms-mult-loc',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-mult-loc',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html',
               references     : []
             },
             //
@@ -35999,9 +35629,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AA,
               title          : '2.4.6 Headings and Labels',
               description    : 'Headings and labels describe topic or purpose.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-descriptive',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-descriptive',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html',
               references     : []
             },
             //
@@ -36012,9 +35642,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AA,
               title          : '2.4.7 Focus Visible',
               description    : 'Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible. ',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-visible',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-focus-visible',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-visible',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-focus-visible',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html',
               references     : []
             },
             //
@@ -36025,9 +35655,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title          : '2.4.8 Location',
               description    : 'Information about the user\'s location within a set of Web pages is available.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#navigation-mechanisms-location',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-location',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-location.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#navigation-mechanisms-location',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-location',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-location.html',
               references     : []
             },
             //
@@ -36038,9 +35668,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title          : '2.4.9 Link Purpose (Link Only)',
               description    : 'A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#navigation-mechanisms-link',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-link',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#navigation-mechanisms-link',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-link',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html',
               references     : []
             },
             //
@@ -36051,9 +35681,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title          : '2.4.10 Section Headings',
               description    : 'Section headings are used to organize the content.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#navigation-mechanisms-headings',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-headings',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-headings.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#navigation-mechanisms-headings',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-headings',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-headings.html',
               references     : []
             }
           }
@@ -36067,7 +35697,7 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
       id          : OpenAjax.a11y.WCAG20_PRINCIPLE.P_3,
       title       : '3. Understandable',
       description : 'Information and the operation of user interface must be understandable.',
-      url_spec    : 'http://www.w3.org/TR/WCAG20/#understandable',
+      url_spec    : 'https://www.w3.org/TR/WCAG20/#understandable',
       guidelines : {
         //
         // Guideline 3.1 Readable
@@ -36076,7 +35706,7 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
           id          : OpenAjax.a11y.WCAG20_GUIDELINE.G_3_1,
           title       : '3.1 Readable',
           description : 'Make text content readable and understandable.',
-          url_spec    : 'http://www.w3.org/TR/WCAG20/#meaning',
+          url_spec    : 'https://www.w3.org/TR/WCAG20/#meaning',
           success_criteria : {
             //
             // Success Criterion 3.1.1 Language of Page
@@ -36086,9 +35716,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.A,
               title          : '3.1.1 Language of Page',
               description    : 'The default human language  of each Web page  can be programmatically determined. ',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#meaning-doc-lang-id',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-doc-lang-id',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#meaning-doc-lang-id',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-doc-lang-id',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html',
               references     : []
             },
             //
@@ -36099,9 +35729,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AA,
               title          : '3.1.2 Language of Parts',
               description    : 'The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#meaning-other-lang-id',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-other-lang-id',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#meaning-other-lang-id',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-other-lang-id',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html',
               references     : []
             },
             //
@@ -36112,9 +35742,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title          : '3.1.3 Unusual Words',
               description    : 'A mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#meaning-idioms',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-idioms',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-idioms.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#meaning-idioms',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-idioms',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-idioms.html',
               references     : []
             },
             //
@@ -36125,9 +35755,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title          : '3.1.4 Abbreviations',
               description    : 'A mechanism for identifying the expanded form or meaning of abbreviations is available. ',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#meaning-located',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-located',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-located.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#meaning-located',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-located',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-located.html',
               references     : []
             },
             //
@@ -36138,9 +35768,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title          : '3.1.5 Reading Level',
               description    : 'When text requires reading ability more advanced than the lower secondary education level after removal of proper names and titles, supplemental content, or a version that does not require reading ability more advanced than the lower secondary education level, is available. ',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#meaning-supplements',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-supplements',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-supplements.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#meaning-supplements',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-supplements',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-supplements.html',
               references     : []
             },
             //
@@ -36151,9 +35781,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title          : '3.1.6 Pronunciation',
               description    : 'A mechanism is available for identifying specific pronunciation of words where meaning of the words, in context, is ambiguous without knowing the pronunciation.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#meaning-pronunciation',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-pronunciation',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-pronunciation.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#meaning-pronunciation',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-pronunciation',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-pronunciation.html',
               references     : []
             }
           }
@@ -36165,7 +35795,7 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
           id          : OpenAjax.a11y.WCAG20_GUIDELINE.G_3_2,
           title       : '3.2 Predictable',
           description : 'Make Web pages appear and operate in predictable ways.',
-          url_spec    : 'http://www.w3.org/TR/WCAG20/#consistent-behavior',
+          url_spec    : 'https://www.w3.org/TR/WCAG20/#consistent-behavior',
           success_criteria : {
             //
             // Success Criterion 3.2.1 On Focus
@@ -36175,9 +35805,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.A,
               title          : '3.2.1 On Focus',
               description    : 'When any component receives focus, it does not initiate a change of context.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#consistent-behavior-receive-focus',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-consistent-behavior-receive-focus',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-receive-focus.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#consistent-behavior-receive-focus',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-consistent-behavior-receive-focus',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-receive-focus.html',
               references     : []
             },
             //
@@ -36188,9 +35818,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.A,
               title          : '3.2.2 On Input',
               description    : 'Changing the setting of any user interface component  does not automatically cause a change of context  unless the user has been advised of the behavior before using the component.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#consistent-behavior-unpredictable-change',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-consistent-behavior-unpredictable-change',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#consistent-behavior-unpredictable-change',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-consistent-behavior-unpredictable-change',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html',
               references     : []
             },
             //
@@ -36201,9 +35831,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AA,
               title          : '3.2.3 Consistent Navigation',
               description    : 'Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages  occur in the same relative order each time they are repeated, unless a change is initiated by the user.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#consistent-behavior-consistent-locations',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-consistent-behavior-consistent-locations',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#consistent-behavior-consistent-locations',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-consistent-behavior-consistent-locations',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html',
               references     : []
             },
             //
@@ -36214,9 +35844,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AA,
               title          : '3.2.4 Consistent Identification',
               description    : 'Components that have the same functionality within a set of Web pages are identified consistently.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#consistent-behavior-consistent-functionality',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-consistent-behavior-consistent-functionality',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-functionality.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#consistent-behavior-consistent-functionality',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-consistent-behavior-consistent-functionality',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-functionality.html',
               references     : []
             },
             //
@@ -36227,9 +35857,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title          : '3.2.5 Change on Request',
               description    : 'Changes of context are initiated only by user request or a mechanism is available to turn off such changes.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#consistent-behavior-no-extreme-changes-context',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-consistent-behavior-no-extreme-changes-context',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-no-extreme-changes-context.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#consistent-behavior-no-extreme-changes-context',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-consistent-behavior-no-extreme-changes-context',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-no-extreme-changes-context.html',
               references     : []
             }
           }
@@ -36241,7 +35871,7 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
           id          : OpenAjax.a11y.WCAG20_GUIDELINE.G_3_3,
           title       : '3.3 Input Assistance',
           description : 'Help users avoid and correct mistakes.',
-          url_spec    : 'http://www.w3.org/TR/WCAG20/#minimize-error',
+          url_spec    : 'https://www.w3.org/TR/WCAG20/#minimize-error',
           success_criteria : {
             //
             // Success Criterion 3.3.1 Error Identification
@@ -36251,9 +35881,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.A,
               title          : '3.3.1 Error Identification',
               description    : 'If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#minimize-error-identified',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-identified',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-identified.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#minimize-error-identified',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-minimize-error-identified',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-identified.html',
               references     : []
             },
             //
@@ -36264,9 +35894,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.A,
               title          : '3.3.2 Labels or Instructions',
               description    : 'Labels or instructions are provided when content requires user input.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#minimize-error-cues',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#minimize-error-cues',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-minimize-error-cues',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html',
               references     : []
             },
             //
@@ -36277,9 +35907,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AA,
               title          : '3.3.3 Error Suggestion',
               description    : 'If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#minimize-error-suggestions',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-suggestions',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#minimize-error-suggestions',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-minimize-error-suggestions',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html',
               references     : []
             },
             //
@@ -36290,9 +35920,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AA,
               title          : '3.3.4 Error Prevention (Legal, Financial, Data)',
               description    : 'For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true:',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#minimize-error-reversible',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-reversible',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#minimize-error-reversible',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-minimize-error-reversible',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html',
               references     : []
             },
             //
@@ -36303,9 +35933,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title          : '3.3.5 Help',
               description    : 'Context-sensitive help is available.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#minimize-error-context-help',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-context-help',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-context-help.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#minimize-error-context-help',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-minimize-error-context-help',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-context-help.html',
               references     : []
             },
             //
@@ -36316,9 +35946,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.AAA,
               title          : '3.3.6 Error Prevention (All)',
               description    : 'For Web pages that require the user to submit information, at least one of the following is true',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#minimize-error-reversible-all',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-reversible-all',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible-all.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#minimize-error-reversible-all',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-minimize-error-reversible-all',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible-all.html',
               references     : []
             }
           }
@@ -36332,7 +35962,7 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
       id          : OpenAjax.a11y.WCAG20_PRINCIPLE.P_4,
       title       : '4. Robust',
       description : 'Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.',
-      url_spec    : 'http://www.w3.org/TR/WCAG20/#robust',
+      url_spec    : 'https://www.w3.org/TR/WCAG20/#robust',
       guidelines : {
         //
         // Guideline 4.1 Compatible
@@ -36341,7 +35971,7 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
           id          : OpenAjax.a11y.WCAG20_GUIDELINE.G_4_1,
           title       : '4.1 Compatible',
           description : 'Maximize compatibility with current and future user agents, including assistive technologies.',
-          url_spec    : 'http://www.w3.org/TR/WCAG20/#ensure-compat',
+          url_spec    : 'https://www.w3.org/TR/WCAG20/#ensure-compat',
           success_criteria : {
             //
             // Success Criterion 4.1.1 Parsing Content
@@ -36351,9 +35981,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.A,
               title          : '4.1.1 Parsing Content',
               description    : 'In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#ensure-compat-parses',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-parses',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#ensure-compat-parses',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-ensure-compat-parses',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html',
               references     : []
             },
             //
@@ -36364,9 +35994,9 @@ OpenAjax.a11y.nls.WCAG20.addNLS('en-us', {
               level          : OpenAjax.a11y.WCAG20_LEVEL.A,
               title          : '4.1.2 Name, Role, Value',
               description    : 'For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.',
-              url_spec       : 'http://www.w3.org/TR/WCAG20/#ensure-compat-rsv',
-              url_meet       : 'http://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv',
-              url_understand : 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html',
+              url_spec       : 'https://www.w3.org/TR/WCAG20/#ensure-compat-rsv',
+              url_meet       : 'https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-ensure-compat-rsv',
+              url_understand : 'https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html',
               references     : []
             }
           }

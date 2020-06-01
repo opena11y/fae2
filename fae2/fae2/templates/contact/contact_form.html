@@ -24,7 +24,6 @@
         <option value="Other">
     </datalist>
 
-
     {% include "forms/textarea.html" with textarea=form.message rows=10 cols=80 desc="Details of the comment or feedback"%}
 
     <input type="hidden" name="status" value="NR">
@@ -33,9 +32,7 @@
     <div class="fae_button">
         <input type="submit" value="Send Feedback or Question"/>
     </div>
-
 </form>
-
 <section aria-labelledby="id_my_contacts" style="margin-top: 5em">
     <h2 id="id_my_contacts">My Feedback and Questions</h2>
 
@@ -68,14 +65,8 @@
         </tbody>
     </table>
 </section>
-
 {% endblock %}
 
 {% block javascript %}
-
 <script src="{% static 'js/form-control-focus.js' %}" type="text/javascript"></script>
-
 {% endblock %}
-
-
-
