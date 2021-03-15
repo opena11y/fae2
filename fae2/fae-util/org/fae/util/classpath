@@ -2,7 +2,7 @@
 
 echo $FAE_HOME
 
-HP=$FAE_HOME/lib/htmlunit-2.39.0/lib/*.jar
+HP=$FAE_HOME/lib/htmlunit-2.45.0/lib/*.jar
 
 echo $HP
 

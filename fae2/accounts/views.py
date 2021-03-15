@@ -716,11 +716,13 @@ class AllUserInformationView(LoginRequiredMixin, FAENavigationMixin, TemplateVie
 
         stats_users = StatsUser.objects.exclude(user__username="anonymous")
 
+        ACTIVE_DAYS = 120
+
         active = 0
         subscribers = 0
         registered = 0
         for su in stats_users:
-            u = su.get_activity(120)
+            u = su.get_activity(ACTIVE_DAYS)
             if u.num_reports > 0:
                 active += 1
 
@@ -736,6 +738,7 @@ class AllUserInformationView(LoginRequiredMixin, FAENavigationMixin, TemplateVie
         context['registered'] = registered
         context['subscribers'] = subscribers
         context['active'] = active
+        context['active_days'] = ACTIVE_DAYS
 
         return context
 

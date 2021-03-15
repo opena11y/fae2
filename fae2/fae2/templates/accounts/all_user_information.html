@@ -12,11 +12,11 @@ All User Information
 
 <section aria-labelledby="id_user_info">
   <h2 id="id_user_info">User Information</h2>
-  
+
   <ul>
     <li>Registered: {{registered}}</li>
     <li>Subscribers: {{subscribers}}</li>
-    <li>Active: {{active}}</li>
+    <li>Active: {{active}} (<abbr title="Created at least one report in the last {{active_days}} days.">last {{active_days}} days)</abbr>.</li>
   </ul>
 
   <table class="details table table-striped table-hover sortable" aria-labelledby="id_user_info">
@@ -39,7 +39,7 @@ All User Information
                 <td class="num">
                     {{su.user.id}}
                 </td>
-                
+
                 <td class="text">
                     <a href="{% url 'user_information' su.user.id %}">{{ su.user.username }}</a>
                 </td>
@@ -53,18 +53,18 @@ All User Information
                 <td class="text">
                     {{ su.user.profile.account_type }}
                 </td>
-                
+
                 <td class="text"  >{{ su.user.profile.email_announcements }}</td>
-                
+
                 <td class="num"  >{{ su.ws_report_group.num_total_reports }}</td>
-                
+
                 <td class="num"   >{{ su.ws_report_group.num_total_pages }}</td>
 
                 <td class="num"   >{{ su.user.contacts.count }}</td>
-                                
+
             </tr>
             {% endfor %}
-      </tbody>       
+      </tbody>
     </table>
 
 
