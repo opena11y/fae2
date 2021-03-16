@@ -27,6 +27,7 @@ from datetime import datetime
 
 from django.conf import settings
 from django.utils.timezone import make_aware
+from django.utils import timezone
 
 
 from os.path import join
@@ -495,7 +496,7 @@ class WebsiteReport(RuleGroupResult):
       num += 1
 
   def update_last_viewed(self):
-    self.last_viewed = datetime.now()
+    self.last_viewed = timezone.now()
     self.save()
 #    print('[LAST_VIEWED][' +  self.title + ']: ' + str(self.last_viewed))
 

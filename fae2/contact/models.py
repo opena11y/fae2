@@ -38,6 +38,8 @@ from django.template.loader import render_to_string
 
 import markdown
 from datetime import date
+from django.utils.timezone import make_aware
+from django.utils import timezone
 
 from fae2.settings import EMAIL_HOST_USER
 from fae2.settings import ADMIN_EMAIL
@@ -115,7 +117,7 @@ class Announcement(models.Model):
                 self.message_html = ""
 
         if self.web and not self.end_date:
-            self.end_date = datetime.datetime.now() + datetime.timedelta(days=3)
+            self.end_date = timezone.now() + datetime.timedelta(days=3)
 
         super(Announcement, self).save()  # Call the "real" save() method.
 
@@ -137,7 +139,7 @@ class Announcement(models.Model):
     def check_to_show(self, profile, request):
 
         if (self.status != 'Arch') and self.end_date:
-            now = datetime.datetime.now()
+            now = timezone.now()
             end = datetime.datetime(self.end_date.year, self.end_date.month, self.end_date.day)
 
             if end < now:

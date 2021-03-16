@@ -66,6 +66,9 @@ from django.core.exceptions     import ObjectDoesNotExist
 
 from userProfiles.models import UserProfile
 
+from django.utils.timezone import make_aware
+from django.utils import timezone
+
 DEBUG=True
 INFO=True
 ERROR=True

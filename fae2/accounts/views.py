@@ -89,6 +89,7 @@ from userProfiles.models import get_profile
 
 from django.conf import settings
 from django.utils.timezone import make_aware
+from django.utils import timezone
 
 
 def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
@@ -97,7 +98,7 @@ def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
 
 def getExpirationDate(dt, months):
     if (not dt):
-        dt = datetime.datetime.utcnow()
+        dt = timezone.now()
 
     year = dt.year
     month = dt.month + months
@@ -418,7 +419,7 @@ class UpdateSubscriptionView(LoginRequiredMixin, FAENavigationMixin, CreateView)
             p = bytearray()
             p.extend(map(ord, PAYMENT_SEND_KEY))
 
-            now = datetime.datetime.utcnow()
+            now = timezone.now()
             ts = now.strftime("%m-%d-%Y %H:%M:%S")
             amount = amount + '.00'
             code = amount + '|' + str(PAYMENT_SITE_ID) + '|' + ts
@@ -444,7 +445,7 @@ class UpdateSubscriptionView(LoginRequiredMixin, FAENavigationMixin, CreateView)
             try:
                 ro['TIMESTAMP'] = format_timestamp(ro['TIMESTAMP'])
             except:
-                ro['TIMESTAMP'] = datetime.datetime.utcnow()
+                ro['TIMESTAMP'] = timezone.now()
 
             return ro
         except:
@@ -538,17 +539,17 @@ class PaymentView(LoginRequiredMixin, FAENavigationMixin, TemplateView):
                         profile.add_payment(payment.subscription_cost)
 
                         if not profile.subscription_start:
-                            profile.subscription_start = datetime.datetime.utcnow()
+                            profile.subscription_start = timezone.now()
 
                     else:
                         profile.account_type = payment.account_type
-                        profile.subscription_start = datetime.datetime.utcnow()
+                        profile.subscription_start = timezone.now()
                         profile.subscription_end = payment.subscription_end
                         profile.set_payments(payment.subscription_cost)
 
                 if payment.status == 'PMT_NOCOST':
                     profile.account_type = payment.account_type
-                    profile.subscription_start = datetime.datetime.utcnow()
+                    profile.subscription_start = timezone.now()
                     profile.subscription_end = payment.subscription_end
                     profile.subtract_payment(payment.subscription_cost)
 
@@ -570,7 +571,7 @@ class PaymentView(LoginRequiredMixin, FAENavigationMixin, TemplateView):
             p = bytearray()
             p.extend(map(ord, PAYMENT_SEND_KEY))
 
-            now = datetime.datetime.utcnow()
+            now = timezone.now()
             ts = now.strftime("%m-%d-%Y %H:%M:%S")
             amount = str(payment.actual_subscription_cost) + '.00'
             code = payment.token + '|' + amount + '|' + ts + '|1|' + PAYMENT_ACCOUNT + '|' + amount
@@ -603,7 +604,7 @@ class PaymentView(LoginRequiredMixin, FAENavigationMixin, TemplateView):
             try:
                 ro['TIMESTAMP'] = format_timestamp(ro['TIMESTAMP'])
             except:
-                ro['TIMESTAMP'] = datetime.datetime.utcnow()
+                ro['TIMESTAMP'] = timezone.now()
 
             print(str(ro))
 
