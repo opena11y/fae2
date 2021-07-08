@@ -1,6 +1,8 @@
 data/
 logs/
+secrets.json
 fae2/fae2/secrets.json
+fae2/fae2/fae2/secrets.json
 fae2/venv/
 fae2/fae2/static/
 fae2/fae-util/test/

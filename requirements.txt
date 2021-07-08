@@ -9,3 +9,4 @@ psycopg2-binary
 pytz==2019.3
 requests==2.20.0
 sqlparse==0.3.0
+django-google-tag-manager==0.0.5

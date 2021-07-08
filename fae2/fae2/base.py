@@ -182,6 +182,7 @@ INSTALLED_APPS = (
     'websiteResults.apps.WebsiteResultsConfig',
     'websiteResultGroups.apps.WebsiteresultgroupsConfig',
     'stats.apps.StatsConfig',
+    'gtm',
 )
 
 if SHIBBOLETH_ENABLED:
@@ -275,6 +276,11 @@ LOGGING = {
         },
     },
 }
+
+# Analytics implemented via GTM
+# https://pypi.org/project/django-google-tag-manager/
+
+GOOGLE_TAG_ID = get_secret('GOOGLE_TAG_ID')
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
