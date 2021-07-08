@@ -1,15 +1,17 @@
 {% load staticfiles i18n %}
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" dir="ltr" ng-app>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>{{site.name}}</title>
+    <title>{% block page_title %}{{site.name}}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="The Functional Accessibility Evaluator (FAE) evaluates a website or a single web page based on the W3C Web Content Accessibility Guidelines (WCAG) 2.0 Level A and AA requirements.">
+    <meta name="description" content="{% block meta_description %}The Functional Accessibility Evaluator (FAE) evaluates a website or a single web page based on the W3C Web Content Accessibility Guidelines (WCAG) 2.0 Level A and AA requirements.{% endblock %}">
 
-    <meta name="keywords" content="wcag web content accessibility guidelines section 508 disability evaluation evalutor disability ada report">
+    <meta name="keywords" content="{% block meta_keywords %}wcag web content accessibility guidelines section 508 disability evaluation evalutor disability ada report{% endblock %}">
+
+    <meta name="robots" content="{% block meta_robots %}index,follow{% endblock %}">
 
     <meta name="author" content="Jon Gunderson and Nicholas Hoyt University of Illinois">
 
